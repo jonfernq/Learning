@@ -36,15 +36,19 @@ Two ways to format, tables and checkboxes (prevents the answers from collapsing 
 
 ---
 
+Also: 
+
+For: 
 
 | a) Answer #1 |
 | --- |
 | b) Answer #2 |
 
+Use: 
 
-| 1. Question | 
-| --- |
+```
 | a) Answer #1 |
+| --- |
 | b) Answer #2 |
-
+```
 
