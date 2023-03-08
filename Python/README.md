@@ -1,4 +1,4 @@
-## Python Quiz
+## Python
 
 Multiple choice question sets: 
 
