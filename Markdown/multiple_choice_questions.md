@@ -1,5 +1,7 @@
 ## Multiple Choice Questions: 
 
+Two ways to format, tables and checkboxes (prevents the answers from collapsing onto one line). 
+
 **To get this formatted text:** 
 
 | 1. Question | 
