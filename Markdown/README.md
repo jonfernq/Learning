@@ -1,33 +1,7 @@
-## Multiple Choice Questions: 
+## GitHub Flavored Markdown (GFM) 
 
-**To get this formatted text:** 
+Sometimes it is a bit tricky to get the formatting you want in GitHub Flavored Markdown (GFM).
 
-| 1. Question | 
-| --- |
-| a) Answer #1 |
-| b) Answer #2 |
+For example multiple choice questions, I found putting them in tables or with a checkbox in front works:
 
-**Use this markdown:** 
-
-```
-| 1. Question | 
-| --- |
-| a) Answer #1 |
-| b) Answer #2 |
-
-```
----
-
-**To get this formatted text:** 
-
-1. Question:
-- [ ] a) answer #1
-- [ ] b) answer #2
-
-**Use this markdown:** 
-
-```
-1. Question:
-- [ ] a) answer #1
-- [ ] b) answer #2
-```
+- [Multiple Choice Questions](https://github.com/jonfernq/Learning/blob/main/Markdown/multiple_choice_questions.md) 
