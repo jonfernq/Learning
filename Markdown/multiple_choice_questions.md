@@ -36,5 +36,6 @@ Two ways to format, tables and checkboxes (prevents the answers from collapsing 
 
 ---
 
+| --- |
 | a) Answer #1 |
 | b) Answer #2 |
