@@ -52,9 +52,5 @@ Use:
 | b) Answer #2 |
 ```
 
-| a) Answer #1 |
-| b) Answer #2 |
-| --- |
-
 
 
