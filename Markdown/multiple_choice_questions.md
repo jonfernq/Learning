@@ -33,3 +33,8 @@ Two ways to format, tables and checkboxes (prevents the answers from collapsing 
 - [ ] a) answer #1
 - [ ] b) answer #2
 ```
+
+---
+
+| a) Answer #1 |
+| b) Answer #2 |
