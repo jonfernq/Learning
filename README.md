@@ -1,5 +1,6 @@
 # Learning
-From learning languages to learning programming languages
+
+Muliple choice questions & notes for learning the intricacies of programming languages (and natural languages too). 
 
 - [Markdown](https://github.com/jonfernq/Learning/tree/main/Markdown)
 
