@@ -22,7 +22,7 @@ Yes, there are many books that dive deep into the application of Markdown and pr
 
 "Markdown Mastery: Simple Yet Powerful Writing Format" by Vicent Marti: This book provides an in-depth look at Markdown syntax and advanced features, with a focus on how to use Markdown for writing and publishing content on the web.
 
-"The Markdown Guide" by Matt Cone: This book provides a comprehensive guide to Markdown syntax and use cases, with a focus on using Markdown for writing and publishing technical documentation.
+["The Markdown Guide"](https://dl.icdst.org/pdfs/files3/c79990b0b853932d36ddc117ce2503e3.pdf) by Matt Cone: This book provides a comprehensive guide to Markdown syntax and use cases, with a focus on using Markdown for writing and publishing technical documentation.
 
 "Mastering Markdown" by Wes Bos: This book provides a comprehensive guide to Markdown syntax and advanced features, with a focus on using Markdown for writing and publishing web content.
 
