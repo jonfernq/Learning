@@ -8,7 +8,7 @@ Note, the description of steps below continues on from activating a virtual envi
 So, after activating a local Python virtual environment first:
 
 ---
-# Install required Python dependencies (Sphinx etc.)
+### Install required Python dependencies (Sphinx etc.)
 pip install -r docs/requirements.txt
 
 This command uses pip to install the Python dependencies required by a project, as specified in the requirements.txt file located in the docs directory.
@@ -20,10 +20,10 @@ When you run this command, pip will read the requirements.txt file and install a
 The requirements.txt file typically includes a list of package names, along with their version numbers or version constraints, that are required for the project to run correctly. By installing the dependencies from this file, you can ensure that you have the correct versions of the required packages installed, which is important for maintaining compatibility and avoiding conflicts between different packages.
 
 ---
-# Enter the Sphinx project
+### Enter the Sphinx project
 cd docs/
 
-# Run the raw sphinx-build command
+### Run the raw sphinx-build command
 sphinx-build -M html . _build/
 
 This is a Sphinx documentation generator command.
