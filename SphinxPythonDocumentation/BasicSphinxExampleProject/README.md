@@ -9,7 +9,9 @@ So, after activating a local Python virtual environment first:
 
 ---
 ### Install required Python dependencies (Sphinx etc.)
+```
 pip install -r docs/requirements.txt
+```
 
 This command uses pip to install the Python dependencies required by a project, as specified in the requirements.txt file located in the docs directory.
 
@@ -21,10 +23,14 @@ The requirements.txt file typically includes a list of package names, along with
 
 ---
 ### Enter the Sphinx project
+```
 cd docs/
+```
 
 ### Run the raw sphinx-build command
+```
 sphinx-build -M html . _build/
+```
 
 This is a Sphinx documentation generator command.
 
@@ -38,4 +44,26 @@ The _build/ directory is the destination directory where Sphinx will output the 
 
 So, when you run the command sphinx-build -M html . _build/, 
 Sphinx will look in the current directory for documentation files, build the documentation in HTML format, and output the generated files to the _build/ directory.
+
+---
+> Configuration error: config directory doesn't contain a conf.py file (D:\GITHUB_MY\SPHINX\example)
+
+The error message indicates that Sphinx is looking for the conf.py file in the wrong directory, which is causing the configuration error.
+
+To resolve this issue, you can try specifying the path to the conf.py file explicitly when running the sphinx-build command. For example, if your conf.py file is located in the docs directory, you can run the following command from the root directory of your project:
+
+```bash
+sphinx-build -M html docs docs/_build
+```
+
+This command tells Sphinx to build the HTML documentation using the conf.py file located in the docs directory, and to output the generated files to the docs/_build directory.
+
+If you still get the same error, you can check that the docs directory contains a conf.py file and that it is spelled correctly. You can also try specifying the full path to the conf.py file in the sphinx-build command to ensure that Sphinx can find it:
+
+```bash
+sphinx-build -M html /path/to/docs/conf.py docs/_build
+```
+
+By specifying the full path to the conf.py file, you can be sure that Sphinx will find it and the configuration error will be resolved.
+
 
