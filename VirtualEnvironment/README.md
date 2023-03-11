@@ -38,5 +38,14 @@ source myenv/bin/activate
 
 After running this command, your command prompt should change to indicate that you are now working within the virtual environment.
 
-If you want to exit the virtual environment later, you can run the deactivate command.
+You can confirm you’re in the virtual environment by checking the location of your Python interpreter:
 
+```
+which python
+```
+
+This should output the path to the Python executable inside your virtual environment. 
+
+As long as your virtual environment is activated pip will install packages into that specific environment and you’ll be able to import and use packages in your Python application.
+
+If you want to exit the virtual environment later, run the deactivate command.
