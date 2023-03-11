@@ -19,14 +19,17 @@ To download and get started with Python Sphinx, follow these steps:
 
 **Install Sphinx:** Once you have Python installed, you can use pip (the Python package manager) to install Sphinx. Open a command prompt or terminal window and enter the following command:
 
-Copy code
+```
 pip install sphinx
+```
+
 This will download and install the latest version of Sphinx.
 
 Create a new documentation project: To create a new Sphinx project, navigate to the directory where you want to create the project and enter the following command:
 
-Copy code
+```
 sphinx-quickstart
+```
 
 This will start a command-line wizard that will guide you through the process of creating a new Sphinx project.
 
@@ -34,14 +37,58 @@ Write your documentation: Once you have created a new Sphinx project, you can st
 
 Build your documentation: To generate HTML or other output formats from your documentation, use the Sphinx build command. For example, to generate HTML output, navigate to your project directory and enter the following command:
 
-go
+```go
 Copy code
 make html
+```
 
 This will generate HTML files in a directory called _build/html in your project directory.
 
 That's it! With these steps, you should now be able to start using Sphinx to write and publish your documentation. For more information on how to use Sphinx, including how to customize the output format, create custom extensions, and more, see the official Sphinx documentation: https://www.sphinx-doc.org/en/master/
 
+---
+> Can you give me a quickstart 'hello world' simple example to start making a Sphinx siite? 
+
+Sure! Here's a quickstart example to create a "Hello World" Sphinx site:
+
+Install Sphinx if you haven't already done so. You can do this using pip by running the following command in your terminal or command prompt:
+
+```
+pip install sphinx
+```
+
+Create a new directory for your Sphinx site and navigate to it in your terminal or command prompt.
+
+Run the following command to generate a new Sphinx project:
+
+```
+sphinx-quickstart
+```
+
+Follow the prompts to set up your project. For a "Hello World" example, you can accept the default options for most of the prompts.
+
+Once the project has been generated, navigate to the source directory within your project directory.
+
+Create a new file called index.rst and add the following content:
+
+```markdown
+Hello World
+===========
+
+Welcome to my Sphinx site!
+```
+
+Navigate back to the root directory of your Sphinx project and run the following command to build your site:
+
+```
+make html
+```
+
+Once the build process is complete, open the build/html/index.html file in your web browser to see your "Hello World" Sphinx site.
+
+That's it! You've now created a simple Sphinx site. You can add more content to your index.rst file and create additional pages to customize your site further.
+
+---
 > Are there ready-made Sphinx templates that can be adapted to make development faster ? 
 
 Yes, Sphinx provides a variety of pre-built templates that you can use to quickly create documentation that looks professional and polished. These templates provide pre-built CSS stylesheets and HTML layouts that you can customize to fit your needs.
@@ -58,30 +105,33 @@ Sphinx Material Theme: This is a theme based on Google's Material Design guideli
 
 To use one of these templates, you can simply install the template package using pip and then modify your Sphinx configuration file to use the template. For example, to use the Sphinx Bootstrap Theme, you can run the following command:
 
-Copy code
+```
 pip install sphinx-bootstrap-theme
+```
 
 And then modify your conf.py configuration file to include the following lines:
 
-makefile
-Copy code
+```makefile
 html_theme = 'bootstrap'
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+```
 
 With these lines added, your Sphinx project will use the Sphinx Bootstrap Theme for its HTML output.
 
 Overall, using a pre-built Sphinx template can be a great way to save time and effort when creating documentation. Just be sure to choose a template that fits your needs and can be easily customized to meet your specific requirements.
 
+---
 > How do I modify the conf.py file for the Sphinx Material Theme ? 
 
 To modify the conf.py file for the Sphinx Material Theme, you will need to first install the theme using pip. You can do this by running the following command in your terminal:
 
-Copy code
+```
 pip install sphinx-material
+```
+
 Once you have installed the theme, you can modify your conf.py file to use it. Here's an example of how to do this:
 
-python
-Copy code
+```python
 # Add the following lines to your conf.py file
 import sphinx_material
 
@@ -96,6 +146,7 @@ html_theme_options = {
     'color_accent': 'purple',
     'globaltoc_depth': 2,
 }
+```
 
 In this example, we import the sphinx_material module, set the html_theme variable to 'sphinx_material', and define some custom options using the html_theme_options dictionary.
 
