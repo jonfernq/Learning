@@ -70,6 +70,7 @@ sphinx-build -M html /path/to/docs/conf.py docs/_build
 
 By specifying the full path to the conf.py file, you can be sure that Sphinx will find it and the configuration error will be resolved.
 
+---
 ### Shorter Command
 
 You can also build the documentation locally with make:
