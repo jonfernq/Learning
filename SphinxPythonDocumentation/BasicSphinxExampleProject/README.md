@@ -82,8 +82,7 @@ Build with make
 make html
 ```
 
-
-# Open with your preferred browser, pointing it to the documentation index page
+Open with your preferred browser, pointing it to the documentation index page
 ```
 firefox _build/html/index.html
 ```
