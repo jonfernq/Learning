@@ -7,13 +7,13 @@
 
 Yes, there have been several articles and books written about the history and development of Markdown. Here are a few resources that you may find helpful:
 
-"Markdown: The Syntax You (Probably) Already Know" by John Gruber: This is the original article written by John Gruber in 2004 that introduced Markdown to the world.
+**"Markdown: The Syntax You (Probably) Already Know"** by John Gruber: This is the original article written by John Gruber in 2004 that introduced Markdown to the world.
 
-"A Brief History of Markdown" by Aaron Swartz: This article, written in 2004 by the late Aaron Swartz, provides an overview of the early development of Markdown and its impact on the world of online publishing.
+**"A Brief History of Markdown"** by Aaron Swartz: This article, written in 2004 by the late Aaron Swartz, provides an overview of the early development of Markdown and its impact on the world of online publishing.
 
-"Mastering Markdown" by Wes Bos: This is a book that provides an in-depth look at the history, syntax, and advanced features of Markdown.
+**"Mastering Markdown"** by Wes Bos: This is a book that provides an in-depth look at the history, syntax, and advanced features of Markdown.
 
-"The Markdown Story" by Matt Cone: This article, published on the iMore website, provides a brief history of Markdown and how it has evolved over time.
+**"The Markdown Story"** by Matt Cone: This article, published on the iMore website, provides a brief history of Markdown and how it has evolved over time.
 
 These resources provide a good starting point for learning about the history of Markdown and its evolution over time.
 
@@ -26,9 +26,9 @@ Yes, there are many books that dive deep into the application of Markdown and pr
 
 ["The Markdown Guide"](https://dl.icdst.org/pdfs/files3/c79990b0b853932d36ddc117ce2503e3.pdf) by Matt Cone: This book provides a comprehensive guide to Markdown syntax and use cases, with a focus on using Markdown for writing and publishing technical documentation.
 
-"Mastering Markdown" by Wes Bos: This book provides a comprehensive guide to Markdown syntax and advanced features, with a focus on using Markdown for writing and publishing web content.
+**"Mastering Markdown"** by Wes Bos: This book provides a comprehensive guide to Markdown syntax and advanced features, with a focus on using Markdown for writing and publishing web content.
 
-"Markdown for Writers" by Ryan Hellyer: This book provides a guide to using Markdown for writing and publishing content, with a focus on writers and bloggers.
+**"Markdown for Writers"** by Ryan Hellyer: This book provides a guide to using Markdown for writing and publishing content, with a focus on writers and bloggers.
 
 These books provide a wealth of information on how to use Markdown effectively for a variety of use cases, and are a great resource for anyone looking to learn more about Markdown.
 
@@ -50,17 +50,18 @@ Overall, while no single Markdown standard can perfectly replicate all of the fe
 
 There are several Markdown standards and extensions that support footnotes, citations, and other advanced formatting features that are essential to Wikipedia pages. Some of these include:
 
-Pandoc Markdown: Pandoc is a popular document converter that supports multiple input and output formats, including Markdown. Pandoc Markdown includes many extensions beyond basic Markdown, such as footnotes, citations, tables, and definition lists.
+**Pandoc Markdown:** Pandoc is a popular document converter that supports multiple input and output formats, including Markdown. Pandoc Markdown includes many extensions beyond basic Markdown, such as footnotes, citations, tables, and definition lists.
 
-CommonMark with extensions: CommonMark is a standardized version of Markdown that includes many features beyond basic Markdown, such as tables, definition lists, and strikethrough formatting. CommonMark also allows for extensions to be added to the syntax to support additional functionality, such as footnotes and citations.
+**CommonMark with extensions:** CommonMark is a standardized version of Markdown that includes many features beyond basic Markdown, such as tables, definition lists, and strikethrough formatting. CommonMark also allows for extensions to be added to the syntax to support additional functionality, such as footnotes and citations.
 
-MultiMarkdown: MultiMarkdown is an extension of Markdown that includes many advanced formatting features, including footnotes, citations, tables, and metadata. MultiMarkdown is designed to be highly customizable and supports a wide range of output formats, including HTML, LaTeX, and PDF.
+**MultiMarkdown:** MultiMarkdown is an extension of Markdown that includes many advanced formatting features, including footnotes, citations, tables, and metadata. MultiMarkdown is designed to be highly customizable and supports a wide range of output formats, including HTML, LaTeX, and PDF.
 
-GitHub Flavored Markdown with extensions: GitHub Flavored Markdown (GFM) is a popular Markdown flavor that includes many extensions, such as support for task lists, tables, and strikethrough formatting. GFM also allows for extensions to be added to the syntax to support additional functionality, such as footnotes and citations.
+**GitHub Flavored Markdown with extensions:** GitHub Flavored Markdown (GFM) is a popular Markdown flavor that includes many extensions, such as support for task lists, tables, and strikethrough formatting. GFM also allows for extensions to be added to the syntax to support additional functionality, such as footnotes and citations.
 
 These Markdown standards and extensions can be used to create richly formatted content, including footnotes and citations, that is similar in style and functionality to Wikipedia pages.
 
 > how does one  add GFM extensions ? 
+
 GitHub Flavored Markdown (GFM) includes many extensions that are not part of standard Markdown. To use GFM extensions, you can simply use the appropriate syntax in your Markdown documents. Here are some examples of how to use some of the most commonly used GFM extensions:
 
 Task lists: To create a task list, use the following syntax:
