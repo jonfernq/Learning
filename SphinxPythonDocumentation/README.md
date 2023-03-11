@@ -1,5 +1,15 @@
 ## Sphinx: Python Documentation
 
+> I heard that the software that powers Python documentation is called Sphinx? 
+
+Yes, that's correct! The software that powers the Python documentation is called Sphinx. Sphinx is a documentation generator that is designed specifically for Python, but it can be used with other programming languages as well.
+
+Sphinx uses reStructuredText as its markup language, which is a lightweight markup language that is easy to read and write. The reStructuredText files are then processed by Sphinx to generate HTML, PDF, and other output formats.
+
+Sphinx provides a range of features that make it a popular choice for documenting Python projects. For example, it supports automatic generation of API documentation from Python code, cross-referencing between different parts of the documentation, and the ability to include code samples and other interactive elements in the documentation.
+
+In addition to being used for the Python documentation, Sphinx is also used by many other open source projects to generate their documentation, including Django, SQLAlchemy, and many more.
+
 > How do i download and get started with Python Sphinx? 
 
 To download and get started with Python Sphinx, follow these steps:
