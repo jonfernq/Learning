@@ -10,6 +10,7 @@ Sphinx provides a range of features that make it a popular choice for documentin
 
 In addition to being used for the Python documentation, Sphinx is also used by many other open source projects to generate their documentation, including Django, SQLAlchemy, and many more.
 
+---
 > How do i download and get started with Python Sphinx? 
 
 To download and get started with Python Sphinx, follow these steps:
