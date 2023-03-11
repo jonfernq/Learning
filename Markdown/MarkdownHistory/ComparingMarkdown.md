@@ -31,13 +31,13 @@ reStructuredText and Markdown are both lightweight markup languages that are des
 
 Here are some features of reStructuredText that go beyond the capabilities of GitHub Flavored Markdown:
 
-Cross-referencing: reStructuredText allows you to easily create cross-references between different parts of your documentation using a simple syntax.
+**Cross-referencing:** reStructuredText allows you to easily create cross-references between different parts of your documentation using a simple syntax.
 
-Table of contents: reStructuredText can automatically generate a table of contents based on the headings in your document.
+**Table of contents:** reStructuredText can automatically generate a table of contents based on the headings in your document.
 
-Inline markup: reStructuredText provides a rich set of inline markup options, including support for bold, italic, underline, and many other styles.
+**Inline markup:** reStructuredText provides a rich set of inline markup options, including support for bold, italic, underline, and many other styles.
 
-Directives: reStructuredText allows you to define custom directives that can be used to create custom elements in your documentation.
+**Directives:** reStructuredText allows you to define custom directives that can be used to create custom elements in your documentation.
 
 Support for complex layouts: reStructuredText provides a number of features that make it easier to create complex layouts, such as nested lists, tables, and images with captions.
 
@@ -51,13 +51,13 @@ Yes, reStructuredText does support many features that are useful for academic wr
 
 Here are some examples of how reStructuredText can be used for academic writing:
 
-Citations: reStructuredText provides a syntax for creating citations using a simple label system. You can create a citation reference using a label, and then include the full citation information in a separate "footnote" section.
+**Citations:** reStructuredText provides a syntax for creating citations using a simple label system. You can create a citation reference using a label, and then include the full citation information in a separate "footnote" section.
 
-Footnotes: reStructuredText supports footnotes using a simple syntax, allowing you to add additional information or commentary to your text without interrupting the flow.
+**Footnotes:** reStructuredText supports footnotes using a simple syntax, allowing you to add additional information or commentary to your text without interrupting the flow.
 
-References: reStructuredText also supports the creation of references, which allow you to easily link to other parts of your document or external resources.
+**References:** reStructuredText also supports the creation of references, which allow you to easily link to other parts of your document or external resources.
 
-Math expressions: reStructuredText provides support for math expressions using LaTeX syntax, allowing you to include complex mathematical equations and formulas in your text.
+**Math expressions:** reStructuredText provides support for math expressions using LaTeX syntax, allowing you to include complex mathematical equations and formulas in your text.
 
 In addition to these features, reStructuredText can also be used to generate LaTeX output, which can be useful for academic writing and publishing. You can use reStructuredText to write your document, and then use Sphinx or another tool to generate LaTeX output that can be compiled into a PDF or other publication format.
 
@@ -67,11 +67,11 @@ reStructuredText and R Markdown are both lightweight markup languages that are c
 
 Here are some differences between reStructuredText and R Markdown:
 
-Syntax: reStructuredText uses a syntax that is more similar to traditional markup languages, such as HTML and LaTeX, while R Markdown uses a syntax that is closer to plain text.
+**Syntax:** reStructuredText uses a syntax that is more similar to traditional markup languages, such as HTML and LaTeX, while R Markdown uses a syntax that is closer to plain text.
 
-Extensibility: reStructuredText provides a more extensible architecture, allowing you to create custom directives and roles, while R Markdown is more limited in its extensibility.
+**Extensibility:** reStructuredText provides a more extensible architecture, allowing you to create custom directives and roles, while R Markdown is more limited in its extensibility.
 
-Customization: reStructuredText provides a wider range of configuration options, allowing you to customize the output format to a greater extent, while R Markdown is more focused on providing a simple and easy-to-use default output format.
+**Customization:** reStructuredText provides a wider range of configuration options, allowing you to customize the output format to a greater extent, while R Markdown is more focused on providing a simple and easy-to-use default output format.
 
 Support for different output formats: reStructuredText can be used to generate a wide range of output formats, including HTML, LaTeX, PDF, and more, while R Markdown is primarily focused on generating HTML and PDF output.
 
