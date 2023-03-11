@@ -46,6 +46,8 @@ So, when you run the command sphinx-build -M html . _build/,
 Sphinx will look in the current directory for documentation files, build the documentation in HTML format, and output the generated files to the _build/ directory.
 
 ---
+### Dealing with Error 
+
 > Configuration error: config directory doesn't contain a conf.py file (D:\GITHUB_MY\SPHINX\example)
 
 Even though this was set up ahead of time to work flawlessly, an error did occur and the fix is straightforward. 
