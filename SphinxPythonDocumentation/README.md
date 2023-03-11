@@ -153,3 +153,47 @@ In this example, we import the sphinx_material module, set the html_theme variab
 The available options that you can modify include things like the primary and accent colors, the depth of the table of contents, and the repository URL and name. You can find a full list of available options in the Sphinx Material Theme documentation.
 
 Once you have modified your conf.py file, you can generate your documentation by running the make html command in your terminal. Your documentation will be generated with the Sphinx Material Theme applied.
+
+---
+> Could you explain what Sphinx creates in the first default site creation, the code of which runs: 
+
+![sphinx_starer](https://user-images.githubusercontent.com/68504324/224463987-c7ce085b-d321-477a-8cf6-b94557ab8720.jpg)
+
+Certainly! The code you're looking at is the index.rst file that Sphinx generates by default when you run sphinx-quickstart.
+
+Here's a brief explanation of what's going on in the file:
+
+- The first few lines of the file are comments that indicate that the file was created by Sphinx and when it was created.
+
+- The next line is the main heading for your documentation. In this case, it's "Welcome to JonFernquest's documentation!" but you can change it to whatever you like.
+
+- The toctree directive that follows is used to generate a table of contents for your documentation. It lists the contents of your documentation in a nested format, with top-level items on the left and sub-items indented to the right. In this case, there are no sub-items, so the maxdepth option is set to 2 to limit the depth of the table of contents to 1 level.
+
+- The caption option for the toctree directive specifies the text that will be displayed above the table of contents.
+
+- The final section of the file, titled "Indices and tables", contains links to various indexes and tables that Sphinx can generate for your documentation. The genindex link leads to an alphabetical index of all the terms and concepts in your documentation, the modindex link leads to an index of all the modules in your documentation, and the search link leads to a search page that allows users to search for keywords within your documentation.
+
+I hope that helps! Let me know if you have any other questions.
+
+---
+> So, this Sphinx main front page must link to other pages? Such as individual documentation pages? Are there examples to guide one in the creation of documentation pages and documentation site? 
+
+Yes, the Sphinx main front page is typically just an index or table of contents that links to other pages or sections of your documentation.
+
+To create individual documentation pages or sections, you would typically create a new file in reStructuredText format (e.g., mypage.rst) in the source/ directory of your Sphinx project. In this file, you can write your documentation content using reStructuredText syntax.
+
+Once you've created your documentation pages, you can link to them from the main front page by adding them to the toctree directive. For example, if you have a file called mypage.rst, you could add it to the toctree directive on the main front page like this:
+
+```ruby
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   mypage
+```
+
+This would create a link to mypage.rst in the main front page's table of contents.
+
+As for examples, the Sphinx documentation itself is a great resource for learning how to create Sphinx documentation. The official Sphinx documentation includes a tutorial, a user guide, and a reference guide that cover all aspects of Sphinx, from installation and configuration to writing documentation in reStructuredText syntax and customizing the Sphinx output. Additionally, there are many open source projects that use Sphinx for their documentation, so you can look at their documentation directories to see how they structure and organize their documentation.
+
+
