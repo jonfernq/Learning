@@ -196,4 +196,36 @@ This would create a link to mypage.rst in the main front page's table of content
 
 As for examples, the Sphinx documentation itself is a great resource for learning how to create Sphinx documentation. The official Sphinx documentation includes a tutorial, a user guide, and a reference guide that cover all aspects of Sphinx, from installation and configuration to writing documentation in reStructuredText syntax and customizing the Sphinx output. Additionally, there are many open source projects that use Sphinx for their documentation, so you can look at their documentation directories to see how they structure and organize their documentation.
 
+---
+> Can you embed videos on Sphinx documentation pages ? 
+
+Yes, you can embed videos on Sphinx documentation pages. One way to do this is by using the youtube directive provided by the sphinxcontrib.youtube extension. Here's how:
+
+Install the sphinxcontrib-youtube extension using pip:
+
+```
+pip install sphinxcontrib-youtube
+```
+
+Add the extension to your Sphinx project's conf.py file:
+
+```python
+extensions = [
+    # other extensions...
+    "sphinxcontrib.youtube",
+]
+```
+
+Use the youtube directive to embed a YouTube video on a page. For example:
+
+```rst
+.. youtube:: dQw4w9WgXcQ
+   :width: 640
+   :height: 480
+   :align: center
+```
+
+This will embed the YouTube video with the ID dQw4w9WgXcQ on the page, with a width of 640 pixels, a height of 480 pixels, and centered alignment.
+
+Note that you can also use other video hosting platforms, such as Vimeo or Twitch, by using the appropriate directive provided by the sphinxcontrib package for that platform.
 
