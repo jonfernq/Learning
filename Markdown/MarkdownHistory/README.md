@@ -1,6 +1,8 @@
 
 # History of Markdown
 
+- [Comparing Markdowns: reStructuredText vs. others](https://github.com/jonfernq/Learning/blob/main/Markdown/MarkdownHistory/ComparingMarkdown.md) 
+
 > Has anyone documented or written about the history of Markdown? 
 
 Yes, there have been several articles and books written about the history and development of Markdown. Here are a few resources that you may find helpful:
