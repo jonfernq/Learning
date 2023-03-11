@@ -48,6 +48,8 @@ Sphinx will look in the current directory for documentation files, build the doc
 ---
 > Configuration error: config directory doesn't contain a conf.py file (D:\GITHUB_MY\SPHINX\example)
 
+Even though this was set up ahead of time to work flawlessly, an error did occur and the fix is straightforward. 
+
 The error message indicates that Sphinx is looking for the conf.py file in the wrong directory, which is causing the configuration error.
 
 To resolve this issue, you can try specifying the path to the conf.py file explicitly when running the sphinx-build command. For example, if your conf.py file is located in the docs directory, you can run the following command from the root directory of your project:
