@@ -95,13 +95,13 @@ Yes, Sphinx provides a variety of pre-built templates that you can use to quickl
 
 Here are a few popular Sphinx templates that you can use to speed up your development:
 
-Sphinx Bootstrap Theme: This is a popular template that provides a modern, responsive design based on the Bootstrap framework. It includes a variety of customization options and is easy to use out of the box.
+**Sphinx Bootstrap Theme:** This is a popular template that provides a modern, responsive design based on the Bootstrap framework. It includes a variety of customization options and is easy to use out of the box.
 
-Read the Docs Theme: This is the default theme used by Read the Docs, a popular documentation hosting platform. It provides a clean, minimalist design that is easy to read and navigate.
+**Read the Docs Theme:** This is the default theme used by Read the Docs, a popular documentation hosting platform. It provides a clean, minimalist design that is easy to read and navigate.
 
-Sphinx RTD Theme: This is a third-party theme that is based on the Read the Docs theme but provides additional customization options and features, such as support for Google Analytics and custom CSS.
+**Sphinx RTD Theme:** This is a third-party theme that is based on the Read the Docs theme but provides additional customization options and features, such as support for Google Analytics and custom CSS.
 
-Sphinx Material Theme: This is a theme based on Google's Material Design guidelines. It provides a modern, colorful design with a variety of customization options.
+**Sphinx Material Theme:** This is a theme based on Google's Material Design guidelines. It provides a modern, colorful design with a variety of customization options.
 
 To use one of these templates, you can simply install the template package using pip and then modify your Sphinx configuration file to use the template. For example, to use the Sphinx Bootstrap Theme, you can run the following command:
 
