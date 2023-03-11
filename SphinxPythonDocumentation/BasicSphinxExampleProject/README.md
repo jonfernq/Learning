@@ -72,12 +72,12 @@ By specifying the full path to the conf.py file, you can be sure that Sphinx wil
 
 You can also build the documentation locally with make:
 
-# Enter the Sphinx project
+Enter the Sphinx project
 ```
 cd docs/
 ```
 
-# Build with make
+Build with make
 ```
 make html
 ```
