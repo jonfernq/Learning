@@ -18,7 +18,7 @@ This means that if you are working within a virtual environment and try to impor
 This is why it's important to make sure that you activate the correct virtual environment before running your Python code or installing packages, and to ensure that all the required packages are installed within the virtual environment. You can use tools like pip to install packages within a virtual environment, and it's a good practice to create a requirements.txt file to keep track of the packages and versions required for your project.
 
 ---
-## Creating a Virtual Environment
+### Creating a Virtual Environment
 
 "venv (for Python 3)... allow you to manage separate package installations for different projects. 
 They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation. 
@@ -70,3 +70,6 @@ As long as your virtual environment is activated pip will install packages into 
 and you’ll be able to import and use packages in your Python application.
 
 When you want to exit the virtual environment, run the deactivate command.
+
+Next step is to get an [example project](https://github.com/jonfernq/Learning/tree/main/SphinxPythonDocumentation/BasicSphinxExampleProject) working.
+
