@@ -89,5 +89,14 @@ Open with your preferred browser, pointing it to the documentation index page
 ```
 firefox _build/html/index.html
 ```
+---
+### Developing the Documentation 
+
+From here, example projects flesh out the website:
+
+- [ReadTheDocs Tutorial](https://docs.readthedocs.io/en/stable/tutorial/) 
+- [Official Sphinx Tutorial](https://www.sphinx-doc.org/en/master/tutorial/index.html) 
+
+
 
 
