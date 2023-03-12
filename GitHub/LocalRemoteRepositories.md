@@ -118,5 +118,12 @@ Once you've done this, your Sphinx documentation site should be available at htt
 
 Yes, to be safe it's best to include all necessary files in the project directory and all sub-directories. This includes any source code files, documentation files, configuration files, and any other necessary files. It's also important to make sure that any dependencies or requirements are clearly specified so that users can easily install and use the project.  
 
+  ---
+  
+  Remembering in which directory/folder to issue commands is sometimes difficult.
+  
+  >  I forgot, do you issue "make html" from project directory or from the docs ? 
+
+You should issue the "make html" command from the "docs" directory, assuming that you have already navigated to the root directory of your Sphinx project. This is because the "docs" directory contains the "conf.py" file and the source files for your documentation, which Sphinx uses to generate the HTML output.
 
 
