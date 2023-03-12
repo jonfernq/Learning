@@ -20,6 +20,44 @@ Here are the basic steps to set up a local repository:
 
 At this point, you have set up a local repository and committed your changes. You can continue working on the project and making changes, committing them as needed. To share your changes with others or back them up to a remote repository like GitHub, you can push your changes to the remote repository using the git push command.
 
+---
+### Add all files to local repository 
+
+> What if there is one directory of files and you are adding all of them to the local repository? What the actual commands to be issued?  
+
+If you have a directory of files that you want to add to a local Git repository, you can use the following commands:
+
+Navigate to the directory that contains the files you want to add.
+
+```bash
+cd /path/to/directory
+```
+
+Initialize a new Git repository in the current directory.
+
+```csharp
+git init
+```
+
+Add all the files in the directory to the Git index.
+
+```csharp
+git add .
+```
+
+This command stages all the changes in the directory, including new files, modifications to existing files, and deletions.
+
+Commit the changes to the local repository.
+
+```sql
+git commit -m "Initial commit"
+```
+
+This command creates a new commit with a message describing the changes you made.
+
+After following these steps, your directory of files should now be added to the local Git repository. You can use git status to check the status of your repository and git log to view the commit history.
+
+---
 ### Remote Repositories
 
 > What are the steps taken to get the local repository on one's machine into the remote repository on github ? 
