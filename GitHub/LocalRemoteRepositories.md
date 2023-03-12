@@ -110,9 +110,13 @@ To deploy your documentation site to GitHub, you can follow these general steps:
 
 Once you've done this, your Sphinx documentation site should be available at https://<username>.github.io/<repository-name>/.
 
+---
+  
+> Project files to include in repository
+  
+> It seems exactly what files to include might vary with the user, but to be safe all files in the project directory and all sub-directories would be best to include? 
 
-
-
+Yes, to be safe it's best to include all necessary files in the project directory and all sub-directories. This includes any source code files, documentation files, configuration files, and any other necessary files. It's also important to make sure that any dependencies or requirements are clearly specified so that users can easily install and use the project.  
 
 
 
