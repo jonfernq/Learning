@@ -47,6 +47,8 @@ git add .
 
 This command stages all the changes in the directory, including new files, modifications to existing files, and deletions.
 
+'git add .' adds all changes in the current directory and all subdirectories to the staging area for the next commit.
+
 Commit the changes to the local repository.
 
 ```sql
