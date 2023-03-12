@@ -8,7 +8,7 @@ Here are the basic steps to set up a local repository:
 
 - 1. Create a new directory on your local machine where you want to store the repository.
 
-- 2. Navigate to the directory using the command line or terminal.
+- 2. Navigate to the directory using the command line or terminal (Sphinx project directory)
 
 - 3. Initialize the directory as a Git repository by running the command git init.
 
