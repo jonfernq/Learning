@@ -80,6 +80,33 @@ To push the local repository on your machine to the remote repository on GitHub,
 
 After following these steps, the changes you made in the local repository should be reflected in the remote repository on GitHub.
 
+---
+
+### Project Files to Deploy to Sphinx GitHub Pages site
+
+> I do not understand exactly which directories and files must be included in deploying a Python Sphinx documentation site to GitHub. It seems that everything in the '_build' directory must be included? Anything else?  
+
+When deploying a Python Sphinx documentation site to GitHub, the following directories and files are typically included:
+
+- **The docs directory:** This is the directory that contains your Sphinx documentation files, including your conf.py configuration file.
+
+- **The _build directory:** This directory contains the built HTML files that Sphinx generates when you build your documentation. These files are what will be served by GitHub Pages.
+
+- **The index.html file:** This file is the main entry point for your documentation site. It should be located in the root of the _build directory.
+
+- Any other **static assets (such as images, CSS, or JavaScript files)** that are referenced by your documentation pages.
+
+To deploy your documentation site to GitHub, you can follow these general steps:
+
+- 1. Build your documentation using Sphinx: make html (or sphinx-build -b html source/ _build/)
+
+- 2. Copy the contents of the _build/html directory into a new directory named docs in your repository.
+
+- 3. Add, commit, and push the changes to your GitHub repository.
+
+- 4. Configure GitHub Pages to serve your documentation site from the docs directory.
+
+Once you've done this, your Sphinx documentation site should be available at https://<username>.github.io/<repository-name>/.
 
 
 
