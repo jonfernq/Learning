@@ -6,6 +6,11 @@
 The example project contains a script for counting the frequency distribution of words 
 in a given file and some documentation generated using Sphinx. For bigger projects, we can have more source files."
 
+- [Initial Repository](https://github.com/coderefinery/documentation-example) 
+- [Final Deployed Pages](https://jonfernq.github.io/documentation-example/) 
+
+Follow the Steps: 
+
 ---
 - **Step 1:** Go to the documentation-example project template on GitHub and create a copy to your namespace (“Generate”, since this is a template repository):
 
