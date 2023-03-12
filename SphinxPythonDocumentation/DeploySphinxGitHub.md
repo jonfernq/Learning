@@ -8,6 +8,7 @@ in a given file and some documentation generated using Sphinx. For bigger projec
 
 - [Initial Repository](https://github.com/coderefinery/documentation-example) 
 - [Final Deployed Pages](https://jonfernq.github.io/documentation-example/) 
+- [GitHub Action: environment.yaml](https://github.com/coderefinery/documentation-example/blob/main/environment.yml)
 
 Follow the Steps: 
 
