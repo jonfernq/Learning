@@ -8,9 +8,44 @@
 
 3. Write a program that takes a list of dictionaries representing students and their test scores, and returns a dictionary containing the average score for each subject.
 
+```python 
+def average_scores(students):
+    # Initialize an empty dictionary to hold the average scores
+    averages = {}
+
+    # Loop over each student in the list
+    for student in students:
+        # Loop over each subject in the student's scores
+        for subject, score in student['scores'].items():
+            # Check if the subject is already in the averages dictionary
+            if subject in averages:
+                # If the subject is already in the dictionary, add the score to the total
+                averages[subject]['total'] += score
+                averages[subject]['count'] += 1
+            else:
+                # If the subject is not in the dictionary, initialize it with the first score
+                averages[subject] = {'total': score, 'count': 1}
+
+    # Calculate the average for each subject
+    for subject, data in averages.items():
+        averages[subject] = data['total'] / data['count']
+
+    return averages
+
+students = [
+    {'name': 'Alice', 'scores': {'math': 80, 'english': 85, 'history': 90}},
+    {'name': 'Bob', 'scores': {'math': 75, 'english': 70, 'history': 85}},
+    {'name': 'Charlie', 'scores': {'math': 90, 'english': 80, 'history': 95}}
+]
+
+averages = average_scores(students)
+
+print(averages) # Output: {'math': 81.67, 'english': 78.33, 'history': 90.0}
+``` 
+
 4. Write a function that takes a list of integers as input and returns the median value.
 
-``` 
+```python 
 def find_median(lst):
     # First, sort the list in ascending order
     lst.sort()
