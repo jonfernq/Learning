@@ -123,6 +123,16 @@ averages = average_scores(students)
 print(averages) # Output: {'math': 81.67, 'english': 78.33, 'history': 90.0}
 ``` 
 
+**Explanation:**
+
+This is a Python function that takes a list of dictionaries representing students and their test scores and returns a dictionary containing the average score for each subject.
+
+The function first initializes an empty dictionary called averages to hold the average scores. It then loops over each student in the list of students, and for each student, it loops over each subject and score in the student's scores dictionary.
+
+For each subject and score, the function checks if the subject is already in the averages dictionary. If it is, the function adds the score to the total for that subject and increments the count of scores for that subject. If the subject is not already in the dictionary, the function initializes it with the first score.
+
+After looping over all the students and their scores, the function calculates the average score for each subject by dividing the total score for that subject by the count of scores for that subject. The function then returns the averages dictionary containing the average score for each subject.
+
 **4. Write a function that takes a list of integers as input and returns the median value.**
 
 ```python 
