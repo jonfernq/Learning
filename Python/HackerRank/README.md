@@ -1,5 +1,8 @@
 ## Hacker Rank
 
+- [Basic Questions]()
+- [Difficult Intermediate]() 
+
 [HackerRank](https://en.wikipedia.org/wiki/HackerRank) is a technology company that focuses on competitive programming challenges for both consumers and businesses. 
 Developers compete by writing programs according to provided specifications. 
 HackerRank's programming challenges can be solved in a variety of programming languages (including Java, C++, PHP, Python, SQL, JavaScript) 
@@ -41,40 +44,3 @@ Preparing for the tests on HackerRank can be a great way to improve your coding 
 
 Overall, HackerRank is a valuable resource for anyone looking to improve their coding skills and prepare for technical interviews. Whether you are a beginner or an experienced coder, there are challenges on HackerRank that can help you learn and grow as a programmer.
 
-
-
-
-
-
-Regenerate response
-
-ChatGPT Feb 13 Version. Free Research Preview. Our goal is to make AI systems more natural a
-
-Could you provide some example questions from the basics test?
-
-Here are some example questions that you might find on the "problem-solving basic" test on HackerRank:
-
-Write a program that takes an integer as input and prints "Even" if the number is even or "Odd" if the number is odd.
-
-Write a function that takes a list of integers as input and returns the sum of all the even numbers in the list.
-
-Write a program that takes two strings as input and concatenates them together, separated by a space.
-
-Write a program that takes a string as input and prints the reverse of the string.
-
-Write a function that takes a list of strings as input and returns a new list with all the strings sorted in alphabetical order.
-
-These questions are designed to test a candidate's understanding of basic programming concepts like conditional statements, loops, functions, and string manipulation. The actual questions on the test may vary depending on the specific version of the "problem-solving basic" test being used.
-
-
-Please provide some examples of the most difficult questions on the intermediate Python  test.
-
-Write a program that takes a list of integers as input and returns a list of all the pairs of integers in the list that sum up to a target value.
-
-Write a function that takes a string as input and returns the length of the longest substring that contains only unique characters.
-
-Write a program that takes a list of dictionaries representing students and their test scores, and returns a dictionary containing the average score for each subject.
-
-Write a function that takes a list of integers as input and returns the median value.
-
-Write a program that simulates a game of Blackjack, with a human player and a computer dealer.
