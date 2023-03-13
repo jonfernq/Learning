@@ -1,4 +1,4 @@
-## Hacker Rank
+## Coding Challenges
 
 - [Coding Challenges](#Coding-Challenges)
 - [Hacker Rank](#Hacker-Rank)
