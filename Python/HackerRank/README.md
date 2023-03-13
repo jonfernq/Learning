@@ -53,13 +53,13 @@ Overall, HackerRank is a valuable resource for anyone looking to improve their c
 
 LeetCode offers a number of features that make it a popular choice for coding practice and interview preparation. Some of these features include:
 
-Large Collection of Problems: LeetCode offers a vast collection of coding problems, ranging from easy to hard difficulty levels. These problems are designed to cover a wide range of topics and are regularly updated to keep up with industry trends and best practices.
+1. **Large Collection of Problems:** LeetCode offers a vast collection of coding problems, ranging from easy to hard difficulty levels. These problems are designed to cover a wide range of topics and are regularly updated to keep up with industry trends and best practices.
 
-Online Judge System: LeetCode offers an online judge system that allows users to submit their solutions and receive immediate feedback on their code's correctness and efficiency.
+2. **Online Judge System:** LeetCode offers an online judge system that allows users to submit their solutions and receive immediate feedback on their code's correctness and efficiency.
 
-Interview Preparation: LeetCode offers a dedicated interview preparation section that provides users with curated sets of problems that are commonly asked in technical interviews. This section also includes mock interviews and company-specific interview questions.
+3. **Interview Preparation:** LeetCode offers a dedicated interview preparation section that provides users with curated sets of problems that are commonly asked in technical interviews. This section also includes mock interviews and company-specific interview questions.
 
-Discussion Forum: LeetCode has a discussion forum where users can ask questions, share solutions, and discuss coding problems with other users. This forum is a valuable resource for learning from others' experiences and finding alternative solutions to coding problems.
+4. **Discussion Forum:** LeetCode has a discussion forum where users can ask questions, share solutions, and discuss coding problems with other users. This forum is a valuable resource for learning from others' experiences and finding alternative solutions to coding problems.
 
 Overall, LeetCode is a popular platform for coding practice and interview preparation, particularly for individuals looking to improve their coding skills and land a job in the tech industry.
 
