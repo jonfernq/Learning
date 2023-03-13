@@ -1,5 +1,11 @@
 ## Hacker Rank: Difficult Intermediate Coding Challenges
 
+### Audio
+
+- [Audio](https://drive.google.com/file/d/12lBHtkUxInZHE92dfc15DFpAVNwS5MW9/view?usp=sharing)
+
+### Transcript
+
 > Please provide some examples of the most difficult questions on the intermediate Python  test.
 
 **1. Write a program that takes a list of integers as input and returns a list of all the pairs of integers in the list that sum up to a target value.**
