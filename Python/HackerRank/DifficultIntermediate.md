@@ -28,6 +28,38 @@ print(pairs)  # Output: [(1, 6), (2, 5), (3, 4)]
 
 2. Write a function that takes a string as input and returns the length of the longest substring that contains only unique characters.
 
+```python 
+def longest_unique_substring(s):
+    # Initialize variables to keep track of the start and end indices of the substring
+    start = 0
+    end = 0
+    # Initialize a set to keep track of the unique characters in the substring
+    seen = set()
+    # Initialize a variable to keep track of the length of the longest unique substring
+    max_length = 0
+
+    # Loop over each character in the string
+    while end < len(s):
+        # Check if the current character is in the set of seen characters
+        if s[end] not in seen:
+            # If the current character is not in the set, add it to the set and increment the end index
+            seen.add(s[end])
+            end += 1
+            # Update the max length if the current substring is longer than the previous longest substring
+            max_length = max(max_length, end - start)
+        else:
+            # If the current character is in the set, remove the first character in the substring from the set and
+            # increment the start index
+            seen.remove(s[start])
+            start += 1
+
+    return max_length
+
+my_string = "abcabcbb"
+length = longest_unique_substring(my_string)
+print(length)  # Output: 3
+```
+
 3. Write a program that takes a list of dictionaries representing students and their test scores, and returns a dictionary containing the average score for each subject.
 
 ```python 
