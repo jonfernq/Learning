@@ -2,7 +2,7 @@
 
 > Please provide some examples of the most difficult questions on the intermediate Python  test.
 
-1. Write a program that takes a list of integers as input and returns a list of all the pairs of integers in the list that sum up to a target value.
+**1. Write a program that takes a list of integers as input and returns a list of all the pairs of integers in the list that sum up to a target value.**
 
 ```python 
 def find_pairs(lst, target):
@@ -26,7 +26,19 @@ pairs = find_pairs(my_list, target)
 print(pairs)  # Output: [(1, 6), (2, 5), (3, 4)]
 ```
 
-2. Write a function that takes a string as input and returns the length of the longest substring that contains only unique characters.
+**Explanation:**
+
+The find_pairs function takes two inputs: a list of integers lst and a target integer value target. The function searches through the list and finds all pairs of numbers that add up to the target value, and returns these pairs as a list.
+
+The function works by initializing an empty list called pairs to hold the pairs that add up to the target value. It then loops over each number in the list using a for loop, and for each number it loops over all subsequent numbers in the list using another for loop. This way, the function checks every possible pair of numbers in the list.
+
+For each pair of numbers, the function checks if their sum is equal to the target value using an if statement. If the sum is equal to the target value, the pair of numbers is added to the pairs list using the append method.
+
+Finally, the function returns the pairs list, which contains all pairs of numbers that add up to the target value.
+
+In the example provided, the find_pairs function is called with my_list as the list of integers and target as the integer value 7. The function returns the pairs [(1, 6), (2, 5), (3, 4)], which are printed to the console using the print function. These pairs represent all possible pairs of numbers in my_list that add up to the target value of 7.
+
+**2. Write a function that takes a string as input and returns the length of the longest substring that contains only unique characters.**
 
 ```python 
 def longest_unique_substring(s):
