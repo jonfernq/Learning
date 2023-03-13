@@ -1,6 +1,6 @@
 ## Hacker Rank
 
-- [Coding Challenges](#Coding_Challenges)
+- [Coding Challenges](#Coding-Challenges)
 - [Hacker Rank](#Hacker_Rank)
 - [Leetcode](#Leetcode)
 - [Competitive Coding](#Competitive_Coding)
