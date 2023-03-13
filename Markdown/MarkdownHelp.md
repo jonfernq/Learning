@@ -13,6 +13,11 @@ Here's an example of how to create an audio player in Markdown using the HTML5 a
 </audio>
 ```  
 
+<audio controls>
+  <source src="https://example.com/audiofile.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 In this example, replace the src attribute with the direct link to your audio file.
 
 You can also use services like GitHub Pages or Netlify to host your audio files and create a webpage with the audio player embedded.
