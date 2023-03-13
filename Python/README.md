@@ -6,6 +6,12 @@ Multiple choice question sets:
 - [os.path](https://github.com/jonfernq/Python-Utilities/blob/main/PythonQuiz/file_path_questions.md)
 - [Python List Slices](https://github.com/jonfernq/Python-Utilities/blob/main/PythonQuiz/PythonSlices.md) 
 
+
+### Coding Challenges
+
+- [Hacker Rank Basic](https://github.com/jonfernq/Learning/blob/main/Python/HackerRank/BasicQuestions.md) 
+- [Hacker Rank Intermediate Difficult](https://github.com/jonfernq/Learning/blob/main/Python/HackerRank/DifficultIntermediate.md) 
+
 ### Utilities
 
 Reformatting of ChatGPT quiz code: 
