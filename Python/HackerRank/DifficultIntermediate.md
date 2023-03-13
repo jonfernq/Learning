@@ -4,6 +4,28 @@
 
 1. Write a program that takes a list of integers as input and returns a list of all the pairs of integers in the list that sum up to a target value.
 
+```python 
+def find_pairs(lst, target):
+    # Initialize an empty list to hold the pairs
+    pairs = []
+
+    # Loop over each number in the list
+    for i in range(len(lst)):
+        # Loop over each subsequent number in the list
+        for j in range(i + 1, len(lst)):
+            # Check if the sum of the two numbers is equal to the target value
+            if lst[i] + lst[j] == target:
+                # If so, add the pair to the list of pairs
+                pairs.append((lst[i], lst[j]))
+
+    return pairs
+
+my_list = [1, 2, 3, 4, 5, 6]
+target = 7
+pairs = find_pairs(my_list, target)
+print(pairs)  # Output: [(1, 6), (2, 5), (3, 4)]
+```
+
 2. Write a function that takes a string as input and returns the length of the longest substring that contains only unique characters.
 
 3. Write a program that takes a list of dictionaries representing students and their test scores, and returns a dictionary containing the average score for each subject.
