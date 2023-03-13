@@ -1,6 +1,9 @@
 ## Hacker Rank
 
-`[[toc]]` 
+- [Coding Challenges](#Coding Challenges)
+- [Hacker Rank](#Hacker Rank)
+- [Leetcode](#Leetcode)
+- [Competitive Coding](#Competitive Coding)
 
 ---
 ### Coding Challenges 
