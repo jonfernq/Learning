@@ -120,3 +120,96 @@ print(median)  # Output: 4.0
 ```
 
 5. Write a program that simulates a game of Blackjack, with a human player and a computer dealer.
+
+```python
+import random
+
+# create deck of cards
+suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs']
+ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
+
+deck = []
+for suit in suits:
+    for rank in ranks:
+        card = {'suit': suit, 'rank': rank}
+        deck.append(card)
+
+# function to calculate the value of a hand of cards
+def calculate_hand(hand):
+    total = 0
+    num_aces = 0
+    for card in hand:
+        rank = card['rank']
+        if rank in ['Jack', 'Queen', 'King']:
+            total += 10
+        elif rank == 'Ace':
+            num_aces += 1
+            total += 11
+        else:
+            total += int(rank)
+    while total > 21 and num_aces > 0:
+        total -= 10
+        num_aces -= 1
+    return total
+
+# function to show the cards in a hand
+def show_hand(hand):
+    for card in hand:
+        print(card['rank'], 'of', card['suit'])
+
+# function to ask the player if they want to hit or stand
+def get_player_choice():
+    while True:
+        choice = input('Do you want to hit or stand? ').lower()
+        if choice in ['hit', 'stand']:
+            return choice
+        else:
+            print('Please enter "hit" or "stand".')
+
+# shuffle the deck and deal two cards to the player and the dealer
+random.shuffle(deck)
+player_hand = [deck.pop(), deck.pop()]
+dealer_hand = [deck.pop(), deck.pop()]
+
+# show the initial hands
+print('Your hand:')
+show_hand(player_hand)
+print('Dealer\'s hand:')
+print(dealer_hand[0]['rank'], 'of', dealer_hand[0]['suit'])
+print('')
+
+# player's turn
+while True:
+    choice = get_player_choice()
+    if choice == 'hit':
+        player_hand.append(deck.pop())
+        print('Your hand:')
+        show_hand(player_hand)
+        if calculate_hand(player_hand) > 21:
+            print('Bust! You lose.')
+            exit()
+    else:
+        break
+
+# dealer's turn
+while calculate_hand(dealer_hand) < 17:
+    dealer_hand.append(deck.pop())
+print('Dealer\'s hand:')
+show_hand(dealer_hand)
+
+# determine the winner
+player_score = calculate_hand(player_hand)
+dealer_score = calculate_hand(dealer_hand)
+if dealer_score > 21:
+    print('Dealer bust! You win.')
+elif player_score > dealer_score:
+    print('You win.')
+elif player_score == dealer_score:
+    print('It\'s a tie.')
+else:
+    print('You lose.')
+```    
+    
+This program creates a deck of cards and deals two cards to the player and the dealer. The player can then choose to hit (receive another card) or stand (keep their current hand). Once the player has finished their turn, the dealer takes their turn according to a simple set of rules (hit if their hand is less than 17, stand otherwise). Finally, the winner is determined based on who has the higher score without going over 21.
+
+
