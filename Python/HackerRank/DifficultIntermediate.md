@@ -72,7 +72,21 @@ length = longest_unique_substring(my_string)
 print(length)  # Output: 3
 ```
 
-3. Write a program that takes a list of dictionaries representing students and their test scores, and returns a dictionary containing the average score for each subject.
+**Explanation:**
+
+The function longest_unique_substring takes a string as input and returns the length of the longest substring in the string that contains only unique characters.
+
+The function uses a sliding window approach to find the longest substring. It starts by initializing variables to keep track of the start and end indices of the substring, a set to keep track of the unique characters in the substring, and a variable to keep track of the length of the longest unique substring.
+
+The function then loops over each character in the string using a while loop. At each iteration, it checks if the current character is in the set of seen characters. If the current character is not in the set, it adds it to the set and increments the end index. It also updates the max length if the current substring is longer than the previous longest substring.
+
+If the current character is already in the set, it removes the first character in the substring from the set and increments the start index. This continues until the end index reaches the end of the string.
+
+Finally, the function returns the length of the longest unique substring.
+
+In the given example, the input string is "abcabcbb". The longest substring with unique characters is "abc", which has a length of 3. Therefore, the function returns 3 as output.
+
+**3. Write a program that takes a list of dictionaries representing students and their test scores, and returns a dictionary containing the average score for each subject.**
 
 ```python 
 def average_scores(students):
@@ -109,7 +123,7 @@ averages = average_scores(students)
 print(averages) # Output: {'math': 81.67, 'english': 78.33, 'history': 90.0}
 ``` 
 
-4. Write a function that takes a list of integers as input and returns the median value.
+**4. Write a function that takes a list of integers as input and returns the median value.**
 
 ```python 
 def find_median(lst):
@@ -131,7 +145,7 @@ median = find_median(my_list)
 print(median)  # Output: 4.0
 ```
 
-5. Write a program that simulates a game of Blackjack, with a human player and a computer dealer.
+**5. Write a program that simulates a game of Blackjack, with a human player and a computer dealer.**
 
 ```python
 import random
