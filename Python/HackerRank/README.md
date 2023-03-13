@@ -45,6 +45,8 @@ Preparing for the tests on HackerRank can be a great way to improve your coding 
 Overall, HackerRank is a valuable resource for anyone looking to improve their coding skills and prepare for technical interviews. Whether you are a beginner or an experienced coder, there are challenges on HackerRank that can help you learn and grow as a programmer.
 
 ---
+### Leetcode
+
 > What is Leetcode? 
 
 [LeetCode](https://en.wikipedia.org/wiki/Leet_(programming_language)) is a platform that provides a collection of coding challenges and problems that are designed to improve coding skills and prepare individuals for technical interviews. Similar to HackerRank, LeetCode offers a variety of coding challenges that cover a wide range of topics, including algorithms, data structures, databases, system design, and more.
@@ -79,6 +81,8 @@ Community and Discussion Forum: Both platforms have active communities and discu
 In summary, while both HackerRank and LeetCode offer a great platform for coding practice and interview preparation, the choice between the two may depend on individual preferences and learning styles.
 
 ---
+### Competitive Coding 
+
 > What kinds of jobs are competitive coding platforms best for? Are they ideal for all coding and IT-related jobs? What are some other skill-set areas that they perhaps neglect? 
 
 [Competitive coding](https://en.wikipedia.org/wiki/Competitive_programming) platforms like HackerRank and LeetCode are best suited for jobs that require strong coding skills and technical abilities, such as software engineering, data science, and artificial intelligence. These platforms are particularly useful for preparing for technical interviews, which are commonly used to assess candidates' coding skills during the hiring process.
