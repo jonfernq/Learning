@@ -10,9 +10,11 @@ Multiple choice questions & notes for learning the intricacies of programming la
 
 - [Development Environments](https://github.com/jonfernq/Learning/tree/main/DevelopmentEnvironments)
 
-- [COBOL](https://github.com/jonfernq/Learning/tree/main/COBOL) 
+- [Python](https://github.com/jonfernq/Learning/tree/main/Python)
 
 - [JavaScript](https://github.com/jonfernq/Learning/tree/main/JavaScript)
+
+- [COBOL](https://github.com/jonfernq/Learning/tree/main/COBOL) 
 
 ### Git & GitHub
 
