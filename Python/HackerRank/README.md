@@ -1,7 +1,7 @@
 ## Hacker Rank
 
-- [Basic Questions]()
-- [Difficult Intermediate]() 
+- [Basic Questions](https://github.com/jonfernq/Learning/blob/main/Python/HackerRank/BasicQuestions.md)
+- [Difficult Intermediate](https://github.com/jonfernq/Learning/blob/main/Python/HackerRank/DifficultIntermediate.md) 
 
 [HackerRank](https://en.wikipedia.org/wiki/HackerRank) is a technology company that focuses on competitive programming challenges for both consumers and businesses. 
 Developers compete by writing programs according to provided specifications. 
