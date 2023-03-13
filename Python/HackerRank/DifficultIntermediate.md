@@ -2,6 +2,8 @@
 
 > Please provide some examples of the most difficult questions on the intermediate Python  test.
 
+[Text Only, No Code, For Audio to Listen to](https://github.com/jonfernq/Learning/blob/main/Python/HackerRank/DifficultIntermediateTextOnly.md)
+
 **1. Write a program that takes a list of integers as input and returns a list of all the pairs of integers in the list that sum up to a target value.**
 
 ```python 
