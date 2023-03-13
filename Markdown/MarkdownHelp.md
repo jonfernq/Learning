@@ -1,28 +1,5 @@
 ## Markdown Help
 
-> How does one play audio in a github markdown page? Where does one store this audio? 
-
-GitHub markdown pages do not support embedding audio files directly. You will need to upload the audio file to a hosting service that supports direct linking, such as SoundCloud or Dropbox. Once the audio file is uploaded, you can get the direct link to the file and use it to create an audio player in your markdown page.
-
-Here's an example of how to create an audio player in Markdown using the HTML5 audio tag and a direct link to an audio file:
-
-```bash
-<audio controls>
-  <source src="https://example.com/audiofile.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-```  
-
-<audio controls>
-  <source src="https://example.com/audiofile.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-In this example, replace the src attribute with the direct link to your audio file.
-
-You can also use services like GitHub Pages or Netlify to host your audio files and create a webpage with the audio player embedded.
-
----
 > Is there an online markdown editor at GitHub that saves directly to the repository or do i have to cut and paste from another editor? 
 
 Yes, GitHub provides an online Markdown editor that allows you to edit Markdown files directly in your repository without the need to copy and paste from another editor. To access the editor, you can follow these steps:
