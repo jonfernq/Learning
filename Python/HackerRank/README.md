@@ -1,6 +1,6 @@
 ## Hacker Rank
 
-[toc]
+[[toc]]
 
 ---
 ### Coding Challenges 
