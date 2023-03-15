@@ -22,7 +22,7 @@ Multiple choice questions & notes for learning the intricacies of programming la
 
 ### Ontologies
 
-- [Ontologies]() 
+- [Ontologies](https://github.com/jonfernq/Learning/blob/main/Ontologies/README.md) 
 
 ### English Teaching
 
