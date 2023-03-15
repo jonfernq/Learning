@@ -23,3 +23,7 @@ Multiple choice questions & notes for learning the intricacies of programming la
 ### English Teaching
 
 - [English Teaching](https://github.com/jonfernq/English-Teaching)
+
+### Self-Publishing
+
+- [Self-Publishing: Leanpub, Gitbooks, & Sphinx/ReadTheDocs](https://github.com/jonfernq/Learning/blob/main/SelfPublishing/README.md) 
