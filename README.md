@@ -20,6 +20,10 @@ Multiple choice questions & notes for learning the intricacies of programming la
 
 - [Local & Remote Repositories](https://github.com/jonfernq/Learning/blob/main/GitHub/LocalRemoteRepositories.md) 
 
+### Ontologies
+
+- [Ontologies]() 
+
 ### English Teaching
 
 - [English Teaching](https://github.com/jonfernq/English-Teaching)
