@@ -162,3 +162,76 @@ Here's an example of what the data in customer_purchases_data.txt might look lik
 
 This data represents purchases made by three customers, with their corresponding IDs, purchase dates, and amounts. You can use this data to test the SQL query and Python program I provided earlier.
 
+---
+### Example #3
+
+> Can you modify the above query so that it prints out subtotals by customer id and also a grand total at the end? 
+
+To modify the SQL query to include subtotals by customer ID and a grand total at the end, we can use the GROUP BY clause along with the WITH ROLLUP option. Here's the modified SQL query:
+
+```SQL
+SELECT customer_id, purchase_date, SUM(amount) as total_amount
+FROM customer_purchases
+GROUP BY customer_id, purchase_date WITH ROLLUP
+ORDER BY customer_id, purchase_date
+```
+
+This query will group the customer purchases by both customer ID and purchase date, and include subtotals for each customer ID and a grand total at the end. The WITH ROLLUP option will add a row with NULL values for the customer ID and purchase date columns to represent the grand total.
+
+To modify the Python program to print out the subtotals and grand total, we can update the for loop to keep track of the current customer ID, subtotal for each customer, and the grand total. Here's the updated Python program:
+
+```python
+import sqlite3
+
+# Connect to the database
+conn = sqlite3.connect('customer_purchases.db')
+c = conn.cursor()
+
+# Create the customer_purchases table
+c.execute('''CREATE TABLE customer_purchases
+             (customer_id INT, purchase_date TEXT, amount FLOAT)''')
+
+# Read the data from a file and insert it into the customer_purchases table
+with open('customer_purchases_data.txt', 'r') as f:
+    for line in f:
+        values = line.strip().split(',')
+        c.execute('INSERT INTO customer_purchases VALUES (?, ?, ?)', (int(values[0]), values[1], float(values[2])))
+
+# Execute the SQL query to group and order the customer purchases by customer ID and purchase date
+c.execute('''SELECT customer_id, purchase_date, SUM(amount) as total_amount
+             FROM customer_purchases
+             GROUP BY customer_id, purchase_date WITH ROLLUP
+             ORDER BY customer_id, purchase_date''')
+
+# Print the results
+current_customer_id = None
+subtotal = 0
+grand_total = 0
+
+for row in c:
+    customer_id, purchase_date, total_amount = row
+
+    # Print the subtotal for the previous customer ID
+    if customer_id != current_customer_id and current_customer_id is not None:
+        print(f"Subtotal for customer {current_customer_id}: {subtotal:.2f}")
+        subtotal = 0
+
+    # Print the current row
+    if customer_id is not None and purchase_date is not None:
+        print(f"{customer_id}\t{purchase_date}\t{total_amount:.2f}")
+
+    # Update the subtotal and grand total
+    subtotal += total_amount if total_amount is not None else 0
+    grand_total += total_amount if total_amount is not None else 0
+    current_customer_id = customer_id
+
+# Print the grand total
+print(f"\nGrand total: {grand_total:.2f}")
+
+# Close the database connection
+conn.close()
+```
+
+In this updated program, we're initializing current_customer_id, subtotal, and grand_total variables to keep track of the current customer ID, subtotal for each customer, and grand total, respectively.
+
+We're then updating the for loop to print out the subtotal for the previous customer ID and to update the subtotal and grand_total variables based on the current row. Finally, we're printing out the grand total at the end.
