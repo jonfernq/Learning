@@ -17,6 +17,8 @@ There are several types of SQL statements that are commonly used to aggregate da
 By using these SQL statements in combination, you can perform a wide variety of data analysis tasks, such as calculating totals, averages, and other summary statistics, identifying trends and patterns in the data, and filtering and sorting the data to extract insights.
 
 ---
+### Example #1
+
 > Please provide a simple example of 'GROUP BY' and 'ORDER BY' used together, as they always seem to be used. 
 
 Here's a simple example of using GROUP BY and ORDER BY together:
@@ -81,5 +83,82 @@ When you run this program, it should output the following:
 
 This is the result set produced by the SQL statement, which shows the total sales amount for each product and region combination, sorted in descending order by the total sales amount.
 
+---
+### Example #2
 
+> Suppose you have a database table of customer purchases with customer id, date of purchase, and amount as fields.
+Please write an SQL query to list all purchases including these three fields, grouping and ordering by customer id and purchase date
+
+Here's an SQL query that should do what you've described:
+
+```vbnet
+SELECT customer_id, purchase_date, amount
+FROM customer_purchases
+GROUP BY customer_id, purchase_date, amount
+ORDER BY customer_id, purchase_date;
+```
+
+In this query, we're selecting the "customer_id", "purchase_date", and "amount" columns from the "customer_purchases" table. We're then using the GROUP BY clause to group the results by "customer_id" and "purchase_date", which means that we'll see each unique combination of customer and purchase date in the results.
+
+Finally, we're using the ORDER BY clause to order the results first by "customer_id" and then by "purchase_date". This means that the results will be ordered first by customer ID and within each customer ID, the purchases will be ordered by date.
+
+---
+> Please write a Python program with example data read from a file to demonstrate this query.  
+
+Here's an example Python program that reads data from a file and executes the SQL query to group and order the customer purchases by customer ID and purchase date:
+
+```python
+import sqlite3
+
+# Connect to the database
+conn = sqlite3.connect('customer_purchases.db')
+c = conn.cursor()
+
+# Create the customer_purchases table
+c.execute('''CREATE TABLE customer_purchases
+             (customer_id INT, purchase_date TEXT, amount FLOAT)''')
+
+# Read the data from a file and insert it into the customer_purchases table
+with open('customer_purchases_data.txt', 'r') as f:
+    for line in f:
+        values = line.strip().split(',')
+        c.execute('INSERT INTO customer_purchases VALUES (?, ?, ?)', (int(values[0]), values[1], float(values[2])))
+
+# Execute the SQL query to group and order the customer purchases by customer ID and purchase date
+c.execute('''SELECT customer_id, purchase_date, amount
+             FROM customer_purchases
+             GROUP BY customer_id, purchase_date, amount
+             ORDER BY customer_id, purchase_date''')
+
+# Print the results
+for row in c:
+    print(row)
+
+# Close the database connection
+conn.close()
+```
+
+In this program, we're creating a SQLite database named "customer_purchases.db" and a table named "customer_purchases" with the columns "customer_id", "purchase_date", and "amount".
+
+We're then reading data from a file named "customer_purchases_data.txt" that contains comma-separated values for customer ID, purchase date, and amount. We're inserting this data into the "customer_purchases" table using the "INSERT INTO" SQL statement.
+
+Finally, we're executing the SQL query to group and order the customer purchases by customer ID and purchase date. We're then printing the results to the console using a for loop.
+
+--- 
+> Please create some data for customer_purchases_data.txt
+
+Here's an example of what the data in customer_purchases_data.txt might look like:
+
+```
+1,2022-01-01,100.00
+1,2022-02-01,75.00
+1,2022-02-15,25.00
+2,2022-01-10,50.00
+2,2022-03-01,150.00
+3,2022-02-14,200.00
+3,2022-03-01,125.00
+3,2022-03-10,75.00
+```
+
+This data represents purchases made by three customers, with their corresponding IDs, purchase dates, and amounts. You can use this data to test the SQL query and Python program I provided earlier.
 
