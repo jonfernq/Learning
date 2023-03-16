@@ -1,4 +1,15 @@
-## Joins
+## SQL Joins
+
+
+> What is the definition of an SQL join? 
+
+In SQL, a join is a way to combine rows from two or more tables based on a related column between them. The related column is typically a primary key in one table and a foreign key in another table. The join operation creates a new result set by combining columns from the two tables based on the join condition.
+
+There are several types of joins in SQL, including inner join, left join, right join, full outer join, and cross join. Each type of join produces a different result set based on how the tables are joined.
+
+An inner join returns only the rows that have matching values in both tables based on the join condition. A left join returns all the rows from the left table and the matching rows from the right table. A right join returns all the rows from the right table and the matching rows from the left table. A full outer join returns all the rows from both tables, including the non-matching rows. A cross join returns the Cartesian product of the two tables, which means that every row from one table is paired with every row from the other table.
+
+Joins are a powerful tool in SQL that allow you to combine data from multiple tables to gain insights and answer complex questions. By using joins, you can avoid duplicating data in your database and ensure that your data is well-organized and easy to work with.
 
 ---
 > Please list the different kinds of SQL joins. 
@@ -147,10 +158,8 @@ ON e1.ManagerID = e2.EmployeeID;
 
 In this query, we're joining the "Employees" table with itself based on the "ManagerID" column. We're aliasing the table as "e1" and "e2" to distinguish between the two instances of the "Employees" table. We're selecting the name of each employee (aliased as "EmployeeName") and the name of their manager (aliased as "ManagerName"). We're joining the table on the condition that the "ManagerID" of one row matches the "EmployeeID" of another row, which means that the row with the "ManagerID" is the manager of the row with the "EmployeeID".
 
-The result of  this query will be a table that lists the name of each employee and the name of their manager. If an employee has no manager (i.e., their "ManagerID"will not appear 
-```
-in the r
-l> Join 
+The result of this query will be a table that lists the name of each employee and the name of their manager. If an employee has no manager (i.e., their "ManagerID" is NULL), they will not appear in the result.
 
-This Self Join allows us to retrieve information from a table that refers to itself. It can be useful in cases where a table contains hierarchical data, such as organizational charts or famil
+This Self Join allows us to retrieve information from a table that refers to itself. It can be useful in cases where a table contains hierarchical data, such as organizational charts or family trees.
+
 
