@@ -172,18 +172,16 @@ myproject/
 
 Here's what each of these files and directories represents:
 
-```
-todo/: This is the directory that contains the app code. It's located inside the project directory and is treated as a Python package.
-todo/__init__.py: An empty file that tells Python to treat the todo directory as a Python package.
-todo/admin.py: A Python module that defines the admin interface for the app. This file is responsible for registering models with the Django admin site.
-todo/apps.py: A Python module that defines the configuration for the app. This file is responsible for telling Django about the app and its configuration.
-todo/models.py: A Python module that defines the data models for the app. This file is responsible for defining the fields and relationships that are used to store and retrieve data from the database.
-todo/views.py: A Python module that defines the views for the app. This file is responsible for defining the functions or classes that handle incoming requests and generate responses.
-todo/urls.py: A Python module that defines the URL patterns for the app. This file is responsible for mapping URLs to views.
-todo/migrations/: A directory that contains the database migration files for the app. These files are used to create and modify database tables and fields.
-todo/templates/: A directory that contains the HTML templates for the app.
-todo/templates/todo/todo_list.html: A specific HTML template file that defines how to display a to-do list.
-```
+- **todo/:** This is the directory that contains the app code. It's located inside the project directory and is treated as a Python package.
+- **todo/__init__.py:** An empty file that tells Python to treat the todo directory as a Python package.
+- **todo/admin.py:** A Python module that defines the admin interface for the app. This file is responsible for registering models with the Django admin site.
+- **todo/apps.py:** A Python module that defines the configuration for the app. This file is responsible for telling Django about the app and its configuration.
+- **todo/models.py:** A Python module that defines the data models for the app. This file is responsible for defining the fields and relationships that are used to store and retrieve data from the database.
+- **todo/views.py:** A Python module that defines the views for the app. This file is responsible for defining the functions or classes that handle incoming requests and generate responses.
+- **todo/urls.py:** A Python module that defines the URL patterns for the app. This file is responsible for mapping URLs to views.
+- **todo/migrations/:** A directory that contains the database migration files for the app. These files are used to create and modify database tables and fields.
+- **todo/templates/:** A directory that contains the HTML templates for the app.
+- **todo/templates/todo/todo_list.html:** A specific HTML template file that defines how to display a to-do list.
 
 Finally, the directory where commands are issued is typically the project directory (`myproject/)
 
