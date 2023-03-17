@@ -194,15 +194,15 @@ Finally, the directory where commands are issued is typically the project direct
 
 Here are some multiple choice questions to test knowledge of Django:
 
-What is the purpose of an app in a Django project?
-a) To define the overall structure of the project
-b) To provide specific functionality
-c) To manage the project's database
-d) To handle user authentication
+1. What is the purpose of an app in a Django project?
+- a) To define the overall structure of the project
+- b) To provide specific functionality
+- c) To manage the project's database
+- d) To handle user authentication
 
 Answer: b) To provide specific functionality
 
-What is the purpose of models in a Django project?
+2. What is the purpose of models in a Django project?
 a) To define the structure of data and how it is stored in the database
 b) To define how data is displayed to the user
 c) To define how requests are routed to views
@@ -210,7 +210,7 @@ d) To define the configuration options for the project
 
 Answer: a) To define the structure of data and how it is stored in the database
 
-What is the purpose of views in a Django project?
+3. What is the purpose of views in a Django project?
 a) To define the structure of data and how it is stored in the database
 b) To define how data is displayed to the user
 c) To define how requests are routed to views
@@ -218,7 +218,7 @@ d) To define the configuration options for the project
 
 Answer: b) To define how data is displayed to the user
 
-What is the purpose of templates in a Django project?
+4. What is the purpose of templates in a Django project?
 a) To define the structure of data and how it is stored in the database
 b) To define how data is displayed to the user
 c) To define how requests are routed to views
@@ -226,7 +226,7 @@ d) To define the configuration options for the project
 
 Answer: b) To define how data is displayed to the user
 
-What is the purpose of URLs in a Django project?
+5. What is the purpose of URLs in a Django project?
 a) To define the structure of data and how it is stored in the database
 b) To define how data is displayed to the user
 c) To define how requests are routed to views
