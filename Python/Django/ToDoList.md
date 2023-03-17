@@ -1,11 +1,12 @@
 ## Todo List App (Django) 
 
-- [Code](###Code)
-- [Directory Structure]()
+- [Code](#code)
+- [Directory Structure](#directory-structure)
 - [Questions]()
 
 ---
-###Code 
+### Code 
+<h3 id="code">Code</h3>
 
 > For a simple to-do list app in Django, please provide all the files and code needed. 
 
@@ -106,6 +107,9 @@ python manage.py runserver
 And visit http://localhost:8000/ in your browser to see your simple to-do list app in action.
 
 ---
+### Directory Structure
+<h3 id="directory-structure">Directory Structure</h3>
+
 > In the instructions above the following files were specified: 
 
 - todo/models.py
