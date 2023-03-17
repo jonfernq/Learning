@@ -2,6 +2,8 @@
 
 Questions geared towards: 1. where to host one's writing (e.g. GitHub), and 2. how to work it into material published on a website (e.g. Git Pages) or in book form (e.g. at Leanpub).
 
+- [GitBooks](https://github.com/jonfernq/Learning/blob/main/SelfPublishing/GitBooks/README.md)
+
 ---
 > So what is Leanpub? 
 
