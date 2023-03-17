@@ -16,6 +16,8 @@ Multiple choice questions & notes for learning the intricacies of programming la
 
 - [COBOL](https://github.com/jonfernq/Learning/tree/main/COBOL) 
 
+- [Databases](https://github.com/jonfernq/Learning/blob/main/Databases/README.md) 
+
 ### Git & GitHub
 
 - [Local & Remote Repositories](https://github.com/jonfernq/Learning/blob/main/GitHub/LocalRemoteRepositories.md) 
