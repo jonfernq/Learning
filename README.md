@@ -26,7 +26,7 @@ Multiple choice questions & notes for learning the intricacies of programming la
 
 ### English Teaching
 
-- [English Teaching](https://github.com/jonfernq/English-Teaching)
+- [English Teaching](https://github.com/jonfernq/English-Teaching/blob/main/README.md)
 
 ### Self-Publishing
 
