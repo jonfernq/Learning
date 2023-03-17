@@ -1,11 +1,11 @@
 ## Todo List App (Django) 
 
+Table of Contents: 
 - [Code](#code)
 - [Directory Structure](#directory-structure)
-- [Questions]()
+- [Questions](#questions)
 
 ---
-### Code 
 <h3 id="code">Code</h3>
 
 > For a simple to-do list app in Django, please provide all the files and code needed. 
@@ -188,6 +188,53 @@ todo/templates/todo/todo_list.html: A specific HTML template file that defines h
 ```
 
 Finally, the directory where commands are issued is typically the project directory (`myproject/)
+
+---
+<h3 id="questions">Questions</h3>
+
+Here are some multiple choice questions to test knowledge of Django:
+
+What is the purpose of an app in a Django project?
+a) To define the overall structure of the project
+b) To provide specific functionality
+c) To manage the project's database
+d) To handle user authentication
+
+Answer: b) To provide specific functionality
+
+What is the purpose of models in a Django project?
+a) To define the structure of data and how it is stored in the database
+b) To define how data is displayed to the user
+c) To define how requests are routed to views
+d) To define the configuration options for the project
+
+Answer: a) To define the structure of data and how it is stored in the database
+
+What is the purpose of views in a Django project?
+a) To define the structure of data and how it is stored in the database
+b) To define how data is displayed to the user
+c) To define how requests are routed to views
+d) To define the configuration options for the project
+
+Answer: b) To define how data is displayed to the user
+
+What is the purpose of templates in a Django project?
+a) To define the structure of data and how it is stored in the database
+b) To define how data is displayed to the user
+c) To define how requests are routed to views
+d) To define the configuration options for the project
+
+Answer: b) To define how data is displayed to the user
+
+What is the purpose of URLs in a Django project?
+a) To define the structure of data and how it is stored in the database
+b) To define how data is displayed to the user
+c) To define how requests are routed to views
+d) To define the configuration options for the project
+
+Answer: c) To define how requests are routed to views
+
+
 
 
 
