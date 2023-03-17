@@ -9,8 +9,8 @@
 
 More useful info from the lil' oracle, if you can imagine something that should exist in the open source world, it probably does, namely here MS Access lookalikes that use SQLite: 
 
-https://github.com/giowck/symphytum
-https://www.osalt.com/glom
+- [Symphytum](https://github.com/giowck/symphytum) 
+- [Glom](https://www.osalt.com/glom) 
 
 ---
 > Open source LibreOffice and OpenOffice do not use SQLite? I would expect them to, why not? 
