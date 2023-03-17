@@ -1,5 +1,12 @@
 ## Todo List App (Django) 
 
+- [Code](###Code)
+- [Directory Structure]()
+- [Questions]()
+
+---
+###Code 
+
 > For a simple to-do list app in Django, please provide all the files and code needed. 
 
 Here's an example of a simple to-do list app in Django with all the necessary files and code:
@@ -128,12 +135,14 @@ myproject/
 
 Here's what each of these files represents:
 
+```
 manage.py: A command-line utility that allows you to interact with your Django project. You'll run commands like python manage.py runserver from the command line to start your development server, run database migrations, and more.
 myproject/: This is the directory that contains the actual project code. It's also the top-level Python package for the project, which means that any modules or apps that you create will be located inside this directory.
 myproject/__init__.py: An empty file that tells Python to treat the myproject directory as a Python package.
 myproject/settings.py: A Python module that contains all the settings for your Django project, such as database configuration, installed apps, middleware, and more.
 myproject/urls.py: A Python module that contains the URL configuration for your project. This file is responsible for mapping URLs to views.
 myproject/asgi.py and myproject/wsgi.py: Two Python modules that are used to run your Django project as a web application. These files are used by servers like Gunicorn or uWSGI to start your application and handle incoming requests.
+```
 
 Assuming you have also created a Django app named todo, the directory structure for the app would look like this:
 
