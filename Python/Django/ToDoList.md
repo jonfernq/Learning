@@ -203,34 +203,34 @@ Here are some multiple choice questions to test knowledge of Django:
 Answer: b) To provide specific functionality
 
 2. What is the purpose of models in a Django project?
-a) To define the structure of data and how it is stored in the database
-b) To define how data is displayed to the user
-c) To define how requests are routed to views
-d) To define the configuration options for the project
+- a) To define the structure of data and how it is stored in the database
+- b) To define how data is displayed to the user
+- c) To define how requests are routed to views
+- d) To define the configuration options for the project
 
 Answer: a) To define the structure of data and how it is stored in the database
 
 3. What is the purpose of views in a Django project?
-a) To define the structure of data and how it is stored in the database
-b) To define how data is displayed to the user
-c) To define how requests are routed to views
-d) To define the configuration options for the project
+- a) To define the structure of data and how it is stored in the database
+- b) To define how data is displayed to the user
+- c) To define how requests are routed to views
+- d) To define the configuration options for the project
 
 Answer: b) To define how data is displayed to the user
 
 4. What is the purpose of templates in a Django project?
-a) To define the structure of data and how it is stored in the database
-b) To define how data is displayed to the user
-c) To define how requests are routed to views
-d) To define the configuration options for the project
+- a) To define the structure of data and how it is stored in the database
+- b) To define how data is displayed to the user
+- c) To define how requests are routed to views
+- d) To define the configuration options for the project
 
 Answer: b) To define how data is displayed to the user
 
 5. What is the purpose of URLs in a Django project?
-a) To define the structure of data and how it is stored in the database
-b) To define how data is displayed to the user
-c) To define how requests are routed to views
-d) To define the configuration options for the project
+- a) To define the structure of data and how it is stored in the database
+- b) To define how data is displayed to the user
+- c) To define how requests are routed to views
+- d) To define the configuration options for the project
 
 Answer: c) To define how requests are routed to views
 
