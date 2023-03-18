@@ -59,20 +59,12 @@ with open('input.txt', 'r', encoding='utf-8') as input_file, \
         if re.match(r"^(python|yaml|diff|css|scss|bash|markdown)", line):
             line =  "```" + line.strip() + "\n"
         newlines.append(line) 
-        
+
+    # 6. Reduce sequences of two or more blank lines to one blank line
     text = concat_strings(newlines) 
     text = reduce_blank_lines(text)
     # Write transformed line to output file
     output_file.write(text) 
-
-    # 6. Reduce sequences of two or more blank lines to one blank line
-    # output_text = output_file.getvalue()
-    #output_text = output_file.read()
-    #output_text = re.sub(r"\n{2,}", "\n", output_text)
-
-    # Write final transformed text to output file
-    #output_file.seek(0)
-    #output_file.write(output_text)
-    ```
+```
     
     
