@@ -2,6 +2,8 @@
 
 Notes on using GFM.
 
+- [Transform ChatGPT text to Markdown](https://github.com/jonfernq/Learning/blob/main/Markdown/GitHubFlavoredmarkdown/CleanUpChatGPTText.md) 
+
 ---
 ### HTML in Markdown Files
 
