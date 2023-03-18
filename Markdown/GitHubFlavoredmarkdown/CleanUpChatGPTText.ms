@@ -1,4 +1,4 @@
-## Clean Up CHatGPT Text
+## Clean Up ChatGPT Text
 
 Program to do most of the tedious reformatting to make a Github Flavored Markdown (GFM) from a cut-and-paste from ChatGPT: 
 
