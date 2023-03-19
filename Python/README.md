@@ -1,5 +1,9 @@
 ## Python
 
+### Knowledge Bases
+
+- [Python Knowledge base](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/README.md): Outline of Python filled in with basic ideas and examples. 
+
 - [Django](https://github.com/jonfernq/Learning/blob/main/Python/Django/README.md)
 
 Multiple choice question sets: 
