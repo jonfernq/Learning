@@ -63,6 +63,105 @@
         * Networking and Internet Programming 
         * Other Modules
 
+5. Object-Oriented Programming 
+    * The Object-Oriented Approach
+        * Object-Oriented Concepts and Terminology 
+    * Custom Classes
+        * Inheritance and Polymorphism 
+        * Using Properties to Control Attribute Access
+        * Creating Complete Fully Integrated Data Types
+    * Custom Collection Classes
+        * Creating Classes That Aggregate Collections
+        * Creating Collection Classes Using Aggregation 
+        * Creating Collection Classes Using Inheritance  
 
+6. File Handling  
+    * Writing and Reading Binary Data
+        * Pickling with Optional Compression 
+        * Raw Binary Data with Optional Compression 
+    * Writing and Parsing Text Files
+        * Writing Text 
+        * Parsing Text 
+        Parsing Text Using Regular Expressions 
+    * Writing and Parsing XML Files
+        * Element Trees
+        * DOM (Document Object Model) 
+        * Manually Writing XML
+        * Parsing XML with SAX (Simple API for XML) 
+    * Random Access Binary Files 
+        * A Generic BinaryRecordFile Class 
+
+7. Advanced Programming Techniques 
+    * Further Procedural Programming  
+        * Branching Using Dictionaries 
+        * Generator Expressions and Functions
+        * Dynamic Code Execution and Dynamic Imports 
+        * Local and Recursive Functions 
+        * Function and Method Decorators
+        * Function Annotations
+    * Further Object-Oriented Programming 
+        * Context Managers
+        * Descriptors
+        * Class Decorators 
+        * Abstract Base Classes 
+        * Multiple Inheritance 
+        * Metaclasses
+    * Functional-Style Programming 
+        * Partial Function Application 
+        * Coroutines 
+
+8. Debugging, Testing, and Profiling 
+    * Debugging 
+        * Dealing with Syntax Errors
+        * Dealing with Runtime Errors 
+        * Scientific Debugging
+    * Unit Testing 
+    * Profiling
+
+9. Processes and Threading
+    * Using the Multiprocessing Module 
+    * Using the Threading Module
+
+10. Networking 
+    * Creating a TCP Client 
+    * Creating aTCP Server 
+
+11. Database Programming 00005
+    * DBM Databases 
+    * SQL Databases 
+
+12. Regular Expressions
+    * Python’s Regular Expression Language  
+        * Characters and Character Classes 
+        * Quantifiers
+        * Grouping and Capturing 
+        * Assertions and Flags 
+    * The Regular Expression Module
+
+13. Introduction to Parsing  
+    * BNF Syntax and Parsing Terminology   
+    * Writing Handcrafted Parsers  
+    * Simple Key—Value Data Parsing  
+    * Playlist Data Parsing  
+    * Parsing the Blocks Domain-Specific Language   
+    * Pythonic Parsing with PyParsing  
+    * A Quick Introduction to PyParsing   
+    * Simple Key—Value Data Parsing   
+    * Playlist Data Parsing  
+    * Parsing the Blocks Domain-Specific Language  
+    * Parsing First-Order Logic  
+    * Lex/Yacc-Style Parsing with PLY  
+    * Simple Key—Value Data Parsing   
+    * Playlist Data Parsing  
+    * Parsing the Blocks Domain-Specific Language   
+    * Parsing First-Order Logic  
+
+14. Introduction to GUI Programming 
+    * Dialog-Style Programs  
+    * Main-Window-Style Programs   
+    * Creating a Main Window   
+    * Creating a Custom Dialog   
+
+(Source: *Table of Contents of Programming in Python 3: A Complete Introduction to the Python Language* (2010))  
 
 
