@@ -1,5 +1,15 @@
 ## Learning
 
+### Knowledge Bases 
+
+- [Python](https://github.com/jonfernq/Learning/tree/main/Python)
+
+### English Teaching
+
+- [English Teaching](https://github.com/jonfernq/English-Teaching/blob/main/README.md)
+
+### Miscellaneous Programming
+
 Multiple choice questions & notes for learning the intricacies of programming languages (and natural languages too). 
 
 - [Virtual Environments](https://github.com/jonfernq/Learning/tree/main/VirtualEnvironment)
@@ -9,8 +19,6 @@ Multiple choice questions & notes for learning the intricacies of programming la
 - [Markdown](https://github.com/jonfernq/Learning/tree/main/Markdown)
 
 - [Development Environments](https://github.com/jonfernq/Learning/tree/main/DevelopmentEnvironments)
-
-- [Python](https://github.com/jonfernq/Learning/tree/main/Python)
 
 - [JavaScript](https://github.com/jonfernq/Learning/tree/main/JavaScript)
 
@@ -25,10 +33,6 @@ Multiple choice questions & notes for learning the intricacies of programming la
 ### Ontologies
 
 - [Ontologies](https://github.com/jonfernq/Learning/blob/main/Ontologies/README.md) 
-
-### English Teaching
-
-- [English Teaching](https://github.com/jonfernq/English-Teaching/blob/main/README.md)
 
 ### Self-Publishing
 
