@@ -17,7 +17,7 @@
        * String Formatting with the strformat() Method 
        * Character Encodings 
 
-2 Collection Data Types 
+2. Collection Data Types 
     * Sequence Types
         * Tuples
         * Named Tuples
