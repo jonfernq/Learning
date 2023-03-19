@@ -17,7 +17,7 @@
        * String Formatting with the strformat() Method 
        * Character Encodings 
 
-2. [Collection Data Types](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/CollectionDataTypes.md) 
+2. [Collection Data Types](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/CollectionDataTypes.md): [Questions](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/CollectionTypeQuestions.md)
     * Sequence Types
         * [Tuples](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/Tuple.md)
         * Named Tuples
