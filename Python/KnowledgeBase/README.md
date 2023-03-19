@@ -32,3 +32,35 @@
     * Iterating and Copying Collections
         * Iterators and Iterable Operations and Functions 
         * Copying Collections 
+
+
+3. Control Structures and Functions 
+    * Control Structures
+        * Conditional Branching 
+        * Looping
+    * Exception Handling 
+        * Catching and Raising Exceptions 
+        * Custom Exceptions
+    * Custom Functions
+        * Names and Docstrings 
+        * Argument and Parameter Unpacking 
+        * Accessing Variables in the Global Scope
+        * Lambda Functions 
+        * Assertions
+
+4. Modules  
+    * Modules and Packages 
+        * Packages
+        * Custom Modules
+    * Overview of Python’s Standard Library  
+        * String Handling
+        * Command-Line Programming
+        * Mathematics and Numbers
+        * Times and Dates
+        * Algorithms and Collection Data Types 
+        * File Formats, Encodings, and Data Persistence  
+        * File, Directory, and Process Handling 
+        * Networking and Internet Programming 
+        * Other Modules
+
+
