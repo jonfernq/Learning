@@ -2,20 +2,20 @@
 
 
 1 Data Types
-    Identifiers and Keywords
-    Integral Types
-        Integers
-        Booleans
-    Floating-Point Types
-        Floating-Point Numbers  
-        Complex Numbers  
-        Decimal Numbers 
-   Strings
-       Comparing Strings
-       Slicing and Striding Strings  
-       String Operators and Methods 
-       String Formatting with the strformat() Method 
-       Character Encodings 
+    - Identifiers and Keywords
+    - Integral Types
+        - Integers
+        - Booleans
+    - Floating-Point Types
+        - Floating-Point Numbers  
+        - Complex Numbers  
+        - Decimal Numbers 
+   - Strings
+       - Comparing Strings
+       - Slicing and Striding Strings  
+       - String Operators and Methods 
+       - String Formatting with the strformat() Method 
+       - Character Encodings 
 
 2 Collection Data Types 
     Sequence Types
