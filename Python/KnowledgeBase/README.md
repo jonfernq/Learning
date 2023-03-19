@@ -18,17 +18,17 @@
        * Character Encodings 
 
 2 Collection Data Types 
-    Sequence Types
-        Tuples
-        Named Tuples
-        Lists
-    Set Types
-        Sets 
-        Frozen Sets 		
-    Mapping Types 
-        Dictionaries
-        Default Dictionaries 
-        Ordered Dictionaries 
-    Iterating and Copying Collections
-        Iterators and Iterable Operations and Functions 
-        Copying Collections 
+    * Sequence Types
+        * Tuples
+        * Named Tuples
+        * Lists
+    * Set Types
+        * Sets 
+        * Frozen Sets 		
+    * Mapping Types 
+        * Dictionaries
+        * Default Dictionaries 
+        * Ordered Dictionaries 
+    * Iterating and Copying Collections
+        * Iterators and Iterable Operations and Functions 
+        * Copying Collections 
