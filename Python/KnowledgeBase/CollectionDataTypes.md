@@ -26,6 +26,7 @@ Python has several built-in collection types. Some of the most commonly used one
 
 These collection types are very versatile and can be used in a wide range of programming tasks.
 
+---
 > What is a 'sequence type' in Python? Please give formal definition and the different kinds of sequence types in Python. 
 
 In Python, a sequence type is a data type that represents an ordered collection of items, where each item can be accessed by its position (or index) within the collection. Sequence types are an important part of the Python language, and they are used extensively in many different applications.
