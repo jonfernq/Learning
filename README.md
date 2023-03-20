@@ -2,7 +2,7 @@
 
 ### Knowledge Bases 
 
-- [Python](https://github.com/jonfernq/Learning/tree/main/Python)
+- [Python](https://github.com/jonfernq/Learning/blob/main/Python/README.md)
 
 ### English Teaching
 
