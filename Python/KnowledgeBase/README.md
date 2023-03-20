@@ -1,5 +1,6 @@
 ## Python Language Knowledge Base
 
+[[General Questions](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/GeneralQuestions1.md)]
 
 1. Data Types
     * Identifiers and Keywords
