@@ -48,7 +48,7 @@
         * Lambda Functions 
         * Assertions
 
-4. Modules  
+4. Modules  [[Questions](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/ModulesPackagesQuestions.md)]
     * Modules and Packages 
         * Packages
         * Custom Modules
