@@ -48,11 +48,11 @@
         * Lambda Functions 
         * Assertions
 
-4. Modules  [[Questions](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/ModulesPackagesQuestions.md)]
-    * Modules and Packages 
+4. Modules  
+    * Modules and Packages    [[Questions](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/ModulesPackagesQuestions.md)]
         * Packages
         * Custom Modules
-    * Overview of Python’s Standard Library  
+    * Overview of Python’s Standard Library    [[Questions](https://github.com/jonfernq/Learning/blob/main/Python/KnowledgeBase/StandardLibraryQuestions.md)]
         * String Handling
         * Command-Line Programming
         * Mathematics and Numbers
