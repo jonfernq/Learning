@@ -126,7 +126,7 @@ To install Django within a virtual environment, activate the virtual environment
 The short form of the command is 'pip install django'. This will install the latest version of Django in your virtual environment, which you can then use for your project. It's generally considered good practice to use the longer, more explicit form of the pip command when installing packages in Python virtual environments: 
 
 ```
-python pip install django~=4.0.0
+python -m pip install django~=4.0.0
 ```
 
 Here's why:
