@@ -5,10 +5,11 @@ Table of Contents:
 1. Virtual Environment: First, setup a virtual environment to work in. 
     * [Create Virtual Environment](#create_virtual_environment)
     * [Activate Virtual Environment](#activate_virtual_environment)
-    
-- [Code](#code): Next code project and app.
-- [Directory Structure](#directory-structure): Familiarize oneself with standard directory structure. 
-- [Questions](#questions): Review and memorize with some questions. 
+    * [Explanation_of Virtual Environments](#explanation_of_virtual_environments)
+2. [Create Project](#create_project)
+3. [Create App](#create_app)
+4. [Directory Structure](#directory-structure): Familiarize oneself with standard directory structure. 
+5. [Questions](#questions): Review and memorize with some questions. 
 
 ---
 <a id="create_virtual_environment"></a>
@@ -82,6 +83,7 @@ When you want to exit the virtual environment, run the 'deactivate' command.
 Next step is to get to work on your project. 
 
 ---
+<a id="explanation_of_virtual_environments"></a>
 ### Explanation of VIrtual Environments  
 
 > So using virtual environments means the path environmental variable is redirected to your virtual environment, using the version of Python there and the packages that have been installed there? 
@@ -102,6 +104,7 @@ This means that if you are working within a virtual environment and try to impor
 This is why it's important to make sure that you activate the correct virtual environment before running your Python code or installing packages, and to ensure that all the required packages are installed within the virtual environment. You can use tools like pip to install packages within a virtual environment, and it's a good practice to create a requirements.txt file to keep track of the packages and versions required for your project.
 
 ---
+<a id="install_django"></a>
 ### Install Django 
 
 You need to install Django for every virtual environment you create because virtual environments are isolated Python environments, which means they have their own Python executable and their own set of installed packages.
@@ -146,14 +149,8 @@ It's generally considered good practice to use the longer, more explicit form of
 
 In summary, using the longer form of the pip command with the comparison operator is a best practice that ensures you get the correct version of a package installed in your virtual environment, while also ensuring reproducibility and compatibility with other developers.
 
----
-<h3 id="code">Code</h3>
-
-> For a simple to-do list app in Django, please provide all the files and code needed. 
-
-Here's an example of a simple to-do list app in Django with all the necessary files and code:
-
----
+--- 
+<a id="create_project"></a>
 ### Create Project
 
 Now to start creating the project itself, create a new Django project by running the following command in the project directory:
@@ -176,6 +173,7 @@ django-admin startproject myproject
 This will create a new directory named myproject in your home directory, containing the files and directories needed for a new Django project.
 
 ---
+ <a id="create_app"></a>
 ### Create App
 
 After you create a project, then create a new Django app within your project by running the following command:
@@ -267,6 +265,7 @@ python manage.py runserver
 And visit http://localhost:8000/ in your browser to see your simple to-do list app in action.
 
 ---
+<a id="directory_structure"></a>
 ### Directory Structure
 <h3 id="directory-structure">Directory Structure</h3>
 
@@ -346,7 +345,8 @@ Here's what each of these files and directories represents:
 Finally, the directory where commands are issued is typically the project directory (`myproject/)
 
 ---
-<h3 id="questions">Questions</h3>
+<a id="questions"></a> 
+### Questions
 
 Here are some multiple choice questions to test knowledge of Django:
 
