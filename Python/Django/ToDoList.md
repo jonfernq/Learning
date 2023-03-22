@@ -7,15 +7,68 @@ Table of Contents:
 - [Questions](#questions): Review and memorize with some questions. 
 
 ---
+### Create Virtual Environment
+
+[Virtual Environment](https://github.com/jonfernq/Learning/blob/main/Python/Django/VirtualEnvironment.md): 
+
+---
+### Install Django 
+
+> I have  activated a virtual environment, do i have to install django for every virtual environment i create ? 
+
+Yes, you need to install Django for every virtual environment you create because virtual environments are isolated Python environments, which means they have their own Python executable and their own set of installed packages.
+
+When you create a new virtual environment, it is essentially a fresh Python installation with no packages installed. This means that you need to install Django and any other packages you need for that specific project within the virtual environment.
+
+To install Django within a virtual environment, activate the virtual environment and then use pip to install Django, like this:
+
+```
+pip install django
+```
+
+This will install the latest version of Django in your virtual environment, which you can then use for your project.
+
+It's a good practice to keep track of the packages you have installed in each virtual environment, so you can easily reproduce the same environment on another machine or share it with other developers. You can do this by creating a requirements.txt file that lists all the packages installed in the virtual environment, and then using that file to install the same packages in another environment. You can create a requirements.txt file by running the following command:
+
+```
+pip freeze > requirements.txt
+```
+
+This will create a requirements.txt file in the current directory, which lists all the packages installed in the virtual environment. You can then use this file to install the same packages in another environment by running the following command:
+
+```
+pip install -r requirements.txt
+```
+---
+### Long-form of Pip Command
+
+Or even better use the long-form of the pip command:
+
+```
+python pip install django~=4.0.0
+```
+
+It's generally considered good practice to use the longer, more explicit form of the pip command when installing packages in Python virtual environments. Here's why:
+
+- **Ensuring the correct version of Python is used:** When you use the longer form of the pip command (python -m pip install <package>), you are explicitly telling Python to use the pip module that is associated with the current Python installation. This can be important if you have multiple versions of Python installed on your system, or if you are using a virtual environment with a specific version of Python.
+
+- **Specifying the package version:** By specifying the package version using the comparison operator ~=, you are telling pip to install a version of the package that is compatible with the version you have specified. In this case, ~=4.0.0 means "install version 4.x.x of Django, where x can be any number, as long as it is greater than or equal to 0." This ensures that you get the latest security updates for version 4 of Django, without breaking any existing code that relies on the 4.x.x version.
+
+- **Reproducibility:** By specifying the package version and using the longer form of the pip command, you are ensuring that your virtual environment is reproducible. That is, anyone else who creates a virtual environment using the same package version and pip command will get the same environment as you. This is important for collaborative projects, where multiple developers need to work on the same codebase.
+
+In summary, using the longer form of the pip command with the comparison operator is a best practice that ensures you get the correct version of a package installed in your virtual environment, while also ensuring reproducibility and compatibility with other developers.
+
+---
 <h3 id="code">Code</h3>
 
 > For a simple to-do list app in Django, please provide all the files and code needed. 
 
 Here's an example of a simple to-do list app in Django with all the necessary files and code:
 
+---
 ### Create Project
 
-First, create a new Django project by running the following command in the project directory:
+Now to start creating the project itself, create a new Django project by running the following command in the project directory:
 
 ```
 django-admin startproject myproject
@@ -25,10 +78,10 @@ django-admin startproject myproject
 
 Yes, that's correct. When you run the command django-admin startproject myproject, it will create a new Django project in a subdirectory named myproject. This subdirectory will contain a number of files and directories, including a manage.py file and another subdirectory with the same name as the project.
 
-You should run this command in the parent directory where you want the myproject directory to be created. For example, if you want to create the myproject directory in your home directory, you would run the command in the terminal while you are in the home directory:
+You should run this command in the parent directory where you want the myproject directory to be created. For example, if you want to create the myproject directory in 'home_directory', you would run the command in the terminal while you are in 'home_directory':
 
 ```bash
-cd ~
+cd D:\home_directory
 django-admin startproject myproject
 ```
 
