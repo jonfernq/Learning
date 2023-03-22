@@ -160,21 +160,30 @@ pip install -r requirements.txt
 ### Create Project
 
 Now to start creating the project itself, create a new Django project by running the following command in the project directory:
-
 ```
-django-admin startproject myproject
+django-admin startproject myproject . 
 ```
  
- To verify your project creation:
-
+To verify your project creation:
 ```
 python manage.py runserver
 ```
+
+**Explanation:** The command "django-admin startproject myproject ." is used to create a new Django project named "myproject" in the current directory.
+
+Here is a breakdown of the command:
+
+- "django-admin" is a command-line utility that is used to perform various tasks related to Django projects, such as creating a new project or starting a new app.
+- "startproject" is a subcommand of the "django-admin" utility that is used to create a new Django project.
+- "myproject" is the name of the new project that you want to create. You can replace this with any name you prefer.
+- "." specifies the location where you want to create the new project. In this case, the "." indicates the current directory, which means that the new project will be created in the current directory.
+ 
+So, when you run this command, Django will create a new project directory named "myproject" in the current directory and populate it with the necessary files and directories to get you started with your Django project.
  
 ---
-> So i am a little confused, the Django command: "django-admin startproject myproject" creates two sub-directories named 'myproject" , so you issue this command in the parent directory of the project directory you are creating ? 
+**Note:** If you do not use the '.' to indicate creation in the current directory, and issue the Django command: "django-admin startproject myproject" two sub-directories named 'myproject" will be created. 
 
-Yes, that's correct. When you run the command django-admin startproject myproject, it will create a new Django project in a subdirectory named myproject. This subdirectory will contain a number of files and directories, including a manage.py file and another subdirectory with the same name as the project.
+When you run the command django-admin startproject myproject, it will create a new Django project in a subdirectory named myproject. This subdirectory will contain a number of files and directories, including a manage.py file and another subdirectory with the same name as the project.
 
 You should run this command in the parent directory where you want the myproject directory to be created. For example, if you want to create the myproject directory in 'home_directory', you would run the command in the terminal while you are in 'home_directory':
 
