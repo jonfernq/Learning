@@ -1,9 +1,10 @@
 ## Todo List App (Django) 
 
 Table of Contents: 
-- [Code](#code)
-- [Directory Structure](#directory-structure)
-- [Questions](#questions)
+- [Virtual Environment](https://github.com/jonfernq/Learning/blob/main/Python/Django/VirtualEnvironment.md): First, setup a virtual environment to work in. 
+- [Code](#code): Next code project and app.
+- [Directory Structure](#directory-structure): Familiarize oneself with standard directory structure. 
+- [Questions](#questions): Review and memorize with some questions. 
 
 ---
 <h3 id="code">Code</h3>
