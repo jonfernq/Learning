@@ -119,35 +119,15 @@ You need to install Django for every virtual environment you create because virt
 
 When you create a new virtual environment, it is essentially a fresh Python installation with no packages installed. This means that you need to install Django and any other packages you need for that specific project within the virtual environment.
 
-To install Django within a virtual environment, activate the virtual environment and then use pip to install Django, like this:
+To install Django within a virtual environment, activate the virtual environment and then use pip to install Django.
 
-```
-pip install django
-```
-
-This will install the latest version of Django in your virtual environment, which you can then use for your project.
-
-It's a good practice to keep track of the packages you have installed in each virtual environment, so you can easily reproduce the same environment on another machine or share it with other developers. You can do this by creating a requirements.txt file that lists all the packages installed in the virtual environment, and then using that file to install the same packages in another environment. You can create a requirements.txt file by running the following command:
-
-```
-pip freeze > requirements.txt
-```
-
-This will create a requirements.txt file in the current directory, which lists all the packages installed in the virtual environment. You can then use this file to install the same packages in another environment by running the following command:
-
-```
-pip install -r requirements.txt
-```
----
-### Long-form of Pip Command
-
-Or even better use the long-form of the pip command:
+The short form of the command is 'pip install django'. This will install the latest version of Django in your virtual environment, which you can then use for your project. It's generally considered good practice to use the longer, more explicit form of the pip command when installing packages in Python virtual environments: 
 
 ```
 python pip install django~=4.0.0
 ```
 
-It's generally considered good practice to use the longer, more explicit form of the pip command when installing packages in Python virtual environments. Here's why:
+Here's why:
 
 - **Ensuring the correct version of Python is used:** When you use the longer form of the pip command (python -m pip install <package>), you are explicitly telling Python to use the pip module that is associated with the current Python installation. This can be important if you have multiple versions of Python installed on your system, or if you are using a virtual environment with a specific version of Python.
 
@@ -157,6 +137,21 @@ It's generally considered good practice to use the longer, more explicit form of
 
 In summary, using the longer form of the pip command with the comparison operator is a best practice that ensures you get the correct version of a package installed in your virtual environment, while also ensuring reproducibility and compatibility with other developers.
 
+---
+### requirements.txt
+
+It's a good practice to keep track of the packages you have installed in each virtual environment, so you can easily reproduce the same environment on another machine or share it with other developers. You can do this by creating a requirements.txt file that lists all the packages installed in the virtual environment, and then using that file to install the same packages in another environment. You can create a requirements.txt file by running the following command:
+
+```
+pip freeze > requirements.txt
+```
+ 
+This will create a requirements.txt file in the current directory, which lists all the packages installed in the virtual environment. You can then use this file to install the same packages in another environment by running the following command:
+
+```
+pip install -r requirements.txt
+```
+ 
 --- 
 <a id="create_project"></a>
 ### Create Project
