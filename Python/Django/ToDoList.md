@@ -11,7 +11,8 @@ Table of Contents:
 - [Questions](#questions): Review and memorize with some questions. 
 
 ---
-### Create Virtual Environment {#create_virtual_environment}
+<a id="create_virtual_environment"></a>
+### Create Virtual Environment
 
 "venv (for Python 3)... allow you to manage separate package installations for different projects. 
 They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation. 
@@ -39,6 +40,7 @@ myproject/
 You should exclude your virtual environment directory from your version control system using .gitignore or similar.
 
 ---
+<a id="activate_virtual_environment"></a>
 ### Activate Virtual Environment {#activate_virtual_environment}
 
 Before you can start installing or using packages in your virtual environment you’ll need to activate it. 
