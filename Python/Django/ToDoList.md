@@ -13,7 +13,7 @@ Table of Contents:
 
 Here's an example of a simple to-do list app in Django with all the necessary files and code:
 
-First, create a new Django project by running the following command in your terminal:
+First, create a new Django project by running the following command in the project directory:
 
 ```
 django-admin startproject myproject
