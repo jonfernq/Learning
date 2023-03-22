@@ -37,31 +37,35 @@ Activate the virtual environment by running the following command:
 On Windows:
 
 ```
-myenv\Scripts\activate.bat
+env\Scripts\activate.bat
 ```
 
 On macOS or Linux:
 
 ```bash
-source myenv/bin/activate
+source env/bin/activate
 ```
 
-After running this command, your command prompt should change to indicate that you are now working within the virtual environment.
+After running this command, your command prompt should change to indicate that you are now working within the virtual environment:
+
+![env_cursor_change](https://user-images.githubusercontent.com/68504324/226779778-e08418b9-8043-4f13-acc4-32519676fe11.jpg)
 
 You can confirm you’re in the virtual environment by checking the location of your Python interpreter:
 
 ```
-which python
+where python
 ```
 
-This should output the path to the Python executable inside your virtual environment. 
+This should output the paths to your Python executables, including the path inside your virtual environment:
+
+![where_python](https://user-images.githubusercontent.com/68504324/226780642-685ca533-2f2d-4d91-bafc-7785009e075b.jpg)
 
 As long as your virtual environment is activated pip will install packages into that specific environment 
 and you’ll be able to import and use packages in your Python application.
 
-When you want to exit the virtual environment, run the deactivate command.
+When you want to exit the virtual environment, run the 'deactivate' command.
 
-Next step is to get an [example project](https://github.com/jonfernq/Learning/tree/main/SphinxPythonDocumentation/BasicSphinxExampleProject) working.
+Next step is to get to work on your project. 
 
 ---
 ### Explanation: 
