@@ -13,13 +13,31 @@ Table of Contents:
 
 Here's an example of a simple to-do list app in Django with all the necessary files and code:
 
+### Create Project
+
 First, create a new Django project by running the following command in the project directory:
 
 ```
 django-admin startproject myproject
 ```
+---
+> So i am a little confused, the Django command: "django-admin startproject myproject" creates two sub-directories named 'myproject" , so you issue this command in the parent directory of the project directory you are creating ? 
 
-Next, create a new Django app within your project by running the following command:
+Yes, that's correct. When you run the command django-admin startproject myproject, it will create a new Django project in a subdirectory named myproject. This subdirectory will contain a number of files and directories, including a manage.py file and another subdirectory with the same name as the project.
+
+You should run this command in the parent directory where you want the myproject directory to be created. For example, if you want to create the myproject directory in your home directory, you would run the command in the terminal while you are in the home directory:
+
+```bash
+cd ~
+django-admin startproject myproject
+```
+
+This will create a new directory named myproject in your home directory, containing the files and directories needed for a new Django project.
+
+---
+### Create App
+
+After you create a project, then create a new Django app within your project by running the following command:
 
 ```
 python manage.py startapp todo
