@@ -164,6 +164,13 @@ Now to start creating the project itself, create a new Django project by running
 ```
 django-admin startproject myproject
 ```
+ 
+ To verify your project creation:
+
+```
+python manage.py runserver
+```
+ 
 ---
 > So i am a little confused, the Django command: "django-admin startproject myproject" creates two sub-directories named 'myproject" , so you issue this command in the parent directory of the project directory you are creating ? 
 
