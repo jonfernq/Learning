@@ -1,8 +1,12 @@
 ## Django
 
+### Simple Example Starter App 
+
 - [Todo-list App](https://github.com/jonfernq/Learning/blob/main/Python/Django/ToDoList.md)
 
 ---
+### The Big Pciture 
+
 > So in setting up a Django project, I went through all the steps, issuing all the commands, but I did not really grasp the overall idea, namely the big picture of what one does. One has a project and apps within the project. One has Databases, Settings, URLS, Views, and Templates, and maybe more. For a given app choices have to made regarding these and then entries made in .py files. Could you explain giving a high-level view of what is happening?  
 
 Here is a high-level overview of the components involved in setting up a Django project and how they work together.
