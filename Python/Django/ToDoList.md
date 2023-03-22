@@ -11,6 +11,8 @@ Table of Contents:
 4. [Directory Structure](#directory-structure): Familiarize oneself with standard directory structure. 
 5. [Questions](#questions): Review and memorize with some questions. 
 
+Create a simple todo-list application as a starter example project.
+
 ---
 <a id="create_virtual_environment"></a>
 ### Create Virtual Environment
@@ -267,7 +269,6 @@ And visit http://localhost:8000/ in your browser to see your simple to-do list a
 ---
 <a id="directory_structure"></a>
 ### Directory Structure
-<h3 id="directory-structure">Directory Structure</h3>
 
 > In the instructions above the following files were specified: 
 
