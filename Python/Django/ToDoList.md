@@ -6,6 +6,8 @@ Table of Contents:
     * [Create Virtual Environment](#create_virtual_environment)
     * [Activate Virtual Environment](#activate_virtual_environment)
     * [Explanation_of Virtual Environments](#explanation_of_virtual_environments)
+    * [Install Django](#install_django): Install Django in the new virtual environment.
+    * [Requirements](#requirements): Save project dependencies into requirements.txt 
 2. [Create Project](#create_project)
 3. [Create App](#create_app)
 4. [Directory Structure](#directory-structure): Familiarize oneself with standard directory structure. 
@@ -138,6 +140,7 @@ Here's why:
 In summary, using the longer form of the pip command with the comparison operator is a best practice that ensures you get the correct version of a package installed in your virtual environment, while also ensuring reproducibility and compatibility with other developers.
 
 ---
+ <a id="requirements"></a>
 ### requirements.txt
 
 It's a good practice to keep track of the packages you have installed in each virtual environment, so you can easily reproduce the same environment on another machine or share it with other developers. You can do this by creating a requirements.txt file that lists all the packages installed in the virtual environment, and then using that file to install the same packages in another environment. You can create a requirements.txt file by running the following command:
