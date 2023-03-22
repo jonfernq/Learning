@@ -17,20 +17,27 @@ Create a simple todo-list application as a starter example project.
 <a id="create_virtual_environment"></a>
 ### Create Virtual Environment
 
-"venv (for Python 3)... allow you to manage separate package installations for different projects. 
-They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation. 
+The virtual environment command ("venv (for Python 3)) allows you to manage separate package installations for different projects. 
+
+Virtual environments essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation.
+
 When you switch projects, you can simply create a new virtual environment and not have to worry about breaking the packages installed in the other environments. 
-It is always recommended to use a virtual environment while developing Python applications." 
+
+It is always recommended to use a virtual environment while developing Python applications.
+
 (Source: [Python Documentation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment))
 
+Here is the command: 
 ```
 python -m venv env
 ```
 
-The second argument is the location to create the virtual environment. 
-Generally, you can just create this in your project and call it env.
+The second argument 'env' is the location to create the virtual environment. 
+
+Generally, you can just create this in your project and call it 'env'.
 
 'venv' will create a virtual Python installation in the 'env' folder. 
+
 The command is issued in the project directory resulting in the directory structure:
 
 ```markdown
@@ -40,7 +47,7 @@ myproject/
         more sub-directories and files 
 ```
 
-You should exclude your virtual environment directory from your version control system using .gitignore or similar.
+You should also exclude your virtual environment directory from your version control system using .gitignore or similar.
 
 ---
 <a id="activate_virtual_environment"></a>
