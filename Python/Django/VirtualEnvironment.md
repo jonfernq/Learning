@@ -56,6 +56,8 @@ When you want to exit the virtual environment, run the deactivate command.
 Next step is to get an [example project](https://github.com/jonfernq/Learning/tree/main/SphinxPythonDocumentation/BasicSphinxExampleProject) working.
 
 ---
+### Explanation: 
+
 > So using virtual environments means the path environmental variable is redirected to your virtual environment, using the version of Python there and the packages that have been installed there? 
 
 Yes, that's correct. When you activate a virtual environment, the PATH environment variable is temporarily modified to include the path to the Python executable and any other executables specific to that virtual environment. This means that any commands you run, including running Python scripts, will use the version of Python and the packages installed in that virtual environment, rather than the global Python installation.
