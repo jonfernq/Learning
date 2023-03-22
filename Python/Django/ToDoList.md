@@ -180,19 +180,7 @@ Here is a breakdown of the command:
  
 So, when you run this command, Django will create a new project directory named "myproject" in the current directory and populate it with the necessary files and directories to get you started with your Django project.
  
----
-**Note:** If you do not use the '.' to indicate creation in the current directory, and issue the Django command: "django-admin startproject myproject" two sub-directories named 'myproject" will be created. 
-
-When you run the command django-admin startproject myproject, it will create a new Django project in a subdirectory named myproject. This subdirectory will contain a number of files and directories, including a manage.py file and another subdirectory with the same name as the project.
-
-You should run this command in the parent directory where you want the myproject directory to be created. For example, if you want to create the myproject directory in 'home_directory', you would run the command in the terminal while you are in 'home_directory':
-
-```bash
-cd D:\home_directory
-django-admin startproject myproject
-```
-
-This will create a new directory named myproject in your home directory, containing the files and directories needed for a new Django project.
+**Note:** If you do not use the '.' to indicate creation in the current directory and issue the Django command: "django-admin startproject myproject" a new Django project in a subdirectory named myproject will be created, so you will get two sub-directories named 'myproject". Don't make this mistake by leaving out the ".". 
 
 ---
  <a id="create_app"></a>
