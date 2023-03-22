@@ -1,13 +1,17 @@
 ## Todo List App (Django) 
 
 Table of Contents: 
-- [Virtual Environment](https://github.com/jonfernq/Learning/blob/main/Python/Django/VirtualEnvironment.md): First, setup a virtual environment to work in. 
+ 
+1. Virtual Environment: First, setup a virtual environment to work in. 
+    * [Create Virtual Environment](#create_virtual_environment)
+    * [Activate Virtual Environment](#activate_virtual_environment)
+    
 - [Code](#code): Next code project and app.
 - [Directory Structure](#directory-structure): Familiarize oneself with standard directory structure. 
 - [Questions](#questions): Review and memorize with some questions. 
 
 ---
-### Create Virtual Environment
+### Create Virtual Environment {#create_virtual_environment}
 
 "venv (for Python 3)... allow you to manage separate package installations for different projects. 
 They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation. 
@@ -35,7 +39,7 @@ myproject/
 You should exclude your virtual environment directory from your version control system using .gitignore or similar.
 
 ---
-### Activate Virtual Environment
+### Activate Virtual Environment {#activate_virtual_environment}
 
 Before you can start installing or using packages in your virtual environment you’ll need to activate it. 
 Activating a virtual environment will put the virtual environment-specific python and pip executables into your shell’s PATH.
