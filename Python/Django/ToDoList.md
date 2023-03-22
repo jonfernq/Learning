@@ -9,14 +9,75 @@ Table of Contents:
 ---
 ### Create Virtual Environment
 
-[Virtual Environment](https://github.com/jonfernq/Learning/blob/main/Python/Django/VirtualEnvironment.md): 
+"venv (for Python 3)... allow you to manage separate package installations for different projects. 
+They essentially allow you to create a “virtual” isolated Python installation and install packages into that virtual installation. 
+When you switch projects, you can simply create a new virtual environment and not have to worry about breaking the packages installed in the other environments. 
+It is always recommended to use a virtual environment while developing Python applications." 
+(Source: [Python Documentation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment))
+
+```
+python -m venv env
+```
+
+The second argument is the location to create the virtual environment. 
+Generally, you can just create this in your project and call it env.
+
+'venv' will create a virtual Python installation in the 'env' folder. 
+The command is issued in the project directory resulting in the directory structure:
+
+```markdown
+myproject/
+    env/ 
+        ....
+        more sub-directories and files 
+```
+
+You should exclude your virtual environment directory from your version control system using .gitignore or similar.
+
+### Activate Virtual Environment
+
+Before you can start installing or using packages in your virtual environment you’ll need to activate it. 
+Activating a virtual environment will put the virtual environment-specific python and pip executables into your shell’s PATH.
+
+Activate the virtual environment by running the following command:
+
+On Windows:
+
+```
+env\Scripts\activate.bat
+```
+
+On macOS or Linux:
+
+```bash
+source env/bin/activate
+```
+
+After running this command, your command prompt should change to indicate that you are now working within the virtual environment:
+
+![env_cursor_change](https://user-images.githubusercontent.com/68504324/226779778-e08418b9-8043-4f13-acc4-32519676fe11.jpg)
+
+You can confirm you’re in the virtual environment by checking the location of your Python interpreter:
+
+```
+where python
+```
+
+This should output the paths to your Python executables, including the path inside your virtual environment:
+
+![where_python](https://user-images.githubusercontent.com/68504324/226780642-685ca533-2f2d-4d91-bafc-7785009e075b.jpg)
+
+As long as your virtual environment is activated pip will install packages into that specific environment 
+and you’ll be able to import and use packages in your Python application.
+
+When you want to exit the virtual environment, run the 'deactivate' command.
+
+Next step is to get to work on your project. 
 
 ---
 ### Install Django 
 
-> I have  activated a virtual environment, do i have to install django for every virtual environment i create ? 
-
-Yes, you need to install Django for every virtual environment you create because virtual environments are isolated Python environments, which means they have their own Python executable and their own set of installed packages.
+You need to install Django for every virtual environment you create because virtual environments are isolated Python environments, which means they have their own Python executable and their own set of installed packages.
 
 When you create a new virtual environment, it is essentially a fresh Python installation with no packages installed. This means that you need to install Django and any other packages you need for that specific project within the virtual environment.
 
