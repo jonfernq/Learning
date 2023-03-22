@@ -9,7 +9,7 @@ It is always recommended to use a virtual environment while developing Python ap
 (Source: [Python Documentation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment))
 
 ```
-python3 -m venv env
+python -m venv env
 ```
 
 The second argument is the location to create the virtual environment. 
