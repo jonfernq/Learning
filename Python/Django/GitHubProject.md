@@ -85,7 +85,7 @@ To deactivate a pipenv environment, follow these steps:
 pipenv shell deactivate
 ```
 
-Alternatively, you can simply use the exit command to leave the shell session:
+  Alternatively, you can simply use the exit command to leave the shell session:
 
 ```bash
 exit
@@ -93,7 +93,7 @@ exit
 
   4. You should now see that you have returned to your original shell environment and the pipenv environment is no longer active.
 
-Note: It's important to deactivate the pipenv environment when you're done using it to prevent any conflicts with other projects or environments on your system.
+  Note: It's important to deactivate the pipenv environment when you're done using it to prevent any conflicts with other projects or environments on your system.
 
 
 
