@@ -4,7 +4,7 @@
 
 Please give me a simple C program to compile in WSL Ubuntu, along with instructions on how to compile.
 
-Sure, here's a simple C program that you can compile in WSL Ubuntu:
+Here's a simple C program that you can compile in WSL Ubuntu:
 
 ```arduino
 #include <stdio.h>
@@ -13,6 +13,14 @@ int main() {
     printf("Hello, World!\n");
     return 0;
 }
+```
+
+Open Ubuntu, then:
+
+```
+root@DESKTOP-GBKF6GA:~# cd /mnt/d
+root@DESKTOP-GBKF6GA:/mnt/d# mkdir myprogram
+root@DESKTOP-GBKF6GA:/mnt/d# cd myprogram
 ```
 
 To compile this program in WSL Ubuntu, you can follow these steps:
