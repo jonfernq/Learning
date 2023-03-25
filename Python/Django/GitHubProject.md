@@ -1,5 +1,9 @@
 ## Django Projects 
 
+Sometimes, you just want to just run a GitHub project without entering all the code first, as is traditionally done in coding tutorials.
+
+Here are the steps. 
+
 ### Running a Project from GitHub Repository 
 
 > If one has a Django project folder from a GitHub repository what is the smallest and quickest set of commands to get it working? 
