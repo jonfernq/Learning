@@ -47,13 +47,13 @@ Activate the virtual environment by running the following command:
 On Windows:
 
 ```
-myenv\Scripts\activate.bat
+env\Scripts\activate.bat
 ```
 
 On macOS or Linux:
 
 ```bash
-source myenv/bin/activate
+source env/bin/activate
 ```
 
 After running this command, your command prompt should change to indicate that you are now working within the virtual environment.
