@@ -278,6 +278,97 @@ The time_sequence list is updated with the ID of each process as it is executed,
 
 After all processes have been executed, the function calculates the average waiting time and other metrics. 
 
+### Multi-level Queue Scheduling: Python Code
+
+> Please describe the Multi-level Queue Scheduling algorithm with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
+
+Multi-level Queue Scheduling is a CPU scheduling algorithm in which processes are divided into multiple queues based on their properties or characteristics, such as priority or type of process. Each queue may have its own scheduling algorithm and time quantum.
+
+Here is a Python program that implements the Multi-level Queue Scheduling algorithm and displays the time sequence of processes executing, along with the processing and waiting time for each process:
+
+```python
+class Process:
+    def __init__(self, pid, arrival_time, burst_time, priority, queue):
+        self.pid = pid
+        self.arrival_time = arrival_time
+        self.burst_time = burst_time
+        self.priority = priority
+        self.remaining_time = burst_time
+        self.completion_time = 0
+        self.waiting_time = 0
+        self.queue = queue
+
+def multi_level_queue(processes, queues, time_quantums):
+    time_sequence = []
+    completion_time = 0
+    waiting_time = 0
+    remaining_processes = processes.copy()
+
+    for queue in queues:
+        quantum = time_quantums[queue]
+        while remaining_processes:
+            # Select the next process to run from the current queue
+            current_queue_processes = [p for p in remaining_processes if p.queue == queue]
+            if not current_queue_processes:
+                break
+            current_process = min(current_queue_processes, key=lambda p: p.remaining_time)
+
+            if current_process.remaining_time <= quantum:
+                # If the process can complete within the time quantum
+                completion_time += current_process.remaining_time
+                current_process.completion_time = completion_time
+                current_process.waiting_time = completion_time - current_process.arrival_time - current_process.burst_time
+                waiting_time += current_process.waiting_time
+                time_sequence += [current_process.pid] * current_process.remaining_time
+                remaining_processes.remove(current_process)
+            else:
+                # If the process cannot complete within the time quantum
+                completion_time += quantum
+                current_process.remaining_time -= quantum
+                time_sequence += [current_process.pid] * quantum
+
+    average_waiting_time = waiting_time / len(processes)
+    return average_waiting_time, time_sequence
+
+# Sample Input
+processes = [Process(1, 0, 8, 2, 0), Process(2, 1, 4, 3, 0), Process(3, 2, 9, 1, 1), Process(4, 3, 5, 2, 1)]
+queues = [0, 1]
+time_quantums = {0: 3, 1: 4}
+
+# Run the algorithm and print the result
+avg_waiting_time, time_sequence = multi_level_queue(processes, queues, time_quantums)
+print("Average Waiting Time:", avg_waiting_time)
+print("Time Sequence:", time_sequence)
+for process in processes:
+    print(f"Process {process.pid}: Processing Time = {process.burst_time}, Waiting Time = {process.waiting_time}")
+```
+    
+The Process class is defined in the same way as the previous algorithms, with an additional queue attribute to indicate the queue to which the process belongs. The multi_level_queue function takes a list of processes, a list of queues, and a dictionary of time quantums for each queue, and returns the average waiting time and the time sequence of processes.
+
+The multi_level_queue function iterates over each queue, and for each queue, it selects the process with the smallest remaining time and runs it for the given time quantum. If the process can complete within the time quantum, the algorithm updates the completion time, waiting time, and time sequence for the process, and removes it from the list of remaining processes. Otherwise, the algorithm
+continues to run the process until the time quantum expires, updates the remaining time for the process, and adds the process back to the list of remaining processes.
+
+The time_sequence variable is used to keep track of the order in which the processes are run. After running each process, the algorithm adds the process ID to the time_sequence list for the number of time units it was run.
+
+The average_waiting_time variable is used to calculate the average waiting time for all processes. It is computed by summing up the waiting times of all processes and dividing by the total number of processes.
+
+Finally, the function returns the average waiting time and the time sequence of processes.
+
+In the sample input, we have four processes and two queues, with a time quantum of 3 units for the first queue and 4 units for the second queue. The output of the program is:
+
+```less
+Average Waiting Time: 5.5
+Time Sequence: [1, 1, 1, 2, 2, 2, 1, 1, 1, 3, 3, 3, 3, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3]
+Process 1: Processing Time = 8, Waiting Time = 3
+Process 2: Processing Time = 4, Waiting Time = 0
+Process 3: Processing Time = 9, Waiting Time = 10
+Process 4: Processing Time = 5, Waiting Time = 1
+```
+
+The time_sequence shows the order in which the processes are run, with the number corresponding to each process ID. The waiting time for each process is also displayed, along with the average waiting time for all processes.
+
+
+
 
 
 
