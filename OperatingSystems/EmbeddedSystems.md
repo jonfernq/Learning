@@ -34,6 +34,21 @@ Linux distributions that are commonly used for embedded systems development incl
 
 - Arch Linux: Arch Linux is known for its minimalism and customizability, making it a popular choice for embedded systems development.
 
+- RTLinux:
+RTLinux is a real-time operating system based on the Linux kernel, designed for real-time applications. It supports the simultaneous running of Linux and real-time applications, providing a real-time subsystem for real-time applications to run in parallel with the Linux kernel. The advantages of using RTLinux for embedded systems include increased performance, reduced latency, and better determinism. However, the use of RTLinux requires specialized knowledge and development tools, which may be a disadvantage for some developers.
+
+- OpenWrt and LEDE:
+OpenWrt and LEDE are two open-source Linux-based operating systems that are commonly used for embedded systems, particularly for networking devices such as routers. Both of these operating systems are highly customizable and offer a wide range of features and packages for embedded system development. The advantages of using OpenWrt and LEDE include their flexibility, ease of customization, and strong community support. However, their complexity and steep learning curve can be a disadvantage for some developers.
+
+- µCLinux:
+µCLinux, also known as Microcontroller Linux, is a version of the Linux kernel designed for microcontrollers and other embedded systems with limited resources. It is specifically designed to be lightweight and requires only a minimal amount of memory and storage space. The advantages of using µCLinux include its small footprint, low resource usage, and strong support for a wide range of hardware platforms. However, its limited feature set and lack of support for certain hardware and software components can be a disadvantage for some applications.
+
+- Angstrom:
+Angstrom is a lightweight and highly customizable Linux distribution designed specifically for embedded systems. It is known for its small size and support for a wide range of hardware platforms, making it a popular choice for embedded system development. The advantages of using Angstrom include its flexibility, ease of customization, and strong community support. However, its complexity and steep learning curve can be a disadvantage for some developers.
+
+- Android:
+Android is a mobile operating system based on the Linux kernel, originally designed for smartphones and tablets. However, it has also been used in a variety of other embedded systems, such as set-top boxes, smart TVs, and smartwatches. The advantages of using Android for embedded systems include its widespread popularity, strong community support, and extensive feature set. However, its complexity and high resource requirements can be a disadvantage for some embedded systems with limited resources.
+
 Overall, Linux is a popular choice for embedded systems development due to its flexibility, customization options, and large community support. However, developers should carefully consider the advantages and disadvantages before choosing Linux for their specific use case.
 
 > Do you know about Arch Linux ? 
