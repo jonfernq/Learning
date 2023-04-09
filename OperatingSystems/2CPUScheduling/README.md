@@ -63,6 +63,10 @@ for process in processes:
     print(f"Process {process.pid}: Processing Time = {process.burst_time}, Waiting Time = {process.waiting_time}")
 ```
 
+- **Output:**
+ 
+![fcfs](https://user-images.githubusercontent.com/68504324/230748741-8c1a2a3c-40c4-4773-b941-702893e425ff.jpg)
+
 The Python code above demonstrates the implementation of the First-Come, First-Served (FCFS) scheduling algorithm for a list of processes.
 
 The Process class is defined to store the process ID, arrival time, burst time, completion time, and waiting time of each process.
