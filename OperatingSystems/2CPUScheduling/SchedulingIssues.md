@@ -59,7 +59,7 @@ To open perfmon from PowerShell, type perfmon.exe and press Enter. This will lau
 
 You can also use the logman command from the Command Prompt or PowerShell to create and manage performance counter logs. For example, to create a new performance counter log, you can use the following command:
 
-```lua
+```
 logman create counter MyCounterLog -c "\Processor(_Total)\% Processor Time" -f csv
 ```
 
@@ -67,7 +67,7 @@ This command creates a new performance counter log named "MyCounterLog" that log
 
 Once you have created a performance counter log, you can use the typeperf command from the Command Prompt or PowerShell to view the logged data. For example, to view the logged data for the "MyCounterLog" log, you can use the following command:
 
-```scss
+```
 typeperf "\MyCounterLog(*)\*"
 ```
 
@@ -160,7 +160,7 @@ sudo apt-get install stress
 
 Run stress with the desired CPU load:
 
-```css
+```arduino
 stress --cpu 4
 ```
 
