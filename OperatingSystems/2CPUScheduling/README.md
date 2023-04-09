@@ -197,7 +197,7 @@ for process in processes:
 
 - **Output:**
 
-
+![priority py](https://user-images.githubusercontent.com/68504324/230749137-486fcece-0ee2-4754-982c-e8eb98faf2af.jpg)
 
 The Process class is defined in a similar way to the previous algorithms, with an added priority attribute. The priority_scheduling function takes a list of processes as input and returns the average waiting time and the time sequence of processes.
 
