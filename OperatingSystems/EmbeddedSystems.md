@@ -59,7 +59,7 @@ Yes, Arch Linux is a popular, lightweight, and flexible Linux distribution that 
 
 Yes, Arch Linux is also used for embedded systems due to its lightweight and flexible nature. Its minimalistic approach allows for easy customization and optimization for specific use cases, including embedded systems. Arch Linux has a large and active community that provides support and resources for using it in embedded systems, including pre-built images and guides for installation and configuration. Additionally, Arch Linux's rolling release model ensures that the latest software packages are continuously updated, making it a good choice for embedded systems that require up-to-date software.
 
-Can Arch Linux be used with the Raspberry Pi hardware platform? If not, then what low-cost hardware platform can it be used with ? 
+> Can Arch Linux be used with the Raspberry Pi hardware platform? If not, then what low-cost hardware platform can it be used with ? 
 
 Yes, Arch Linux can be used with the Raspberry Pi hardware platform. In fact, Arch Linux has an official ARM port, which includes support for the Raspberry Pi.
 
