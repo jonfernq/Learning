@@ -209,6 +209,77 @@ After all processes have been executed, the function calculates the average wait
 
 This program demonstrates the implementation of the Priority Scheduling algorithm and displays the time sequence of processes executing, along with the processing and waiting time for each process.
 
+### Round Robin (RR) Scheduling
+
+Please describe the Round Robin (RR) scheduling algorithm with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
+Round Robin (RR) is a CPU scheduling algorithm in which each process is given a fixed time slot called a time quantum, and the CPU switches between processes in a circular queue. If a process has not completed its execution within the given time quantum, it is preempted, and the CPU switches to the next process in the queue.
+
+Here is a Python program that implements the Round Robin algorithm and displays the time sequence of processes executing, along with the processing and waiting time for each process:
+
+```python
+class Process:
+    def __init__(self, pid, arrival_time, burst_time):
+        self.pid = pid
+        self.arrival_time = arrival_time
+        self.burst_time = burst_time
+        self.remaining_time = burst_time
+        self.completion_time = 0
+        self.waiting_time = 0
+
+def round_robin(processes, time_quantum):
+    time_sequence = []
+    completion_time = 0
+    waiting_time = 0
+    remaining_processes = processes.copy()
+
+    while remaining_processes:
+        # Select the next process to run
+        current_process = remaining_processes[0]
+        if current_process.remaining_time <= time_quantum:
+            # If the process can complete within the time quantum
+            completion_time += current_process.remaining_time
+            current_process.completion_time = completion_time
+            current_process.waiting_time = completion_time - current_process.arrival_time - current_process.burst_time
+            waiting_time += current_process.waiting_time
+            time_sequence += [current_process.pid] * current_process.remaining_time
+            remaining_processes.pop(0)
+        else:
+            # If the process cannot complete within the time quantum
+            completion_time += time_quantum
+            current_process.remaining_time -= time_quantum
+            time_sequence += [current_process.pid] * time_quantum
+            remaining_processes.pop(0)
+            remaining_processes.append(current_process)
+
+    average_waiting_time = waiting_time / len(processes)
+    return average_waiting_time, time_sequence
+
+# Sample Input
+processes = [Process(1, 0, 8), Process(2, 1, 4), Process(3, 2, 9), Process(4, 3, 5)]
+
+# Run the algorithm and print the result
+time_quantum = 3
+avg_waiting_time, time_sequence = round_robin(processes, time_quantum)
+print("Average Waiting Time:", avg_waiting_time)
+print("Time Sequence:", time_sequence)
+for process in processes:
+    print(f"Process {process.pid}: Processing Time = {process.burst_time}, Waiting Time = {process.waiting_time}")
+```
+
+- **Output:**
+
+The Process class is defined in a similar way to the previous algorithms, with an added remaining_time attribute to keep track of the remaining time for each process. The round_robin function takes a list of processes and a time quantum as input and returns the average waiting time and the time sequence of processes.
+
+The round_robin function uses a while loop to repeatedly run processes in a circular queue until all processes have been executed. For each iteration, the algorithm selects the next process in the queue, and checks if it can complete within the given time quantum. If it can, the algorithm updates the completion time, waiting time, and time sequence for the process, and removes it from the queue. Otherwise, the algorithm updates the remaining time for the process, adds it to the end of the queue, and moves on to the next process.
+
+The time_sequence list is updated with the ID of each process as it is executed, and the waiting_time variable keeps track of the total waiting time for all processes.
+
+After all processes have been executed, the function calculates the average waiting time and
+
+
+
+
+
 
 
 
