@@ -3,6 +3,7 @@
 ### Knowledge Bases 
 
 - [Python](https://github.com/jonfernq/Learning/blob/main/Python/README.md)
+- [Operating Systems](https://github.com/jonfernq/Learning/tree/main/OperatingSystems) 
 
 ### English Teaching
 
