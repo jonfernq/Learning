@@ -10,7 +10,7 @@
 * [Multi-level Queue Scheduling: Python Code](#section6)
 * [Multi-level Feedback Queue Scheduling: Python Code](#section7)
 
-### Types of Scheduling Algorithms {#section1}
+### Types of Scheduling Algorithms
 
 > For operating systems, what are the different types of Central Processing Unit (CPU) Scheduling? What are the scheduling criteria and what algorithms are used? 
 
@@ -30,7 +30,7 @@ In operating systems, the CPU scheduling algorithm is responsible for selecting 
 
 These are some of the most common CPU scheduling algorithms used in operating systems. The choice of scheduling algorithm depends on the specific requirements of the system and the trade-offs between response time, throughput, and fairness.
 
-### First-Come, First-Served (FCFS) Scheduling: Python Code {#section2}
+### First-Come, First-Served (FCFS) Scheduling: Python Code
 
 > Please describe First-Come, First-Served (FCFS) with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
 
@@ -92,7 +92,7 @@ Finally, the fcfs function returns the average waiting time and the time_sequenc
 
 With the modifications made, this program provides a comprehensive display of the FCFS algorithm execution, including the time sequence of processes executing and the processing and waiting time for each process.
 
-###  Shortest Job First (SJF) Scheduling: Python Code {#section3}
+###  Shortest Job First (SJF) Scheduling: Python Code
 
 > Please describe the Shortest Job First (SJF) scheduling algorithm with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
 
