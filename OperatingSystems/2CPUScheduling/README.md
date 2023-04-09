@@ -1,5 +1,17 @@
 ## 2. CPU Scheduling 
 
+### Table of Contents
+
+* [Types of Scheduling Algorithms](#section1)
+* [First-Come, First-Served (FCFS) Scheduling: Python Code](#section2)
+* [Shortest Job First (SJF) Scheduling: Python Code](#section3)
+* [Priority Scheduling: Python Code](#section4)
+* [Round Robin (RR) Scheduling: Python Code](#section5)
+* [Multi-level Queue Scheduling: Python Code](#section6)
+* [Multi-level Feedback Queue Scheduling: Python Code](#section7)
+
+### Types of Scheduling Algorithms {#section1}
+
 > For operating systems, what are the different types of Central Processing Unit (CPU) Scheduling? What are the scheduling criteria and what algorithms are used? 
 
 In operating systems, the CPU scheduling algorithm is responsible for selecting which process should be executed next on the CPU. There are several different types of CPU scheduling algorithms, each with its own criteria and algorithms. Here are some of the most common ones:
@@ -18,7 +30,7 @@ In operating systems, the CPU scheduling algorithm is responsible for selecting 
 
 These are some of the most common CPU scheduling algorithms used in operating systems. The choice of scheduling algorithm depends on the specific requirements of the system and the trade-offs between response time, throughput, and fairness.
 
-### First-Come, First-Served (FCFS) Scheduling: Python Code
+### First-Come, First-Served (FCFS) Scheduling: Python Code {#section2}
 
 > Please describe First-Come, First-Served (FCFS) with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
 
@@ -80,7 +92,7 @@ Finally, the fcfs function returns the average waiting time and the time_sequenc
 
 With the modifications made, this program provides a comprehensive display of the FCFS algorithm execution, including the time sequence of processes executing and the processing and waiting time for each process.
 
-###  Shortest Job First (SJF) Scheduling: Python Code 
+###  Shortest Job First (SJF) Scheduling: Python Code {#section3}
 
 > Please describe the Shortest Job First (SJF) scheduling algorithm with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
 
@@ -144,7 +156,7 @@ After all processes have been executed, the function calculates the average wait
 
 This program demonstrates the implementation of the SJF algorithm and displays the time sequence of processes executing and the processing and waiting time for each process.
 
-### Priority Scheduling
+### Priority Scheduling: Python Code 
 
 Please describe the 'Priority Scheduling' algorithm with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
 Priority Scheduling is a scheduling algorithm in which the process with the highest priority is executed first. Processes are assigned priorities, and the priority can be determined based on factors such as the amount of CPU time needed, the importance of the process, or its deadline.
@@ -209,7 +221,7 @@ After all processes have been executed, the function calculates the average wait
 
 This program demonstrates the implementation of the Priority Scheduling algorithm and displays the time sequence of processes executing, along with the processing and waiting time for each process.
 
-### Round Robin (RR) Scheduling
+### Round Robin (RR) Scheduling: Python Code
 
 Please describe the Round Robin (RR) scheduling algorithm with a simple Python program that displays the time sequence of processes executing and also the processing and waiting time for each process.
 Round Robin (RR) is a CPU scheduling algorithm in which each process is given a fixed time slot called a time quantum, and the CPU switches between processes in a circular queue. If a process has not completed its execution within the given time quantum, it is preempted, and the CPU switches to the next process in the queue.
