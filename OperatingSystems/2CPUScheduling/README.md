@@ -268,13 +268,15 @@ for process in processes:
 
 - **Output:**
 
+![round_robin](https://user-images.githubusercontent.com/68504324/230749502-eb01df0c-d37f-45fa-88cf-48c7104dfea7.jpg)
+
 The Process class is defined in a similar way to the previous algorithms, with an added remaining_time attribute to keep track of the remaining time for each process. The round_robin function takes a list of processes and a time quantum as input and returns the average waiting time and the time sequence of processes.
 
 The round_robin function uses a while loop to repeatedly run processes in a circular queue until all processes have been executed. For each iteration, the algorithm selects the next process in the queue, and checks if it can complete within the given time quantum. If it can, the algorithm updates the completion time, waiting time, and time sequence for the process, and removes it from the queue. Otherwise, the algorithm updates the remaining time for the process, adds it to the end of the queue, and moves on to the next process.
 
 The time_sequence list is updated with the ID of each process as it is executed, and the waiting_time variable keeps track of the total waiting time for all processes.
 
-After all processes have been executed, the function calculates the average waiting time and
+After all processes have been executed, the function calculates the average waiting time and other metrics. 
 
 
 
