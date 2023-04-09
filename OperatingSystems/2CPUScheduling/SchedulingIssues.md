@@ -34,7 +34,7 @@ These metrics can be used to evaluate the performance of different CPU schedulin
 
 On Linux systems, there are several tools that can be used to obtain these metrics. Here are a few examples:
 
-CPU Utilization: The top command is a useful tool for monitoring CPU utilization in real-time. To display CPU usage, simply run the top command in a terminal window. The %CPU column displays the percentage of CPU time being used by each process.
+- CPU Utilization: The top command is a useful tool for monitoring CPU utilization in real-time. To display CPU usage, simply run the top command in a terminal window. The %CPU column displays the percentage of CPU time being used by each process.
 
 - Throughput: To measure throughput, you can use the sar command, which is part of the sysstat package. The sar command can be used to collect and report system activity information, including disk I/O, CPU utilization, and network activity. To monitor disk I/O throughput, for example, you can use the sar -d command.
 
@@ -59,16 +59,17 @@ To open perfmon from PowerShell, type perfmon.exe and press Enter. This will lau
 
 You can also use the logman command from the Command Prompt or PowerShell to create and manage performance counter logs. For example, to create a new performance counter log, you can use the following command:
 
-lua
+```lua
 logman create counter MyCounterLog -c "\Processor(_Total)\% Processor Time" -f csv
+```
 
 This command creates a new performance counter log named "MyCounterLog" that logs the percentage of processor time used by all processors. The log data is saved in CSV format.
 
 Once you have created a performance counter log, you can use the typeperf command from the Command Prompt or PowerShell to view the logged data. For example, to view the logged data for the "MyCounterLog" log, you can use the following command:
 
-scss
+```scss
 typeperf "\MyCounterLog(*)\*"
-
+```
 
 This command displays all performance counter data in the "MyCounterLog" log. You can modify the command to display only specific counter data.
 
@@ -153,13 +154,15 @@ Here is an example of how to use "stress" to simulate CPU stress on a Linux syst
 
 Install stress:
 
-arduino
+```arduino
 sudo apt-get install stress
+```
 
 Run stress with the desired CPU load:
 
-css
+```css
 stress --cpu 4
+```
 
 This command will simulate 4 threads of CPU load on the system. You can adjust the number of threads to simulate a higher or lower CPU load.
 
@@ -167,11 +170,13 @@ Monitor system resources:
 
 While running "stress", you can monitor the system resources using tools like "top" or "htop". This will show the CPU usage, as well as other system resources like memory and I/O.
 
-css
-Copy code
+```css
 top
-Copy code
+```
+
+```
 htop
+```
 
 By simulating CPU stress with "stress", you can demonstrate the importance of CPU-related scripts in managing system resources and preventing system overload.
 
