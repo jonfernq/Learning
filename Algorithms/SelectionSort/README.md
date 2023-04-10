@@ -10,7 +10,7 @@
 - [Comparisons](#section4)
 - [Complexity Analysis](#section4) 
 - [References](#section4) 
-- 
+
 ---
 ### Specification
 
