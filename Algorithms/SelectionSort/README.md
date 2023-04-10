@@ -1,5 +1,14 @@
 ## Selection Sort 
 
+### Table of Contents
+
+* [Specification](#section1)
+* [Example](#section2)
+* [Example: Separate Arrays](#section3)
+* [Example Code With Print Statements](#section4)
+
+### Specification
+
 Selection sort is a simple sorting algorithm that works by repeatedly finding the minimum element 
 from the unsorted part of the array and putting it at the beginning of the array.
 
@@ -11,6 +20,7 @@ and swaps it with the first element of the unsorted part, thereby expanding the 
 The time complexity of the selection sort algorithm is O(n^2), where n is the number of elements in the array. Selection sort is not very efficient for large arrays, but it is simple and easy to implement.
 
 ---
+### Example 
 
 > Could you provide an example of sorting an actual array with selection sort, performing the operations mentioned above step-by-step ? 
 
@@ -59,6 +69,8 @@ Step 5:
 As you can see, the selection sort algorithm first finds the minimum element in the unsorted part of the array and swaps it with the first element of the unsorted part. It then repeats this process for the remaining unsorted part of the array until the entire array is sorted in ascending order.
 
 ---
+### Example: Separate Arrays 
+
 > Here's an example of how the selection sort algorithm can be applied to two separate arrays, one for the sorted part and the other for the unsorted part:
 
 ```python
@@ -135,6 +147,8 @@ sorted_array = [11, 12, 22,
 ```
 
 ---
+### Example Code With Print Statements 
+
 > Here's the same example code with print statements added to show the step-by-step operations:
 
 ```python
