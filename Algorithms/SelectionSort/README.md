@@ -24,15 +24,15 @@ Let's say we have the following unsorted array of integers:
 
 To sort this array using selection sort, we would follow these steps:
 
-Set the first element (64) as the minimum element.
+1. Set the first element (64) as the minimum element.
 
-Compare the minimum element with the next element (25). Since 25 is less than 64, set it as the new minimum element.
+2. Compare the minimum element with the next element (25). Since 25 is less than 64, set it as the new minimum element.
 
-Continue comparing the minimum element (25) with the remaining elements of the array. If a smaller element is found, set it as the new minimum element.
+3. Continue comparing the minimum element (25) with the remaining elements of the array. If a smaller element is found, set it as the new minimum element.
 
-Once all the elements have been compared, swap the minimum element (11) with the first element of the unsorted part of the array (64).
+4. Once all the elements have been compared, swap the minimum element (11) with the first element of the unsorted part of the array (64).
 
-Repeat the above steps for the remaining unsorted part of the array (excluding the first element).
+5. Repeat the above steps for the remaining unsorted part of the array (excluding the first element).
 
 Here are the step-by-step operations to sort the above array using selection sort:
 
@@ -82,7 +82,9 @@ while len(unsorted_array) > 0:
 print(sorted_array)
 ```
 
-In this implementation, we start with an unsorted array and an empty sorted array. We repeatedly find the minimum element in the unsorted array and remove it from the unsorted array, adding it to the sorted array. We repeat this process until the unsorted array is empty.
+In this implementation, we start with an unsorted array and an empty sorted array. 
+We repeatedly find the minimum element in the unsorted array and remove it from the unsorted array, 
+adding it to the sorted array. We repeat this process until the unsorted array is empty.
 
 Here are the step-by-step operations to sort the above array using selection sort:
 
@@ -133,7 +135,7 @@ sorted_array = [11, 12, 22,
 ```
 
 ---
-> Sure, here's the same example code with print statements added to show the step-by-step operations:
+> Here's the same example code with print statements added to show the step-by-step operations:
 
 ```python
 # unsorted array
