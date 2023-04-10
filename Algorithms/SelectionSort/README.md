@@ -2,15 +2,13 @@
 
 ### Table of Contents
 
-* [Specification](#section1)
-* 
-* [Example](#section2)
-* [Example: Separate Arrays](#section3)
-* [Example Code With Print Statements](#section4)
-
-* [Advantages & Disadvantages](#section4)
-* [Comparisons](#section4)
-* [Complexity Analysis](#section4) 
+- [Specification](#section1) 
+- [Example](#section2)
+- [Example: Separate Arrays](#section3)
+- [Example Code With Print Statements](#section4)
+- [Advantages & Disadvantages](#section4)
+- [Comparisons](#section4)
+- [Complexity Analysis](#section4) 
 
 ---
 ### Specification
