@@ -3,10 +3,16 @@
 ### Table of Contents
 
 * [Specification](#section1)
+* 
 * [Example](#section2)
 * [Example: Separate Arrays](#section3)
 * [Example Code With Print Statements](#section4)
 
+* [Advantages & Disadvantages](#section4)
+* [Comparisons](#section4)
+* [Complexity Analysis](#section4) 
+
+---
 ### Specification
 
 Selection sort is a simple sorting algorithm that works by repeatedly finding the minimum element 
@@ -200,6 +206,69 @@ sorted array:  [11, 12, 22, 25, 64]
 final sorted array:  [11, 12, 22, 25, 64]
 ```
 Each iteration of the while loop finds the minimum element in the unsorted array, removes it, and adds it to the sorted array. The current state of the arrays is printed after each iteration to show the step-by-step operations of the selection sort algorithm.
+
+---
+### Advantages & Disadvantages 
+
+> What are the advantages and disadvantages of selection sort ? 
+
+Selection sort has some advantages and disadvantages as follows:
+
+**Advantages:**
+
+1. **Simplicity:** Selection sort is a simple algorithm to understand and implement, requiring only basic programming knowledge.
+
+2. **In-place sorting:** Selection sort operates on the original input array and doesn't require any additional space, making it an in-place sorting algorithm.
+
+3. **No recursion:** Selection sort is a non-recursive sorting algorithm, which means it doesn't require recursion to sort the input array.
+
+**Disadvantages:**
+
+1. **Time complexity:** Selection sort has a time complexity of O(n^2) in the worst case, which means it is inefficient for large arrays.
+
+2. **Slow for nearly sorted arrays:** Selection sort's performance is not optimized for nearly sorted arrays because it still has to make n-1 comparisons even if the input array is already nearly sorted.
+
+3. **Unstable:** Selection sort is an unstable sorting algorithm, meaning that the relative order of equal elements in the input array may not be preserved in the sorted array.
+
+Overall, while selection sort is a simple and easy-to-implement algorithm, its time complexity and lack of optimization for nearly sorted arrays make it less efficient than other sorting algorithms for large input sizes.
+
+---
+### Comparisons 
+
+> Please compare selection sort to other algorithms. 
+
+Selection sort is one of the simpler sorting algorithms, but it has some limitations compared to other algorithms.
+
+Here are some comparisons between selection sort and other popular sorting algorithms:
+
+- **Insertion sort:** Both selection sort and insertion sort have time complexity of O(n^2) in the worst case. However, insertion sort can perform better than selection sort on nearly sorted or small input arrays because it makes fewer comparisons and swaps.
+- **Bubble sort:** Bubble sort is similar to selection sort in that they both have a time complexity of O(n^2) in the worst case. However, bubble sort makes more comparisons and swaps than selection sort, so it is generally less efficient.
+- **Merge sort:** Merge sort has a time complexity of O(n log n) in the worst case, which is much better than selection sort for large input sizes. Merge sort is also a stable sorting algorithm, which means that the relative order of equal elements is preserved in the sorted array. However, merge sort requires additional space for merging subarrays, which makes it less space-efficient than selection sort.
+- **Quick sort:** Quick sort has an average time complexity of O(n log n), which makes it faster than selection sort for large input sizes. However, its worst-case time complexity is O(n^2), which can occur if the pivot element is chosen poorly. Quick sort is also not a stable sorting algorithm, so it may not preserve the relative order of equal elements.
+
+In summary, selection sort is a simple and easy-to-implement algorithm, but it has limitations in terms of time complexity and optimization for nearly sorted arrays. Other sorting algorithms such as insertion sort, merge sort, and quick sort offer better time complexity and stability, but may be more complex to implement.
+
+---
+### Complexity Analysis
+
+> Could you provide a full time and space complexity analysis for selection sort? 
+
+- **Time Complexity:**
+In selection sort, we repeatedly find the minimum element from the unsorted part of the array and swap it with the element at the beginning of the unsorted part. The algorithm performs n-1 comparisons to find the minimum element in the first pass, n-2 comparisons to find the minimum element in the second pass, and so on. Therefore, the total number of comparisons is:
+
+```
+(n-1) + (n-2) + ... + 2 + 1 = n(n-1)/2
+```
+
+This gives us a time complexity of O(n^2) in the worst case, as the algorithm needs to perform n^2/2 comparisons to sort the array.
+
+- **Space Complexity:**
+Selection sort operates on the original input array and doesn't require any additional space. Therefore, the space complexity of selection sort is O(1), which means it is an in-place sorting algorithm.
+
+Overall, selection sort has a time complexity of O(n^2) and a space complexity of O(1). It is a simple algorithm to understand and implement, but it is not optimized for nearly sorted arrays and can be slow for large input sizes. However, it is a good algorithm to use for small or already mostly sorted arrays because it requires very little additional memory.
+
+
+
 
 
 
