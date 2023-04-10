@@ -9,7 +9,8 @@
 - [Advantages & Disadvantages](#section4)
 - [Comparisons](#section4)
 - [Complexity Analysis](#section4) 
-
+- [References](#section4) 
+- 
 ---
 ### Specification
 
@@ -264,6 +265,19 @@ This gives us a time complexity of O(n^2) in the worst case, as the algorithm ne
 Selection sort operates on the original input array and doesn't require any additional space. Therefore, the space complexity of selection sort is O(1), which means it is an in-place sorting algorithm.
 
 Overall, selection sort has a time complexity of O(n^2) and a space complexity of O(1). It is a simple algorithm to understand and implement, but it is not optimized for nearly sorted arrays and can be slow for large input sizes. However, it is a good algorithm to use for small or already mostly sorted arrays because it requires very little additional memory.
+
+--- 
+### References
+
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). *Introduction to Algorithms (3rd ed.).* MIT Press.
+
+Knuth, D. E. (1997). *The Art of Computer Programming, Volume 1: Fundamental Algorithms (3rd ed.).* Addison-Wesley Professional.
+
+Sedgewick, R., & Wayne, K. (2011). *Algorithms (4th ed.).* Addison-Wesley Professional.
+
+Wikipedia contributors. (2021, March 15). *Selection sort.* In Wikipedia, The Free Encyclopedia. Retrieved 14:59, April 10, 2023, from https://en.wikipedia.org/wiki/Selection_sort.
+
+
 
 
 
