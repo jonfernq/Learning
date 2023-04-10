@@ -11,6 +11,7 @@
 - [Complexity Analysis](#section7) 
 - [References](#section8) 
 - [Quiz: Short Answer Questions](#section9)
+- [Quiz: Multiple Choice ](#section10) 
 
 ---
 ### Specification
@@ -323,11 +324,83 @@ Answer: Selection sort is not optimized for nearly sorted arrays, and it can be 
 
 6. Disadvantages of selection sort include its lack of optimization for nearly sorted arrays, its potential slowness for large input sizes, and its worst-case time complexity of O(n^2).
 
+---
+### Quiz: Multiple Choice 
 
+> Could you also provide these questions (and more difficult ones) in multiple choice format  ?
 
+Here are some multiple choice questions (and answers) related to selection sort:
 
+```
+1. What is selection sort?
 
+a) A sorting algorithm that divides the input array into two parts and repeatedly finds the minimum element from the unsorted part, moving it to the beginning of the unsorted part.
+b) A sorting algorithm that divides the input array into three parts and repeatedly finds the maximum element from the unsorted part, moving it to the end of the unsorted part.
+c) A sorting algorithm that randomly shuffles the input array until it is sorted.
+d) A sorting algorithm that compares adjacent elements and swaps them if they are in the wrong order.
 
+Answer: a
 
+2. What is the time complexity of selection sort?
 
+a) O(1)
+b) O(n)
+c) O(nlogn)
+d) O(n^2)
 
+Answer: d
+
+3. What is the space complexity of selection sort?
+
+a) O(1)
+b) O(n)
+c) O(nlogn)
+d) O(n^2)
+
+Answer: a
+
+4. What are the advantages of selection sort?
+
+a) It is simple to understand and implement.
+b) It is an in-place sorting algorithm.
+c) It is good to use for small or already mostly sorted arrays.
+d) All of the above.
+
+Answer: d
+
+5. What are the disadvantages of selection sort?
+
+a) It is not optimized for nearly sorted arrays.
+b) It can be slow for large input sizes.
+c) It has a worst-case time complexity of O(n^2).
+d) All of the above.
+
+Answer: d
+
+6. Which of the following algorithms is NOT a comparison-based sorting algorithm?
+
+a) Insertion sort
+b) Bubble sort
+c) Radix sort
+d) Merge sort
+
+Answer: c
+
+7. Which of the following algorithms has the best average-case time complexity for sorting an array of n elements?
+
+a) Bubble sort
+b) Selection sort
+c) Insertion sort
+d) Merge sort
+
+Answer: d
+
+8. Which of the following sorting algorithms is best suited for sorting a large, unsorted array?
+
+a) Insertion sort
+b) Selection sort
+c) Quick sort
+d) Merge sort
+
+Answer: c or d (either one could be argued, but typically quick sort is faster than merge sort for large input sizes).
+```
