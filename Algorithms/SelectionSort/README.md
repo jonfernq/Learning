@@ -6,10 +6,11 @@
 - [Example](#section2)
 - [Example: Separate Arrays](#section3)
 - [Example Code With Print Statements](#section4)
-- [Advantages & Disadvantages](#section4)
-- [Comparisons](#section4)
-- [Complexity Analysis](#section4) 
-- [References](#section4) 
+- [Advantages & Disadvantages](#section5)
+- [Comparisons](#section6)
+- [Complexity Analysis](#section7) 
+- [References](#section8) 
+- [Quiz: Short Answer Questions](#section9)
 
 ---
 ### Specification
@@ -276,6 +277,52 @@ Knuth, D. E. (1997). *The Art of Computer Programming, Volume 1: Fundamental Alg
 Sedgewick, R., & Wayne, K. (2011). *Algorithms (4th ed.).* Addison-Wesley Professional.
 
 Wikipedia contributors. (2021, March 15). *Selection sort.* In Wikipedia, The Free Encyclopedia. Retrieved 14:59, April 10, 2023, from https://en.wikipedia.org/wiki/Selection_sort.
+
+---
+### Quiz: Short Answer Questions
+
+> Could you provide some short answer questions (and answer key) for the material on selection sort that you provided above? 
+
+Here are some short answer questions (and answer key) related to the material on selection sort:
+
+1. What is selection sort?
+
+Answer: Selection sort is a simple sorting algorithm that works by repeatedly finding the minimum element from an unsorted part of an array and moving it to the beginning of the unsorted part.
+
+2. How does selection sort work?
+
+Answer: Selection sort divides the input array into two parts: the sorted part and the unsorted part. It repeatedly finds the minimum element from the unsorted part and moves it to the beginning of the unsorted part, expanding the sorted part of the array until it includes all elements.
+
+3. What is the time complexity of selection sort?
+
+Answer: The time complexity of selection sort is O(n^2), where n is the number of elements in the array.
+
+4. What is the space complexity of selection sort?
+
+Answer: The space complexity of selection sort is O(1), as it operates on the original input array and doesn't require any additional space.
+
+5. What are the advantages of selection sort?
+
+Answer: Selection sort is simple to understand and implement, and it is an in-place sorting algorithm, meaning it doesn't require additional memory. It is also good to use for small or already mostly sorted arrays.
+
+6. What are the disadvantages of selection sort?
+
+Answer: Selection sort is not optimized for nearly sorted arrays, and it can be slow for large input sizes. It also has a worst-case time complexity of O(n^2), which can be a disadvantage for very large input sizes.
+
+**Answer key:**
+
+1. Selection sort is a simple sorting algorithm.
+
+2. Selection sort divides the input array into two parts and repeatedly finds the minimum element from the unsorted part, moving it to the beginning of the unsorted part.
+
+3. The time complexity of selection sort is O(n^2).
+
+4. The space complexity of selection sort is O(1).
+
+5. Advantages of selection sort include its simplicity, in-place sorting, and suitability for small or mostly sorted arrays.
+
+6. Disadvantages of selection sort include its lack of optimization for nearly sorted arrays, its potential slowness for large input sizes, and its worst-case time complexity of O(n^2).
+
 
 
 
