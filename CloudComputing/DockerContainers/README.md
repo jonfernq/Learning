@@ -1,3 +1,4 @@
+## Docker Containers 
 
 > In cloud computing and using a cloud platform for computational tasks, there seem to be two major - **alternatives:** Virtual Machines (VMs) and Docker Containers? Is this an accurate assessment? 
 
