@@ -2,6 +2,8 @@
 
 COBOL Learning Material
 
+- [Getting Started](https://github.com/jonfernq/Learning/blob/main/COBOL/GettingStarted/README.md) 
+
 - [COBOL programming - tutorials, lectures, exercises, examples](http://www.csis.ul.ie/cobol/)
 - [GnuCOBOL Manual](https://gnucobol.sourceforge.io/)
 - [OpenCOBOL Manual](https://gnucobol.sourceforge.io/guides/OpenCOBOL%20Programmers%20Guide.pdf)
