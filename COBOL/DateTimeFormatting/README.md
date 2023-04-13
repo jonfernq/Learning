@@ -59,3 +59,23 @@ https://github.com/Apress/beg-cobol-for-programmers/blob/master/978-1-4302-6253-
 
 ![cobol___](https://user-images.githubusercontent.com/68504324/231672213-b8c12a99-08d5-4b48-b7c8-828a3dc5e0ff.jpg)
 
+---
+> What option in the GNUCOBOL config file allows the programmer to omit the numbers in columns one through 6 ?
+
+In GNUCOBOL, the option that allows the programmer to omit the numbers in columns one through six is the --free compiler option. When this option is specified, GNUCOBOL treats the source code as free-form and ignores the requirement for line numbers in columns one through six. This allows the programmer to write COBOL code without the need for line numbers in the leftmost six columns, providing more flexibility in formatting and layout.
+
+To add the -free option to the cobc command line for compiling a COBOL source file named datetime.cob, you can modify the command as follows:
+
+```c
+cobc -x -o datetime --free datetime.cob
+```
+
+The --free option tells the GNUCOBOL compiler to expect free-format source code instead of the default fixed-format source code. By using this option, you can write COBOL programs without adhering to the traditional fixed-format layout with columns and can use free-format layout, which allows for more flexible coding styles. Note that --free is a long option, and you can also use its short option -free in the same way, like this:
+
+```c
+cobc -x -o datetime -free datetime.cob
+```
+
+Both --free and -free are equivalent and can be used interchangeably.
+
+
