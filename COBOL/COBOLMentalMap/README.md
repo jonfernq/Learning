@@ -1,13 +1,13 @@
 ## COBOL Mental Map
 
-Based on 'COBOL for the 21st Century' 11th Edition (2005)
+### Based on 'COBOL for the 21st Century' 11th Edition (2005)
 
-Table of Contents (Short)  
+### Table of Contents (Short)  
 
 Unit I: The Basics
-An Introduction to Structured Program Design in COBOL
-The IDENTIFICATION and ENVIRONMENT DIVISIONS
-Coding Complete COBOL Programs: The PROCEDURE DIVISION
+- An Introduction to Structured Program Design in COBOL
+- The IDENTIFICATION and ENVIRONMENT DIVISIONS
+- Coding Complete COBOL Programs: The PROCEDURE DIVISION
 
 Unit II: Designing Structured Programs
 Designing and Debugging Batch and Interactive COBOL Programs
@@ -33,12 +33,10 @@ Appendices
 A: COBOL Character Set and reserved Words
 B: Differences Among the COBOL Standards
 C: Glossary
-
 Index
 
-
-
-Table of Contents (Long)  
+---
+### Table of Contents (Long)  
 
 I. THE BASICS
 1. An Introduction to Structured Program Design in COBOL
