@@ -8,9 +8,10 @@ COBOL Learning Material
 - [GnuCOBOL Manual](https://gnucobol.sourceforge.io/)
 - [OpenCOBOL Manual](https://gnucobol.sourceforge.io/guides/OpenCOBOL%20Programmers%20Guide.pdf)
 
-### COBOL Verbs 
+### COBOL Verbs & Features
 
 - [Inspect](https://github.com/jonfernq/COBOL/tree/main/COBOLInspect)
+- [User-Defined Class Names]() 
 
 ### Recursion & COBOL:
 
