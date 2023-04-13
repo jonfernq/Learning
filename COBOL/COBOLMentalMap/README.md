@@ -180,128 +180,128 @@ I. THE BASICS
 - 3.3.5.5. Summary of Record Description Entrie- - - - - - - - - s
 
 3.4. TYPES OF DATA
-3.4.1. Variable and Constant Data
-3.4.2. Types of Constants
-3.4.2.1. Numeric Literal
-3.4.2.2. Interactive Processing
-3.4.2.3. Nonnumeric Literal
-3.4.2.4. Figurative Constant
+- 3.4.1. Variable and Constant Data
+- 3.4.2. Types of Constants
+- 3.4.2.1. Numeric Literal
+- 3.4.2.2. Interactive Processing
+- 3.4.2.3. Nonnumeric Literal
+- 3.4.2.4. Figurative Constant
 
 3.5. THE WORKING-STORAGE SECTION OF THE DATA DIVISION
-3.5.1. Introduction
-3.5.2. Uses of WORKING-STORAGE
-3.5.3. VALUE Clauses for WORKING-STORAGE Entries
-3.5.3.1. The Purpose of VALUE Clauses
-3.5.3.2. Literals and Figurative Constants in VALUE Clauses
-3.5.3.3. Continuation of Nonnumeric Literals in VALUE Clauses from One Line to the Next
-3.5.4. The DATA DIVISION and Interactive Processing
+- 3.5.1. Introduction
+- 3.5.2. Uses of WORKING-STORAGE
+- 3.5.3. VALUE Clauses for WORKING-STORAGE Entries
+- 3.5.3.1. The Purpose of VALUE Clauses
+- 3.5.3.2. Literals and Figurative Constants in VALUE Clauses
+- 3.5.3.3. Continuation of Nonnumeric Literals in VALUE Clauses from One Line to the Next
+- 3.5.4. The DATA DIVISION and Interactive Processing
 
-3.6. CHAPTER SUMMARY
-3.7. KEY TERMS
-3.8. CHAPTER SELF-TEST
-3.9. PRACTICE PROGRAM 1: BATCH PROCESSING
-3.10. PRACTICE PROGRAM 2: INTERACTIVE PROCESSING
-3.11. REVIEW QUESTIONS
-3.12. DEBUGGING EXERCISES
-3.13. PROGRAMMING ASSIGNMENTS
+- 3.6. CHAPTER SUMMARY
+- 3.7. KEY TERMS
+- 3.8. CHAPTER SELF-TEST
+- 3.9. PRACTICE PROGRAM 1: BATCH PROCESSING
+- 3.10. PRACTICE PROGRAM 2: INTERACTIVE PROCESSING
+- 3.11. REVIEW QUESTIONS
+- 3.12. DEBUGGING EXERCISES
+- 3.13. PROGRAMMING ASSIGNMENTS
 
 
 4. Coding Complete COBOL Programs: The PROCEDURE DIVISION
-4.1. A REVIEW OF THE FIRST THREE DIVISIONS
+- 4.1. A REVIEW OF THE FIRST THREE DIVISIONS
 
-4.2. THE FORMAT OF THE PROCEDURE DIVISION
-4.2.1. Paragraphs that Serve as Modules
-4.2.1.1. Defining Paragraphs
-4.2.1.2. Rules for Forming Paragraph-Names
-4.2.2. Statements within Paragraphs
-4.2.3. The Sequence of Instructions in a Program
-4.2.4. The Top-Down Approach for Coding Paragraphs
+- 4.2. THE FORMAT OF THE PROCEDURE DIVISION
+- 4.2.1. Paragraphs that Serve as Modules
+- 4.2.1.1. Defining Paragraphs
+- 4.2.1.2. Rules for Forming Paragraph-Names
+- 4.2.2. Statements within Paragraphs
+- 4.2.3. The Sequence of Instructions in a Program
+- 4.2.4. The Top-Down Approach for Coding Paragraphs
 
 4.3. Statements Typically Coded in the Main Module of Batch Programs
-4.3.1. OPEN Statement
-4.3.1.1. The Instruction Format: A Review
-4.3.1.2. The Purpose of the OPEN Statement
-4.3.2. PERFORM UNTIL ... END-PERFORM Statement:A Structured Programming Technique
-4.3.3. READ Statement
-4.3.4. More on PERFORM Statements
-4.3.4.1. The Simple PERFORM
-4.3.4.2. A Summary of PERFORMs
-4.3.5. End-of-Job Processing: The CLOSE and STOP RUN Statements
-4.3.5.1. CLOSE Statement
-4.3.5.2. STOP RUN Statement
-4.3.5.3. SELF-TEST
+- 4.3.1. OPEN Statement
+- 4.3.1.1. The Instruction Format: A Review
+- 4.3.1.2. The Purpose of the OPEN Statement
+- 4.3.2. PERFORM UNTIL ... END-PERFORM Statement:A Structured Programming Technique
+- 4.3.3. READ Statement
+- 4.3.4. More on PERFORM Statements
+- 4.3.4.1. The Simple PERFORM
+- 4.3.4.2. A Summary of PERFORMs
+- 4.3.5. End-of-Job Processing: The CLOSE and STOP RUN Statements
+- 4.3.5.1. CLOSE Statement
+- 4.3.5.2. STOP RUN Statement
+- 4.3.5.3. SELF-TEST
 
 4.4. STATEMENTS TYPICALLY CODED IN FULLY INTERACTIVE PROGRAMS
 
-4.5. STATEMENTS TYPICALLY CODED FOR PROCESSING BATCH FILES
-4.5.1. Simplified MOVE Statement
-4.5.2. WRITE Statement
+- 4.5. STATEMENTS TYPICALLY CODED FOR PROCESSING BATCH FILES
+- 4.5.1. Simplified MOVE Statement
+- 4.5.2. WRITE Statement
 
-4.6. LOOKING AHEAD
-4.7. PROCESS-AND-CREATE-OUTPUT MODULE FOR INTERACTIVE PROGRAMS
-4.8. COMPARING BATCH AND INTERACTIVE PROGRAMS
-4.9. REVIEW OF COMMENTS IN COBOL
-4.10. Y2K-COMPLIANT DATE FIELDS
-4.11. CHAPTER SUMMARY
-4.12. KEY TERMS
-4.13. CHAPTER SELF-TEST
-4.14. PRACTICE PROGRAM
-4.15. REVIEW QUESTIONS
-4.16. DEBUGGING EXERCISES
-4.17. PROGRAMMING ASSIGNMENTS
+- 4.6. LOOKING AHEAD
+- 4.7. PROCESS-AND-CREATE-OUTPUT MODULE FOR INTERACTIVE PROGRAMS
+- 4.8. COMPARING BATCH AND INTERACTIVE PROGRAMS
+- 4.9. REVIEW OF COMMENTS IN COBOL
+- 4.10. Y2K-COMPLIANT DATE FIELDS
+- 4.11. CHAPTER SUMMARY
+- 4.12. KEY TERMS
+- 4.13. CHAPTER SELF-TEST
+- 4.14. PRACTICE PROGRAM
+- 4.15. REVIEW QUESTIONS
+- 4.16. DEBUGGING EXERCISES
+- 4.17. PROGRAMMING ASSIGNMENTS
 
 II. DESIGNING STRUCTURED PROGRAMS
-5. Designing and Debugging Batch and Interactive COBOL Programs
+- 5. Designing and Debugging Batch and Interactive COBOL Programs
 
 5.1. WHAT MAKES A WELL-DESIGNED PROGRAM?
-5.1.1. Program Logic Should Be Mapped Out Using a Planning Tool
-5.1.2. Programs Should Be Structured
-5.1.3. Programs Should Use a Top-Down Approach
-5.1.4. Programs Should Be Modular
+- 5.1.1. Program Logic Should Be Mapped Out Using a Planning Tool
+- 5.1.2. Programs Should Be Structured
+- 5.1.3. Programs Should Use a Top-Down Approach
+- 5.1.4. Programs Should Be Modular
 
 5.2. DESIGNING PROGRAMS BEFORE CODING THEM
-5.2.1. How Programs Are Designed
-5.2.2. Pseudocode
-5.2.3. The Four Logical Control Structures
-5.2.3.1. Sequence
-5.2.3.2. Selection
-5.2.3.3. Iteration
-5.2.3.3.1. Format of a PERFORM UNTIL ... END-PERFORM Loop or Iteration
-5.2.3.3.2. MAIN-MODULE
-5.2.3.3.3. PARAGRAPH −1
-5.2.3.3.4. A Simple PERFORM
-5.2.3.4. Case Structure
+- 5.2.1. How Programs Are Designed
+- 5.2.2. Pseudocode
+- 5.2.3. The Four Logical Control Structures
+- 5.2.3.1. Sequence
+- 5.2.3.2. Selection
+- 5.2.3.3. Iteration
+- 5.2.3.3.1. Format of a PERFORM UNTIL ... END-PERFORM Loop or Iteration
+- 5.2.3.3.2. MAIN-MODULE
+- 5.2.3.3.3. PARAGRAPH −1
+- 5.2.3.3.4. A Simple PERFORM
+- 5.2.3.4. Case Structure
 
 5.3. ILLUSTRATING LOGICAL CONTROL STRUCTURES USING PSEUDOCODE
-5.3.1. Example 1
-5.3.2. Example 2
+- 5.3.1. Example 1
+- 5.3.2. Example 2
 
-5.4. HIERARCHY CHARTS FOR TOP-DOWN PROGRAMMING
-5.5. NAMING MODULES OR PARAGRAPHS
-5.6. MODULARIZING PROGRAMS
+- 5.4. HIERARCHY CHARTS FOR TOP-DOWN PROGRAMMING
+- 5.5. NAMING MODULES OR PARAGRAPHS
+- 5.6. MODULARIZING PROGRAMS
 
 5.7. A REVIEW OF TWO CODING GUIDELINES
-5.7.1. Code Each Clause on a Separate Line
-5.7.2. Indent Clauses within a Statement
+- 5.7.1. Code Each Clause on a Separate Line
+- 5.7.2. Indent Clauses within a Statement
 
 5.8. MAKING INTERACTIVE PROGRAMS MORE USER-FRIENDLY
 
 5.9. HOW TO BEGIN CODING, COMPILING, AND DEBUGGING PROGRAMS
-5.9.1. Syntax Errors
-5.9.2. Logic Errors
-5.9.2.1. Designing Test Data That Is Comprehensive and Realistic
-5.9.2.2. Checking for Logic Errors Using the DISPLAY Statement
-5.9.2.2.1. Capturing Screen Displays in Interactive Processing
-5.9.2.2.2. Common Error Notations Using Mainframe Compilers
-5.9.3. The Use of Periods in the PROCEDURE DIVISION
+- 5.9.1. Syntax Errors
+- 5.9.2. Logic Errors
+- 5.9.2.1. Designing Test Data That Is Comprehensive and Realistic
+- 5.9.2.2. Checking for Logic Errors Using the DISPLAY Statement
+- 5.9.2.2.1. Capturing Screen Displays in Interactive Processing
+- 5.9.2.2.2. Common Error Notations Using Mainframe Compilers
+- 5.9.3. The Use of Periods in the PROCEDURE DIVISION
 
-5.10. CHAPTER SUMMARY
-5.11. KEY TERMS
-5.12. CHAPTER SELF-TEST
-5.13. PRACTICE PROGRAM 1
-5.14. PRACTICE PROGRAM 2
-5.15. REVIEW QUESTIONS
-5.16. PROGRAMMING ASSIGNMENTS
+- 5.10. CHAPTER SUMMARY
+- 5.11. KEY TERMS
+- 5.12. CHAPTER SELF-TEST
+- 5.13. PRACTICE PROGRAM 1
+- 5.14. PRACTICE PROGRAM 2
+- 5.15. REVIEW QUESTIONS 
+- 5.16. PROGRAMMING ASSIGNMENTS 
 
 
 6. Moving Data, Printing Information, and Displaying Output Interactively
