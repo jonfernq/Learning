@@ -11,8 +11,8 @@ COBOL Learning Material
 ### COBOL Verbs & Features
 
 - [Inspect](https://github.com/jonfernq/COBOL/tree/main/COBOLInspect)
-- [User-Defined Class Names]() 
-- [88-Level Condition Names]() 
+- [User-Defined Class Names](https://github.com/jonfernq/Learning/blob/main/COBOL/UserDefinedClassNames/README.md) 
+- [88-Level Condition Names](https://github.com/jonfernq/Learning/blob/main/COBOL/88LevelConditionNames/README.md) 
 
 ### Recursion & COBOL:
 
