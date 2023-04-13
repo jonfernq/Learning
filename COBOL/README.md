@@ -3,7 +3,7 @@
 COBOL Learning Material
 
 - [Getting Started](https://github.com/jonfernq/Learning/blob/main/COBOL/GettingStarted/README.md) 
-- [Mental Map]()
+- [Mental Map](https://github.com/jonfernq/Learning/blob/main/COBOL/COBOLMentalMap/README.md)
 
 - [COBOL programming - tutorials, lectures, exercises, examples](http://www.csis.ul.ie/cobol/)
 - [GnuCOBOL Manual](https://gnucobol.sourceforge.io/)
