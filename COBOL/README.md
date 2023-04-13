@@ -1,13 +1,9 @@
 ## Learning COBOL
 
-COBOL Learning Material
+### COBOL Learning Material
 
 - [Getting Started](https://github.com/jonfernq/Learning/blob/main/COBOL/GettingStarted/README.md) 
 - [Mental Map](https://github.com/jonfernq/Learning/blob/main/COBOL/COBOLMentalMap/README.md)
-
-- [COBOL programming - tutorials, lectures, exercises, examples](http://www.csis.ul.ie/cobol/)
-- [GnuCOBOL Manual](https://gnucobol.sourceforge.io/)
-- [OpenCOBOL Manual](https://gnucobol.sourceforge.io/guides/OpenCOBOL%20Programmers%20Guide.pdf)
 
 ### COBOL Verbs & Features
 
@@ -18,3 +14,10 @@ COBOL Learning Material
 ### Recursion & COBOL:
 
 - [Explicit Stack Management](https://github.com/jonfernq/COBOL/blob/main/Recursion/ExplicitStackManagement.md)
+
+### COBOL Resources 
+
+- [COBOL programming - tutorials, lectures, exercises, examples](http://www.csis.ul.ie/cobol/)
+- [GnuCOBOL Manual](https://gnucobol.sourceforge.io/)
+- [OpenCOBOL Manual](https://gnucobol.sourceforge.io/guides/OpenCOBOL%20Programmers%20Guide.pdf)
+
