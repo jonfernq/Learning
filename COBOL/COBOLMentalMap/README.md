@@ -10,42 +10,42 @@ Unit I: The Basics
 - Coding Complete COBOL Programs: The PROCEDURE DIVISION
 
 Unit II: Designing Structured Programs
-Designing and Debugging Batch and Interactive COBOL Programs
-Computing in COBOL: The Arithmetic Verbs and Intrinsic Functions
-Decision Making Using the IF and EVALUATE Statements
-Iteration: Beyond the Basic PERFORM
+- Designing and Debugging Batch and Interactive COBOL Programs
+- Computing in COBOL: The Arithmetic Verbs and Intrinsic Functions
+- Decision Making Using the IF and EVALUATE Statements
+- Iteration: Beyond the Basic PERFORM
 
 Unit III: Writing High-Level COBOL Programs
-Control Break Processing
-Data Validation
-Array Processing and Table Handling
+- Control Break Processing
+- Data Validation
+- Array Processing and Table Handling
 
 Unit IV: File Maintenance
-Sequential File Processing
-Sorting and Merging
-Indexed and Relative File Processing
+- Sequential File Processing
+- Sorting and Merging
+- Indexed and Relative File Processing
 
 Unit V: Advanced Topics
-Improving Program Performance Using the COPY, CALL, and Other Statements
-The Report Writer Module
+- Improving Program Performance Using the COPY, CALL, and Other Statements
+- The Report Writer Module
 
 Appendices
-A: COBOL Character Set and reserved Words
-B: Differences Among the COBOL Standards
-C: Glossary
-Index
+- A: COBOL Character Set and reserved Words
+- B: Differences Among the COBOL Standards
+- C: Glossary
+- Index
 
 ---
 ### Table of Contents (Long)  
 
 I. THE BASICS
-1. An Introduction to Structured Program Design in COBOL
+- 1. An Introduction to Structured Program Design in COBOL
 
 1.1. COMPUTER PROGRAMMING: AN OVERVIEW
-1.1.1. Types of Computer Programs
-1.1.2. Applications Programs
-1.1.3. Machine Language Programs
-1.1.4. Symbolic Programs
+- 1.1.1. Types of Computer Programs
+- 1.1.2. Applications Programs
+- 1.1.3. Machine Language Programs
+- 1.1.4. Symbolic Programs
 
 1.2. THE APPLICATIONS PROGRAM DEVELOPMENT PROCESS
 1.2.1. Determine Program Specifications
