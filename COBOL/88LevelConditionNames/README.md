@@ -38,6 +38,8 @@ Begin.
 
 https://github.com/Apress/beg-cobol-for-programmers/blob/master/978-1-4302-6253-4_Coughlan_Ch05/Listing5-2.cbl
 
+![88levels_](https://user-images.githubusercontent.com/68504324/231712850-1b79ade1-b277-4afb-9b08-c08fbf2bea80.jpg)
+
 In COBOL, the construct shown in the example is called "88-level" or "Level-88". It is used to define condition names, which are boolean flags that can be used to represent and test conditions or states in the data.
 
 In the example you provided, the "88-level" condition names are used to define different values for the "CityCode" data item. Each condition name represents a specific value or range of values for the "CityCode" data item, based on the values specified in the "VALUE" clause.
