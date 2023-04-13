@@ -44,14 +44,15 @@ In the example you provided, the "88-level" condition names are used to define d
 
 For example:
 
-"CityIsDublin" is defined as a condition name that represents the value "1" for "CityCode".
-"CityIsLimerick" is defined as a condition name that represents the value "2" for "CityCode".
-"CityIsCork" is defined as a condition name that represents the value "3" for "CityCode".
-"CityIsGalway" is defined as a condition name that represents the value "4" for "CityCode".
-"CityIsSligo" is defined as a condition name that represents the value "5" for "CityCode".
-"CityIsWaterford" is defined as a condition name that represents the value "6" for "CityCode".
-"UniversityCity" is defined as a condition name that represents a range of values from "1" to "4" (inclusive) for "CityCode".
-"CityCodeNotValid" is defined as a condition name that represents the values "0", "7", "8", or "9" for "CityCode".
+- "CityIsDublin" is defined as a condition name that represents the value "1" for "CityCode".
+- "CityIsLimerick" is defined as a condition name that represents the value "2" for "CityCode".
+- "CityIsCork" is defined as a condition name that represents the value "3" for "CityCode".
+- "CityIsGalway" is defined as a condition name that represents the value "4" for "CityCode".
+- "CityIsSligo" is defined as a condition name that represents the value "5" for "CityCode".
+- "CityIsWaterford" is defined as a condition name that represents the value "6" for "CityCode".
+- "UniversityCity" is defined as a condition name that represents a range of values from "1" to "4" (inclusive) for "CityCode".
+- "CityCodeNotValid" is defined as a condition name that represents the values "0", "7", "8", or "9" for "CityCode".
+
 These condition names can be used in COBOL logic statements, such as "IF" statements or "PERFORM" statements, to make decisions or perform actions based on the values of the associated data items. Condition names provide a way to make COBOL code more readable and self-documenting, as they provide meaningful names for specific values or ranges of values in the data.
 
 
