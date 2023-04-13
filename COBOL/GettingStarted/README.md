@@ -20,8 +20,6 @@
 ---
 ## Compile Steps: 
 
-![cobol_helloworld](https://user-images.githubusercontent.com/68504324/231666172-eb1d3bcd-27e9-4a7c-827a-9f9cae11e53a.jpg)
-
 ![helloworldchatgpt](https://user-images.githubusercontent.com/68504324/231666331-609840bf-9872-4ce7-a8b6-c1e2ad2e69cf.jpg)
 
 ---
