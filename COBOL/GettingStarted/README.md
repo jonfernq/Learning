@@ -49,8 +49,23 @@
 ```
 
 ---
-> so Z9 to suppress leading zeros is called an 'edit mask' ?  
+> So Z9 to suppress leading zeros is called an 'edit mask' ?  
 
 Yes, in COBOL, an "edit mask" is a formatting pattern that is used to specify how numeric data items should be displayed or edited. It consists of a combination of characters, including numeric placeholders (0, 9), sign indicators (S, +, -), and editing characters (., ,, /, $, etc.), that define the desired format for displaying numeric data.
 
 In the context of the COBOL statement DISPLAY "Result is = ", Z9 CalcResult, the Z9 is an edit mask that specifies how the numeric data item CalcResult should be displayed. The Z character is used to suppress leading zeros, and the 9 character is a placeholder for a single numeric digit. When the CalcResult data item is displayed using this edit mask, any leading zeros in the value of CalcResult will be suppressed, and only the significant digits will be displayed.
+
+Here are some examples of how the 'Z' character can be used in edit masks in COBOL:
+
+ZZZZ.ZZ: This edit mask would display a numeric data item with at least four digits before the decimal point and two digits after the decimal point. Leading zeros would be suppressed.
+
+ZZ,ZZZ.99: This edit mask would display a numeric data item with at least two digits before the comma, followed by groups of three digits separated by commas, and two digits after the decimal point. Leading zeros would be suppressed.
+
+Z,ZZZ,ZZZ: This edit mask would display a numeric data item with at least one digit before the comma, followed by groups of three digits separated by commas. Leading zeros would be suppressed.
+
+ZZ,ZZ9.99: This edit mask would display a numeric data item with at least two digits before the comma, followed by groups of three digits separated by commas, and two digits after the decimal point. If there are less than two significant digits before the decimal point, leading zeros would be displayed.
+
+Z99,999: This edit mask would display a numeric data item with at least one digit before the first two digits, followed by a comma, and then groups of three digits separated by commas. Leading zeros would be suppressed.
+
+Remember that the 'Z' character is used to suppress leading zeros in COBOL edit masks, allowing for more flexible and customizable display of numeric data items in COBOL programs.
+
