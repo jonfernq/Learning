@@ -69,3 +69,16 @@ Z99,999: This edit mask would display a numeric data item with at least one digi
 
 Remember that the 'Z' character is used to suppress leading zeros in COBOL edit masks, allowing for more flexible and customizable display of numeric data items in COBOL programs.
 
+---
+> So it seems that COBOL syntax and semantics are very different from other common programming languages such as C, Java, JavScript and Python. I guess that this is because these other common languages are in the same programming language family tree, desdending for the most part from Algol and C ? 
+
+Yes, that's correct. COBOL is a programming language that was specifically designed for business applications and has its own unique syntax and semantics, which can be quite different from other general-purpose programming languages like C, Java, JavaScript, and Python.
+
+COBOL was developed in the late 1950s and early 1960s, and it has its roots in the era of mainframe computers and batch processing. It was primarily designed for handling large-scale data processing tasks in business environments, such as banking, finance, and government. As a result, COBOL has a focus on data manipulation and handling, with features like its extensive support for record-based file processing and data hierarchy.
+
+The syntax and semantics of COBOL were designed to be highly readable and understandable for business users, with a focus on English-like statements and a heavy use of explicit data definitions. This makes COBOL code highly self-documenting and readable, which was important in the era when business users were often involved in writing and maintaining COBOL programs.
+
+In contrast, other programming languages like C, Java, JavaScript, and Python are part of the procedural or object-oriented programming (OOP) paradigms, which have different design goals and origins. They have their roots in languages like Algol, C, and Simula, which were developed for different purposes and have different syntax and semantics compared to COBOL.
+
+While there may be some similarities and overlaps in programming concepts and constructs among different programming languages, each language has its own unique syntax, semantics, and design philosophy, which may make them quite different from one another. As such, learning COBOL may require some effort to understand its unique syntax and semantics, especially for programmers familiar with other programming languages.
+
