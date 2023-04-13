@@ -12,6 +12,7 @@ COBOL Learning Material
 
 - [Inspect](https://github.com/jonfernq/COBOL/tree/main/COBOLInspect)
 - [User-Defined Class Names]() 
+- [88-Level Condition Names]() 
 
 ### Recursion & COBOL:
 
