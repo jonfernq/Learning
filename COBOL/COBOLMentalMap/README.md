@@ -48,57 +48,57 @@ I. THE BASICS
 - 1.1.4. Symbolic Programs
 
 1.2. THE APPLICATIONS PROGRAM DEVELOPMENT PROCESS
-1.2.1. Determine Program Specifications
-1.2.2. Design the Program Using Program Planning Tools
-1.2.3. Code and Enter the Program
-1.2.4. Compile the Source Program
-1.2.5. Test the Program
-1.2.5.1. Debugging During the Compile and Test Phases
-1.2.5.1.1. Compile-Time Errors
-1.2.5.1.2. Execution Errors
-1.2.5.2. Debugging Techniques
-1.2.5.2.1. Desk Checking
-1.2.5.2.2. Correcting Syntax Errors
-1.2.5.2.3. Program Walkthroughs
-1.2.5.2.4. Detecting Logic and Run-time Errors by Executing the Program
-1.2.6. Document the Program
+- 1.2.1. Determine Program Specifications
+- 1.2.2. Design the Program Using Program Planning Tools
+- 1.2.3. Code and Enter the Program
+- 1.2.4. Compile the Source Program
+- 1.2.5. Test the Program
+- 1.2.5.1. Debugging During the Compile and Test Phases
+- 1.2.5.1.1. Compile-Time Errors
+- 1.2.5.1.2. Execution Errors
+- 1.2.5.2. Debugging Techniques
+- 1.2.5.2.1. Desk Checking
+- 1.2.5.2.2. Correcting Syntax Errors
+- 1.2.5.2.3. Program Walkthroughs
+- 1.2.5.2.4. Detecting Logic and Run-time Errors by Executing the Program
+- 1.2.6. Document the Program
 
 1.3. THE NATURE OF COBOL
-1.3.1. COBOL Is a Business-Oriented Language
-1.3.2. COBOL Is a Standard Language
-1.3.3. COBOL Is an English-Like Language
-1.3.4. COBOL Is Relatively Easy to Understand
+- 1.3.1. COBOL Is a Business-Oriented Language
+- 1.3.2. COBOL Is a Standard Language
+- 1.3.3. COBOL Is an English-Like Language
+- 1.3.4. COBOL Is Relatively Easy to Understand
 
 1.4. A HISTORY OF COBOL AND THE ANS VERSIONS
-1.4.1. When it Began
-1.4.2. The American National Standards (ANS) Versions of COBOL
-1.4.3. The Future of COBOL: Lessons Learned from the Year 2000 Problem
-1.4.4. SELF-TEST
+- 1.4.1. When it Began
+- 1.4.2. The American National Standards (ANS) Versions of COBOL
+- 1.4.3. The Future of COBOL: Lessons Learned from the Year 2000 Problem
+- 1.4.4. SELF-TEST
 
 1.5. TECHNIQUES FOR IMPROVING PROGRAM DESIGN
-1.5.1. Structured Programming Using Modular Design for Coding Paragraphs
-1.5.2. The Top-Down Approach for Coding Modules
+- 1.5.1. Structured Programming Using Modular Design for Coding Paragraphs
+- 1.5.2. The Top-Down Approach for Coding Modules
 
 1.6. SAMPLE PROGREMS
-1.6.1. Interactive vs. Batch Processing
-1.6.2. An Overview of the Four Divisions
-1.6.3. Definition of the Problem
-1.6.3.1. Sample Interactive Program
-1.6.3.1.1. Coding Rules
-1.6.3.1.2. The IDENTIFICATION DIVISION of the Interactive Program
-1.6.3.1.3. The DATA DIVISION of the Interactive Program
-1.6.3.1.4. The PROCEDURE DIVISION of the Interactive Program
-1.6.3.2. Sample Batch Program
-1.6.3.2.1. Output Layout
-1.6.3.2.2. The Program Illustrated
-1.6.3.2.3. Coding Rules
-1.6.3.2.4. The IDENTIFICATION and ENVIRONMENT DIVISIONs of the Batch Program
-1.6.3.2.5. The DATA DIVISION of the Batch Program
-1.6.3.2.6. The PROCEDURE DIVISION of the Batch Program
-1.6.3.2.7. The Use of Periods
-1.6.4. A Brief Overview of Program Planning Tools
-1.6.5. Our Definitions for Batch and Interactive Programs
-1.6.6. Summary of COBOL as a Language for Both Batch and Interactive Processing
+- 1.6.1. Interactive vs. Batch Processing
+- 1.6.2. An Overview of the Four Divisions
+- 1.6.3. Definition of the Problem
+- 1.6.3.1. Sample Interactive Program
+- 1.6.3.1.1. Coding Rules
+- 1.6.3.1.2. The IDENTIFICATION DIVISION of the Interactive Program
+- 1.6.3.1.3. The DATA DIVISION of the Interactive Program
+- 1.6.3.1.4. The PROCEDURE DIVISION of the Interactive Program
+- 1.6.3.2. Sample Batch Program
+- 1.6.3.2.1. Output Layout
+- 1.6.3.2.2. The Program Illustrated
+- 1.6.3.2.3. Coding Rules
+- 1.6.3.2.4. The IDENTIFICATION and ENVIRONMENT DIVISIONs of the Batch Program
+- 1.6.3.2.5. The DATA DIVISION of the Batch Program
+- 1.6.3.2.6. The PROCEDURE DIVISION of the Batch Program
+- 1.6.3.2.7. The Use of Periods
+- 1.6.4. A Brief Overview of Program Planning Tools
+- 1.6.5. Our Definitions for Batch and Interactive Programs
+- 1.6.6. Summary of COBOL as a Language for Both Batch and Interactive Processing
 
 1.7. ENTERING AND RUNNING A COBOL PROGRAM ON YOUR COMPUTER
 1.8. CHAPTER SUMMARY
@@ -110,31 +110,31 @@ I. THE BASICS
 
 2. The IDENTIFICATION and ENVIRONMENT DIVISIONs
 
-2.1. BASIC STRUCTURE OF A COBOL PROGRAM
-2.1.1. Coding a Source Program
-2.1.2. Coding Rules
-2.1.2.1. The Main Body of a Program
-2.1.2.2. Optional Entries: Identification and Page and Serial Numbers
-2.1.2.3. Column 7: For Comments, Continuing Nonnumeric Literals, and Starting a New Page
-2.1.2.3.1. Using Column 7 for Comments
-2.1.2.3.2. Page-Eject with a Slash (/) in Column 7
-2.1.2.4. Coding Rules for Areas A and B
-2.1.3. Types of COBOL Entries
+- 2.1. BASIC STRUCTURE OF A COBOL PROGRAM
+- 2.1.1. Coding a Source Program
+- 2.1.2. Coding Rules
+- 2.1.2.1. The Main Body of a Program
+- 2.1.2.2. Optional Entries: Identification and Page and Serial Numbers
+- 2.1.2.3. Column 7: For Comments, Continuing Nonnumeric Literals, and Starting a New Page
+- 2.1.2.3.1. Using Column 7 for Comments
+- 2.1.2.3.2. Page-Eject with a Slash (/) in Column 7
+- 2.1.2.4. Coding Rules for Areas A and B
+- 2.1.3. Types of COBOL Entries
 
 2.2. CODING REQUIREMENTS OF THE IDENTIFICATION DIVISION
-2.2.1. Paragraphs in the IDENTIFICATION DIVISION
-2.2.2. Understanding Instruction Formats as They Appear in Reference Manuals
-2.2.3. Examples
-2.2.4. SELF-TEST
+- 2.2.1. Paragraphs in the IDENTIFICATION DIVISION
+- 2.2.2. Understanding Instruction Formats as They Appear in Reference Manuals
+- 2.2.3. Examples
+- 2.2.4. SELF-TEST
 
 2.3. THE SECTIONS OF THE ENVIRONMENT DIVISION
-2.3.1. CONFIGURATION SECTION (Optional)
-2.3.2. INPUT-OUTPUT SECTION
+- 2.3.1. CONFIGURATION SECTION (Optional)
+- 2.3.2. INPUT-OUTPUT SECTION
 
 2.4. ASSIGNING FILES TO DEVICES IN THE ENVIRONMENT DIVISION
-2.4.1. Overall Format
-2.4.1.1. File-Name Rules
-2.4.1.2. Implementor-Names or Device Specifications
+- 2.4.1. Overall Format
+- 2.4.1.1. File-Name Rules
+- 2.4.1.2. Implementor-Names or Device Specifications
 
 2.5. CHAPTER SUMMARY
 2.6. KEY TERMS
@@ -142,42 +142,42 @@ I. THE BASICS
 2.8. PRACTICE PROGRAM 1: INTERACTIVE PROCESSING
 2.9. PRACTICE PROGRAM 2: BATCH PROCESSING
 2.10. REVIEW QUESTIONS
-2.11. PROGRAMMING ASSIGNMENTS
+2.11. PROGRAMMING AS- SIGNMENT- S
 
 
 3. The DATA DIVISION
 
 3.1. SYSTEMS DESIGN CONSIDERATIONS
-3.1.1. The Relationship Between a Business Information System and its Programs
-3.1.2. Interactive and Batch Processing
-3.1.3. Designing Input for Applications Using Batch Processing
+- 3.1.1. The Relationship Between a Business Information System and its Programs
+- 3.1.2. Interactive and Batch Processing
+- 3.1.3. Designing Input for Applications Using Batch Processing
 
 3.2. FORMING DATA-NAMES
-3.2.1. Rules
-3.2.2. Guidelines
-3.2.2.1. Use Meaningful Data-Names
-3.2.2.2. Use Prefixes or Suffixes in Data-Names Where Appropriate
+- 3.2.1. Rules
+- 3.2.2. Guidelines
+- 3.2.2.1. Use Meaningful Data-Names
+- 3.2.2.2. Use Prefixes or Suffixes in Data-Names Where Appropriate
 
 3.3. THE FILE SECTION OF THE DATA DIVISION
-3.3.1. An Overview
-3.3.2. File Description Entries
-3.3.2.1. LABEL RECORD(S) Clause—(Optional for COBOL 85, Required for COBOL 74, Eliminated from COBOL 2008)
-3.3.2.2. RECORD CONTAINS Clause—(Optional)
-3.3.2.3. BLOCK CONTAINS Clause—(Optional)
-3.3.3. SELF-TEST
-3.3.4. Record Description Entries
-3.3.4.1. Defining a Record
-3.3.4.2. Level Numbers
-3.3.4.3. Fields May Be Defined as Either Elementary or Group Items
-3.3.5. SELF-TEST
-3.3.5.1. PICTURE (PIC) Clauses
-3.3.5.1.1. Types of Data Fields
-3.3.5.1.2. Size of Data Fields
-3.3.5.1.3. Format of PIC Clauses
-3.3.5.2. Allotting Space for Unused Areas in Record Description Entries
-3.3.5.3. The Use of the Implied Decimal Point in PIC Clauses
-3.3.5.4. Interactive Processing
-3.3.5.5. Summary of Record Description Entries
+- 3.3.1. An Overview
+- 3.3.2. File Description Entries
+- 3.3.2.1. LABEL RECORD(S) Clause—(Optional for COBOL 85, Required for COBOL 74, Eliminated from COBOL 2008)
+- 3.3.2.2. RECORD CONTAINS Clause—(Optional)
+- 3.3.2.3. BLOCK CONTAINS Clause—(Optional)
+- 3.3.3. SELF-TEST
+- 3.3.4. Record Description Entries
+- 3.3.4.1. Defining a Record
+- 3.3.4.2. Level Numbers
+- 3.3.4.3. Fields May Be Defined as Either Elementary or Group Items
+- 3.3.5. SELF-TEST
+- 3.3.5.1. PICTURE (PIC) Clauses
+- 3.3.5.1.1. Types of Data Fields
+- 3.3.5.1.2. Size of Data Fields
+- 3.3.5.1.3. Format of PIC Clauses
+- 3.3.5.2. Allotting Space for Unused Areas in Record Description Entries
+- 3.3.5.3. The Use of the Implied Decimal Point in PIC Clauses
+- 3.3.5.4. Interactive Processing
+- 3.3.5.5. Summary of Record Description Entrie- - - - - - - - - s
 
 3.4. TYPES OF DATA
 3.4.1. Variable and Constant Data
