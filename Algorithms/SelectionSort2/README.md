@@ -24,11 +24,16 @@ Where:
 - swap is a function that swaps two elements in an array
 
 Selection sort has a time complexity of O(n^2) in the worst, average, and best cases, 
-and it is not considered efficient for large datasets. 
+so it is not efficient for large datasets. 
 
 However, it has the advantage of being simple to implement and understand. 
+
+Selection sort is an "in-place" sorting algorithm with the lowest possible space complexity of O(1). It operates directly on the input array and only swaps elements within the array to achieve sorted order, so it does not require allocation of additional memory as temporary storage during sorting. So, if memory usage needs to me minimized, this is a desirable feature. 
+
 There are more efficient sorting algorithms such as merge sort, quicksort, and heapsort 
 that are generally preferred for larger datasets.
+
+
 
 
 
