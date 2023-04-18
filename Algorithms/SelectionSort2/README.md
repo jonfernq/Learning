@@ -6,7 +6,7 @@ Ascending sort order is chosen here to keep things simple.
 The smallest element is selected from the unsorted part of an array 
 and moved to the beginning of the sorted part of the array.
 
-**Pseudocode:**
+### Pseudocode: 
 
 ```css
 for i from 0 to n-1
@@ -25,7 +25,29 @@ Where:
 - **A:** input array to be sorted
 - **n:** length of the array
 - **min_idx:** index of minimum element in unsorted portion of array
-- **swap:** function that swaps position of two elements in array
+- **swap:** function that swaps position of two elements in array (or just in-line swap) 
+
+### Python Code:
+
+def selection_sort(A):
+    n = len(A)
+    for i in range(n-1):
+        min_idx = i
+        for j in range(i, n):
+            if A[j] < A[min_idx]:
+                min_idx = j
+        if min_idx != i:
+            temp = A[i]
+            A[i] = A[min_idx]
+            A[min_idx] = temp
+
+# Test case
+A = [64, 35, 12, 22, 11]
+print("Original array:", A)
+selection_sort(A)
+print("Sorted array:", A)
+
+![selection__](https://user-images.githubusercontent.com/68504324/232909581-89562b96-e57b-43a5-9ac4-d998d60676e4.jpg)
 
 ### Advantages & Disadvantages
 
