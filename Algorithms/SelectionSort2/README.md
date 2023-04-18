@@ -142,7 +142,7 @@ Paige, R.. "Programming with Invariants." IEEE Software, 3(1):56–69. January 1
 
 Springer & European Mathematical Soceity (2023, March 26). Arithmetic series. Encyclopedia of Mathematics. Retrieved April 19, 2023, from https://encyclopediaofmath.org/index.php?title=Arithmetic_series
 
-https://mathworld.wolfram.com/ArithmeticSeries.html
+Wolfram (2023, March 24). Arithmetic Series. WolframMathworld. Retrieved April 19, 2023, from https://mathworld.wolfram.com/ArithmeticSeries.html
 
 Wikipedia: Loop invariant, Arithmetic progression 
 
