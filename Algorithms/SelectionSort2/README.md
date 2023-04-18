@@ -93,6 +93,8 @@ Paige, R.. "Programming with Invariants." IEEE Software, 3(1):56–69. January 1
 
 https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
 
+https://mathworld.wolfram.com/ArithmeticSeries.html
+
 https://encyclopediaofmath.org/index.php?title=Arithmetic_series
 
 Wikipedia: Loop invariant, Arithmetic progression 
