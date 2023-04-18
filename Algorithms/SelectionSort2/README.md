@@ -51,9 +51,10 @@ print("Sorted array:", A)
 
 ![selection__](https://user-images.githubusercontent.com/68504324/232912404-033587fa-ddc6-494d-8c5e-90703823946c.jpg)
 
-### Invariants: 
+### Loop Invariants: 
 
-There are three potential loop invariants to track and verify for correctness: 
+There are three potential loop invariants that can be used with mathematical induction to proof correctness 
+(Meyer 2009, 2014; Furia, Meyer and Velder 2014; Paige 1986): 
 
 **Outer Loop:** 
 
@@ -134,7 +135,7 @@ Here is an informative summary from the Wikipedia Sorting algorithm page:
 
 ### REFERENCES 
 
-Furia, C.A. B. Meyer & S. Velder. "Loop invariants: analysis, classification, and examples."ACM Computing Surveys. vol. 46, no. 3, February 2014.
+Furia, C.A. B. Meyer & S. Velder. (2014). "Loop invariants: analysis, classification, and examples."ACM Computing Surveys. vol. 46, no. 3, February 2014.
 
 Cormen, T. H., Leiserson, C. E., & Rivest, R. L. (2022). Introduction to algorithms. MIT Laboratory for Computer Science. pp. 17-24. 
 
@@ -144,7 +145,7 @@ Meyer, B. (2009) Touch of Class. Learning to Program Well with Objects and Contr
 
 Meyer, B. (2014, April 17). "Publish no loop without its invariant." Bertrand Meyer's technology+ blog.  Retrieved April 16, 2023, from https://bertrandmeyer.com/2011/05/12/publish-no-loop-without-its-invariant/ 
 
-Paige, R.. "Programming with Invariants." IEEE Software, 3(1):56–69. January 1986.
+Paige, R. (1986) "Programming with Invariants." IEEE Software, 3(1):56–69. January 1986.
 
 Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022). 'Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.' raywenderlich.com 
 
