@@ -79,10 +79,24 @@ There are more efficient sorting algorithms such as merge sort, quicksort, and h
 that are preferred for larger datasets.
 
 
+### REFERENCES 
+
+Furia, C.A. B. Meyer & S. Velder. "Loop invariants: analysis, classification, and examples."ACM Computing Surveys. vol. 46, no. 3, February 2014.
+
+Cormen, T. H., Leiserson, C. E., & Rivest, R. L. (2022). Introduction to algorithms. MIT Laboratory for Computer Science. pp. 17-24. 
+
+Meyer, B. (2009) Touch of Class. Learning to Program Well with Objects and Contracts. Berlin Heidelberg: Springer-Verlag. Retrieved April 16, 2023 from: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=8ed14032893a16e4c762cc5fe09a4979dd0de527
+
+Meyer, B. (2014, April 17). "Publish no loop without its invariant." Bertrand Meyer's technology+ blog.  Retrieved April 16, 2023, from https://bertrandmeyer.com/2011/05/12/publish-no-loop-without-its-invariant/ 
+
+Paige, R.. "Programming with Invariants." IEEE Software, 3(1):56–69. January 1986.
+
+https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
+
+https://encyclopediaofmath.org/index.php?title=Arithmetic_series
+
+Wikipedia: Loop invariant, Arithmetic progression 
 
 
 
-
-
-Regenerate response
 
