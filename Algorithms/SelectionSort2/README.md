@@ -23,6 +23,8 @@ Where:
 - min_idx keeps track of the index of the minimum (or maximum) element in the unsorted part of the array
 - swap is a function that swaps two elements in an array
 
+### Advantages & Disadvantages
+
 Selection sort has a time complexity of O(n^2) in the worst, average, and best cases, 
 so it is not efficient for large datasets. 
 
