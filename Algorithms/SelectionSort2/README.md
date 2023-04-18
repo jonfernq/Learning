@@ -29,6 +29,7 @@ Where:
 
 ### Python Code:
 
+```css
 def selection_sort(A):
     n = len(A)
     for i in range(n-1):
@@ -36,7 +37,7 @@ def selection_sort(A):
         for j in range(i, n):
             if A[j] < A[min_idx]:
                 min_idx = j
-        if min_idx != i:
+        if min_idx != i:  #  if min_idx == i, minimum already at correct position, avoid unnecessary swapping
             temp = A[i]
             A[i] = A[min_idx]
             A[min_idx] = temp
@@ -46,8 +47,20 @@ A = [64, 35, 12, 22, 11]
 print("Original array:", A)
 selection_sort(A)
 print("Sorted array:", A)
+```
 
-![selection__](https://user-images.githubusercontent.com/68504324/232909581-89562b96-e57b-43a5-9ac4-d998d60676e4.jpg)
+(https://user-images.githubusercontent.com/68504324/232909581-89562b96-e57b-43a5-9ac4-d998d60676e4.jpg)
+
+### Invariants: 
+
+**Outer Loop:** 
+
+- A[0...i-1] is sorted, Ai...n] is unsorted. 
+-
+
+**Inner Loop:**
+
+- 
 
 ### Advantages & Disadvantages
 
