@@ -125,6 +125,17 @@ It also has low memory usage. Selection sort is an "in-place" sorting algorithm 
 There are more efficient sorting algorithms such as merge sort, quicksort, and heapsort 
 that are preferred for larger datasets.
 
+### Uses and Real-Time Applications
+
+The simplicity of selection sort is a virtue and makes it at least useable 
+in non-asymptotic use cases (Sande, Lau, and Ngo 2022:211-12). It is also an 'in-place' sorting algorithm that does not allocate additional memory which gives it a desirable constant space complexity (I believe expressed as O(1)). This is in contrast 
+to 'merge sort' which uses the divide and conquer approach 
+with time complexity of O(n log n) but space complexity of O(n log n) 
+to O(log n) because it allocates memory. 
+
+The uses and real-time applications of the selection sort are, however, limited because of its inefficiency with best, average, and worst time complexity of O(x^2). This at least makes it better than random shuffling until a sorted  list is encountered, known as 'bogosort', with average time complexity of  O(nXn!). Even bubble sort is better than selection sort since it has O(n) best time complexity. 
+
+Similar to selection sort in its simplicity, 'insertion sort' is a good choice if data is already partially sorted. It has best time complexity of O(n) if the data is already sorted, and gets progressively better as more of the data is sorted. The sorted elements of insertion sort (and bubble sort) also retain their order after sorting, a desirable quality known as 'stability'. This is in contrast to selection sort which does not. For these reasons, the Dart Programming language standard library uses insertion sort for n less than or equal to 32 (Sande, Lau, and Ngo 2022:213). 
 
 ### REFERENCES 
 
@@ -140,11 +151,13 @@ Meyer, B. (2014, April 17). "Publish no loop without its invariant." Bertrand Me
 
 Paige, R.. "Programming with Invariants." IEEE Software, 3(1):56–69. January 1986.
 
+Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022). 'Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.' raywenderlich.com 
+
 Springer & European Mathematical Soceity (2023, March 26). Arithmetic series. Encyclopedia of Mathematics. Retrieved April 19, 2023, from https://encyclopediaofmath.org/index.php?title=Arithmetic_series
 
 Wolfram (2023, March 24). Arithmetic Series. WolframMathworld. Retrieved April 19, 2023, from https://mathworld.wolfram.com/ArithmeticSeries.html
 
-Wikipedia: Loop invariant, Arithmetic progression 
+Wikipedia: Loop invariant, Arithmetic progression; Sorting algorithm; Bogosort; Best, worst and average case; Comparison sort; Bubble sort; Selection sort; Insertion sort; Merge sort.  
 
 
 
