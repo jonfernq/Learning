@@ -37,7 +37,7 @@ def selection_sort(A):
         for j in range(i, n):
             if A[j] < A[min_idx]:
                 min_idx = j
-        if min_idx != i:  #  if min_idx == i, minimum already at correct position, avoid unnecessary swapping
+        if min_idx != i:  #  if min_idx == i, minimum already at correct position, so unnecessary swap avoided
             temp = A[i]
             A[i] = A[min_idx]
             A[min_idx] = temp
@@ -53,10 +53,12 @@ print("Sorted array:", A)
 
 ### Invariants: 
 
+There are three potential loop invariants to track and verify for correctness: 
+
 **Outer Loop:** 
 
 - A[0...i-1] is sorted ([Ai...n] is unsorted portion)  
-- all entries in a[i..n-1] are larger than or equal to the entries in a[0..i-1]
+- smallest entries in a[0..i-1] (all entries in a[i..n-1] are larger than or equal to the entries in a[0..i-1]
 
 **Inner Loop:**
 
