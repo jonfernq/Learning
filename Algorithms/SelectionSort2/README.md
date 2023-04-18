@@ -128,14 +128,15 @@ that are preferred for larger datasets.
 ### Uses and Real-Time Applications
 
 The simplicity of selection sort is a virtue and makes it at least useable 
-in non-asymptotic use cases (Sande, Lau, and Ngo 2022:211-12). It is also an 'in-place' sorting algorithm that does not allocate additional memory which gives it a desirable constant space complexity (I believe expressed as O(1)). This is in contrast 
-to 'merge sort' which uses the divide and conquer approach 
+in non-asymptotic use cases (Sande, Lau, and Ngo 2022:211-12). 
+It is also an 'in-place' sorting algorithm that does not allocate additional memory which gives it a desirable constant space complexity O(1). 
+This is in contrast to 'merge sort' which uses the divide and conquer approach 
 with time complexity of O(n log n) but space complexity of O(n log n) 
 to O(log n) because it allocates memory. 
 
-The uses and real-time applications of the selection sort are, however, limited because of its inefficiency with best, average, and worst time complexity of O(x^2). This at least makes it better than random shuffling until a sorted  list is encountered, known as 'bogosort', with average time complexity of  O(nXn!). Even bubble sort is better than selection sort since it has O(n) best time complexity. 
+The uses and real-time applications of selection sort are, however, limited because of its inefficiency with best, average, and worst time complexity of O(x^2). This at least makes it better than random shuffling until a sorted  list is encountered, known as 'bogosort', with average time complexity of  O(nXn!). Even bubble sort is better than selection sort since it has O(n) best time complexity. 
 
-Similar to selection sort in its simplicity, 'insertion sort' is a good choice if data is already partially sorted. It has best time complexity of O(n) if the data is already sorted, and gets progressively better as more of the data is sorted. The sorted elements of insertion sort (and bubble sort) also retain their order after sorting, a desirable quality known as 'stability'. This is in contrast to selection sort which does not. For these reasons, the Dart Programming language standard library uses insertion sort for n less than or equal to 32 (Sande, Lau, and Ngo 2022:213). 
+Similar to selection sort in its simplicity, 'insertion sort' is a good choice if data is already partially sorted. It has best time complexity of O(n) if the data is already sorted, and gets progressively better as more of the data is sorted. The sorted elements of insertion sort (and bubble sort) also retain their order after sorting, a desirable quality known as 'stability'. This is in contrast to selection sort which does not. For these reasons, the Dart Programming language standard library uses insertion sort for n less than or equal to 32 (Sande, Lau, and Ngo 2022:213). Insertion sort is thus similar to but a better choice for small n than selection sort. 
 
 ### REFERENCES 
 
