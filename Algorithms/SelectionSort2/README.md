@@ -64,7 +64,7 @@ There are three potential loop invariants to track and verify for correctness:
 
 - All entries in a[i..j-1] are greater than or equal to a[min_idx].
 
-https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
+(De Rooij 2016)
 
 ### Arithmetic Progression (sequence)
 
@@ -136,7 +136,7 @@ Meyer, B. (2014, April 17). "Publish no loop without its invariant." Bertrand Me
 
 Paige, R.. "Programming with Invariants." IEEE Software, 3(1):56–69. January 1986.
 
-https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
+De Rooij, S. (2016, February 23). What is the loop invariant of selection sort? Quora. Retrieved April 19, 2023, from https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
 
 https://mathworld.wolfram.com/ArithmeticSeries.html
 
