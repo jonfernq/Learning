@@ -80,6 +80,8 @@ The sum of a finite arithmetic progression is an arithmetic series
 Sum(n) = Sum of n terms of an arithmetic progression
 = n(a(1) + a(n))/2
 
+(Springer & European Mathematical Soceity 2023)
+
 ### Mathematical Proof of Time Complexity
 
 In the worst case scenario the smallest array element is at the end of the array and the inner loop always finds a new minimum in each iteration. 
@@ -130,17 +132,17 @@ Furia, C.A. B. Meyer & S. Velder. "Loop invariants: analysis, classification, an
 
 Cormen, T. H., Leiserson, C. E., & Rivest, R. L. (2022). Introduction to algorithms. MIT Laboratory for Computer Science. pp. 17-24. 
 
+De Rooij, S. (2016, February 23). What is the loop invariant of selection sort? Quora. Retrieved April 19, 2023, from https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
+
 Meyer, B. (2009) Touch of Class. Learning to Program Well with Objects and Contracts. Berlin Heidelberg: Springer-Verlag. Retrieved April 16, 2023 from: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=8ed14032893a16e4c762cc5fe09a4979dd0de527
 
 Meyer, B. (2014, April 17). "Publish no loop without its invariant." Bertrand Meyer's technology+ blog.  Retrieved April 16, 2023, from https://bertrandmeyer.com/2011/05/12/publish-no-loop-without-its-invariant/ 
 
 Paige, R.. "Programming with Invariants." IEEE Software, 3(1):56–69. January 1986.
 
-De Rooij, S. (2016, February 23). What is the loop invariant of selection sort? Quora. Retrieved April 19, 2023, from https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
+Springer & European Mathematical Soceity (2023, March 26). Arithmetic series. Encyclopedia of Mathematics. Retrieved April 19, 2023, from https://encyclopediaofmath.org/index.php?title=Arithmetic_series
 
 https://mathworld.wolfram.com/ArithmeticSeries.html
-
-https://encyclopediaofmath.org/index.php?title=Arithmetic_series
 
 Wikipedia: Loop invariant, Arithmetic progression 
 
