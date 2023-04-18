@@ -11,14 +11,14 @@ Pseudocode:
 for i from 0 to n-1
     min_idx = i
     for j from i+1 to n
-        if arr[j] < arr[min_idx]
+        if A[j] < A[min_idx]
             min_idx = j
-    swap arr[i] with arr[min_idx]
+    swap A[i] with A[min_idx]
 ```
 
 Where:
 
-- arr is the input array to be sorted
+- A is the input array to be sorted
 - n is the length of the array
 - min_idx keeps track of the index of the minimum (or maximum) element in the unsorted part of the array
 - swap is a function that swaps two elements in an array
