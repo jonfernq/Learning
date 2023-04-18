@@ -66,6 +66,52 @@ There are three potential loop invariants to track and verify for correctness:
 
 https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
 
+### Mathematical Proof of Time Complexity
+
+The sum of O(n-i-1) for i ranging from 0 to n-2 can be expressed as:
+
+O(n-1) + O(n-2) + O(n-3) + ... + O(2) + O(1)
+
+This is an arithmetic series with n-1 terms, where the common difference between consecutive terms is -1 (since we are subtracting 1 from n in each term), and the first term is O(n-1).
+
+### Arithmetic Progression (sequence)
+
+First, here are essential definitions: 
+
+a(n) = a(1) + (n - 1)d
+
+- a(n) = nth term of arithmetic sequence (progression)
+- d = common difference of succesive numbers
+
+The sum of a finite arithmetic progression is an arithmetic series
+
+Sum(n) = Sum of n terms of an arithmetic progression
+= n(a(1) + a(n))/2
+
+
+The sum of an arithmetic series can be calculated using the following formula:
+
+Sum = (n/2) * (2a + (n-1)d)
+
+where n is the number of terms, a is the first term, and d is the common difference between consecutive terms.
+
+Applying this formula to the arithmetic series O(n-1) + O(n-2) + O(n-3) + ... + O(2) + O(1), we get:
+
+scss
+Copy code
+Sum = ((n-1)/2) * (2 * O(n-1) + (n-1) * (-1))
+Simplifying further, we get:
+
+scss
+Copy code
+Sum = ((n-1)/2) * (2O(n-1) - (n-1))
+Dropping the constant terms and lower order terms, the sum can be expressed in big-O notation as:
+
+mathematica
+Copy code
+Sum = O(n^2)
+
+
 ### Advantages & Disadvantages
 
 Selection sort has time complexity of O(n^2) in the worst, average, and best cases, 
