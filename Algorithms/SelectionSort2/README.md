@@ -16,6 +16,9 @@ for i from 0 to n-1
             min_idx = j
     swap A[i] with A[min_idx]
 ```
+In selection sort, the array has two parts, the sorted part to the left, and the unsorted part to the right.
+To begin with the sorted part is empty and the unsorted part contains all the items to be sorted. 
+Each iteration moves an item from the unsorted to the sorted part. 
 
 Where:
 
