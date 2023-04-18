@@ -49,18 +49,20 @@ selection_sort(A)
 print("Sorted array:", A)
 ```
 
-(https://user-images.githubusercontent.com/68504324/232909581-89562b96-e57b-43a5-9ac4-d998d60676e4.jpg)
+![selection__](https://user-images.githubusercontent.com/68504324/232912404-033587fa-ddc6-494d-8c5e-90703823946c.jpg)
 
 ### Invariants: 
 
 **Outer Loop:** 
 
-- A[0...i-1] is sorted, Ai...n] is unsorted. 
--
+- A[0...i-1] is sorted ([Ai...n] is unsorted portion)  
+- all entries in a[i..n-1] are larger than or equal to the entries in a[0..i-1]
 
 **Inner Loop:**
 
-- 
+- All entries in a[i..j-1] are greater than or equal to a[min_idx].
+
+https://www.quora.com/What-is-the-loop-invariant-of-selection-sort
 
 ### Advantages & Disadvantages
 
