@@ -58,7 +58,7 @@ There are three potential loop invariants to track and verify for correctness:
 **Outer Loop:** 
 
 - A[0...i-1] is sorted ([Ai...n] is unsorted portion)  
-- smallest entries in a[0..i-1] (all entries in a[i..n-1] are larger than or equal to the entries in a[0..i-1]
+- smallest entries in a[0..i-1] (all entries in a[i..n-1] are larger than or equal to the entries in a[0..i-1]) 
 
 **Inner Loop:**
 
@@ -80,13 +80,14 @@ The sum of a finite arithmetic progression is an arithmetic series
 Sum(n) = Sum of n terms of an arithmetic progression
 = n(a(1) + a(n))/2
 
-(Springer & European Mathematical Soceity 2023)
+(Springer & European Mathematical Soceity 2023; Wolfram 2023)
 
 ### Mathematical Proof of Time Complexity
 
-In the worst case scenario the smallest array element is at the end of the array and the inner loop always finds a new minimum in each iteration. 
+In the worst case scenario the array is unsorted and the smallest array element is at the very end of the array, so that the inner loop always finds a new minimum in each iteration. 
 
-However, even if the array is already sorted, the iteration over the two embedded loops will still take place, thus best case time complexity is the same as worst case. The middle or 'average' case (not 'average' in the statistical sense) is thus the same also.  
+However, even if the array is already sorted, the iteration over the two embedded loops will still take place, 
+thus best case time complexity is the same as worst case. The middle or 'average' case (not 'average' in the statistical sense) is thus the same also.  
 
 The two embedded loops can be expressed as sum of O(n-i-1) for i ranging from 0 to n-2 which can be expressed as:
 
@@ -109,34 +110,23 @@ Simplifying further, we get:
 
 Sum = ((n-1)/2) * (2O(n-1) - (n-1))
 
-Dropping the constant terms and lower order terms, the sum can be expressed in big-O notation as:
+Dropping the constant terms and lower order terms, the sum can be expressed in Big-O notation as:
 
 Sum = O(n^2)
 
-### Advantages & Disadvantages
+### Advantages & Disadvantages: Uses and Real-Time Applications
 
-To summarize, selection sort has time complexity of O(n^2) in the worst, average, and best cases, 
-so it is not efficient for large datasets. 
+To summarize, the uses and real-time applications of selection sort are limited because it has time complexity of O(n^2) in the worst, average, and best cases, so it is not efficient for large datasets. There are more efficient sorting algorithms such as merge sort, quicksort, and heapsort that are preferred for larger datasets. 
 
-However, it has the advantage of being simple to implement and understand. 
+However, there are worse algorithms such as random shuffling until a sorted list is encountered, known as 'bogosort', with average time complexity of  O(nXn!). Even bubble sort is better than selection sort since it has O(n) best time complexity. 
 
-It also has low memory usage. Selection sort is an "in-place" sorting algorithm with the lowest possible space complexity of O(1). It operates directly on the input array and only swaps elements within the array to achieve sorted order, so it does not require allocation of additional memory as temporary storage during sorting. So, if memory usage needs to me minimized, this is a desirable feature. 
+Selection sort does have the advantage of being simple to implement and understand. This makes it useable in non-asymptotic use cases (Sande, Lau, and Ngo 2022:211-12). 
 
-There are more efficient sorting algorithms such as merge sort, quicksort, and heapsort 
-that are preferred for larger datasets.
+Selection sort also has low memory usage. Selection sort is an "in-place" sorting algorithm with the lowest possible space complexity of O(1). It operates directly on the input array and only swaps elements within the array to achieve sorted order, so it does not require allocation of additional memory as temporary storage during sorting. So, if memory usage needs to me minimized, this is a desirable feature. This is in contrast to 'merge sort' which uses the divide and conquer approach with time complexity of O(n log n) but space complexity of O(n log n) to O(log n) because it allocates memory. 
 
-### Uses and Real-Time Applications
+Similar to selection sort in its simplicity, 'insertion sort' is a good choice if data is already partially sorted. It has best time complexity of O(n) if the data is already sorted, and gets progressively better as more of the data is sorted. The sorted elements of insertion sort (and bubble sort) also retain their order after sorting, a desirable quality known as 'stability'. This is in contrast to selection sort which does not. For these reasons, the Dart Programming language standard library uses insertion sort for n less than or equal to 32 (Sande, Lau, and Ngo 2022:213). 
 
-The simplicity of selection sort is a virtue and makes it at least useable 
-in non-asymptotic use cases (Sande, Lau, and Ngo 2022:211-12). 
-It is also an 'in-place' sorting algorithm that does not allocate additional memory which gives it a desirable constant space complexity O(1). 
-This is in contrast to 'merge sort' which uses the divide and conquer approach 
-with time complexity of O(n log n) but space complexity of O(n log n) 
-to O(log n) because it allocates memory. 
-
-The uses and real-time applications of selection sort are, however, limited because of its inefficiency with best, average, and worst time complexity of O(x^2). This at least makes it better than random shuffling until a sorted  list is encountered, known as 'bogosort', with average time complexity of  O(nXn!). Even bubble sort is better than selection sort since it has O(n) best time complexity. 
-
-Similar to selection sort in its simplicity, 'insertion sort' is a good choice if data is already partially sorted. It has best time complexity of O(n) if the data is already sorted, and gets progressively better as more of the data is sorted. The sorted elements of insertion sort (and bubble sort) also retain their order after sorting, a desirable quality known as 'stability'. This is in contrast to selection sort which does not. For these reasons, the Dart Programming language standard library uses insertion sort for n less than or equal to 32 (Sande, Lau, and Ngo 2022:213). Insertion sort is thus similar to but a better choice for small n than selection sort. 
+Insertion sort is thus similar to selection sort but a better choice for small n. 
 
 ### REFERENCES 
 
