@@ -128,6 +128,10 @@ Similar to selection sort in its simplicity, 'insertion sort' is a good choice i
 
 Insertion sort is thus similar to selection sort but a better choice for small n. 
 
+Here is an informative summary from the Wikipedia Sorting algorithm page: 
+
+![sorting_summary](https://user-images.githubusercontent.com/68504324/232928621-e1f60082-ff80-4cb2-b555-e624fd7ecccb.jpg)
+
 ### REFERENCES 
 
 Furia, C.A. B. Meyer & S. Velder. "Loop invariants: analysis, classification, and examples."ACM Computing Surveys. vol. 46, no. 3, February 2014.
