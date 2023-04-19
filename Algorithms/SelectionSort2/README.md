@@ -55,7 +55,7 @@ print("Sorted array:", A)
 
 ### Loop Invariants: 
 
-There are three potential loop invariants that can be used with mathematical induction to prove correctness 
+There are three potential loop invariants that can be used with mathematical induction to prove correctness (see written assignment)
 (Meyer 2009, 2014; Furia, Meyer and Velder 2014; Paige 1986): 
 
 **Outer Loop:** 
@@ -76,7 +76,7 @@ First, here are essential definitions for the time complexity proof:
 a(n) = a(1) + (n - 1)d
 
 - a(n) = nth term of arithmetic sequence (progression)
-- d = common difference of succesive numbers
+- d = common difference of successive numbers
 
 The sum of a finite arithmetic progression is an arithmetic series
 
@@ -121,7 +121,7 @@ Sum = O(n^2)
 
 ### Advantages & Disadvantages: Uses and Real-Time Applications
 
-To summarize, the uses and real-time applications of selection sort are limited because it has time complexity of O(n^2) in the worst, average, and best cases, so it is not efficient for large datasets. There are more efficient sorting algorithms such as merge sort, quicksort, and heapsort that are preferred for larger datasets. 
+The uses and real-time applications of selection sort are limited because it has time complexity of O(n^2) in the worst, average, and best cases, so it is not efficient for large datasets. There are more efficient sorting algorithms such as merge sort, quicksort, and heapsort, that are preferred for larger datasets. 
 
 However, there are worse algorithms such as random shuffling until a sorted list is encountered, known as 'bogosort', with average time complexity of  O(nXn!). Even bubble sort is better than selection sort since it has O(n) best time complexity. 
 
