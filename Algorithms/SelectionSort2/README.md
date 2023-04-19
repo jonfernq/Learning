@@ -94,7 +94,7 @@ thus best case time complexity is the same as worst case. The middle or 'average
 between best and worse case is thus the same also.  
 
 Intuitively and diagrammatically the two embedded loops can be seen to be O(n^2), however this can also be proven more rigorously mathematically.
-The two embedded loops can be expressed as sum of O(n-i-1) for i ranging from 0 to n-2 which can be expressed as:
+To recap, the two embedded loops in selection sort iterate over an array or list to find the minimum element and swap it with the element at the beginning of the unsorted portion of the array. The outer loop iterates from the beginning to the second-to-last element (0 to n-2), and the inner loop iterates from the current element of the outer loop to the last element (i+1 to n-1). Since the number of comparisons made in the inner loop depends on the value of i, the total number of comparisons can be expressed as the sum of O(n-i-1) for i ranging from 0 to n-2. When you expand the sum O(n-i-1) for i ranging from 0 to n-2, you get:
 
 O(n-1) + O(n-2) + O(n-3) + ... + O(2) + O(1)
 
