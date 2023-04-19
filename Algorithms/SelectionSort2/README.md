@@ -1,6 +1,6 @@
 ## Selection Sort 
-Algorithms Portfolio Project - Week 2
-Jon Fernquest
+- Algorithms Portfolio Project - Week 2
+- Jon Fernquest
 
 Selection sort is a simple comparison-based in place sorting algorithm.
 Ascending sort order is chosen here to keep things simple. 
