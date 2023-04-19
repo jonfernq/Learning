@@ -55,7 +55,7 @@ print("Sorted array:", A)
 
 ### Loop Invariants: 
 
-There are three potential loop invariants that can be used with mathematical induction to proof correctness 
+There are three potential loop invariants that can be used with mathematical induction to prove correctness 
 (Meyer 2009, 2014; Furia, Meyer and Velder 2014; Paige 1986): 
 
 **Outer Loop:** 
@@ -87,11 +87,13 @@ Sum(n) = Sum of n terms of an arithmetic progression
 
 ### Mathematical Proof of Time Complexity
 
-In the worst case scenario the array is unsorted and the smallest array element is at the very end of the array, so that the inner loop always finds a new minimum in each iteration. 
+In the worst case scenario, the array is unsorted and the smallest array element is at the very end of the array, so that the inner loop always finds a new minimum in each iteration. 
 
 However, even if the array is already sorted, the iteration over the two embedded loops will still take place, 
-thus best case time complexity is the same as worst case. The middle or 'average' case (not 'average' in the statistical sense) is thus the same also.  
+thus best case time complexity is the same as worst case. The middle or 'average' case (not 'average' in the statistical sense) 
+between best and worse case is thus the same also.  
 
+Intuitively and diagrammatically the two embedded loops can be seen to be O(n^2), however this can also be proven more rigorously mathematically.
 The two embedded loops can be expressed as sum of O(n-i-1) for i ranging from 0 to n-2 which can be expressed as:
 
 O(n-1) + O(n-2) + O(n-3) + ... + O(2) + O(1)
@@ -99,7 +101,7 @@ O(n-1) + O(n-2) + O(n-3) + ... + O(2) + O(1)
 This is an arithmetic series with n-1 terms, where the common difference between consecutive terms is -1 
 (since we are subtracting 1 from n in each term), and the first term is O(n-1).
 
-The sum of an arithmetic series is calculated:
+The sum of an arithmetic series is:
 
 Sum = (n/2) * (2a + (n-1)d)
 
@@ -113,7 +115,7 @@ Simplifying further, we get:
 
 Sum = ((n-1)/2) * (2O(n-1) - (n-1))
 
-Dropping the constant terms and lower order terms, the sum can be expressed in Big-O notation as:
+Dropping the constant terms and lower order terms, in Big-O notation:
 
 Sum = O(n^2)
 
