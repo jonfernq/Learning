@@ -200,6 +200,12 @@ Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). Windows Internals. Micros
 
 Love, R. (2010). Linux Kernel Development. Addison-Wesley.
 
+Also:
+
+Bryant, R. E., & O'Hallaron, D. R. (2015). Computer Systems: A Programmer's Perspective. Pearson.
+
+"Computer Systems: A Programmer's Perspective" is a comprehensive textbook that provides a thorough understanding of computer systems from a programmer's perspective. It covers the fundamental concepts, principles, and techniques of computer architecture, operating systems, and networking, with a focus on how these components interact to form a complete computer system. The book takes a bottom-up approach, starting with the basic building blocks of computer systems and gradually building up to more advanced topics, making it suitable for both undergraduate and graduate-level courses in computer systems, computer organization, and computer architecture. It includes numerous practical examples, case studies, and exercises that help readers develop practical skills in system programming and problem-solving. Overall, the book offers a deep insight into the inner workings of computer systems and provides a solid foundation for understanding modern computer architecture and system-level programming.
+
 ---
 > In the area of algorithms Sedgewick at Princeton provides nice lectures at Coursera. Is there anything like that for operating systems, in terms of publicly accessible university lectures? 
 
