@@ -7,13 +7,13 @@ solves these sub-problems, and then combines the smaller solutions into a soluti
 
 **Steps:** 
 
-- **Divide:** Recursively divide complex problem into easier smaller sub-problems. 
+- **Divide:** Recursively divide complex problem into easier smaller, sub-problems. 
 
 - **Conquer:** Recursively solve sub-problems with same approach. 
 
-- **Combine:** Combine small solutions to sub-problems into larger solution to original complex problem. 
+- **Combine:** Combine small solutions into larger solution to original complex problem. 
 
-- **Base case:** A condition for terminating recursion, indicating when complex problem has been simplified enough to be solved without further division.
+- **Base case:** A condition for terminating recursio that indicates when complex problem has been simplified enough to be solved without further division.
 
 (Cormen 2022:76)
 
@@ -26,8 +26,6 @@ solves these sub-problems, and then combines the smaller solutions into a soluti
 - Conquer: Recursively sort each successive smaller half arrays until these subproblems are solved trivially, namely when sub-array has only one or zero elements, which are already sorted trivially by definition.
 
 - Combine: Sorted smaller sublists successively combined in sorted order to form final sorted list.
-
-(Sande, Lau, and Ngo 2022)
 
 **2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays.
 
@@ -119,31 +117,21 @@ Using the 'substitution method' a 'recurrence relation' is solved to find time c
 
 ### REFERENCES: 
 
-Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to Algorithms.** Fourth Edition. MIT Press. [Ebook]
+Abelson, H., Sussman, G. J., & Sussman, J. (1996). *Structure and Interpretation of Computer Programs.* MIT Press.
 
-Kleinberg, J., & Tardos, E. (2005). Algorithm Design. Pearson Education.
+Barendregt, H. (1984). *The Lambda Calculus: Its Syntax and Semantics.* North-Holland.
+
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to Algorithms.* Fourth Edition. MIT Press. [Ebook]
+
+Goodrich, M. T., & Tamassia, R. (2015). *Data Structures and Algorithms in Java.* John Wiley & Sons.
+
+Knuth, D. E. (1994). *Concrete Mathematics: A Foundation for Computer Science.* Addison-Wesley.
+
+Pierce, B. C., Casinghino, C., et al. (2021). *Software Foundations.* Electronic version available at https://softwarefoundations.cis.upenn.edu.
+
+Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022).*Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.* raywenderlich.com
 
 Sedgewick, R., & Wayne, K. (2011). *Algorithms.* Addison-Wesley Professional.
-
-Dasgupta, S., Papadimitriou, C. H., & Vazirani, U. V. (2008). Algorithms. McGraw-Hill Education.
-
-Goodrich, M. T., & Tamassia, R. (2015). Data Structures and Algorithms in Java. John Wiley & Sons.
-
-Knuth, D. E. (1997). The Art of Computer Programming, Volume 1: Fundamental Algorithms. Addison-Wesley Professional.
-
-Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022). 'Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.' raywenderlich.com
-
-Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
-
-Harel, D. (2012). Algorithmics: The Spirit of Computing. Addison-Wesley Professional.
-
-Abelson, H., Sussman, G. J., & Sussman, J. (1996). Structure and Interpretation of Computer Programs. MIT Press.
-
-Knuth, D. E. (1994). Concrete Mathematics: A Foundation for Computer Science. Addison-Wesley.
-
-Pierce, B. C., Casinghino, C., et al. (2021). Software Foundations. Electronic version available at https://softwarefoundations.cis.upenn.edu.
-
-Barendregt, H. (1984). The Lambda Calculus: Its Syntax and Semantics. North-Holland.
 
 **Wikipedia:** Divide-and-conquer algorithm; Functional programming; Recursion; Recurrence relation; Call stack; Side effects; Immutable object; MapReduce; Aggregate function; Fork-join model
 
