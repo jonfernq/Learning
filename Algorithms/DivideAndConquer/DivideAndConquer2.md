@@ -58,6 +58,22 @@ has been simplified enough to be solved without further division.
 
 - **Parallel and Distributed Computing:** divide into smaller tasks solved independently by multiple processors.
 
+- **MapReduce** is a programming model and framework for processing large-scale data sets in a distributed and parallel manner. It is widely used for big data processing and is known for its scalability and fault tolerance.
+
+The MapReduce programming model follows a divide and conquer approach, where a large problem is divided into smaller subproblems that can be processed independently in parallel. The MapReduce framework then orchestrates the distribution of data and computation across a cluster of machines, and the results from the individual subproblems are combined to obtain the final solution.
+
+In MapReduce, the "Map" step involves processing input data in parallel across multiple machines and generating intermediate key-value pairs as output. The intermediate results are then grouped by key and passed to the "Reduce" step. The "Reduce" step involves processing the grouped intermediate results in parallel across multiple machines and generating the final output, which is the solution to the original problem.
+
+The divide and conquer approach is evident in the MapReduce model, as the processing of large data sets is divided into smaller chunks that can be processed independently in parallel, similar to the "divide" step in divide and conquer. The intermediate results from the "Map" step are combined and grouped by key, similar to the "combine" step in divide and conquer. Finally, the "Reduce" step involves processing the grouped intermediate results in parallel and generating the final output, similar to the "conquer" step in divide and conquer.
+
+Overall, MapReduce can be seen as a practical implementation of the divide and conquer approach for large-scale data processing in a distributed and parallel computing environment.
+
+- **Functional programming** and divide and conquer can be closely related in the sense that functional programming techniques, such as higher-order functions and recursion, can be used to implement divide and conquer algorithms effectively. Functional programming languages, such as Haskell, Lisp, and ML, are well-suited for implementing divide and conquer algorithms due to their support for higher-order functions and other functional programming concepts.
+
+In functional programming, the use of higher-order functions allows for passing functions as arguments to other functions, which can be used to implement the "divide" step of the divide and conquer approach. Recursion, which is commonly used in functional programming, can be used to implement the "conquer" step of the divide and conquer approach by recursively solving smaller subproblems until they are small enough to be solved directly. Finally, the combination of results from smaller subproblems, which is the "combine" step of the divide and conquer approach, can be implemented using higher-order functions to merge or concatenate results obtained from smaller subproblems.
+
+Overall, functional programming can provide a natural and expressive way to implement divide and conquer algorithms, leveraging higher-order functions and recursion to break down problems into smaller subproblems and combine results to obtain a solution.
+
 ---
 
 > What are the pros and cons of the divide and conquer approach?
