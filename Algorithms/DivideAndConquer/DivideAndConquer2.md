@@ -139,7 +139,7 @@ Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
 
 Harel, D. (2012). Algorithmics: The Spirit of Computing. Addison-Wesley Professional.
 
-**Wikipedia:** Divide-and-conquer algorithm; Recursion; Recurrence relation; MapReduce; Call stack; Side effects; Immutable object; Aggregate function; Fork-join model
+**Wikipedia:** Divide-and-conquer algorithm; Functional programming; Recursion; Recurrence relation; Call stack; Side effects; Immutable object; MapReduce; Aggregate function; Fork-join model
 
 
 
