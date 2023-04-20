@@ -178,6 +178,28 @@ These are just a few examples of books that cover system tuning and performance 
 
 "Linux Kernel Development" by Robert Love
 
+Or: 
+
+Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). Operating System Concepts. Wiley.
+
+Tanenbaum, A. S., & Bos, H. (2014). Modern Operating Systems. Pearson.
+
+Stallings, W. (2018). Operating Systems: Internals and Design Principles. Pearson.
+
+Arpaci-Dusseau, R. H., & Arpaci-Dusseau, A. C. (2014). Operating Systems: Three Easy Pieces. Arpaci-Dusseau Books.
+
+Anderson, T., & Dahlin, M. (2014). Operating Systems: Principles and Practice. Recursive Books.
+
+Crowley, C. (2015). Operating Systems: A Design-Oriented Approach. CRC Press.
+
+Comer, D. (2015). Operating System Design: The Xinu Approach. CRC Press.
+
+Stevens, W. R., & Rago, S. A. (2013). Advanced Programming in the UNIX Environment. Addison-Wesley.
+
+Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). Windows Internals. Microsoft Press.
+
+Love, R. (2010). Linux Kernel Development. Addison-Wesley.
+
 
 
 
