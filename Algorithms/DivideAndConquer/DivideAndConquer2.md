@@ -2,18 +2,16 @@
 
 > Explain the divide and conquer approach and provide examples. 
 
-'Divide and conquer' ia a problem-solving approach that divides a complex problem into easier sub-problems,
-solves these sub-problems, and then combines the smaller solutions into a solution to the larger problem: 
+'Divide and conquer' is a problem-solving approach that divides a complex problem into easier sub-problems,
+solves these sub-problems, and then combines the smaller solutions into a solution to the larger problem. 
 
 **Steps:** 
 
 - **Divide:** Recursively divide complex problem into easier smaller, sub-problems. 
 
-- **Conquer:** Recursively solve sub-problems with same approach. 
+- **Conquer:** Recursively solve sub-problems. 
 
-- **Combine:** Combine small solutions into larger solution to original complex problem. 
-
-- **Base case:** A condition for terminating recursio that indicates when complex problem has been simplified enough to be solved without further division.
+- **Combine:** Combine smaller problem solutions into solution to original larger problem. 
 
 (Cormen 2022:76)
 
@@ -23,15 +21,15 @@ solves these sub-problems, and then combines the smaller solutions into a soluti
 
 - Divide: Array to be sorted divided into two halves.
 
-- Conquer: Recursively sort each successive smaller half arrays until these subproblems are solved trivially, namely when sub-array has only one or zero elements, which are already sorted trivially by definition.
+- Conquer: Recursively sort successive smaller half arrays until these sub-problems are solved trivially, namely when sub-array has only one or zero elements, which are already sorted by definition.
 
-- Combine: Sorted smaller sublists successively combined in sorted order to form final sorted list.
+- Combine: Sorted smaller sub-lists successively combined in sorted order to form final sorted list.
 
-**2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays.
+**2. Quick Sort:** Selects pivot element from array, partitions array into two sub-arrays based on pivot, and recursively sorts the two sub-arrays.
 
 - Divide: Array to be sorted divided into two smaller sub-arrays based on a chosen pivot element. Elements in the original array are partitioned such that elements smaller than the pivot are placed in one sub-array, and elements larger than the pivot are placed in another sub-array. 
 
-- Conquer: The smaller sublists created in the divide step (i.e., the sublists of elements smaller than the pivot and the sublists of elements larger than the pivot) are recursively sorted. Division is repeated until sub-arrays have only one or zero elements, which are already sorted by definition.
+- Conquer: The smaller sublists created in the divide step are recursively sorted. Division is repeated until sub-arrays have only one or zero elements, which are already sorted by definition.
 
 - Combine: Sorted sublists are re-combined to form final sorted list. Since the sorting is done in place by swapping elements within the original list, the combining step is not explicitly required. The pivot element is chosen and adjusted during the partitioning step to ensure that the elements smaller than the pivot are on one side, and the elements larger than the pivot are on the other side, effectively sorting the list.
 
@@ -46,7 +44,7 @@ Recursion enables the expression of computations as a series of function calls a
 
 Recursion is well-situated in the functional programming paradigm, a paradigm which promotes a style of programming that is declarative, concise, modular, expressive, and rigorous. Functional programming is built on the mathematical foundation of the lambda calculus, where functions can be defined in a recursive manner and can operate on other functions as data. These 'higher-order functions' are 'first-class citizens' that can be passed as arguments, returned as values, and stored in data structures. This results in  'immutable' objects where data and variables do not change their values once defined. This results in programs without 'side effects', that is state changes that are difficult to track and control. This in turn makes it easier to reason about code and prove programs to be correct. 
 
-However, divide and conquer can also be applied to non-recursive or imperative algorithms. Iterative or loop-based algorithms are typical for non-recursive divide and conquer approaches. Algorithms can often be implemented either recursively and non-recursively. Recursion may not be the most efficient or preferred approach due to the overhead associated with function calls.
+However, divide and conquer can also be applied to non-recursive or imperative algorithms. Iterative or loop-based algorithms are typical for the non-recursive divide and conquer approach. Algorithms can often be implemented either recursively and non-recursively. Recursion may not be the most efficient or preferred approach due to the overhead associated with function calls. 
 
 (Abelson, Sussman, & Sussman 1996; Knuth 1994; Barendregt 1984; Pierce et al 2021)
 
