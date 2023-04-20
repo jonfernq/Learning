@@ -236,6 +236,66 @@ Yes, there are publicly accessible university lectures on operating systems that
 
 These are just a few examples of publicly accessible university lectures on operating systems, and there may be other resources available online as well. It's always a good idea to check the websites of universities or educational platforms like Coursera, edX, or YouTube for additional resources.
 
+---
+> Are you familiar with the notion of **'stride'** and how it is used to control locality? 
+
+Yes, the notion of "stride" refers to the pattern of accessing memory locations with a fixed interval or step. It is often used in computer systems to control locality and optimize memory access.
+
+In the context of cache optimization, stride prefetching is a technique where the processor predicts future memory accesses based on the observed pattern of strides, or fixed intervals, between consecutive memory accesses. The processor uses this pattern to prefetch or fetch data into the cache ahead of time, so that the data is readily available when it is actually needed, reducing the latency of memory access.
+
+Stride prefetching is commonly used in processors with hardware prefetchers, which are dedicated hardware units that automatically fetch data from main memory into cache based on observed memory access patterns. By prefetching data into cache based on the stride pattern, stride prefetching can effectively exploit spatial locality, as the data that is accessed with a fixed stride is likely to be stored in nearby memory locations, improving overall system performance.
+
+The stride prefetching technique is just one example of how strides can be used to control locality and optimize memory access in computer systems. Other techniques, such as stride-based loop optimizations and memory access optimizations, may also leverage the concept of stride to improve system performance by taking advantage of the spatial locality in memory access patterns.
+
+---
+> How is this done with GPUs? For example, NVidia GPUs under CUDA? 
+
+In the context of GPUs (Graphics Processing Units) and CUDA (Compute Unified Device Architecture), stride-based optimizations are commonly used to improve memory access patterns and exploit locality for efficient data processing.
+
+CUDA is a parallel computing framework developed by NVIDIA for programming GPUs. GPUs are designed for parallel processing and are optimized for high-performance graphics rendering and general-purpose computing. Stride-based optimizations are used in CUDA programming to optimize memory access patterns and minimize memory latency.
+
+In CUDA, strides can be controlled through various mechanisms, including the use of thread blocks, threads, and memory layouts. For example, thread blocks in CUDA are groups of threads that are executed in parallel, and threads within a thread block can access shared memory, which is a fast on-chip memory, to communicate and share data. By organizing threads within a thread block to access shared memory with a specific stride, CUDA programs can control the memory access pattern and optimize locality, reducing the latency of memory access.
+
+In addition, CUDA provides support for different memory layouts, such as global memory, shared memory, constant memory, and texture memory, each with its own characteristics in terms of access time, capacity, and caching behavior. CUDA programmers can optimize the memory access pattern by choosing the appropriate memory layout and configuring the stride pattern based on the specific requirements of their application.
+
+Overall, stride-based optimizations are important in CUDA programming to efficiently utilize the memory hierarchy of GPUs and exploit locality for high-performance data processing. By carefully controlling the memory access pattern and leveraging spatial locality, CUDA programmers can optimize memory access, reduce memory latency, and improve the overall performance of GPU-accelerated applications.
+
+---
+> When one is running deep learning models or transformers with GPUs (for example with PyTorch or HUgging Face) I guess the CUDA programming has already been taken care of , and you don't have to worry about it ?  Can the GPU be configured via this software ? 
+
+When using deep learning libraries like PyTorch or Hugging Face for training or inference of deep learning models on GPUs, the underlying CUDA programming is typically abstracted away from the user, and the libraries take care of GPU configuration and optimizations. These libraries provide high-level APIs that handle the interaction with the GPU and abstract the low-level CUDA programming details, making it easier for users to write deep learning code without explicitly writing CUDA code.
+
+Most deep learning libraries, including PyTorch and Hugging Face, are designed to work seamlessly with GPUs and utilize CUDA optimizations by default. These libraries provide GPU acceleration through optimized CUDA kernels and APIs for matrix computations, neural network operations, and other deep learning tasks. The GPU configuration and optimizations are usually managed internally by the library and are automatically leveraged to accelerate the deep learning computations.
+
+However, some deep learning libraries also provide options for users to configure the GPU settings, such as the number of GPUs to use, memory allocation, and other GPU-related parameters, depending on the library and its configuration options. These options may vary depending on the library and the specific deep learning task you are working on.
+
+It's important to note that while deep learning libraries abstract the low-level CUDA programming details, understanding the basics of CUDA and GPU architecture can still be beneficial for optimizing and troubleshooting deep learning code running on GPUs. Advanced users who require fine-grained control over GPU settings or want to optimize performance for specific use cases may choose to write custom CUDA code or configure GPU settings manually, depending on their requirements.
+
+In summary, when using deep learning libraries like PyTorch or Hugging Face, the underlying CUDA programming and GPU configuration are typically abstracted away from the user, and the libraries take care of GPU optimizations. However, some libraries may provide options for users to configure GPU settings based on their specific requirements. It's always recommended to refer to the documentation of the specific library being used for details on GPU configuration options and best practices.
+
+---
+- What books are good for  understanding the basics of CUDA and GPU architecture ? 
+
+There are several books that can help you understand the basics of CUDA and GPU architecture. Here are some recommendations:
+
+"Programming Massively Parallel Processors: A Hands-on Approach" by David B. Kirk and Wen-mei W. Hwu: This book provides an in-depth introduction to GPU architecture, CUDA programming model, and programming techniques for parallel computing on GPUs. It covers the fundamentals of CUDA programming, GPU memory hierarchy, parallel programming patterns, and optimization techniques, and includes practical examples and hands-on exercises.
+
+"CUDA Handbook: A Comprehensive Guide to GPU Programming" by Nicholas Wilt: This book covers the basics of GPU architecture, CUDA programming model, memory hierarchy, and optimization techniques. It provides step-by-step guidance on writing CUDA code, understanding memory management, and optimizing GPU performance for various applications.
+
+"CUDA by Example: An Introduction to General-Purpose GPU Programming" by Jason Sanders and Edward Kandrot: This book offers a practical approach to learning CUDA programming, with examples and case studies illustrating GPU programming concepts, memory management, and optimization techniques. It covers the basics of GPU architecture, CUDA programming model, and parallel computing concepts, and includes code examples that demonstrate how to write CUDA code for real-world applications.
+
+"GPU Gems: Programming Techniques, Tips, and Tricks for Real-Time Graphics" edited by Randima Fernando: This book is a collection of articles written by experts in the field of GPU programming, covering a wide range of topics related to GPU architecture, CUDA programming, and optimization techniques. It provides insights into various aspects of GPU programming, including performance optimization, shader programming, parallel algorithms, and more.
+
+"CUDA for Engineers: An Introduction to High-Performance Parallel Computing" by Duane Storti and Mete Yurtoglu: This book offers a practical approach to CUDA programming, with examples and case studies focused on engineering and scientific computing. It covers the basics of GPU architecture, CUDA programming model, memory management, and optimization techniques, and includes examples and exercises for hands-on learning.
+
+These books can provide you with a solid foundation in CUDA programming and GPU architecture, from basic concepts to advanced optimization techniques. It's recommended to read multiple sources and practice with hands-on exercises to gain practical experience and deepen your understanding of CUDA and GPU programming.
+
+
+
+
+
+
+
 
 
 
