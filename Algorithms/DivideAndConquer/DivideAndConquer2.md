@@ -27,13 +27,17 @@ solves these sub-problems, and then combines the smaller solutions into a soluti
 
 - Combine: Sorted smaller sublists successively combined in sorted order to form final sorted list.
 
-**2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays. 
+(Sande, Lau, and Ngo 2022)
+
+**2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays.
 
 - Divide: Array to be sorted divided into two smaller sub-arrays based on a chosen pivot element. Elements in the original array are partitioned such that elements smaller than the pivot are placed in one sub-array, and elements larger than the pivot are placed in another sub-array. 
 
 - Conquer: The smaller sublists created in the divide step (i.e., the sublists of elements smaller than the pivot and the sublists of elements larger than the pivot) are recursively sorted. Division is repeated until sub-arrays have only one or zero elements, which are already sorted by definition.
 
 - Combine: Sorted sublists are re-combined to form final sorted list. Since the sorting is done in place by swapping elements within the original list, the combining step is not explicitly required. The pivot element is chosen and adjusted during the partitioning step to ensure that the elements smaller than the pivot are on one side, and the elements larger than the pivot are on the other side, effectively sorting the list.
+
+(Sande, Lau, and Ngo 2022)
 
 ---
 > How is the divide and conquer approach useful in recursion to solve complex problems? 
@@ -138,6 +142,8 @@ Dasgupta, S., Papadimitriou, C. H., & Vazirani, U. V. (2008). Algorithms. McGraw
 Goodrich, M. T., & Tamassia, R. (2015). Data Structures and Algorithms in Java. John Wiley & Sons.
 
 Knuth, D. E. (1997). The Art of Computer Programming, Volume 1: Fundamental Algorithms. Addison-Wesley Professional.
+
+Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022). 'Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.' raywenderlich.com
 
 Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
 
