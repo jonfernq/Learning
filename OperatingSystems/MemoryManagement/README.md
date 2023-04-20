@@ -156,6 +156,29 @@ There are several books that cover the topic of system tuning and performance op
 
 These are just a few examples of books that cover system tuning and performance optimization in Windows operating systems, including Windows 10. There are many other resources available online, including official documentation, blogs, and tutorials, that can help you learn more about system tuning in Windows. It's recommended to consult multiple sources and experiment with changes in a controlled environment to ensure system stability and reliability.
 
+### REFERENCES
+
+"Operating System Concepts" by Abraham Silberschatz, Peter B. Galvin, and Greg Gagne
+
+"Modern Operating Systems" by Andrew S. Tanenbaum and Herbert Bos
+
+"Operating Systems: Internals and Design Principles" by William Stallings
+
+"Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
+
+"Operating Systems: Principles and Practice" by Thomas Anderson and Michael Dahlin
+
+"Operating Systems: A Design-Oriented Approach" by Charles Crowley
+
+"Operating System Design: The Xinu Approach" by Douglas Comer
+
+"Advanced Programming in the UNIX Environment" by W. Richard Stevens and Stephen A. Rago
+
+"Windows Internals" by Mark Russinovich, David A. Solomon, and Alex Ionescu
+
+"Linux Kernel Development" by Robert Love
+
+
 
 
 
