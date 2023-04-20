@@ -20,8 +20,14 @@ and then combines the solutions of these problems into a solution to the complex
 
 Recursion solves problems using functions that call themselves, the partial sub-problems are neatly and conceniently stored on the function call stack. 
 
-Expression of problems using recursion allows for a simple, concise and easily understood solution. 
+Expression of problems using recursion allows for a simple, concise , elegant, and easily understood solution. 
 This makes a solution more reliable, adaptable and re-usable. 
+
+Recursion is also a hallmark of functional programming and increased control over what programs do. 
+
+- Functional programming allows for proofs of program correctness
+- Functional programming is associate with immutable objects, objects whose state cannot be modified after it is created.
+- Functional programming can guarantee that code has no side effects, that is does not cause a change in state.
 
 ---
 > What is the role of the 'substitution method' in recursion? 
@@ -133,7 +139,7 @@ Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
 
 Harel, D. (2012). Algorithmics: The Spirit of Computing. Addison-Wesley Professional.
 
-**Wikipedia:** Divide-and-conquer algorithm; Recursion; Recurrence relation; MapReduce; Call stack; Aggregate function; Fork-join model
+**Wikipedia:** Divide-and-conquer algorithm; Recursion; Recurrence relation; MapReduce; Call stack; Side effects; Immutable object; Aggregate function; Fork-join model
 
 
 
