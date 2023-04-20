@@ -55,18 +55,17 @@ However, divide and conquer can also be applied to non-recursive or imperative a
 ---
 > What is the role of the 'substitution method' in recursion? 
 
-Whereas correctness of divide-and-conquer algorithms is proven by mathematical induction, 
-in the substitution method a recurrence relation is solved to find time complexity. 
+Using the 'substitution method' a 'recurrence relation' is solved to find time complexity. 
 
 **Steps:**
 
-- Recurrence relation: This involves expressing the time complexity of a recursive algorithm in terms of itself. For example, if the recurrence relation is T(n) = 2T(n/2) + f(n), where T(n) represents the time complexity of the algorithm for an input size of n, and f(n) represents the time taken by the non-recursive part of the algorithm, then the recurrence relation is written down as T(n) = 2T(n/2) + f(n).
+- **Recurrence relation:** the time complexity of a recursive algorithm is expressed in terms of itself, in a recurrence relation such as T(n) = 2T(n/2) + f(n), where T(n) represents the time complexity of the algorithm for an input size of n, and f(n) represents the time taken by the non-recursive part of the algorithm.
 
-- Guess: Based on the form of the recurrence relation, an educated guess is made for the solution of the recurrence relation. This guess is typically based on the pattern observed in the recursive function calls and the base case(s) of the recursion.
+- **Educated Guess:** Based on the pattern observed in the recursive function calls and the base case of the recursion, an educated guess is made for the solution of the recurrence relation. 
 
-- Mathematical induction: The guessed solution is then proven using mathematical induction. The base case(s) are verified, and the inductive step is established to prove that the guessed solution holds for all values of the input size n.
+- **Mathematical induction:** The proposed solution is then proven using mathematical induction. The base case is verified, and the inductive step is established to prove that the guessed solution holds for all values of the input.
 
-- Time complexity: Once the guessed solution is proven, it can be used to determine the overall time complexity of the recursive algorithm. The final time complexity is typically expressed in big-O notation, which provides an upper bound on the growth rate of the algorithm as the input size increases.
+- **Time complexity:** Once the guessed solution is proven, it can be used to determine the overall time complexity of the recursive algorithm, typically expressed in Big-O notation, providing an upper bound on the growth rate of the algorithm as the input size increases.
 
 (Cormen 2022:90-5: Section 4.3)
 
