@@ -51,7 +51,9 @@ The substitution method typically involves the following steps:
 The substitution method is a useful technique for analyzing the time complexity of recursive algorithms, as it provides a systematic approach to derive the overall time complexity of the algorithm based on the recurrence relation. It helps in understanding the performance characteristics of recursive algorithms and in making informed decisions about algorithm design and optimization.
 
 ---
-> Provide examples of the 'divide and conquer' approach
+> What are the applications of the divide and conquer approach? Provide Examples. 
+
+- **Sorting:** Merge Sort, Quick Sort, and Heap Sort.
 
 **1. Merge Sort:** Merge Sort is a sorting algorithm that uses the divide and conquer approach to sort an array of elements. It divides the array into two halves, recursively sorts the two halves, and then merges the sorted halves to obtain the final sorted array.
 
@@ -69,16 +71,9 @@ The substitution method is a useful technique for analyzing the time complexity 
 
 - Combine: Sorted sublists are re-combined to form final sorted list. Since the sorting is done in place by swapping elements within the original list, the combining step is not explicitly required. The pivot element is chosen and adjusted during the partitioning step to ensure that the elements smaller than the pivot are on one side, and the elements larger than the pivot are on the other side, effectively sorting the list.
 
-**3. Binary Search:** Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
-
-**4. Fast Fourier Transform (FFT):** The FFT algorithm is a widely used algorithm in signal processing and other fields that uses the divide and conquer approach to efficiently compute the Discrete Fourier Transform (DFT) of a sequence of values.
-
----
-> What are the applications of the divide and conquer approach? 
-
-- **Sorting:** Merge Sort, Quick Sort, and Heap Sort.
-
 - **Searching:** Binary Search finds position of target element in sorted array.
+
+**Binary Search:** Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
 
 - **Matrix Operations:** Matrix multiplication, matrix exponentiation, and other matrix operations.
 
@@ -87,6 +82,8 @@ The substitution method is a useful technique for analyzing the time complexity 
 - **Graph Algorithms:** Depth-First Search (DFS) and Breadth-First Search (BFS).
 
 - **Numerical Computations:** fast Fourier transform (FFT), algorithms for multiplying large numbers (Karatsuba algorithm)
+
+**4. Fast Fourier Transform (FFT):** The FFT algorithm is a widely used algorithm in signal processing and other fields that uses the divide and conquer approach to efficiently compute the Discrete Fourier Transform (DFT) of a sequence of values.
  
 - **Image Processing:** image filtering, edge detection, and image segmentation, finding closest pair of points, processing of images by dividing into smaller subimages.
 
@@ -105,7 +102,6 @@ The MapReduce framework orchestrates the distribution of data and computation ac
 The divide and conquer approach is evident in the MapReduce model, as the processing of large data sets is divided into smaller chunks that can be processed independently in parallel, similar to the "divide" step in divide and conquer. The intermediate results from the "Map" step are combined and grouped by key, similar to the "combine" step in divide and conquer. Finally, the "Reduce" step involves processing the grouped intermediate results in parallel and generating the final output, similar to the "conquer" step in divide and conquer.
 
 ---
-
 > What are the pros and cons of the divide and conquer approach?
 
 **Pros:**
