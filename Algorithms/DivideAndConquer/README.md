@@ -1,6 +1,5 @@
 ## Divide and Conquer 
 
----
 > Explain the divide and conquer approach and provide examples. 
 
 The divide and conquer approach is a problem-solving technique where a complex problem is divided into smaller, more manageable subproblems, which are then solved independently. The solutions to the subproblems are combined to obtain the solution to the original problem. This approach is often used in computer science, mathematics, and other fields to solve problems efficiently by breaking them down into smaller, more tractable subproblems.
