@@ -110,6 +110,27 @@ The substitution method typically involves the following steps:
 
 The substitution method is a useful technique for analyzing the time complexity of recursive algorithms, as it provides a systematic approach to derive the overall time complexity of the algorithm based on the recurrence relation. It helps in understanding the performance characteristics of recursive algorithms and in making informed decisions about algorithm design and optimization.
 
+---
+### REFERENCES: 
+
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms. MIT Press.
+
+Kleinberg, J., & Tardos, E. (2005). Algorithm Design. Pearson Education.
+
+Sedgewick, R., & Wayne, K. (2011). Algorithms. Addison-Wesley Professional.
+
+Dasgupta, S., Papadimitriou, C. H., & Vazirani, U. V. (2008). Algorithms. McGraw-Hill Education.
+
+Goodrich, M. T., & Tamassia, R. (2015). Data Structures and Algorithms in Java. John Wiley & Sons.
+
+Knuth, D. E. (1997). The Art of Computer Programming, Volume 1: Fundamental Algorithms. Addison-Wesley Professional.
+
+Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
+
+Harel, D. (2012). Algorithmics: The Spirit of Computing. Addison-Wesley Professional.
+
+
+
 
 
 
