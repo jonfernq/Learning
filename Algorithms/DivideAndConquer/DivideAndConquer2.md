@@ -27,11 +27,30 @@ has been simplified enough to be solved without further division.
 
 - Combine: Sorted sublists successively compared and combined in sorted orrder to form final sorted list.
 
-- **2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays. 
+**2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays. 
 
-- **3. Binary Search:** Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
+**3. Binary Search:** Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
 
-- **4. Fast Fourier Transform (FFT):** The FFT algorithm is a widely used algorithm in signal processing and other fields that uses the divide and conquer approach to efficiently compute the Discrete Fourier Transform (DFT) of a sequence of values.
+**4. Fast Fourier Transform (FFT):** The FFT algorithm is a widely used algorithm in signal processing and other fields that uses the divide and conquer approach to efficiently compute the Discrete Fourier Transform (DFT) of a sequence of values.
+
+---
+> What are the applications of the divide and conquer approach? 
+
+- **Sorting:** Merge Sort, Quick Sort, and Heap Sort.
+
+- **Searching:** Binary Search finds position of target element in sorted array.
+
+- **Matrix Operations:** Matrix multiplication, matrix exponentiation, and other matrix operations.
+
+- **Computational Geometry:** finding the closest pair of points, convex hull, and line segment intersection.
+
+- **Graph Algorithms:** Depth-First Search (DFS) and Breadth-First Search (BFS).
+- 
+- **Numerical Computations:** fast Fourier transform (FFT).
+- 
+- **Image Processing:** image filtering, edge detection, and image segmentation, process images by dividing into smaller subimages.
+
+- **Parallel and Distributed Computing:** divide into smaller tasks solved independently by multiple processors.
 
 ---
 ### REFERENCES: 
