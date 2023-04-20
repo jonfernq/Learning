@@ -21,24 +21,22 @@ and then combines the solutions of these problems into a solution to the complex
 
 
 ---
-> What is the role of the substitution method in recursion? 
+> What is the role of the 'substitution method' in recursion? 
 
 Whereas correctness of divide-and-conquer algorithms is proven by mathematical induction, 
-the substitution method analyzes the time complexity. 
+in the substitution method a recurrence relation is solved to find time complexity. 
 
-In this approach, recursive function calls are replaced with recursive function definitions resulting in a recurrence relation that is solved to find time complexity.
+**Steps:**
 
-The substitution method typically involves the following steps:
+- Recurrence relation: This involves expressing the time complexity of a recursive algorithm in terms of itself. For example, if the recurrence relation is T(n) = 2T(n/2) + f(n), where T(n) represents the time complexity of the algorithm for an input size of n, and f(n) represents the time taken by the non-recursive part of the algorithm, then the recurrence relation is written down as T(n) = 2T(n/2) + f(n).
 
-- Writing down the recurrence relation: This involves expressing the time complexity of a recursive algorithm in terms of itself. For example, if the recurrence relation is T(n) = 2T(n/2) + f(n), where T(n) represents the time complexity of the algorithm for an input size of n, and f(n) represents the time taken by the non-recursive part of the algorithm, then the recurrence relation is written down as T(n) = 2T(n/2) + f(n).
+- Guess: Based on the form of the recurrence relation, an educated guess is made for the solution of the recurrence relation. This guess is typically based on the pattern observed in the recursive function calls and the base case(s) of the recursion.
 
-- Making an educated guess: Based on the form of the recurrence relation, an educated guess is made for the solution of the recurrence relation. This guess is typically based on the pattern observed in the recursive function calls and the base case(s) of the recursion.
+- Mathematical induction: The guessed solution is then proven using mathematical induction. The base case(s) are verified, and the inductive step is established to prove that the guessed solution holds for all values of the input size n.
 
-- Proving the guess using mathematical induction: The guessed solution is then proven using mathematical induction. The base case(s) are verified, and the inductive step is established to prove that the guessed solution holds for all values of the input size n.
+- Time complexity: Once the guessed solution is proven, it can be used to determine the overall time complexity of the recursive algorithm. The final time complexity is typically expressed in big-O notation, which provides an upper bound on the growth rate of the algorithm as the input size increases.
 
-- Deriving the final time complexity: Once the guessed solution is proven, it can be used to determine the overall time complexity of the recursive algorithm. The final time complexity is typically expressed in big-O notation, which provides an upper bound on the growth rate of the algorithm as the input size increases.
-
-The substitution method is a useful technique for analyzing the time complexity of recursive algorithms, as it provides a systematic approach to derive the overall time complexity of the algorithm based on the recurrence relation. It helps in understanding the performance characteristics of recursive algorithms and in making informed decisions about algorithm design and optimization.
+(Cormen 2022:90-5: Section 4.3)
 
 ---
 > What are the applications of the divide and conquer approach? Provide Examples. 
