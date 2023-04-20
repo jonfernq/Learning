@@ -1,5 +1,49 @@
 ## Memory Management 
 
+> What is the 'memory hierarchy' and a 'page fault' ? How does the 'memory management' problem arise in computing ? 
+
+The **memory hierarchy** refers to the organization of different levels of memory in a computer system, with varying speeds, capacities, and costs. 
+
+The memory hierarchy typically includes several levels, such as registers, cache, main memory (RAM), and secondary storage (e.g., hard drives). 
+
+The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
+
+A **page fault**, also known as a "page miss," occurs when a program tries to access a page of memory that is not currently in the main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). 
+
+This triggers a process known as "page swapping," where the operating system needs to fetch the required page from secondary storage into main memory before the program can access it. 
+
+Page faults can cause a delay in program execution as the operating system performs the necessary data transfer.
+
+**Memory management** is a fundamental problem in computing that involves allocating and managing the available memory resources efficiently to maximize system performance and minimize overhead. 
+
+The memory management problem arises due to the limited size of main memory (RAM) compared to the potentially larger size of programs and data that need to be stored and processed by a computer system. 
+
+Memory management techniques, such as paging, segmentation, and virtual memory, are used to optimize memory utilization, handle page faults, and provide a virtualized and abstracted view of memory to programs running on a computer system. 
+
+Efficient memory management is critical for overall system performance and stability, as it directly affects the execution speed and responsiveness of programs and the overall efficiency of the computing system.
+
+---
+> How does the paged segmentation scheme solve the problem of  memory management ? 
+
+The paged segmentation scheme is a memory management technique that combines elements of both paging and segmentation to manage memory in a computer system. 
+
+In this scheme, a program's address space is divided into segments, which are further divided into fixed-size pages. Each segment is treated as a separate unit, and each page within a segment is treated as a separate unit as well.
+
+The paged segmentation scheme solves the problem of memory management by providing several benefits:
+
+- Flexibility: The paged segmentation scheme allows for flexibility in managing memory by dividing the program's address space into segments of varying sizes. This allows for efficient allocation of memory based on the specific needs of different parts of the program.
+
+- Address space isolation: Each segment is isolated from other segments, providing protection and security. This prevents one segment from accessing or modifying the memory of another segment, enhancing system security and stability.
+
+- Efficient memory utilization: Paging within each segment allows for efficient utilization of memory by allocating memory in fixed-size pages, which can be managed independently. This helps to minimize internal fragmentation and optimize memory usage.
+
+- Virtual memory support: The paged segmentation scheme can be used to implement virtual memory, which allows programs to access more memory than physically available in the system. Virtual memory provides the illusion of a larger address space to programs, enabling them to run larger programs and handle more data.
+
+- Page fault handling: The paged segmentation scheme provides mechanisms to handle page faults efficiently. When a segment is not in main memory and a page fault occurs, the operating system can bring the required page into memory from secondary storage, minimizing the impact on program execution.
+
+Overall, the paged segmentation scheme helps to efficiently manage memory by providing flexibility, address space isolation, efficient memory utilization, virtual memory support, and effective page fault handling, which collectively contribute to improving system performance and stability.
+
+---
 > Discuss the paged segmentation scheme of memory management.
 
 The paged segmentation scheme is a memory management scheme that combines aspects of both paging and segmentation, which are two popular memory management techniques used in operating systems. In the paged segmentation scheme, the logical address space of a process is divided into segments, and each segment is further divided into pages. This allows for flexible and efficient memory allocation and address translation.
