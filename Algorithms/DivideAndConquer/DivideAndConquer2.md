@@ -1,5 +1,5 @@
 ## Divide and Conquer 
-
+    
 > Explain the divide and conquer approach and provide examples. 
 
 'Divide and conquer' is a problem-solving approach that divides a complex problem into easier sub-problems,
