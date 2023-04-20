@@ -5,14 +5,13 @@
 'Divide and conquer' ia a problem-solving approach that divides a complex problem into easier sub-problems.
 and then combines the solutions of these problems into a solution to the complex problem: 
 
-- **Divide:** divide complex prroblem into easier smaller sub-problems. 
+- **Divide:** Recursively divide complex problem into easier smaller sub-problems. 
 
-- **Conquer:** Solve sub-problems independently with same algorithm or approach, recursively or iteratively. 
+- **Conquer:** Recursively solve sub-problems with same approach. 
 
-- **Combine:** Combine solutions to sub-problems into solution to original complex problem. 
+- **Combine:** Combine small solutions to sub-problems into larger solution to original complex problem. 
 
-- **Base case:** A condition for terminating recursion or iteration, indicating when complex problem 
-has been simplified enough to be solved without further division.
+- **Base case:** A condition for terminating recursion, indicating when complex problem has been simplified enough to be solved without further division.
 
 (Cormen 2022:76)
 
