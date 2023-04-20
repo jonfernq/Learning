@@ -28,7 +28,6 @@ Example:
 This is an inline equation: \(E=mc^2\)
 
 This is a display mode equation:
-
 \[
 E=mc^2
 \]
