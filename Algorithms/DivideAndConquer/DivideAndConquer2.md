@@ -18,7 +18,10 @@ and then combines the solutions of these problems into a solution to the complex
 ---
 > How is the divide and conquer approach useful in recursion to solve complex problems? 
 
+Recursion solves problems using functions that call themselves, the partial sub-problems are stored in the function call stack. 
 
+Expression of problems using recursion allows for a simple, concise and easily understood solution. 
+This makes a solution more reliable, adaptable and re-usable. 
 
 ---
 > What is the role of the 'substitution method' in recursion? 
