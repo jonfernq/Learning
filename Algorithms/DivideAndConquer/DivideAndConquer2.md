@@ -18,7 +18,7 @@ and then combines the solutions of these problems into a solution to the complex
 ---
 > How is the divide and conquer approach useful in recursion to solve complex problems? 
 
-Recursion solves problems using functions that call themselves, the partial sub-problems are stored in the function call stack. 
+Recursion solves problems using functions that call themselves, the partial sub-problems are neatly and conceniently stored on the function call stack. 
 
 Expression of problems using recursion allows for a simple, concise and easily understood solution. 
 This makes a solution more reliable, adaptable and re-usable. 
@@ -133,7 +133,7 @@ Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
 
 Harel, D. (2012). Algorithmics: The Spirit of Computing. Addison-Wesley Professional.
 
-**Wikipedia:** Fork-join model; MapReduce; ivide-and-conquer algorithm; Aggregate function
+**Wikipedia:** Divide-and-conquer algorithm; Recursion; Recurrence relation; MapReduce; Call stack; Aggregate function; Fork-join model
 
 
 
