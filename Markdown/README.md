@@ -15,7 +15,7 @@
 - [Multiple Choice Questions](https://github.com/jonfernq/Learning/blob/main/Markdown/multiple_choice_questions.md) 
 - [Inline HTML](https://github.com/jonfernq/Learning/blob/main/Markdown/GitHubFlavoredmarkdown/README.md)
 
-### OTher 
+### Other 
 
 - [Markdown Help](https://github.com/jonfernq/Learning/blob/main/Markdown/MarkdownHelp.md) - Little problems encountered along the way, and solutions. 
 
