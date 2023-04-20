@@ -74,6 +74,8 @@ In functional programming, the use of higher-order functions allows for passing 
 
 Overall, functional programming can provide a natural and expressive way to implement divide and conquer algorithms, leveraging higher-order functions and recursion to break down problems into smaller subproblems and combine results to obtain a solution.
 
+- **Aggregate function** in SQL and database management: "Aggregate functions present a bottleneck, because they potentially require having all input values at once. In distributed computing, it is desirable to divide such computations into smaller pieces, and distribute the work, usually computing in parallel, via a divide and conquer algorithm." 
+
 ---
 
 > What are the pros and cons of the divide and conquer approach?
@@ -115,6 +117,8 @@ Knuth, D. E. (1997). The Art of Computer Programming, Volume 1: Fundamental Algo
 Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
 
 Harel, D. (2012). Algorithmics: The Spirit of Computing. Addison-Wesley Professional.
+
+**Wikipedia:** Fork-join model; MapReduce; ivide-and-conquer algorithm; Aggregate function
 
 
 
