@@ -4,7 +4,7 @@
 
 ### Mathematical Expressions
 
-- [math in Markdown](https://github.com/jonfernq/Learning/blob/main/Markdown/MarkdownMath/README.md) 
+- [Math in Markdown](https://github.com/jonfernq/Learning/blob/main/Markdown/MarkdownMath/README.md) 
 
 ### GitHub Flavored Markdown (GFM) 
 
