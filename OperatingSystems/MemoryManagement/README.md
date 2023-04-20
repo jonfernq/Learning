@@ -200,6 +200,23 @@ Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). Windows Internals. Micros
 
 Love, R. (2010). Linux Kernel Development. Addison-Wesley.
 
+---
+> In the area of algorithms Sedgewick at Princeton provides nice lectures at Coursera. Is there anything like that for operating systems, in terms of publicly accessible university lectures? 
+
+Yes, there are publicly accessible university lectures on operating systems that are available online. Here are a few examples:
+
+- "Operating Systems" by Prof. Remzi H. Arpaci-Dusseau at the University of Wisconsin-Madison: This is a comprehensive course on operating systems that covers topics such as processes, threads, synchronization, virtual memory, file systems, and more. The course is available on YouTube and the accompanying course materials are available on the course website: http://pages.cs.wisc.edu/~remzi/Classes/537/Spring2018/.
+
+- "Operating Systems and System Programming" by Prof. Sam S. Guyer at Tufts University: This is a course that covers fundamental concepts of operating systems and system programming, including topics such as processes, threads, synchronization, memory management, and file systems. The course materials, including lecture slides and assignments, are available on the course website: https://www.cs.tufts.edu/comp/111/.
+
+- "Operating Systems Engineering" by Prof. Indranil Gupta at the University of Illinois at Urbana-Champaign: This is a course that focuses on the design, implementation, and evaluation of operating systems. Topics covered include process management, memory management, file systems, and distributed systems. The course materials, including lecture slides and assignments, are available on the course website: https://courses.engr.illinois.edu/cs241/fa2020/.
+
+These are just a few examples of publicly accessible university lectures on operating systems, and there may be other resources available online as well. It's always a good idea to check the websites of universities or educational platforms like Coursera, edX, or YouTube for additional resources.
+
+
+
+
+
 
 
 
