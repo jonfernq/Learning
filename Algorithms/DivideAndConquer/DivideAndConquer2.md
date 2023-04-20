@@ -1,9 +1,11 @@
 ## Divide and Conquer 
 
-> Explain the 'divide and conquer' approach.
+> Explain the divide and conquer approach and provide examples. 
 
-'Divide and conquer' ia a problem-solving approach that divides a complex problem into easier sub-problems.
-and then combines the solutions of these problems into a solution to the complex problem: 
+'Divide and conquer' ia a problem-solving approach that divides a complex problem into easier sub-problems,
+solves these sub-problems, and then combines the smaller solutions into a solution to the larger problem: 
+
+**Steps:** 
 
 - **Divide:** Recursively divide complex problem into easier smaller sub-problems. 
 
@@ -15,10 +17,28 @@ and then combines the solutions of these problems into a solution to the complex
 
 (Cormen 2022:76)
 
+**Examples:** 
+
+**1. Merge Sort:** Divides array into two halves, recursively sorts the two halves, and then merges sorted halves into final sorted array.
+
+- Divide: Array to be sorted divided into two halves.
+
+- Conquer: Recursively sort each successive smaller half arrays until these subproblems are solved trivially, namely when sub-array has only one or zero elements, which are already sorted trivially by definition.
+
+- Combine: Sorted smaller sublists successively combined in sorted order to form final sorted list.
+
+**2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays. 
+
+- Divide: Array to be sorted divided into two smaller sub-arrays based on a chosen pivot element. Elements in the original array are partitioned such that elements smaller than the pivot are placed in one sub-array, and elements larger than the pivot are placed in another sub-array. 
+
+- Conquer: The smaller sublists created in the divide step (i.e., the sublists of elements smaller than the pivot and the sublists of elements larger than the pivot) are recursively sorted. Division is repeated until sub-arrays have only one or zero elements, which are already sorted by definition.
+
+- Combine: Sorted sublists are re-combined to form final sorted list. Since the sorting is done in place by swapping elements within the original list, the combining step is not explicitly required. The pivot element is chosen and adjusted during the partitioning step to ensure that the elements smaller than the pivot are on one side, and the elements larger than the pivot are on the other side, effectively sorting the list.
+
 ---
 > How is the divide and conquer approach useful in recursion to solve complex problems? 
 
-Recursion solves problems using functions that call themselves, the partial sub-problems are neatly and conceniently stored on the function call stack. 
+Recursion solves problems using functions that call themselves, during program execution the partial sub-problems and their partial solutions are neatly and conveniently stored on the function call stack. 
 
 Expression of problems using recursion allows for a simple, concise , elegant, and easily understood solution. 
 This makes a solution more reliable, adaptable and re-usable. 
@@ -51,22 +71,6 @@ in the substitution method a recurrence relation is solved to find time complexi
 > What are the applications of the divide and conquer approach? Provide Examples. 
 
 - **Sorting:** Merge Sort, Quick Sort, and Heap Sort.
-
-**1. Merge Sort:** Merge Sort is a sorting algorithm that uses the divide and conquer approach to sort an array of elements. It divides the array into two halves, recursively sorts the two halves, and then merges the sorted halves to obtain the final sorted array.
-
-- Divide: Array to be sorted divided into two halves.
-
-- Conquer: Recursively sort each successive smaller half until subproblems are solved trivially, namely when sub-array has only one or zero elements, which are already sorted by definition.
-
-- Combine: Sorted sublists successively compared and combined in sorted orrder to form final sorted list.
-
-**2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays. 
-
-- Divide: Array to be sorted divided into two smaller sub-arrays based on a chosen pivot element. Elements in the original array are partitioned such that elements smaller than the pivot are placed in one sub-array, and elements larger than the pivot are placed in another sub-array. 
-
-- Conquer: The smaller sublists created in the divide step (i.e., the sublists of elements smaller than the pivot and the sublists of elements larger than the pivot) are recursively sorted. Division is repeated until sub-arrays have only one or zero elements, which are already sorted by definition.
-
-- Combine: Sorted sublists are re-combined to form final sorted list. Since the sorting is done in place by swapping elements within the original list, the combining step is not explicitly required. The pivot element is chosen and adjusted during the partitioning step to ensure that the elements smaller than the pivot are on one side, and the elements larger than the pivot are on the other side, effectively sorting the list.
 
 - **Searching:** Binary Search finds position of target element in sorted array.
 
