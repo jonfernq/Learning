@@ -42,16 +42,11 @@ solves these sub-problems, and then combines the smaller solutions into a soluti
 ---
 > How is the divide and conquer approach useful in recursion to solve complex problems? 
 
-Recursion solves problems using functions that call themselves, during program execution the partial sub-problems and their partial solutions are neatly and conveniently stored on the function call stack. 
+'Divide and conquer' as a problem-solving approach in programming attains rigor when combined with recursion and functional programming. 
 
-Expression of problems using recursion allows for a simple, concise , elegant, and easily understood solution. 
-This makes a solution more reliable, adaptable and re-usable. 
+Recursion is well-situated in the functional programming paradigm, a paradigm which promotes a style of programming that is declarative, concise, modular, expressive, and rigorous. Functional programming is built on the mathematical foundation of the lambda calculus, where functions can be defined in a recursive manner and can operate on other functions as data. Recursion enables the functional programming paradigm to express computations as a series of function calls and function compositions. These 'higher-order functions' are 'first-class citizens' that can be passed as arguments, returned as values, and stored in data structures. This results in  'immutable' objects where data and variables do not change their values once defined. This results in programs without 'side effects', that is state changes that are difficult to track and control. This in turn makes it easier to reason about code and provably correct programs. 
 
-Recursion is also a hallmark of functional programming and increased control over what programs do. 
-
-- Functional programming allows for proofs of program correctness
-- Functional programming is associate with immutable objects, objects whose state cannot be modified after it is created.
-- Functional programming can guarantee that code has no side effects, that is does not cause a change in state.
+However, divide and conquer can also be applied to non-recursive or imperative algorithms. Iterative or loop-based algorithms are typical for non-recursive divide and conquer approaches. Algorithms can often be implemented either recursively and non-recursively. Recursion may not be the most efficient or preferred approach due to the overhead associated with function calls.
 
 ---
 > What is the role of the 'substitution method' in recursion? 
