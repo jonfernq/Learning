@@ -33,9 +33,7 @@ has been simplified enough to be solved without further division.
 
 - Conquer: The smaller sublists created in the divide step (i.e., the sublists of elements smaller than the pivot and the sublists of elements larger than the pivot) are recursively sorted. Division is repeated until sub-arrays have only one or zero elements, which are already sorted by definition.
 
-- Combine: Sorted sublists are re-combined to form final sorted list. Since the sorting is done in place by swapping elements within the original list, the combining step is not explicitly required.
-
-The pivot element is chosen and adjusted during the partitioning step to ensure that the elements smaller than the pivot are on one side, and the elements larger than the pivot are on the other side, effectively sorting the list.
+- Combine: Sorted sublists are re-combined to form final sorted list. Since the sorting is done in place by swapping elements within the original list, the combining step is not explicitly required. The pivot element is chosen and adjusted during the partitioning step to ensure that the elements smaller than the pivot are on one side, and the elements larger than the pivot are on the other side, effectively sorting the list.
 
 **3. Binary Search:** Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
 
@@ -53,9 +51,9 @@ The pivot element is chosen and adjusted during the partitioning step to ensure 
 - **Computational Geometry:** finding the closest pair of points, convex hull, and line segment intersection.
 
 - **Graph Algorithms:** Depth-First Search (DFS) and Breadth-First Search (BFS).
-- 
+
 - **Numerical Computations:** fast Fourier transform (FFT).
-- 
+ 
 - **Image Processing:** image filtering, edge detection, and image segmentation, process images by dividing into smaller subimages.
 
 - **Parallel and Distributed Computing:** divide into smaller tasks solved independently by multiple processors.
