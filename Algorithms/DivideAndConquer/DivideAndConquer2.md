@@ -19,13 +19,13 @@ has been simplified enough to be solved without further division.
 ---
 > Provide examples of the 'divide and conquer' approach
 
-- **1. Merge Sort:** Merge Sort is a sorting algorithm that uses the divide and conquer approach to sort an array of elements. It divides the array into two halves, recursively sorts the two halves, and then merges the sorted halves to obtain the final sorted array.
+**1. Merge Sort:** Merge Sort is a sorting algorithm that uses the divide and conquer approach to sort an array of elements. It divides the array into two halves, recursively sorts the two halves, and then merges the sorted halves to obtain the final sorted array.
 
-Divide: Array to be sorted divided into two halves.
+- Divide: Array to be sorted divided into two halves.
 
-Conquer: Recursively sort each successive smaller half until subproblems are solved trivially, namely when sub-array has only one or zero elements, which are already sorted by definition.
+- Conquer: Recursively sort each successive smaller half until subproblems are solved trivially, namely when sub-array has only one or zero elements, which are already sorted by definition.
 
-Combine: Sorted sublists successively compared and combined in sorted orrder to form final sorted list.
+- Combine: Sorted sublists successively compared and combined in sorted orrder to form final sorted list.
 
 - **2. Quick Sort:** Selects pivot element from array, partitions array into two subarrays based on pivot, and recursively sorts the two subarrays. 
 
