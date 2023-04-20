@@ -50,6 +50,8 @@ Recursion is well-situated in the functional programming paradigm, a paradigm wh
 
 However, divide and conquer can also be applied to non-recursive or imperative algorithms. Iterative or loop-based algorithms are typical for non-recursive divide and conquer approaches. Algorithms can often be implemented either recursively and non-recursively. Recursion may not be the most efficient or preferred approach due to the overhead associated with function calls.
 
+(Abelson, Sussman, & Sussman 1996; Knuth 1994; Barendregt 1984; Pierce et al 2021)
+
 ---
 > What is the role of the 'substitution method' in recursion? 
 
@@ -73,9 +75,7 @@ in the substitution method a recurrence relation is solved to find time complexi
 
 - **Sorting:** Merge Sort, Quick Sort, and Heap Sort.
 
-- **Searching:** Binary Search finds position of target element in sorted array.
-
-**Binary Search:** Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
+- **Searching:** Binary Search finds position of target element in sorted array. Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
 
 - **Matrix Operations:** Matrix multiplication, matrix exponentiation, and other matrix operations.
 
@@ -84,47 +84,39 @@ in the substitution method a recurrence relation is solved to find time complexi
 - **Graph Algorithms:** Depth-First Search (DFS) and Breadth-First Search (BFS).
 
 - **Numerical Computations:** fast Fourier transform (FFT), algorithms for multiplying large numbers (Karatsuba algorithm)
-
-**4. Fast Fourier Transform (FFT):** The FFT algorithm is a widely used algorithm in signal processing and other fields that uses the divide and conquer approach to efficiently compute the Discrete Fourier Transform (DFT) of a sequence of values.
  
 - **Image Processing:** image filtering, edge detection, and image segmentation, finding closest pair of points, processing of images by dividing into smaller subimages.
 
 - **Compilers:**  top-down parsers (syntactic analysis of programming languages) 
 
-- **Functional programming** functional programming features such as higher-order functions and recursion in languages such as Haskell, Lisp, and ML, are well-suited to implement divide and conquerin a conceptually simple fashion. In higher-order functions functions are passed as arguments to other functions. Recursion recursively solving smaller subproblems until they are small enough to be solved directly. Higher-order functions merge or concatenate results obtained from smaller subproblems in the combine step.
-
 - **Database management:** Aggregate function* in SQL: "Aggregate functions present a bottleneck, because they potentially require having all input values at once. In distributed computing, it is desirable to divide such computations into smaller pieces, and distribute the work, usually computing in parallel, via a divide and conquer algorithm." 
 
 - **Parallel and Distributed Computing:** divide into smaller tasks solved independently by multiple processors.
 
-- **MapReduce** is a programming model and framework for processing large-scale data sets in a distributed and parallel manner. It is widely used for big data processing and is known for its scalability and fault tolerance.
-
-The MapReduce framework orchestrates the distribution of data and computation across a cluster of machines. The "Map" step involves processing input data in parallel across multiple machines and generating intermediate key-value pairs as output. The intermediate results are then grouped by key and passed to the "Reduce" step. The "Reduce" step involves processing the grouped intermediate results in parallel across multiple machines and generating the final output, which is the solution to the original problem.
-
-The divide and conquer approach is evident in the MapReduce model, as the processing of large data sets is divided into smaller chunks that can be processed independently in parallel, similar to the "divide" step in divide and conquer. The intermediate results from the "Map" step are combined and grouped by key, similar to the "combine" step in divide and conquer. Finally, the "Reduce" step involves processing the grouped intermediate results in parallel and generating the final output, similar to the "conquer" step in divide and conquer.
+- **MapReduce** is a programming model and framework for processing large-scale data sets in a distributed and parallel manner across a cluster of machines. It is widely used for big data processing and is known for its scalability and fault tolerance.
 
 ---
 > What are the pros and cons of the divide and conquer approach?
 
 **Pros:**
 
-- **Efficiency:** often leads to efficient algorithms, as it allows for the parallelization of tasks, reduces redundant computation, and minimizes the amount of data or work needed to be processed at each level of recursion. This can result in improved time complexity and reduced computational overhead.
+- **Efficiency:** allows for parallelization of tasks, reduces redundant computation, and minimizes the amount of data or work needed to be processed at each level of recursion. This can result in improved time complexity and reduced computational overhead.
 
-- **Scalability:** The divide and conquer approach is makes it suitable for parallel and distributed computing environments, where multiple processors or nodes can work on subproblems concurrently, potentially leading to improved performance on large datasets.
+- **Scalability:** suitable for parallel and distributed computing environments, where multiple processors or nodes can work on subproblems concurrently.
 
-- **Modularity:** promotes modularity in algorithm design, as it breaks down complex problems into smaller, more manageable subproblems. This can make the algorithm easier to understand, implement, and maintain.
+- **Modularity:** promotes modularity in algorithm design, breaking down complex problems into smaller, more manageable subproblems. This can make the algorithm easier to understand, implement, and maintain.
 
-- **Flexibility:** The divide and conquer approach is a general problem-solving technique that can be applied to a wide range of problem domains and applications. It can be used to solve problems of varying complexity and size, making it a versatile approach for problem solving.
+- **Flexibility:** a general and versatile problem-solving approach that can be applied to a wide range of problem domains and applications, of varying complexity and size.
 
 **Cons:**
 
-- **Overhead:** can sometimes introduce additional overhead, such as the cost of dividing the problem into smaller subproblems, combining the results, or managing the recursion. This can impact the overall performance of the algorithm, particularly for small problem sizes where the overhead may outweigh the benefits.
+- **Overhead:** can sometimes introduce additional overhead, such as the cost of dividing the problem into smaller subproblems, combining the results, or managing the recursion. TFor small problem sizes the overhead may outweigh the benefits.
 
-- **Complexity:** can introduce complexity into algorithm design, as it requires careful handling of the division, combination, and recursion steps. This can make the algorithm harder to implement, debug, and maintain, particularly for complex problems or when dealing with multiple levels of recursion.
+- **Complexity:** can introduce complexity into algorithm design which can make the algorithm harder to implement, debug, and maintain.
 
-- **Communication and Coordination:** In parallel and distributed computing environments, the divide and conquer approach may require communication and coordination among processors or nodes to exchange data or synchronize operations. This can introduce additional complexity and potential overhead, particularly in cases where communication or coordination is not efficient.
+- **Communication and Coordination:** In parallel and distributed computing environments, may require communication and coordination among processors or nodes to exchange data or synchronize operations. This can introduce additional complexity and potential overhead.
 
-- **Problem Constraints:** may not be suitable for all types of problems or domains. Some problems may not have a natural way of being divided into smaller subproblems, or the division may not result in significant benefits in terms of efficiency or scalability. 
+- **Problem Constraints:** Some problems and problem domains may not have a natural way of dividing problems into smaller sub-problems, or the division may not result in significant benefits in terms of efficiency or scalability. 
 
 ### REFERENCES: 
 
@@ -145,6 +137,14 @@ Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022). 'Data Structures & Algorit
 Skiena, S. S. (2008). The Algorithm Design Manual. Springer.
 
 Harel, D. (2012). Algorithmics: The Spirit of Computing. Addison-Wesley Professional.
+
+Abelson, H., Sussman, G. J., & Sussman, J. (1996). Structure and Interpretation of Computer Programs. MIT Press.
+
+Knuth, D. E. (1994). Concrete Mathematics: A Foundation for Computer Science. Addison-Wesley.
+
+Pierce, B. C., Casinghino, C., et al. (2021). Software Foundations. Electronic version available at https://softwarefoundations.cis.upenn.edu.
+
+Barendregt, H. (1984). The Lambda Calculus: Its Syntax and Semantics. North-Holland.
 
 **Wikipedia:** Divide-and-conquer algorithm; Functional programming; Recursion; Recurrence relation; Call stack; Side effects; Immutable object; MapReduce; Aggregate function; Fork-join model
 
