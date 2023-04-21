@@ -55,21 +55,6 @@ In the paged segmentation scheme of memory management, the conversion of a logic
 - Data Access: The physical address is then used by the memory management unit (MMU) in the hardware to access the data or instruction stored in the corresponding physical memory location.
 
 ---
-. What are examples of operating systems with paged segmentation scheme of memory management.
-
-The paged segmentation scheme of memory management is a common memory management technique used in many modern operating systems. Here are some examples of operating systems that utilize the paged segmentation scheme:
-
-- Windows: Microsoft Windows operating systems, including Windows XP, Windows Vista, Windows 7, Windows 8, and Windows 10, utilize a paged segmentation scheme of memory management. Windows uses a combination of paging and segmentation to manage the virtual memory of processes.
-
-- Linux: The Linux operating system, which is a popular open-source operating system used in various distributions (such as Ubuntu, Fedora, CentOS, etc.), also employs a paged segmentation scheme for memory management. Linux uses a combination of paging and segmentation to manage virtual memory and provide memory protection and isolation between processes.
-
-- macOS: Apple's macOS, which is the operating system used in Mac computers, also employs a paged segmentation scheme for memory management. macOS uses a combination of paging and segmentation to manage virtual memory, provide memory protection, and support features such as memory sharing and copy-on-write.
-
-- Android: The Android operating system, which is a widely used operating system for mobile devices, also utilizes a paged segmentation scheme for memory management. Android uses a combination of paging and segmentation to manage virtual memory and provide memory protection and isolation between apps running on the system.
-
-It's important to note that the specific implementation details of the paged segmentation scheme may vary among different operating systems, and these examples are based on general knowledge as of my knowledge cutoff date in September 2021. The exact details of how the paged segmentation scheme is implemented in each operating system may change over time with updates and advancements in memory management techniques.
-
----
 > What are examples of operating systems with paged segmentation scheme of memory management.
 
 Virtually every operating system uses paged segmentation scheme of memory management that only differs in implmentation: 
