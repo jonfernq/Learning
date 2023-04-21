@@ -299,6 +299,18 @@ There are several books that can help you understand the basics of CUDA and GPU 
 
 These books can provide you with a solid foundation in CUDA programming and GPU architecture, from basic concepts to advanced optimization techniques. It's recommended to read multiple sources and practice with hands-on exercises to gain practical experience and deepen your understanding of CUDA and GPU programming.
 
+---
+> What kind of memory management does Minix have ? 
+
+Minix, an open-source operating system developed by Andrew S. Tanenbaum, utilizes a form of memory management known as "paged virtual memory" or "virtual memory with paging."
+
+In Minix, the system memory is divided into fixed-size pages, typically 4KB in size. These pages are used as the basic unit of memory allocation and management. The operating system maps virtual addresses used by processes to physical addresses in memory using a page table. Each process has its own page table, which allows for address translation and memory protection.
+
+Minix uses demand paging, which means that pages are loaded into memory from secondary storage (e.g., disk) only when they are accessed by a process. This allows for more efficient memory usage, as only the pages that are actually needed by a process are loaded into memory, while the rest can remain on disk.
+
+Minix also employs techniques such as page replacement algorithms (e.g., LRU, FIFO) to manage the limited physical memory available in the system. When the system encounters a page fault, which occurs when a process attempts to access a page that is not currently in memory, Minix determines which page to evict from memory to make space for the requested page.
+
+Overall, Minix's memory management is designed to provide virtual memory abstraction to processes, allowing them to access larger address spaces than the physical memory available, while efficiently managing the allocation and mapping of pages between secondary storage and physical memory.
 
 
 
