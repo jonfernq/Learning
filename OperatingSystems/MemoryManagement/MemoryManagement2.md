@@ -2,25 +2,15 @@
 
 > How does the paged segmentation scheme solve the problem of memory management ? 
 
-Resource scarity is once again the underlying problem as it was in the last unit where we studied CPU scheduling.
-
-When memory is a scarce and limited resource, memory management is the solution to this problem.  
-
-The speed and quantity of memory available is continually increasing, so how can memory be scarce? Historically, as memory has increased in speed and quantity, the requirements of programs have increased to use up this increased capacity, and demand even more, necessitating memory management. 
-
-First, we must discuss the 'problem of memory management' in greater depth.   
+Resource scarity is once again the underlying problem as it was in the last unit where we studied CPU scheduling. When memory is a scarce and limited resource, memory management is the solution to this problem.  
 
 > How does the 'memory management' problem arise in computing ? 
 
-The higher memory is in the so-called 'memory hierarchy', the more scarce it is.  
+The memory management problem arises due to the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by a computer system. This phenomenon is known as 'software bloat' and Wirth's Law: "software manages to outgrow hardware in size and sluggishness." This also reflects the 'second system effect' namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
 
-The **memory hierarchy** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs. This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with relatively fast acccess time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
+The higher memory is in the so-called **'memory hierarchy'**, the more scarce it is. The memory hierarchy refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs. This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with relatively fast acccess time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
 
-**Memory management** is the problem of how to allocate and manage the scarce memory resources of a computing system to maximize performance.
-
-The memory management problem arises due to the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by a computer system. 
-
-Memory management techniques, such as paging, segmentation, and virtual memory, are used to optimize memory utilization, handle page faults, and provide a virtualized and abstracted view of memory to programs running on a computer system. 
+**Memory management** aims to solve the problem of how to allocate and manage the scarce memory resources of a computing system to maximize performance. Techniques such as paging, segmentation, and virtual memory are used to optimize memory utilization, handle page faults, and provide a virtualized and abstracted view of memory to programs running on a computer system. 
 
 Efficient memory management is critical for overall system performance and stability, as it directly affects the execution speed and responsiveness of programs and the overall efficiency of the computing system.
 
@@ -184,28 +174,6 @@ Page faults can cause a delay in program execution as the operating system perfo
 
 ### REFERENCES
 
-"Operating System Concepts" by Abraham Silberschatz, Peter B. Galvin, and Greg Gagne
-
-"Modern Operating Systems" by Andrew S. Tanenbaum and Herbert Bos
-
-"Operating Systems: Internals and Design Principles" by William Stallings
-
-"Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
-
-"Operating Systems: Principles and Practice" by Thomas Anderson and Michael Dahlin
-
-"Operating Systems: A Design-Oriented Approach" by Charles Crowley
-
-"Operating System Design: The Xinu Approach" by Douglas Comer
-
-"Advanced Programming in the UNIX Environment" by W. Richard Stevens and Stephen A. Rago
-
-"Windows Internals" by Mark Russinovich, David A. Solomon, and Alex Ionescu
-
-"Linux Kernel Development" by Robert Love
-
-Or: 
-
 Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). Operating System Concepts. Wiley.
 
 Tanenbaum, A. S., & Bos, H. (2014). Modern Operating Systems. Pearson.
@@ -229,6 +197,8 @@ Love, R. (2010). Linux Kernel Development. Addison-Wesley.
 Also:
 
 Bryant, R. E., & O'Hallaron, D. R. (2015). Computer Systems: A Programmer's Perspective. Pearson.
+
+Wikipedia: Memory management; Memory hierarchy; Locality; Software bloat; Wirth's law, Second-system effect. 
 
 "Computer Systems: A Programmer's Perspective" is a comprehensive textbook that provides a thorough understanding of computer systems from a programmer's perspective. It covers the fundamental concepts, principles, and techniques of computer architecture, operating systems, and networking, with a focus on how these components interact to form a complete computer system. The book takes a bottom-up approach, starting with the basic building blocks of computer systems and gradually building up to more advanced topics, making it suitable for both undergraduate and graduate-level courses in computer systems, computer organization, and computer architecture. It includes numerous practical examples, case studies, and exercises that help readers develop practical skills in system programming and problem-solving. Overall, the book offers a deep insight into the inner workings of computer systems and provides a solid foundation for understanding modern computer architecture and system-level programming.
 
