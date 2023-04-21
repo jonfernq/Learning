@@ -41,12 +41,6 @@ Operating systems exploit the concept of locality to improve performance, reduce
 
 By understanding and leveraging locality, memory management and operating systems can effectively manage the limited resources of a computer system and enhance its performance.
 
---- 
-A **page fault**, also known as a "page miss," occurs when a program tries to access a page of memory that is not currently in the main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). 
-
-This triggers a process known as "page swapping," where the operating system needs to fetch the required page from secondary storage into main memory before the program can access it. 
-
-Page faults can cause a delay in program execution as the operating system performs the necessary data transfer.
 ---
 > How does the paged segmentation scheme solve the problem of  memory management ? 
 
@@ -180,6 +174,13 @@ There are several books that cover the topic of system tuning and performance op
 - "Windows Performance" by Brendan Gregg: This book covers performance monitoring and tuning techniques for Windows systems. It includes topics such as system profiling, benchmarking, performance analysis, and optimization techniques. It provides practical guidance on how to identify and resolve performance issues in Windows systems using performance monitoring tools and techniques.
 
 These are just a few examples of books that cover system tuning and performance optimization in Windows operating systems, including Windows 10. There are many other resources available online, including official documentation, blogs, and tutorials, that can help you learn more about system tuning in Windows. It's recommended to consult multiple sources and experiment with changes in a controlled environment to ensure system stability and reliability.
+
+--- 
+A **page fault**, also known as a "page miss," occurs when a program tries to access a page of memory that is not currently in the main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). 
+
+This triggers a process known as "page swapping," where the operating system needs to fetch the required page from secondary storage into main memory before the program can access it. 
+
+Page faults can cause a delay in program execution as the operating system performs the necessary data transfer.
 
 ### REFERENCES
 
