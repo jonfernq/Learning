@@ -1,20 +1,22 @@
 ## Memory Management 
 
-> What is the 'memory hierarchy' and a 'page fault' ? How does the 'memory management' problem arise in computing ? 
+> How does the paged segmentation scheme solve the problem of memory management ? 
 
-The **memory hierarchy** refers to the organization of different levels of memory in a computer system, with varying speeds, capacities, and costs. 
+Resource scarity is once again the underlying problem as it was in the last unit where we studied CPU scheduling.
 
-The memory hierarchy typically includes several levels, such as registers, cache, main memory (RAM), and secondary storage (e.g., hard drives). 
+When memory is a scarce and limited resource, memory management is the solution to this problem.  
 
-The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
+The speed and quantity of memory available is continually increasing, so how can memory be scarce? Historically, as memory has increased in speed and quantity, the requirements of programs have increased to use up this increased capacity, and demand even more, necessitating memory management. 
 
-A **page fault**, also known as a "page miss," occurs when a program tries to access a page of memory that is not currently in the main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). 
+First, we must discuss the 'problem of memory management' in greater depth.   
 
-This triggers a process known as "page swapping," where the operating system needs to fetch the required page from secondary storage into main memory before the program can access it. 
+> How does the 'memory management' problem arise in computing ? 
 
-Page faults can cause a delay in program execution as the operating system performs the necessary data transfer.
+The higher memory is in the so-called 'memory hierarchy', the more scarce it is.  
 
-**Memory management** is a fundamental problem in computing that involves allocating and managing the available memory resources efficiently to maximize system performance and minimize overhead. 
+The **memory hierarchy** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs. This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with relatively fast acccess time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
+
+**Memory management** is a fundamental problem in computing that involves allocating and managing the available but scarce memory resources of a computing system efficiently to maximize system performance and minimize overhead. 
 
 The memory management problem arises due to the limited size of main memory (RAM) compared to the potentially larger size of programs and data that need to be stored and processed by a computer system. 
 
@@ -39,6 +41,12 @@ Operating systems exploit the concept of locality to improve performance, reduce
 
 By understanding and leveraging locality, memory management and operating systems can effectively manage the limited resources of a computer system and enhance its performance.
 
+--- 
+A **page fault**, also known as a "page miss," occurs when a program tries to access a page of memory that is not currently in the main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). 
+
+This triggers a process known as "page swapping," where the operating system needs to fetch the required page from secondary storage into main memory before the program can access it. 
+
+Page faults can cause a delay in program execution as the operating system performs the necessary data transfer.
 ---
 > How does the paged segmentation scheme solve the problem of  memory management ? 
 
