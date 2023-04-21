@@ -16,9 +16,9 @@ The higher memory is in the so-called 'memory hierarchy', the more scarce it is.
 
 The **memory hierarchy** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs. This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with relatively fast acccess time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
 
-**Memory management** is a fundamental problem in computing that involves allocating and managing the available but scarce memory resources of a computing system efficiently to maximize system performance and minimize overhead. 
+**Memory management** is the problem of how to allocate and manage the scarce memory resources of a computing system to maximize performance.
 
-The memory management problem arises due to the limited size of main memory (RAM) compared to the potentially larger size of programs and data that need to be stored and processed by a computer system. 
+The memory management problem arises due to the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by a computer system. 
 
 Memory management techniques, such as paging, segmentation, and virtual memory, are used to optimize memory utilization, handle page faults, and provide a virtualized and abstracted view of memory to programs running on a computer system. 
 
