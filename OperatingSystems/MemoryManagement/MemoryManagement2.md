@@ -6,9 +6,9 @@ Resource scarity is once again the underlying problem as it was in the last unit
 
 > How does the 'memory management' problem arise in computing ? 
 
-The memory management problem arises due to the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by a computer system. This phenomenon is known as 'software bloat' and Wirth's Law: "software manages to outgrow hardware in size and sluggishness." This also reflects the 'second system effect' namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
+The memory management problem arises historically from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This phenomenon is known as 'software bloat' and Wirth's Law: "software manages to outgrow hardware in size and sluggishness." This also reflects the 'second system effect' namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
 
-The higher memory is in the so-called memory hierarchy, the more scarce it is. The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with relatively fast acccess time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
+The higher memory is in the so-called memory hierarchy, the more scarce it is. The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with still relatively fast access time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times (that can only be accessed efficiently in an asynchronous manner). The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
 
 **Memory management** aims to solve the problem of how to allocate and manage the scarce memory resources of a computing system to maximize performance. Techniques such as paging, segmentation, and virtual memory are used to optimize memory utilization, handle page faults, and provide a virtualized and abstracted view of memory to programs running on a computer system. 
 
@@ -98,5 +98,5 @@ Tanenbaum, A. S., & Bos, H. (2014). Modern Operating Systems. Pearson.
 
 Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). Windows Internals. Microsoft Press.
 
-Wikipedia: Memory management; Memory hierarchy; Locality; Software bloat; Wirth's law, Second-system effect. 
+Wikipedia: Memory management; Memory hierarchy; Locality; Software bloat; Wirth's law, Second-system effect; Memory paging; Page fault; Page replacement algorithm, Demand paging, Memory segmentation, Thrashing (computer science) 
 
