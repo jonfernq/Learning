@@ -14,38 +14,16 @@ The higher memory is in the so-called **'memory hierarchy'**, the more scarce it
 
 Efficient memory management is critical for overall system performance and stability, as it directly affects the execution speed and responsiveness of programs and the overall efficiency of the computing system.
 
----
-> What is the idea of 'locality' and why is it important for memory management and operating systems? 
+Locality and page fault are two critical concepts in memory management. The concept of **'locality'** in the context of memory management refers to the tendency of computer programs to access memory in localized or nearby regions. Whereas Spatial Locality is the tendency of a program to access memory locations that are close to each other in terms of address space, Temporal Locality is the tendency of a program to access the same memory location multiple times within a short period of time. Memory management techniques, such as caching, paging, and virtual memory, are designed based on the principle of locality to optimize memory access and reduce overhead. Operating systems exploit the concept of locality to improve performance, reduce memory fragmentation, and **minimize the number of page faults**, thereby enhancing overall system efficiency. 
 
-The concept of "locality" in the context of memory management and operating systems refers to the tendency of computer programs to access memory in localized or nearby regions, rather than randomly accessing memory locations. There are two types of locality that are commonly recognized:
-
-- **Temporal Locality:** This refers to the tendency of a program to access the same memory location multiple times within a short period of time. In other words, if a program accesses a particular memory location, it is likely to access the same location again in the near future. This is based on the principle of data and instruction reuse, where recently accessed data or instructions are likely to be accessed again.
-
-- **Spatial Locality:** This refers to the tendency of a program to access memory locations that are close to each other in terms of address space. For example, if a program accesses a memory location, it is likely to access neighboring memory locations in close proximity. This is based on the principle of data and instruction proximity, where data or instructions that are stored close to each other in memory are likely to be accessed together.
-
-The idea of locality is important for memory management and operating systems because it allows for efficient memory allocation and access strategies. 
-
-Memory management techniques, such as caching, paging, and virtual memory, are designed based on the principle of locality to optimize memory access and reduce overhead. 
-
-Operating systems exploit the concept of locality to improve performance, reduce memory fragmentation, and **minimize the number of page faults**, thereby enhancing overall system efficiency. 
-
-By understanding and leveraging locality, memory management and operating systems can effectively manage the limited resources of a computer system and enhance its performance.
-
---- 
-A **page fault** is a sort of violation of locality, occuring when a program tries to access a page of memory outside of main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). 
-
-This triggers a process known as "page swapping," where the operating system needs to fetch the required page from secondary storage into main memory before the program can access it. 
-
-Page faults can cause a delay in program execution as the operating system performs the necessary data transfer.
-
-This involves the CPU interrupt cycle in which a running process state is saved away until a slow I/O task is completed to ensure CPU utilization is maximized.  
+A **page fault** is in essence a of violation of locality, occuring when a program tries to access a page of memory outside of main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). This triggers 'page swapping' where the operating system fetches the required page from secondary storage into main memory so the program can access it. Page faults cause a delay in program execution as the operating system performs the necessary data transfer. This involves the CPU interrupt cycle in which a running process state is saved away until a slow I/O task is completed to ensure CPU utilization is maximized.  
 
 ---
 > Discuss the paged segmentation scheme of memory management.
 
 The paged segmentation scheme is a memory management scheme that combines aspects of both paging and segmentation, which are two popular memory management techniques used in operating systems. In the paged segmentation scheme, the logical address space of a process is divided into segments, and each segment is further divided into pages. This allows for flexible and efficient memory allocation and address translation.
 
-Here's how the paged segmentation scheme works:
+Component parts of paged segmentation scheme:
 
 - Segments: In this scheme, the logical address space of a process is divided into segments, which are portions of the process's address space that represent different parts of the program, such as code, data, and stack. Each segment is assigned a segment number.
 
