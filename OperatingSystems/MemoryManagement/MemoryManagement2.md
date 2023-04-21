@@ -4,7 +4,11 @@
 
 Resource scarity is once again the underlying problem as it was in the last unit where we studied CPU scheduling. When memory is a scarce and limited resource, memory management is the solution.  
 
-The basic concepts of memory management are simple, but implementations and the way they have developed historically are detailed and complex, since this is a summary we will focus on the key concepts here.   
+The basic concepts of memory management are simple, but the details of variant implementations and their historical development are complex. These concepts can be put to practical use in three ways:  
+
+1. Tuning production systems to optimize performance.
+2. Design of customized memory management for real-time embedded systems in the Internet of Things (IoT).
+3. Memory management optimized for parallel processing, for example GPUs being applied to machine learning and Large Language Models (LLMs). 
 
 > How does the 'memory management' problem arise in computing ? 
 
