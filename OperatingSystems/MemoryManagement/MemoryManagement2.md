@@ -71,17 +71,21 @@ System administrators or designers can tune memeory management by configuring pa
 
 ### REFERENCES
 
-Arpaci-Dusseau, R. H., & Arpaci-Dusseau, A. C. (2014). Operating Systems: Three Easy Pieces. Arpaci-Dusseau Books.
+Anderson, T., & Dahlin, M. (2011-15). *Operating Systems: Principles and Practice, Vol. 3: Memory Management.* Recursive Books.
 
-Bryant, R. E., & O'Hallaron, D. R. (2015). Computer Systems: A Programmer's Perspective. Pearson.
+Arpaci-Dusseau, R. H., & Arpaci-Dusseau, A. C. (2014). *Operating Systems: Three Easy Pieces.* Arpaci-Dusseau Books.
 
-Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). Operating System Concepts. Wiley.
+Bryant, R. E., & O'Hallaron, D. R. (2015). *Computer Systems: A Programmer's Perspective.* Pearson.
 
-Stallings, W. (2018). Operating Systems: Internals and Design Principles. Pearson.
+Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating System Concepts.* Wiley.
 
-Tanenbaum, A. S., & Bos, H. (2014). Modern Operating Systems. Pearson.
+Stallings, W. (2018). *Operating Systems: Internals and Design Principles.* Pearson.
 
-Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). Windows Internals. Microsoft Press.
+Tanenbaum, A. S. (1987). *Operating Systems: Design and Implementation.* Pearson Education.
 
-Wikipedia: Memory management; Memory hierarchy; Locality; Software bloat; Wirth's law, Second-system effect; Memory paging; Page fault; Page replacement algorithm, Demand paging, Memory segmentation, Thrashing (computer science) 
+Tanenbaum, A. S., & Bos, H. (2014). *Modern Operating Systems.* Pearson.
+
+Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). *Windows Internals.* Microsoft Press.
+
+Wikipedia: Memory management; Memory hierarchy; Locality; Software bloat; Wirth's law, Second-system effect; Memory paging; Page fault; Page replacement algorithm, Demand paging, Memory segmentation, Thrashing (computer science); Minix. 
 
