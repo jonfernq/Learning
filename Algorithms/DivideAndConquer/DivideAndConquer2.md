@@ -74,13 +74,13 @@ Using the 'substitution method' a 'recurrence relation' is solved to find time c
 
 - **Searching:** Binary Search finds position of target element in sorted array. Repeatedly divides the array into smaller halves until target element found or search space is exhausted.
 
-- **Matrix Operations:** Matrix multiplication, matrix exponentiation, and other matrix operations.
+- **Matrix Operations:** Matrix multiplication, Strassen matrix multiplication, matrix exponentiation, and other matrix operations.
 
 - **Computational Geometry:** finding the closest pair of points, convex hull, and line segment intersection.
 
 - **Graph Algorithms:** Depth-First Search (DFS) and Breadth-First Search (BFS).
 
-- **Numerical Computations:** Strassen matrix multiplication, fast Fourier transform (FFT), algorithms for multiplying large numbers (Karatsuba algorithm)
+- **Numerical Computations:** Maximum subarray problem, fast Fourier transform (FFT), algorithms for multiplying large numbers (Karatsuba algorithm)
  
 - **Image Processing:** image filtering, edge detection, and image segmentation, finding closest pair of points, processing of images by dividing into smaller subimages.
 
