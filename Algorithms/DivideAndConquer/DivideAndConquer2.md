@@ -44,9 +44,9 @@ Recursion enables the expression of computations as a series of function calls a
 
 Recursion is well-situated in the functional programming paradigm, a paradigm which promotes a style of programming that is declarative, concise, modular, expressive, and rigorous. Functional programming is built on the mathematical foundation of the lambda calculus, where functions can be defined in a recursive manner and can operate on other functions as data. These 'higher-order functions' are 'first-class citizens' that can be passed as arguments, returned as values, and stored in data structures. This results in  'immutable' objects where data and variables do not change their values once defined. This results in programs without 'side effects', that is state changes that are difficult to track and control. This in turn makes it easier to reason about code and prove programs to be correct. 
 
-Static type checking is a key additional feature in functional programming languages contributing to functional programming rigor. However, functional programming algorithms and data structures in these languages seems to be an entirely separate subject from mainstream 'algorithms'. In the JavaScript world typed TypeScript and functional programming, often featuring divide and conquer and recursion, have become very popular recently, for the 'algorithms' embedded in frontend web systems (e.g. in React.js). But this is a sort of functional programming-lite, with event-driven Functional Reactive Programming (FRP) being a more purist approach yet to be adapted (RXJS, MobX). (Note: Static typing is present in Java, but must be added via a package to Python. Since Sedgewick's selection sort implementation featured static typing in Java I thought this was interesting and reproduced it in Python, but did not include it since I judged it to be out of scope.)
+Static type checking is a key additional feature in functional programming languages contributing to functional programming rigor. However, functional programming algorithms and data structures in these languages seems to be an entirely separate subject from mainstream 'algorithms' (Rabhi & Lapalme 1999; Stone 2018). In the JavaScript world typed TypeScript and functional programming, often featuring divide-and-conquer-like recursion, have become very popular recently for the 'algorithms' embedded in frontend web systems (e.g. in React.js). But this is a sort of functional programming-lite with event-driven Functional Reactive Programming (FRP) being a more purist approach yet to be adapted (RXJS, MobX). (Note: Static typing is present in Java, but must be added via a package to Python. Since Sedgewick's selection sort implementation featured static typing in Java I thought this was interesting and reproduced it in Python, but did not include it since I judged it to be out of scope.)
 
-However, divide and conquer can also be applied to non-recursive or imperative algorithms. Iterative or loop-based algorithms are typical for the non-recursive divide and conquer approach. Algorithms can often be implemented either recursively and non-recursively. Recursion may not be the most efficient or preferred approach due to the overhead associated with function calls. 
+Divide and conquer can also be applied to non-recursive or imperative algorithms. Iterative or loop-based algorithms are typical for the non-recursive divide and conquer approach. Algorithms can often be implemented either recursively and non-recursively. Recursion may not be the most efficient or preferred approach due to the overhead associated with function calls. Typical computer hardware and architecture (von Neuman machine) favors an iterative approach over recursion and the program call stack that it intensively employs. When 'tail recursion' is employed (e.g. in Scheme), with the function calling itself at the very end of the the function, conversion to iteration via tail recursion elimination can be employed by the compiler as an optimization.   
 
 (Abelson, Sussman, & Sussman 1996; Knuth 1994; Barendregt 1984; Pierce et al 2021)
 
@@ -80,17 +80,17 @@ Using the 'substitution method' a 'recurrence relation' is solved to find time c
 
 - **Graph Algorithms:** Depth-First Search (DFS) and Breadth-First Search (BFS).
 
-- **Numerical Computations:** fast Fourier transform (FFT), algorithms for multiplying large numbers (Karatsuba algorithm)
+- **Numerical Computations:** Strassen matrix multiplication, fast Fourier transform (FFT), algorithms for multiplying large numbers (Karatsuba algorithm)
  
 - **Image Processing:** image filtering, edge detection, and image segmentation, finding closest pair of points, processing of images by dividing into smaller subimages.
 
-- **Compilers:**  top-down parsers (syntactic analysis of programming languages) 
+- **Compilers:**  top-down parsers in syntactic analysis of programming languages. 
 
-- **Database management:** Aggregate function* in SQL: "Aggregate functions present a bottleneck, because they potentially require having all input values at once. In distributed computing, it is desirable to divide such computations into smaller pieces, and distribute the work, usually computing in parallel, via a divide and conquer algorithm." 
+- **Database management:** Aggregate functions in SQL are a potential bottleneck, so division of work over parallel processors is employed.
 
 - **Parallel and Distributed Computing:** divide into smaller tasks solved independently by multiple processors.
 
-- **MapReduce** is a programming model and framework for processing large-scale data sets in a distributed and parallel manner across a cluster of machines. It is widely used for big data processing and is known for its scalability and fault tolerance.
+- **MapReduce** for processing large-scale data sets in a distributed and parallel manner across a cluster of machines, known for its scalability and fault tolerance.
 
 ---
 > What are the pros and cons of the divide and conquer approach?
@@ -129,11 +129,15 @@ Knuth, D. E. (1994). *Concrete Mathematics: A Foundation for Computer Science.* 
 
 Pierce, B. C., Casinghino, C., et al. (2021). *Software Foundations.* Electronic version available at https://softwarefoundations.cis.upenn.edu.
 
+Rabhi, F. A., & Lapalme, G. (1999). Algorithms: A Functional Programming Approach. Addison-Wesley.
+
 Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022).*Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.* raywenderlich.com
 
 Sedgewick, R., & Wayne, K. (2011). *Algorithms.* Addison-Wesley Professional.
 
-**Wikipedia:** Divide-and-conquer algorithm; Functional programming; Recursion; Recurrence relation; Call stack; Side effects; Immutable object; MapReduce; Aggregate function; Fork-join model; Functional Reactive Programming; MobX
+Stone, J. D. (2018). Algorithms for Functional Programming. Cambridge University Press.
+
+**Wikipedia:** Divide-and-conquer algorithm; Strassen algorithm; Maximum subarray problem; Functional programming; Recursion; Recurrence relation; Call stack; Side effects; Immutable object; MapReduce; Aggregate function; Fork-join model; Functional Reactive Programming; MobX; tail call 
 
 
 
