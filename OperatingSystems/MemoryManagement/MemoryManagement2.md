@@ -2,19 +2,19 @@
 
 > How does the paged segmentation scheme solve the problem of memory management ?  
 
-When memory is a scarce and limited resource, memory management is the solution. 
-Resource scarity is once again the underlying problem as it was in the last unit where we studied CPU scheduling.
+When memory is a scarce and limited, memory management is the solution. 
+Resource scarity is once again the underlying problem as it was with CPU scheduling.
 
-For the most part memory management is taken care of automatically and hidden from users, system administrators, and designers. 
-So why learn these concepts? 
+Memory management is mostly automatic and hidden from users, system administrators, and designers. 
+but there are reasons for learning these concepts:  
 
-1. Tuning memory management in operating systems to optimize performance (Windows, Linux, macOS, Android, iOS).
-2. Design of customized memory management for real-time embedded systems in the Internet of Things (IoT).
-3. Memory management optimized for parallel processing, e.g. GPUs applied to machine learning and Large Language Models (LLMs). 
+1. **Tuning** memory management in operating systems to optimize performance (Windows, Linux, macOS, Android, iOS).
+2. Design of customized memory management for real-time **embedded systems** in the Internet of Things (IoT).
+3. Memory management optimized for **parallel concurrent processing**, e.g. GPUs applied to machine learning and Large Language Models (LLMs). 
 
 > How does the 'memory management' problem arise in computing ? 
 
-The memory management problem arises from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This is known as 'software bloat' or Wirth's Law: "software manages to outgrow hardware in size and sluggishness." It also reflects the 'second system effect' namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
+The memory management problem arises from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This is known as **'software bloat'** or **'Wirth's Law'**: "software manages to outgrow hardware in size and sluggishness." It also reflects the **'second system effect'** namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
 
 The higher its position in the memory hierarchy the more scarce memory is. The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with still relatively fast access time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times that can only be accessed efficiently in an asynchronous manner. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
 
