@@ -208,6 +208,17 @@ print("Result:")
 print(result)
 ```
 
+---
+> Could you describe what those matrix utility functions above are doing in detailed plain English : split_into_submatrices, concatenate_quadrants, or size  ?
+
+Here's a detailed explanation of the matrix utility functions in plain English:
+
+- **split_into_submatrices(matrix):** This function takes an n x n matrix as input and returns four equally sized submatrices (A11, A12, A21, A22) obtained by splitting the input matrix into four quadrants. The input matrix is divided into top-left (A11), top-right (A12), bottom-left (A21), and bottom-right (A22) submatrices, each having n/2 rows and n/2 columns.
+
+- **concatenate_quadrants(A11, A12, A21, A22):** This function takes four equally sized matrices (A11, A12, A21, A22) as input, which represent the four quadrants of a larger matrix. It then concatenates these four matrices horizontally and vertically to create a larger matrix, where A11 is in the top-left quadrant, A12 is in the top-right quadrant, A21 is in the bottom-left quadrant, and A22 is in the bottom-right quadrant.
+
+- **size(matrix):** This function takes an n x n matrix as input and returns the size of the matrix, which is the number of rows or columns in the matrix. It simply retrieves the number of rows (or columns) from the input matrix and returns it as the size of the matrix.
+
 
 
 
