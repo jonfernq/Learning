@@ -27,6 +27,16 @@ A **page fault** is a of violation of locality, when a program tries to access a
 ---
 > Discuss the paged segmentation scheme of memory management.
 
+First, of all to clear up some things about the potentially confusing term 'paged segmentation'.  
+
+'Virtual memory' is defined as the 'illusion' provided to an individual process that that it has an unlimited amount of physical memory to work with, 
+an illusion provided by the 'demand paging' of 'virtual addresses' from a 'virtual address space' (Anderson & Dahlin 2011-15; Hailperin 2014:207-12)
+
+'Virtual memory' can be implemented as 'paging', 'segmentation' or a combination of both: 'paged segmentation'. 
+
+
+
+
 In the paged segmentation scheme, the logical address space of a process is divided into segments, and each segment is further divided into pages. 
 
 Component parts of paged segmentation scheme:
