@@ -248,6 +248,35 @@ C12 = P3 + P5: Calculates the sum of P3 and P5.
 C21 = P2 + P4: Calculates the sum of P2 and P4.
 C22 = P1 + P3 - P2 + P6: Calculates the sum of P1, `P3
 
+---
+> Are Jupyter notebooks good for 'literate programming' ? 
+
+Yes, Jupyter notebooks are commonly used for literate programming. Literate programming is an approach to software development where code and documentation are interwoven, making the code more readable and understandable. Jupyter notebooks provide an interactive environment that allows for combining live code, formatted text, equations, and visualizations in a single document.
+
+Jupyter notebooks support markdown cells, which allow for rich text formatting, including headings, lists, images, and mathematical equations. This makes it easy to write detailed explanations, instructions, and documentation alongside the code cells. Code cells in Jupyter notebooks can contain live code written in various programming languages, such as Python, R, Julia, and more.
+
+One of the main advantages of using Jupyter notebooks for literate programming is the ability to execute code cells interactively and see the results immediately. This makes it easy to experiment with code, visualize data, and iterate on the code and documentation together. Jupyter notebooks also support cell execution order, which allows for a narrative flow in the document, showing the progression of code and results.
+
+Additionally, Jupyter notebooks can be easily shared with others, making it convenient for collaborative development, teaching, and presenting code and results in a self-contained document. Notebooks can be exported to various formats, including HTML, PDF, and Markdown, for sharing and publication.
+
+Overall, Jupyter notebooks provide a powerful environment for literate programming, allowing developers and data scientists to combine code and documentation in an interactive and visually appealing manner.
+
+---
+> In a Jupyter notebook can you execute code and then explain the results step by step as they are calculated ? 
+
+Yes, in a Jupyter notebook, you can execute code cells and then explain the results step by step as they are calculated. This is one of the main advantages of using Jupyter notebooks for literate programming.
+
+You can write code in a code cell, execute it by running the cell, and see the results immediately below the cell. You can then add markdown cells or text cells to provide explanations, interpretations, or comments on the results.
+
+For example, you can write code to perform a calculation, such as matrix multiplication, in one code cell, execute it, and then add a markdown cell below the code cell to explain each step of the calculation using plain English or any other suitable language. You can use markdown features such as headings, lists, images, and mathematical equations to provide detailed explanations alongside the code results.
+
+You can also use the narrative flow of Jupyter notebooks to explain the logic, reasoning, or insights behind the code results. You can refer to specific code cells, variables, or outputs in your explanations, making it easy to provide a clear and coherent explanation of the results as they are calculated.
+
+Overall, Jupyter notebooks provide a flexible and interactive environment for combining code and explanations, allowing you to execute code and explain the results step by step in a readable and organized manner.
+
+
+
+
 
 
 
