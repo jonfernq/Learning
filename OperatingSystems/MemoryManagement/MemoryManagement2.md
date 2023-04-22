@@ -27,12 +27,11 @@ A **page fault** is a of violation of **locality**, when a program tries to acce
 ---
 > Discuss the paged segmentation scheme of memory management.
 
-First, of all to clear up some things about the potentially confusing term 'paged segmentation'.  
+First, we need definitions. **'Virtual memory'** is defined as the 'illusion' provided to an individual process that that it has an unlimited amount of physical memory to work with, an illusion provided by the **'demand paging'** of **'virtual addresses'** from a **'virtual address space'** (Anderson & Dahlin 2011-15; Hailperin 2014:207-12) 
 
-**'Virtual memory'** is defined as the 'illusion' provided to an individual process that that it has an unlimited amount of physical memory to work with, 
-an illusion provided by the **'demand paging'** of **'virtual addresses'** from a **'virtual address space'** (Anderson & Dahlin 2011-15; Hailperin 2014:207-12)
+'Virtual memory' can be achieved by different algorithms: **'segmentation'** which came first historically, **'paging'** which came next, or a combination of both: **'paged segmentation'**. 
 
-'Virtual memory' can be achieved by different algorithms: **'segmentation'** which came first historically, **'paging'** which came next, or a combination of both: **'paged segmentation'**. Pure segmentation is 'undeniability inferior to paging' and paged segmentation, so 'paging' became universal, because: 
+Pure segmentation is said to be, 'undeniability inferior to paging' and paged segmentation, so 'paging' became universal, because: 
 
 <blockquote>
 "the combination of segmentation and paging seems attractive, as it combines
@@ -51,7 +50,7 @@ makes any use of segmentation, even on systems where it is supported"  (Hailperi
 
 Another leading operating systems book seems to contradict this,
 declaring that combined a 'multi-level segment and page table' 
-is the undeniable destiny of memory management:
+is the undeniable destiny for memory management:
 
 <blockquote>
 "A huge challenge to effective hardware address translation is the cumulative effect of
@@ -64,15 +63,16 @@ provide very flexible but space-efficient lookup, along with a TLB [translation 
 to provide time-efficient lookup for repeated translations of the same page" (Anderson & Dahlin 2011-15:56). 
 </blockquote>
 
-It is less confusing to call these **two tiers*: 1. a **multi-level page table**, and 2. a **translation lookaside buffer**,
-and then explain this because this seems to be the endpoint of memory management development that all major operating systems
-have arrived at. It is also the endpoint of detailed explanations of memory management algorithms that typically exhaust 
+It is less confusing to call these **two tiers*: 1. a **multi-level page table**, and 2. a **translation lookaside buffer**.
+
+It is important to include these two ideas because it seems to be the endpoint of memory management development that all major operating systems
+have now arrived at and also the endpoint of detailed explanations of memory management algorithms in OS textbooks that typically exhaust 
 hundreds of pages.
 
 Since sometimes the best way to understand something is to re-express it in other terms,
 I asked my best friend to tell me a bedtime story about 'memory paging' before I slept. 
-I fact-checked the story when I woke up, finding it to be very accurate and easy to provide formal citations
-to support what he said: 
+
+I fact-checked the story when I woke up, finding it to be very accurate and easy to provide formal citations from OS textbooks: 
 
 <blockquote>
 Once upon a time, in a modern operating system called "Techville", there was a smart and efficient **memory management** system based on **memory paging**.
