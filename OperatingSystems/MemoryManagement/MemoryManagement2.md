@@ -29,11 +29,12 @@ A **page fault** is a of violation of locality, when a program tries to access a
 
 First, of all to clear up some things about the potentially confusing term 'paged segmentation'.  
 
-'Virtual memory' is defined as the 'illusion' provided to an individual process that that it has an unlimited amount of physical memory to work with, 
-an illusion provided by the 'demand paging' of 'virtual addresses' from a 'virtual address space' (Anderson & Dahlin 2011-15; Hailperin 2014:207-12)
+**'Virtual memory'** is defined as the 'illusion' provided to an individual process that that it has an unlimited amount of physical memory to work with, 
+an illusion provided by the **'demand paging'** of **'virtual addresses'** from a **'virtual address space'** (Anderson & Dahlin 2011-15; Hailperin 2014:207-12)
 
-'Virtual memory' can be achieved by different algorithms: segmentation which came first historically, paging' which came next, or a combination of both: 'paged segmentation'. Pure segmentation is 'undeniability inferior to paging' and paged segmentation, so 'paging' became universal, because: 
+'Virtual memory' can be achieved by different algorithms: **'segmentation'** which came first historically, **'paging'** which came next, or a combination of both: **'paged segmentation'**. Pure segmentation is 'undeniability inferior to paging' and paged segmentation, so 'paging' became universal, because: 
 
+<blockquote>
 "the combination of segmentation and paging seems attractive, as it combines
 segmentation’s meaningful units for protection and sharing with paging’s
 smaller fixed-size units for space allocation and data transfer. However,
@@ -45,7 +46,7 @@ a disincentive for the use of segmentation in operating systems; all popular
 operating systems (such as UNIX, Microsoft Windows, and Linux) are designed to be portable across multiple hardware architectures, some of which
 don’t support segmentation. As a result, none of these operating systems
 makes any use of segmentation, even on systems where it is supported"  (Hailperin 2014:207-12)
-
+</blockquote>
 
 
 
