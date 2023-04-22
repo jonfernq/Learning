@@ -33,9 +33,11 @@ A = | a11  a12 |    B = | b11  b12 |
 C = | c11  c12 | = | a11*b11 + a12*b21  a11*b12 + a12*b22 |
     |         |     |                                            |
     | c21  c22 |     | a21*b11 + a22*b21  a21*b12 + a22*b22 |
+```    
+    
 In the naive algorithm, we need to perform 8 multiplications to compute the four elements of the resulting matrix C.
 
-Strassen's - **Algorithm:**
+**Strassen's - Algorithm:**
 
 ```scss
 A = | a11  a12 |    B = | b11  b12 |
@@ -62,9 +64,9 @@ So, Strassen's algorithm reduces the number of multiplications required for matr
 ---
 > Can you write some simple pseudocode for the naive and Strassen's algorithm ? 
 
-Sure! Here's a simple pseudocode for both the naive algorithm and Strassen's algorithm for matrix multiplication.
+Here's a simple pseudocode for both the naive algorithm and Strassen's algorithm for matrix multiplication.
 
-Naive - **Algorithm:**
+**Naive - Algorithm:**
 
 ```less
 function multiply_matrices_naive(A, B):
@@ -120,10 +122,95 @@ function multiply_matrices_strassen(A, B):
     return C
 ```
 
-Note that the pseudocode provided above is a simplified version and may need to be adapted or optimized 
-for specific programming languages or platforms. Also, the functions split_into_submatrices, concatenate_quadrants, 
-and size are utility functions that would need to be implemented separately to handle the splitting and concatenation of matrices, 
-as well as determining the size of matrices, based on the conventions and syntax of the programming language you are using.
+Could you write some simple code that implements Strassen's algorithm that uses the first set of utility functions above?  And use the following 2 X 2 matrix multiplication as an example: [[5, 1],[8, 6]] X [[2,3],[1,7]] 
+Certainly! Here's an example implementation of Strassen's algorithm in Python, using the utility functions split_into_submatrices, concatenate_quadrants, and size as described earlier:
+
+```python
+import numpy as np
+
+def split_into_submatrices(matrix):
+    # Input: matrix, an n x n matrix
+    # Output: A11, A12, A21, A22, four equally sized submatrices of matrix
+    
+    n = size(matrix)
+    split_idx = n // 2
+    
+    A11 = matrix[:split_idx, :split_idx]
+    A12 = matrix[:split_idx, split_idx:]
+    A21 = matrix[split_idx:, :split_idx]
+    A22 = matrix[split_idx:, split_idx:]
+    
+    return A11, A12, A21, A22
+
+def concatenate_quadrants(A11, A12, A21, A22):
+    # Input: A11, A12, A21, A22, four equally sized matrices
+    # Output: matrix, a combined matrix from the four quadrants
+    
+    top = np.concatenate((A11, A12), axis=1)
+    bottom = np.concatenate((A21, A22), axis=1)
+    matrix = np.concatenate((top, bottom), axis=0)
+    
+    return matrix
+
+def size(matrix):
+    # Input: matrix, an n x n matrix
+    # Output: n, the size of the matrix (number of rows or columns)
+    
+    n = matrix.shape[0]
+    return n
+
+def strassen(matrix1, matrix2):
+    # Input: matrix1, matrix2, two n x n matrices
+    # Output: result, the product of matrix1 and matrix2 using Strassen's algorithm
+    
+    n = size(matrix1)
+    
+    # Base case: If matrices are 1 x 1, use naive multiplication
+    if n == 1:
+        return matrix1 * matrix2
+    
+    # Split matrices into quadrants
+    A11, A12, A21, A22 = split_into_submatrices(matrix1)
+    B11, B12, B21, B22 = split_into_submatrices(matrix2)
+    
+    # Recursive steps of Strassen's algorithm
+    P1 = strassen(A11 + A22, B11 + B22)
+    P2 = strassen(A21 + A22, B11)
+    P3 = strassen(A11, B12 - B22)
+    P4 = strassen(A22, B21 - B11)
+    P5 = strassen(A11 + A12, B22)
+    P6 = strassen(A21 - A11, B11 + B12)
+    P7 = strassen(A12 - A22, B21 + B22)
+    
+    # Calculate result matrix
+    C11 = P1 + P4 - P5 + P7
+    C12 = P3 + P5
+    C21 = P2 + P4
+    C22 = P1 + P3 - P2 + P6
+    
+    # Concatenate quadrants to form the result matrix
+    result = concatenate_quadrants(C11, C12, C21, C22)
+    
+    return result
+
+# Example usage with 2 x 2 matrices
+matrix1 = np.array([[5, 1], [8, 6]])
+matrix2 = np.array([[2, 3], [1, 7]])
+result = strassen(matrix1, matrix2)
+
+print("Matrix 1:")
+print(matrix1)
+
+print("Matrix 2:")
+print(matrix2)
+
+print("Result:")
+print(result)
+```
+
+
+
+
 
 
 
