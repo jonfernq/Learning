@@ -6,7 +6,7 @@ When memory is a scarce and limited, memory management is the solution.
 Resource scarity is once again the underlying problem as it was with CPU scheduling.
 
 Memory management is mostly automatic and hidden from users, system administrators, and designers. 
-but there are reasons for learning these concepts:  
+but there are reasons about it:  
 
 1. **Tuning** memory management in operating systems to optimize performance (Windows, Linux, macOS, Android, iOS).
 2. Design of customized memory management for real-time **embedded systems** in the Internet of Things (IoT).
@@ -14,24 +14,32 @@ but there are reasons for learning these concepts:
 
 > How does the 'memory management' problem arise in computing ? 
 
-The **memory management problem** arises from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This is known as **'software bloat'** or **'Wirth's Law'**: "software manages to outgrow hardware in size and sluggishness." It also reflects the **'second system effect'** namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
+The **memory management problem** arises from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. 
 
-The higher its position in the memory hierarchy the more scarce memory is. The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with still relatively fast access time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times that can only be accessed efficiently in an asynchronous manner. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
+This is known as **'software bloat'** or **'Wirth's Law'**: "software manages to outgrow hardware in size and sluggishness." 
+
+It also reflects the **'second system effect'** namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
+
+The higher its position in the memory hierarchy the more scarce memory is. 
+
+The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with still relatively fast access time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times that can only be accessed efficiently in an asynchronous manner. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
 
 **Memory management** aims to solve the problem of how to allocate and manage the scarce memory resources of a computing system to maximize performance metrics such as throughput and response time. Techniques such as paging, segmentation, and virtual memory are used to optimize memory utilization, handle page faults, and provide a virtualized and abstracted view of memory to programs running on a computer system. 
 
-**'Locality'** and **'page fault'** are two of the most important concepts in memory management (Bryant & O'Hallaron 2015). The concept of **'locality'** is the tendency of computer programs to access memory in localized or nearby regions. Whereas Spatial Locality is the tendency of a program to access memory locations that are close to each other in terms of address space, temporal Locality is the tendency of a program to access the same memory location multiple times within a short period of time. Memory management techniques, such as caching, paging, and virtual memory, are designed based on the principle of locality to optimize memory access and reduce overhead. Operating systems exploit the concept of locality to improve performance, reduce memory fragmentation, and **minimize the number of page faults**, thereby enhancing overall system efficiency. 
+**'Locality'** and **'page fault'** are two of the most important concepts in memory management (Bryant & O'Hallaron 2015). 
+
+The concept of **'locality'** is the tendency of computer programs to access memory in localized or nearby regions. Whereas Spatial Locality is the tendency of a program to access memory locations that are close to each other in terms of address space, temporal Locality is the tendency of a program to access the same memory location multiple times within a short period of time. Memory management techniques, such as caching, paging, and virtual memory, are designed based on the principle of locality to optimize memory access and reduce overhead. Operating systems exploit the concept of locality to improve performance, reduce memory fragmentation, and **minimize the number of page faults**, thereby enhancing overall system efficiency. 
 
 A **page fault** is a of violation of **locality**, when a program tries to access a page of memory outside of main memory (RAM) located in secondary storage (e.g., hard drive or SSD). This triggers 'page swapping' where the operating system fetches the required page from secondary storage into main memory so the program can access it. While this causes a delay in program execution as the operating system performs the necessary data transfer, high CPU utilization is maintained by entering a CPU interrupt cycle in which a running process state is saved away until the slow I/O task is completed, moving onto to execute the next waiting process. Page faults in the limit cause **'thrashing'** which occurs when memory is overused, causing a continual stream of page faults, processes that fail to complete, system performance degradation and ultimately collapse. 
 
 ---
 > Discuss the paged segmentation scheme of memory management.
 
-First, we need definitions. **'Virtual memory'** is defined as the 'illusion' provided to an individual process that that it has an unlimited amount of physical memory to work with, an illusion provided by the **'demand paging'** of **'virtual addresses'** from a **'virtual address space'** (Anderson & Dahlin 2011-15; Hailperin 2014:207-12) 
+First, we need definitions. **'Virtual memory'** is defined as the 'illusion' provided to an individual process that that it has an unlimited amount of physical memory to work with, an illusion provided by the **'demand paging'** to processes of **'virtual addresses'** from a **'virtual address space'** (Anderson & Dahlin 2011-15; Hailperin 2014:207-12) 
 
 'Virtual memory' can be achieved by different algorithms: **'segmentation'** which came first historically, **'paging'** which came next, or a combination of both: **'paged segmentation'**. 
 
-Pure segmentation is said to be, 'undeniability inferior to paging' and paged segmentation, so 'paging' became universal, because: 
+Pure segmentation is said to be, 'undeniability inferior to paging', so 'paging' became universal, because: 
 
 <blockquote>
 "the combination of segmentation and paging seems attractive, as it combines
@@ -48,9 +56,12 @@ don’t support segmentation. As a result, none of these operating systems
 makes any use of segmentation, even on systems where it is supported"  (Hailperin 2014:244-45)
 </blockquote>
 
-Another leading operating systems book seems to contradict this,
-declaring that combined a 'multi-level segment and page table' 
-is the undeniable destiny for memory management:
+Another leading operating systems book
+declares that a multi-level **segment** and page table 
+is the undeniable destiny for memory management.
+
+I think it is best to call this a 'multi-level page table'
+though to avoid contradicting the other author:
 
 <blockquote>
 "A huge challenge to effective hardware address translation is the cumulative effect of
@@ -63,10 +74,10 @@ provide very flexible but space-efficient lookup, along with a TLB [translation 
 to provide time-efficient lookup for repeated translations of the same page" (Anderson & Dahlin 2011-15:56). 
 </blockquote>
 
-It is less confusing to call these **two tiers*: 1. a **multi-level page table**, and 2. a **translation lookaside buffer**.
+To summarize **two tiers** are important: 1. a **multi-level page table**, and 2. a **translation lookaside buffer**.
 
-It is important to include these two ideas because it seems to be the endpoint of memory management development that all major operating systems
-have now arrived at and also the endpoint of detailed explanations of memory management algorithms in OS textbooks that typically exhaust 
+This seems to be the endpoint of memory management development, circa 2015 when these OS textbooks were published, that all major operating systems
+have now arrived at now, and also the endpoint of detailed explanations of memory management algorithms in these textbooks that typically exhaust 
 hundreds of pages.
 
 Since sometimes the best way to understand something is to re-express it in other terms,
