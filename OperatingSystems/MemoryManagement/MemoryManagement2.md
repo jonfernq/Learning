@@ -1,31 +1,33 @@
 ## Memory Management 
 
-> How does the paged segmentation scheme solve the problem of memory management ? 
+> How does the paged segmentation scheme solve the problem of memory management ?  
 
-Resource scarity is once again the underlying problem as it was in the last unit where we studied CPU scheduling. When memory is a scarce and limited resource, memory management is the solution.  
+When memory is a scarce and limited resource, memory management is the solution. 
+Resource scarity is once again the underlying problem as it was in the last unit where we studied CPU scheduling.
 
-The basic concepts of memory management are simple, but the details of variant implementations and their historical development are complex. These concepts can be put to practical use in three ways:  
+For the most part memory management is taken care of automatically and hidden from users, system administrators, and designers. 
+So why learn these concepts? 
 
-1. Tuning memory management on operating systems in common use (Windows, Linux, macOS, Android, iOS) to optimize performance.
+1. Tuning memory management in operating systems to optimize performance (Windows, Linux, macOS, Android, iOS).
 2. Design of customized memory management for real-time embedded systems in the Internet of Things (IoT).
-3. Memory management optimized for parallel processing, for example GPUs applied to machine learning and Large Language Models (LLMs). 
+3. Memory management optimized for parallel processing, e.g. GPUs applied to machine learning and Large Language Models (LLMs). 
 
 > How does the 'memory management' problem arise in computing ? 
 
-The memory management problem arises historically from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This phenomenon is known as 'software bloat' and Wirth's Law: "software manages to outgrow hardware in size and sluggishness." This also reflects the 'second system effect' namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
+The memory management problem arises from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This is known as 'software bloat' or Wirth's Law: "software manages to outgrow hardware in size and sluggishness." It also reflects the 'second system effect' namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
 
-The higher its position in the memory hierarchy, the more scarce memory is. The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with still relatively fast access time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times that can only be accessed efficiently in an asynchronous manner. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
+The higher its position in the memory hierarchy the more scarce memory is. The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with still relatively fast access time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times that can only be accessed efficiently in an asynchronous manner. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
 
 **Memory management** aims to solve the problem of how to allocate and manage the scarce memory resources of a computing system to maximize performance metrics such as throughput and response time. Techniques such as paging, segmentation, and virtual memory are used to optimize memory utilization, handle page faults, and provide a virtualized and abstracted view of memory to programs running on a computer system. 
 
 'Locality' and 'page fault' are two of the most important concepts in memory management (Bryant & O'Hallaron 2015). The concept of **'locality'** is the tendency of computer programs to access memory in localized or nearby regions. Whereas Spatial Locality is the tendency of a program to access memory locations that are close to each other in terms of address space, temporal Locality is the tendency of a program to access the same memory location multiple times within a short period of time. Memory management techniques, such as caching, paging, and virtual memory, are designed based on the principle of locality to optimize memory access and reduce overhead. Operating systems exploit the concept of locality to improve performance, reduce memory fragmentation, and **minimize the number of page faults**, thereby enhancing overall system efficiency. 
 
-A **page fault** is in essence a of violation of locality, occuring when a program tries to access a page of memory outside of main memory (RAM) but rather in secondary storage (e.g., hard drive or SSD). This triggers 'page swapping' where the operating system fetches the required page from secondary storage into main memory so the program can access it. Page faults cause a delay in program execution as the operating system performs the necessary data transfer. This involves the CPU interrupt cycle in which a running process state is saved away until a slow I/O task is completed to ensure CPU utilization is maximized.  
+A **page fault** is a of violation of locality, when a program tries to access a page of memory outside of main memory (RAM) located in secondary storage (e.g., hard drive or SSD). This triggers 'page swapping' where the operating system fetches the required page from secondary storage into main memory so the program can access it. While this causes a delay in program execution as the operating system performs the necessary data transfer, high CPU utilization is maintained by entering a CPU interrupt cycle in which a running process state is saved away until the slow I/O task is completed, moving onto to execute the next waiting process .  
 
 ---
 > Discuss the paged segmentation scheme of memory management.
 
-The paged segmentation scheme is a memory management scheme that combines aspects of both paging and segmentation, which are two popular memory management techniques used in operating systems. In the paged segmentation scheme, the logical address space of a process is divided into segments, and each segment is further divided into pages. This allows for flexible and efficient memory allocation and address translation.
+In the paged segmentation scheme, the logical address space of a process is divided into segments, and each segment is further divided into pages. 
 
 Component parts of paged segmentation scheme:
 
