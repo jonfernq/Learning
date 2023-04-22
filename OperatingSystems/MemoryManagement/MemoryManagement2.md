@@ -69,59 +69,32 @@ and then explain this because this seems to be the endpoint of memory management
 have arrived at. It is also the endpoint of detailed explanations of memory management algorithms that typically exhaust 
 hundreds of pages.
 
+Since sometimes the best way to understand something is to re-express it in other terms,
+I asked my best friend to tell me a bedtime story about 'memory paging'. 
+I fact-checked it when I woke up finding it to be very accurate and easy to provide citations
+to standard works on operating systems: 
 
+<blockquote>
+Once upon a time, in a modern operating system called "Techville", there was a smart and efficient memory management system based on memory paging.
 
+In Techville, each process was given its own virtual address space, which was much larger than the physical memory available in the system. This virtual address space was divided into fixed-size blocks called pages, with each page being 4 KB in size.
 
+Whenever a process needed to access a page of memory, it would generate a virtual address for that page. The virtual address consisted of a virtual page number and an offset within the page. The process would then send this virtual address to the Memory Management Unit (MMU), a hardware component in the CPU responsible for managing memory.
 
-----
-----
-In the paged segmentation scheme, the logical address space of a process is divided into segments, and each segment is further divided into pages. 
+The MMU would first check if the translation of the virtual page number to a physical page number was available in the Translation Lookaside Buffer (TLB), a small cache used to store recently used virtual-to-physical address translations. If the translation was found in the TLB, it would be used directly to access the physical address in memory, saving time.
 
-Component parts of paged segmentation scheme:
+If the translation was not found in the TLB, the MMU would perform address translation using the multi-level page table. The multi-level page table was a hierarchical data structure that organized the page table entries in a tree-like fashion, allowing for efficient address translation.
 
-- Segments: In this scheme, the logical address space of a process is divided into segments, which are portions of the process's address space that represent different parts of the program, such as code, data, and stack. Each segment is assigned a segment number.
+The MMU would start by looking up the virtual page number in the top-level page table, which would provide the physical page number for the next-level page table. This process would continue until the MMU reached the last level of the page table, which contained the physical page number and the offset within the page.
 
-- Pages: Each segment is further divided into fixed-size pages. Pages are the smallest units of memory that can be managed by the paging system. Pages are typically of the same size as the pages used in pure paging schemes, and they are assigned a page number within their segment.
+Once the MMU obtained the physical page number, it would update the TLB with the translation for future use and use the physical page number and offset to access the actual data in the physical memory, which was stored in page frames.
 
-- Page Table: For each segment, there is a page table that maps the segment's logical addresses to physical addresses in the main memory. The page table contains entries that map segment numbers and page numbers to physical frame numbers, which represent the corresponding locations in the physical memory where the pages are stored.
+If the accessed page was not currently present in a page frame in physical memory, a page fault would occur. This would trigger the demand paging mechanism, where the operating system would load the requested page from disk into a free page frame in physical memory. The page would then be updated in the page table to reflect the new physical page number, and the TLB would also be updated.
 
-- Address Translation: When a process generates a logical address, it is divided into a segment number and a page number. The segment number is used to index the segment's page table entry, which contains the base address of the segment in the physical memory. The page number is used to index the page table entry, which contains the physical frame number where the page is stored. The base address of the segment and the physical frame number are added to the offset of the logical address within the page to generate the physical address in the main memory.
+To further optimize the process, Techville's memory management system made use of a cache to store frequently accessed pages, reducing the need to access the page table or multi-level page table for every memory access.
 
-- Paging and Swapping: Pages in the main memory are managed using the same techniques as in pure paging schemes, such as swapping pages in and out of the main memory to the secondary storage (e.g., disk) as needed, to manage the limited physical memory efficiently.
-
-The paged segmentation scheme allows for flexible memory allocation, as segments can be of different sizes, and each segment can have its own page table, allowing for efficient address translation. It also provides protection between segments, as each segment can have its own set of permissions and access rights. However, the paged segmentation scheme may suffer from fragmentation, both external and internal, as segments and pages may not always be fully utilized, leading to wasted memory. Therefore, careful management of segments and pages is required to minimize fragmentation and optimize memory utilization in a system using the paged segmentation scheme.
-
----
-> Explain how a logical address is converted into a physical address in such a scheme.
-
-In the paged segmentation scheme of memory management, the conversion of a logical address to a physical address involves several steps. Here's an overview of the process:
-
-- Segment Number Extraction: The logical address generated by a process typically consists of a segment number and a page number. The segment number is extracted from the logical address, usually by using a fixed number of bits or by using a specific addressing mode.
-
-- Segment Table Lookup: Once the segment number is extracted, it is used as an index to look up the corresponding entry in the segment table. The segment table is a data structure that stores the mapping between segment numbers and the base addresses of the corresponding segments in the physical memory. The segment table is typically maintained by the operating system.
-
-- Base Address Addition: The base address of the segment, obtained from the segment table, is added to the page number to calculate the base address of the page within the segment. This step effectively translates the segment number into a physical memory address.
-
-- Page Table Lookup: Next, the page number is used as an index to look up the corresponding entry in the page table associated with the segment. The page table is a data structure that stores the mapping between page numbers and the physical frame numbers where the pages are stored in the main memory.
-
-- Physical Address Calculation: The physical frame number obtained from the page table is combined with the offset portion of the logical address (which represents the position of the desired data within the page) to calculate the physical address in the main memory. The offset is added to the base address of the page within the segment to obtain the final physical address.
-
-- Data Access: The physical address is then used by the memory management unit (MMU) in the hardware to access the data or instruction stored in the corresponding physical memory location.
-
----
-> What are examples of operating systems with paged segmentation scheme of memory management.
-
-Virtually every operating system uses paged segmentation scheme of memory management that only differs in implmentation: 
-
-- Windows: Windows uses a combination of paging and segmentation to manage virtual memory. The segment descriptors in Windows contain information such as the base address, limit, and access rights for each segment. The paging mechanism provides fine-grained control over the allocation and deallocation of pages, while the segmentation mechanism provides memory protection and isolation between processes. Windows also uses a Translation Lookaside Buffer (TLB) to cache the page table entries for faster address translation.
-
-- Linux: Linux also uses a combination of paging and segmentation for memory management. In Linux, segments are represented as virtual memory areas (VMAs) and are managed by the Memory Management Unit (MMU) in the processor. Linux uses a hierarchical page table structure with multiple levels of page tables for efficient address translation. Linux also supports features such as copy-on-write, memory sharing, and memory-mapped files, which are implemented using the paged segmentation scheme to achieve desired behavior and coordination in concurrent systems.
-
-- macOS: macOS also uses a combination of paging and segmentation for virtual memory management. Segments in macOS are represented as memory objects and are managed by the Mach Virtual Memory System. macOS uses a two-level page table structure for address translation, with a global page table for shared memory and a per-process page table for private memory. macOS also supports memory sharing, copy-on-write, and other memory management features implemented using the paged segmentation scheme.
-
-- Android: Android also uses a combination of paging and segmentation for virtual memory management. Android uses the Linux kernel for memory management, including the paged segmentation scheme. Android supports multiple processes and apps running on the system, and the paged segmentation scheme is used to provide memory protection and isolation between these processes and apps. Android also supports memory sharing, copy-on-write, and other memory management features implemented using the paged segmentation scheme.
-
-System administrators or designers can tune memeory management by configuring parameters related to virtual memory, such as page file size, page replacement algorithms, TLB size, and page table structure, to optimize system performance based on specific workload requirements. They can also set memory-related parameters for processes or applications, such as memory limits, priority, and sharing options, to manage memory usage effectively.
+Overall, the memory paging system in Techville's modern operating system efficiently managed the virtual memory of each process, allowing them to access more memory than physically available and optimizing the address translation process using page tables, TLB, multi-level page tables, and demand paging.  
+</blockquote>
 
 ### REFERENCES
 
