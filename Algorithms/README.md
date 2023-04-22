@@ -25,13 +25,13 @@
 - Compare the results for best, worst, and average case in time and space found in the heap sort,
 mergesort, and quicksort.
 
-### Unit 5: Data Structures and Algorithms4
+### Unit 5: Data Structures and Algorithms
 
 #### Topics
 - Stacks, queues, and lists
 - Max heap
 - Linked list, circular linked list, doubly linked list, and their implementations.
-- 
+
 #### Learning Objectives
 - Examine the functions of stacks and queues
 - Implement stacks and queues by using linked lists
@@ -47,8 +47,8 @@ mergesort, and quicksort.
 - Collision resolution techniques
 
 #### Learning Objectives
-Analyze types of hashing and hash functions
-Apply collision resolution techniques
+- Analyze types of hashing and hash functions
+- Apply collision resolution techniques
 
 ### Unit 7: Graphs and Algorithms
 
