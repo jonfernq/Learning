@@ -285,6 +285,17 @@ Once you have the Markdown file, you can use it to create new documents in other
 
 It's worth noting that the formatting and layout of the exported document may vary depending on the converter and the specific features used in the original Jupyter notebook, such as images, equations, and tables. Some manual adjustments may be required to fine-tune the appearance of the exported document in the desired format.
 
+--- 
+### REFERENCES 
+
+- Bari, A. (2018, February 8). 2.9 Strassen's matrix multiplication [Video]. YouTube. https://www.youtube.com/watch?v=0oJyNmEbS4w&t=551s
+
+- Divide and conquer | Set 5 (Strassen’s matrix multiplication). (2022, April 22). GeeksforGeeks. Retrieved June 03, 2022, from https://www.geeksforgeeks.org/strassens-matrix-multiplication/
+
+- Easy way to remember Strassen's Matrix Equation. (2022, May 27). GeeksforGeeks. Retrieved June 03, 2022, from https://www.geeksforgeeks.org/easy-way-remember-strassens-matrix-equation/
+
+
+
 
 
 
