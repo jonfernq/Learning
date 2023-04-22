@@ -6,7 +6,7 @@ When memory is a scarce and limited, memory management is the solution.
 Resource scarity is once again the underlying problem as it was with CPU scheduling.
 
 Memory management is mostly automatic and hidden from users, system administrators, and designers. 
-but there are reasons about it:  
+but there are reasons to learn about it:  
 
 1. **Tuning** memory management in operating systems to optimize performance (Windows, Linux, macOS, Android, iOS).
 2. Design of customized memory management for real-time **embedded systems** in the Internet of Things (IoT).
