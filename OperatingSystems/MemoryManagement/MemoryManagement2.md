@@ -49,7 +49,8 @@ makes any use of segmentation, even on systems where it is supported"  (Hailperi
 </blockquote>
 
 Another leading operating systems book seems to contradict this,
-declaring that combined 'paged segmentation' is the undeniable destiny of memory management:
+declaring that combined a 'multi-level segment and page table' 
+is the undeniable destiny of memory management:
 
 <blockquote>
 "A huge challenge to effective hardware address translation is the cumulative effect of
@@ -57,10 +58,15 @@ decades of Moore’s Law: both servers and desktop computers today contain vast 
 of memory. Processes are now able to map their code, data, heap, shared libraries, and
 files directly into memory. Each of these segments can be dynamic; they can be shared
 across processes or private to a single process. To handle these demands, hardware
-systems have converged on a two-tier structure: a *multi-level segment and page table* to
-provide very flexible but space-efficient lookup, along with a TLB to provide time-efficient
-lookup for repeated translations of the same page" (Anderson & Dahlin 2011-15:56; my italics). 
+systems have converged on a two-tier structure: a multi-level segment and page table to
+provide very flexible but space-efficient lookup, along with a TLB [translation lookaside buffer] 
+to provide time-efficient lookup for repeated translations of the same page" (Anderson & Dahlin 2011-15:56; my italics). 
 </blockquote>
+
+It is less confusing to call these **two tiers*: 1. a **multi-level page table**, and 2. a **translation lookaside buffer**,
+and then explain this because this seems to be the endpoint of memory management development that all major operating systems
+have arrived at. It is also the endpoint of detailed explanations of memory management algorithms that typically exhaust 
+hundreds of pages.
 
 
 
