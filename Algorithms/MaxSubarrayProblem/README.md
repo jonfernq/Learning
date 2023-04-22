@@ -172,29 +172,29 @@ Let's consider the following example input - **array:**
 
 We will use a divide-and-conquer approach to find the "crossing maximum subarray" in this input array.
 
-- **Divide:** We start by dividing the input array into two halves at the midpoint, which is index 4.
+1. **Divide:** We start by dividing the input array into two halves at the midpoint, which is index 4.
 
 ```less
 Left - **subarray:** [-2, 3, 5, -1]
 Right - **subarray:** [2, -4, 7, -3, 2]
 ```
-- **Recurse:** We recursively find the maximum subarray in the left subarray and the right subarray by making recursive calls to the same function.
+2. **Recurse:** We recursively find the maximum subarray in the left subarray and the right subarray by making recursive calls to the same function.
 
-For the left - **subarray:**
+For the left - subarray:
 
 ```less
 Left - **subarray:** [-2, 3, 5, -1]
-Maximum subarray in left - **subarray:** [3, 5]
+Maximum subarray in left - subarray: [3, 5]
 ```
 
-For the right - **subarray:**
+For the right - subarray:
 
 ```less
-Right - **subarray:** [2, -4, 7, -3, 2]
-Maximum subarray in right - **subarray:** [2, -4, 7]
+Right - subarray: [2, -4, 7, -3, 2]
+Maximum subarray in right - subarray: [2, -4, 7]
 ```
 
-Find crossing maximum - **subarray:** Next, we find the maximum subarray that crosses the midpoint. We iterate from the midpoint towards the beginning of the left subarray to find the maximum sum of a subarray that ends at the midpoint, and then iterate from the midpoint + 1 towards the end of the right subarray to find the maximum sum of a subarray that starts at the midpoint + 1.
+3. **Find crossing maximum subarray:** Next, we find the maximum subarray that crosses the midpoint. We iterate from the midpoint towards the beginning of the left subarray to find the maximum sum of a subarray that ends at the midpoint, and then iterate from the midpoint + 1 towards the end of the right subarray to find the maximum sum of a subarray that starts at the midpoint + 1.
 
 ```less
 Left - **subarray:** [-2, 3, 5, -1]
@@ -204,8 +204,9 @@ Right - **subarray:** [2, -4, 7, -3, 2]
 Maximum subarray starting at midpoint + - **1:** [2, -4, 7]
 
 Crossing maximum - **subarray:** [3, 5, -1, 2, -4, 7]
+```
 
-- **Compare:** Finally, we compare the three maximum subarrays found in steps 2 and 3, and return the one with the highest sum as the final maximum subarray.
+4. Compare: Finally, we compare the three maximum subarrays found in steps 2 and 3, and return the one with the highest sum as the final maximum subarray.
 
 ```less
 Maximum subarray in left - **subarray:** [3, 5]
@@ -213,13 +214,15 @@ Maximum subarray in right - **subarray:** [2, -4, 7]
 Crossing maximum - **subarray:** [3, 5, -1, 2, -4, 7]
 
 Final maximum - **subarray:** [3, 5, -1, 2, -4, 7]
+```
 
 So, the "crossing maximum subarray" in the input array [-2, 3, 5, -1, 2, -4, 7, -3, 2] is [3, 5, -1, 2, -4, 7], with a sum of 12.
 
 ---
 > Could you re-do this for the brute force approach above and compare ? 
 
-Let's consider the same input array as - **before:** [-2, 3, 5, -1, 2, -4, 7, -3, 2]. We'll use the brute force approach to find the maximum subarray.
+Let's consider the same input array as - before: [-2, 3, 5, -1, 2, -4, 7, -3, 2]. 
+We'll use the brute force approach to find the maximum subarray.
 
 **Brute Force - Approach:**
 
