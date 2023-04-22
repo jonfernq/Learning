@@ -87,7 +87,7 @@ I fact-checked the story when I woke up, finding it to be very accurate and easy
 
 <blockquote>
 Once upon a time, in a modern operating system called "Techville", there was a smart and efficient **memory management** system based on **memory paging**.
-
+  
 In Techville, each **process** was given its own **virtual address space**, which was much larger than the **physical memory** available in the system. This virtual address space was divided into fixed-size blocks called **pages**, with each page being 4 KB in size.
 
 Whenever a process needed to access a page of memory, it would generate a **virtual address** for that page. The virtual address consisted of a virtual page number and an offset within the page. The process would then send this virtual address to the **Memory Management Unit (MMU)**, a hardware component in the CPU responsible for managing memory (Hailperin 2014:207-12, 224-226). 
