@@ -75,25 +75,26 @@ I fact-checked it when I woke up finding it to be very accurate and easy to prov
 to standard works on operating systems: 
 
 <blockquote>
-Once upon a time, in a modern operating system called "Techville", there was a smart and efficient memory management system based on memory paging.
+Once upon a time, in a modern operating system called "Techville", there was a smart and efficient **memory management** system based on **memory paging**.
 
-In Techville, each process was given its own virtual address space, which was much larger than the physical memory available in the system. This virtual address space was divided into fixed-size blocks called pages, with each page being 4 KB in size.
+In Techville, each **process** was given its own **virtual address space**, which was much larger than the **physical memory** available in the system. This virtual address space was divided into fixed-size blocks called **pages**, with each page being 4 KB in size.
 
-Whenever a process needed to access a page of memory, it would generate a virtual address for that page. The virtual address consisted of a virtual page number and an offset within the page. The process would then send this virtual address to the Memory Management Unit (MMU), a hardware component in the CPU responsible for managing memory.
+Whenever a process needed to access a page of memory, it would generate a **virtual address** for that page. The virtual address consisted of a virtual page number and an offset within the page. The process would then send this virtual address to the **Memory Management Unit (MMU)**, a hardware component in the CPU responsible for managing memory.
 
-The MMU would first check if the translation of the virtual page number to a physical page number was available in the Translation Lookaside Buffer (TLB), a small cache used to store recently used virtual-to-physical address translations. If the translation was found in the TLB, it would be used directly to access the physical address in memory, saving time.
+The MMU would first check if the translation of the virtual page number to a physical page number was available in the **Translation Lookaside Buffer (TLB)**, a small **cache** used to store recently used virtual-to-physical address translations. If the translation was found in the TLB, it would be used directly to access the physical address in memory, saving time.
 
-If the translation was not found in the TLB, the MMU would perform address translation using the multi-level page table. The multi-level page table was a hierarchical data structure that organized the page table entries in a tree-like fashion, allowing for efficient address translation.
+If the translation was not found in the TLB, the MMU would perform **address translation** using the **multi-level page table**. The multi-level page table was a hierarchical data structure that organized the page table entries in a tree-like fashion, allowing for efficient address translation.
 
 The MMU would start by looking up the virtual page number in the top-level page table, which would provide the physical page number for the next-level page table. This process would continue until the MMU reached the last level of the page table, which contained the physical page number and the offset within the page.
 
-Once the MMU obtained the physical page number, it would update the TLB with the translation for future use and use the physical page number and offset to access the actual data in the physical memory, which was stored in page frames.
+Once the MMU obtained the physical page number, it would update the TLB with the translation for future use and use the physical page number and offset to access the actual data in the physical memory, which was stored in **page frames**.
 
-If the accessed page was not currently present in a page frame in physical memory, a page fault would occur. This would trigger the demand paging mechanism, where the operating system would load the requested page from disk into a free page frame in physical memory. The page would then be updated in the page table to reflect the new physical page number, and the TLB would also be updated.
+If the accessed page was not currently present in a page frame in physical memory, a **page fault** would occur. This would trigger the **demand paging** mechanism, where the operating system would load the requested page from disk into a free page frame in physical memory. The page would then be updated in the page table to reflect the new physical page number, and the TLB would also be updated.
 
-To further optimize the process, Techville's memory management system made use of a cache to store frequently accessed pages, reducing the need to access the page table or multi-level page table for every memory access.
+To further optimize the process, Techville's memory management system made use of a **cache** to store frequently accessed pages, reducing the need to access the page table or multi-level page table for every memory access.
 
-Overall, the memory paging system in Techville's modern operating system efficiently managed the virtual memory of each process, allowing them to access more memory than physically available and optimizing the address translation process using page tables, TLB, multi-level page tables, and demand paging.  
+Overall, the memory paging system in Techville's modern operating system efficiently managed the virtual memory of each process, allowing them to access more memory than physically available and optimizing the address translation process using page tables, TLB, multi-level page tables, and demand paging,
+and all the memory chips lived happily ever after.   
 </blockquote>
 
 ### REFERENCES
