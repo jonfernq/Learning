@@ -14,7 +14,7 @@ but there are reasons for learning these concepts:
 
 > How does the 'memory management' problem arise in computing ? 
 
-The memory management problem arises from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This is known as **'software bloat'** or **'Wirth's Law'**: "software manages to outgrow hardware in size and sluggishness." It also reflects the **'second system effect'** namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
+The **memory management problem** arises from the limited size of main memory (RAM) compared to the ever-growing size of programs and data that need to be stored and processed by computer systems. This is known as **'software bloat'** or **'Wirth's Law'**: "software manages to outgrow hardware in size and sluggishness." It also reflects the **'second system effect'** namely, "the tendency of small, elegant, and successful systems to be succeeded by over-engineered, bloated systems, due to inflated expectations and overconfidence," first identified by Fred Brooks in his classic of Software Engineering "The Mythical Man Month" (1975).   
 
 The higher its position in the memory hierarchy the more scarce memory is. The **'memory hierarchy'** refers to a pyramid-like organization of different levels of memory in a computer system, with varying speeds, capacities, and costs (Bryant & O'Hallaron 2015). This ranges from registers and caches at the top of the hierarchy with very fast access times, to main memory (RAM) in the middle with still relatively fast access time, to secondary storage (flash drives, hard drives) at the bottom with very slow access times that can only be accessed efficiently in an asynchronous manner. The higher-level memory in the hierarchy is faster but smaller and more expensive, while the lower-level memory is slower but larger and cheaper.
 
@@ -43,7 +43,8 @@ paging alone. Probably as a result of this, many hardware designers decided
 the cost of segmentation, in both money and performance, was not justified
 by the gain. Therefore, they provided support only for paging. This created
 a disincentive for the use of segmentation in operating systems; all popular
-operating systems (such as UNIX, Microsoft Windows, and Linux) are designed to be portable across multiple hardware architectures, some of which
+operating systems (such as UNIX, Microsoft Windows, and Linux) are designed 
+to be portable across multiple hardware architectures, some of which
 don’t support segmentation. As a result, none of these operating systems
 makes any use of segmentation, even on systems where it is supported"  (Hailperin 2014:207-12)
 </blockquote>
@@ -67,6 +68,8 @@ It is less confusing to call these **two tiers*: 1. a **multi-level page table**
 and then explain this because this seems to be the endpoint of memory management development that all major operating systems
 have arrived at. It is also the endpoint of detailed explanations of memory management algorithms that typically exhaust 
 hundreds of pages.
+
+
 
 
 
