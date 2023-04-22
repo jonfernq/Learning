@@ -93,5 +93,5 @@ Tanenbaum, A. S., & Bos, H. (2014). *Modern Operating Systems.* Pearson.
 
 Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). *Windows Internals.* Microsoft Press.
 
-Wikipedia: Memory management; Memory paging; Page (computer memory); Memory segmentation; Page fault; Page replacement algorithm, Demand paging; Virtual memory; CPU cache; Translation lookaside buffer; Memory hierarchy; Locality; Thrashing (computer science); Software bloat; Wirth's law, Second-system effect; Minix. 
+Wikipedia: Memory management; Memory paging; Page (computer memory); Memory segmentation; Page fault; Page replacement algorithm, Demand paging; Virtual memory; CPU cache; Translation lookaside buffer; Physical address; Virtual address space; Memory management unit; Memory hierarchy; Locality; Thrashing (computer science); Software bloat; Wirth's law, Second-system effect; Minix. 
 
