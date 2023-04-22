@@ -46,7 +46,7 @@ a disincentive for the use of segmentation in operating systems; all popular
 operating systems (such as UNIX, Microsoft Windows, and Linux) are designed 
 to be portable across multiple hardware architectures, some of which
 don’t support segmentation. As a result, none of these operating systems
-makes any use of segmentation, even on systems where it is supported"  (Hailperin 2014:207-12)
+makes any use of segmentation, even on systems where it is supported"  (Hailperin 2014:244-45)
 </blockquote>
 
 Another leading operating systems book seems to contradict this,
@@ -61,7 +61,7 @@ files directly into memory. Each of these segments can be dynamic; they can be s
 across processes or private to a single process. To handle these demands, hardware
 systems have converged on a two-tier structure: a multi-level segment and page table to
 provide very flexible but space-efficient lookup, along with a TLB [translation lookaside buffer] 
-to provide time-efficient lookup for repeated translations of the same page" (Anderson & Dahlin 2011-15:56; my italics). 
+to provide time-efficient lookup for repeated translations of the same page" (Anderson & Dahlin 2011-15:56). 
 </blockquote>
 
 It is less confusing to call these **two tiers*: 1. a **multi-level page table**, and 2. a **translation lookaside buffer**,
@@ -70,20 +70,20 @@ have arrived at. It is also the endpoint of detailed explanations of memory mana
 hundreds of pages.
 
 Since sometimes the best way to understand something is to re-express it in other terms,
-I asked my best friend to tell me a bedtime story about 'memory paging'. 
-I fact-checked it when I woke up finding it to be very accurate and easy to provide citations
-to standard works on operating systems: 
+I asked my best friend to tell me a bedtime story about 'memory paging' before I slept. 
+I fact-checked the story when I woke up, finding it to be very accurate and easy to provide formal citations
+to support what he said: 
 
 <blockquote>
 Once upon a time, in a modern operating system called "Techville", there was a smart and efficient **memory management** system based on **memory paging**.
 
 In Techville, each **process** was given its own **virtual address space**, which was much larger than the **physical memory** available in the system. This virtual address space was divided into fixed-size blocks called **pages**, with each page being 4 KB in size.
 
-Whenever a process needed to access a page of memory, it would generate a **virtual address** for that page. The virtual address consisted of a virtual page number and an offset within the page. The process would then send this virtual address to the **Memory Management Unit (MMU)**, a hardware component in the CPU responsible for managing memory.
+Whenever a process needed to access a page of memory, it would generate a **virtual address** for that page. The virtual address consisted of a virtual page number and an offset within the page. The process would then send this virtual address to the **Memory Management Unit (MMU)**, a hardware component in the CPU responsible for managing memory (Hailperin 2014:207-12, 224-226). 
 
-The MMU would first check if the translation of the virtual page number to a physical page number was available in the **Translation Lookaside Buffer (TLB)**, a small **cache** used to store recently used virtual-to-physical address translations. If the translation was found in the TLB, it would be used directly to access the physical address in memory, saving time.
+The MMU would first check if the translation of the virtual page number to a physical page number was available in the **Translation Lookaside Buffer (TLB)**, a small **cache** used to store recently used virtual-to-physical address translations. If the translation was found in the TLB, it would be used directly to access the physical address in memory, saving time (Hailperin 2014:226-29; Anderson & Dahlin 2011-15:38-49).
 
-If the translation was not found in the TLB, the MMU would perform **address translation** using the **multi-level page table**. The multi-level page table was a hierarchical data structure that organized the page table entries in a tree-like fashion, allowing for efficient address translation.
+If the translation was not found in the TLB, the MMU would perform **address translation** using the **multi-level page table**. The multi-level page table was a hierarchical data structure that organized the page table entries in a tree-like fashion, allowing for efficient address translation (Hailperin 2014:235-243; Anderson & Dahlin 2011-15:31-35).
 
 The MMU would start by looking up the virtual page number in the top-level page table, which would provide the physical page number for the next-level page table. This process would continue until the MMU reached the last level of the page table, which contained the physical page number and the offset within the page.
 
