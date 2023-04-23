@@ -243,10 +243,10 @@ The function then recursively calls itself seven times with different combinatio
 
 Using these intermediate products, the function then calculates the four quadrants of the result matrix C11, C12, C21, and C22 as follows:
 
-C11 = P1 + P4 - P5 + P7: Calculates the sum of P1, P4, and -P5, and adds P7.
-C12 = P3 + P5: Calculates the sum of P3 and P5.
-C21 = P2 + P4: Calculates the sum of P2 and P4.
-C22 = P1 + P3 - P2 + P6: Calculates the sum of P1, `P3
+- C11 = P1 + P4 - P5 + P7: Calculates the sum of P1, P4, and -P5, and adds P7.
+- C12 = P3 + P5: Calculates the sum of P3 and P5.
+- C21 = P2 + P4: Calculates the sum of P2 and P4.
+- C22 = P1 + P3 - P2 + P6: Calculates the sum of P1, `P3
 
 ---
 > Are Jupyter notebooks good for 'literate programming' ? 
@@ -284,6 +284,74 @@ To export a Jupyter notebook to Markdown, you can use the "File" menu in Jupyter
 Once you have the Markdown file, you can use it to create new documents in other formats, such as PDF or Word, using appropriate tools. For example, you can use a Markdown-to-PDF converter, such as Pandoc or any other similar tool, to convert the Markdown file to a PDF document. Similarly, you can use a Markdown-to-Word converter, such as Pandoc, to convert the Markdown file to a Word document.
 
 It's worth noting that the formatting and layout of the exported document may vary depending on the converter and the specific features used in the original Jupyter notebook, such as images, equations, and tables. Some manual adjustments may be required to fine-tune the appearance of the exported document in the desired format.
+
+---
+> Please write a non-recursive version of Strassen matrix multiplication that follows that the standard procedure. I think this is based on the splitting of matrices into quadrants? 
+
+Here's a non-recursive version of Strassen's algorithm for matrix multiplication, based on the standard procedure of splitting matrices into quadrants:
+
+```python
+import numpy as np
+
+def strassen(matrix_a, matrix_b):
+    # Check if matrices are compatible for multiplication
+    assert matrix_a.shape[1] == matrix_b.shape[0], "Error: Matrix dimensions do not match for multiplication!"
+
+    # Get matrix dimensions
+    n = matrix_a.shape[0]
+    assert matrix_a.shape[1] == matrix_a.shape[0], "Error: Input matrices are not square matrices of the same size!"
+
+    # Pad matrices to next power of 2
+    next_power_of_two = int(2 ** np.ceil(np.log2(n)))
+    matrix_a_padded = np.pad(matrix_a, ((0, next_power_of_two - n), (0, next_power_of_two - n)), mode='constant')
+    matrix_b_padded = np.pad(matrix_b, ((0, next_power_of_two - n), (0, next_power_of_two - n)), mode='constant')
+
+    # Initialize result matrix
+    matrix_c = np.zeros((next_power_of_two, next_power_of_two))
+
+    # Perform matrix multiplication using standard algorithm
+    for i in range(next_power_of_two):
+        for j in range(next_power_of_two):
+            for k in range(next_power_of_two):
+                matrix_c[i][j] += matrix_a_padded[i][k] * matrix_b_padded[k][j]
+
+    # Return the result matrix
+    return matrix_c[:n, :n]
+```
+
+This non-recursive version of Strassen's algorithm follows the standard procedure of matrix multiplication, but with padding to the next power of 2 to ensure compatibility for matrix sizes that are not already powers of 2. It uses nested loops to perform the multiplication of individual elements of the matrices, similar to the standard algorithm, but without the splitting and recursive calls that are characteristic of the recursive version of Strassen's algorithm. Note that this implementation assumes that the input matrices are square matrices of the same size.
+
+--- 
+> I do not understand this: "with padding to the next power of 2 to ensure compatibility for matrix sizes that are not already powers of 2" Whose idea was it ? 
+
+The idea of padding the matrices to the next power of 2 in the non-recursive version of Strassen's algorithm is a common approach used to ensure compatibility for matrix sizes that are not already powers of 2. This padding is done to make the matrices compatible for the standard matrix multiplication algorithm, which requires the dimensions of the input matrices to be compatible in terms of rows and columns.
+
+In Strassen's algorithm, the matrices are divided into smaller submatrices recursively until they reach a size that is small enough to be multiplied using standard matrix multiplication. However, this recursive approach requires the matrices to have dimensions that are powers of 2 in order to ensure that they can be divided into smaller submatrices evenly at each recursive step. If the input matrices do not have dimensions that are powers of 2, then they need to be padded to the next power of 2 in order to ensure that they can be divided into smaller submatrices evenly and be compatible with the recursive approach.
+
+The idea of padding the matrices to the next power of 2 is not specific to Strassen's algorithm, but rather a common approach used in various matrix multiplication algorithms to handle input matrices of arbitrary sizes. This approach ensures that the input matrices can be processed correctly by the algorithm without any size compatibility issues.
+
+---
+> I see it uses the ceiling function :  next_power_of_two = int(2 ** np.ceil(np.log2(n)))
+
+Yes, that's correct. The next_power_of_two function used in the non-recursive version of Strassen's algorithm computes the next power of 2 greater than or equal to the dimension of the input matrices using the np.ceil and np.log2 functions from the NumPy library. The np.log2 function computes the logarithm base 2 of the input dimension, and the np.ceil function rounds the result up to the nearest integer to ensure that the next power of 2 is obtained.
+
+This next power of 2 is then used as the dimension for padding the input matrices, so that they have dimensions that are compatible with the recursive approach of Strassen's algorithm, which requires matrices of dimensions that are powers of 2. Padding the input matrices to the next power of 2 ensures that they can be divided into smaller submatrices evenly at each recursive step, allowing the algorithm to be applied correctly to matrices of arbitrary sizes.
+
+---
+> This reminds me of the 'master theorem' , is it related ? 
+
+Yes, the concept of padding the input matrices to the next power of 2 in Strassen's algorithm is somewhat related to the "master theorem" in the analysis of divide-and-conquer algorithms. The master theorem is a mathematical tool used to analyze the time complexity of divide-and-conquer algorithms, where a problem is recursively divided into smaller subproblems of a smaller size.
+
+In Strassen's algorithm, the input matrices are recursively divided into smaller submatrices, and the algorithm operates on these submatrices to compute the final result. By padding the input matrices to the next power of 2, we ensure that the recursive divisions result in submatrices that are of sizes that are also powers of 2. This allows us to analyze the time complexity of the algorithm using techniques similar to the master theorem, where the sizes of the submatrices at each recursive step are known and can be used to estimate the total number of operations performed by the algorithm.
+
+However, it's worth noting that the actual analysis of the time complexity of Strassen's algorithm is more involved than using the master theorem directly, as the algorithm has additional overhead due to the matrix additions and subtractions involved in the recursive steps. The master theorem provides a general framework for analyzing the time complexity of divide-and-conquer algorithms, but the specific analysis for Strassen's algorithm requires careful consideration of the matrix operations and their costs.
+
+---
+> This sounds like dividing into 'quadrants' :  recursively divided into smaller submatrices  that are of sizes that are  powers of 2
+
+Yes, you are correct. The process of dividing the input matrices in Strassen's algorithm into smaller submatrices, which are then recursively processed, is often referred to as "quadrant-wise" or "block-wise" matrix multiplication. In this approach, each input matrix is divided into four equal-sized quadrants, and the algorithm recursively computes the product of these quadrants to obtain the final result. This quadrant-wise approach is a key feature of Strassen's algorithm, and it allows for the reduction of the number of multiplications required compared to the standard matrix multiplication algorithm, which involves multiplication of individual elements.
+
+By padding the input matrices to the next power of 2, we ensure that the sizes of the resulting quadrants are also powers of 2, which simplifies the recursive divisions and allows for efficient processing of the submatrices. This quadrant-wise approach, combined with the padding to powers of 2, is one of the key insights of Strassen's algorithm, which results in its reduced number of multiplications and improved time complexity compared to the standard matrix multiplication algorithm.
 
 --- 
 ### REFERENCES 
