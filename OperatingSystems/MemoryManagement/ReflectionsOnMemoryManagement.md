@@ -106,8 +106,9 @@ and smaller ones such as Vercel, Digital Ocean, Netlify and many others.
 Like gigantic bazaars they offer a wide variety of computing resources 
 at many different prices. 
 
-One can get a better deal by varying patterns of resource usage 
-over time and place. 
+On Amazon's AWS for intance, One can get a better deal by varying patterns of resource usage 
+over time and place purchasing them on a spot market 
+or by reserving them and committing up front to use and pay for resources.  
 
 Namely, are there off-hours discounts, 
 and are certain resources (or 'places') offered at different prices,
