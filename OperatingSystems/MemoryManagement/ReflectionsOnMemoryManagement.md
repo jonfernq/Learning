@@ -96,11 +96,20 @@ I will devote the rest of this short paper to system performance tuning for GPUs
 
 ### Docker Memory Management
 
-Infrastructure as Service Cloud computing platforms such as AWS, GCP, and MS Azure
-and like gigantic bazaars with a wide variety of computing resources 
-for sale at different prices. The first question to ask is whether 
-one can get a better deal by varying patterns of resource usage 
-over time and place. Namely, are there off-hours discounts, 
+Nowadays, one can launch all your applications in the cloud on virtual machines, containers,
+or serverless applications. 
+
+Infrastructure as A Service (IAAS) cloud computing platforms provide these services.
+There are major providers such as AWS, GCP, and MS Azure,
+and smaller ones such as Vercel, Digital Ocean, Netlify and many others.  
+
+Like gigantic bazaars they offer a wide variety of computing resources 
+at many different prices. 
+
+One can get a better deal by varying patterns of resource usage 
+over time and place. 
+
+Namely, are there off-hours discounts, 
 and are certain resources (or 'places') offered at different prices,
 This is most obviously true for storage with fast vs. slow access times. 
 Different types of archival storage, for instance, have low access privileges 
