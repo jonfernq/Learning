@@ -90,10 +90,10 @@ I still have to purchase a GPU and start running Large Language Models (LLMs) on
 ### Uses of Memory Management Knowledge 
 
 In depth knowledge of memory management seems to be most useful in certain well-defined areas.  
-This includes performance tuning for different kinds of systems including GPU and cloud computing systems. 
-Embedded system design and system security measures also seem to demand extensive detailed knowledge of memory management. 
+This includes performance tuning for cloud computing and GPUs, . 
+as well as embedded system design and system security measures.  
 
-I will devote the rest of this short paper to system performance tuning for GPUs and Docker containers. 
+I will devote the rest of this short paper to system performance tuning for cloud computing and leave the rest for later.
 
 ### Cloud Memory Management
 
