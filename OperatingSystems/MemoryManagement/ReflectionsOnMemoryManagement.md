@@ -79,7 +79,7 @@ Solving such issues and problems seems to require keeping updated
 on the latest system performance issues via a news feed, 
 not necessarily deep knowledge of system internals.
 
-### Linux Memory Management 
+### Linux Memory Management Goals
 
 The open source programming tools I use are normally associated with Linux. On Windows. Docker did not even work properly on Windows until relatively recently, and deep learning experts recommend the use of a Linux machine for running deep learning models under PyTorch with a GPU. The biggest factor in using Linux for these programming tasks seems to be the openness of the operating system, increased certainty of what is happening in the OS, particularly for testing and ascertaining the nature of a bug when a program crashed. 
 
@@ -101,7 +101,7 @@ Embedded system design and system security measures also seem to demand extensiv
 
 I will devote the rest of this short paper to system performance tuning for GPUs and Docker containers. 
 
-### Docker Memory Management
+### Cloud Memory Management
 
 Nowadays, one can launch all your applications in the cloud on virtual machines, containers,
 or serverless applications. 
@@ -116,6 +116,8 @@ at many different prices.
 On Amazon's AWS for intance, One can get a better deal by varying patterns of resource usage 
 over time and place purchasing them on a spot market 
 or by reserving them and committing up front to use and pay for resources (Wittig & Wittig 2018:92-100).  
+
+#### Container Memory Management
 
 In contrast to virtual machines (VMs) on the cloud,
 flexibility memory allocation is a feature of Docker containers.  
@@ -136,6 +138,11 @@ Monitoring then ensures that containers have sufficient resources to run efficie
 When pods that manage a microservice are created or updated, the control loop checks the requested memory resources of the containers in the pod against the available resources in the cluster. It ensures that the pod is scheduled to a worker node (virtual machine) that has enough available memory to meet the requested resources. If there is not enough available memory, the pod may be queued or rescheduled until sufficient resources become available.
 
 The control loop also monitors the memory usage of containers and if limits are exceeded actions can be triggered. Autoscaling can also adjust the number of replicas of a deployment (replica set) based on memory usage patterns. 
+
+So in conclusion, I would like to note that memory management nowadays extends well beyond one's machine. 
+It is quite typical to use portable Dockers for software development on a Windows machine, for instance,
+and then deploy that container in the cloud under Kubernetes where its resource usage can be autoscaled to meet 
+resource needs. 
 
 ### REFERENCES 
 
