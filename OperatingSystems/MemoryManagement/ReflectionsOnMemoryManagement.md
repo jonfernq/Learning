@@ -49,20 +49,25 @@ and cannot be used, some apps will not open, one cannot print from the browser, 
 Then it is definitely time to reboot the system. When I check task manager memory usage is almost 100% 
 and the memory system seems to be **'thrashing'** and near complete collapse. 
 
-Anti-virus security software over-zealous blocking of access to files seems to be a common problem
-of memory management in the security rather than performance domain. 
-Anti-virus software locking files and preventing access and use 
-is one memory management problem that happens often. I brought a notebook a technician that was so slow in booting and performing
-common tasks, that it was a big waste of time using it.   
-I would usually reinstall Windows, but all the technician 
+Anti-virus security software blocking of access to files and not allowing them to be loaded into memory seems to be a common problem
+of memory management in the security domain. 
+Anti-virus software is always resident in memory and serves as a sort of gatekeeper to memory and the kernel,
+but sometimes it seems to be over-zealous in performing this function. 
+
+I brought a notebook a technician that was so slow in booting and performing
+tasks, that it was a big waste of time using it.   
+Faced with such a situation I would usually just reinstall Windows, but all the technician 
 did was uninstall the Avast anti-virus app and the problem was solved. 
-The task manager also notes the excessive memory usage of this program. 
+The task manager also noted the excessive memory usage of this program. 
 
 Recently, the Avast anti-virus 
 software I have installed on my system locked certain executable images making it 
-impossible to install programs
-For example, I wished to reinstall the OB screen video capture software used to 
-make programming tutorials.   
+impossible to install important programs
+For example, I wished to install video screen capture software used to 
+make programming tutorials.  
+It seemed to want to access executables related to video, but the anti-virus would not allow access.
+The recommended workaround was temporarily disabling the anti-virus software.
+This did not work, however, and a full uninstall and reinstall was needed. 
 Solving such issues and problems seems to require keeping updated 
 on the latest system performance issues via a news feed, 
 not necessarily deep knowledge of system internals.
