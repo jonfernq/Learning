@@ -11,9 +11,7 @@ Along the way, a thorough analysis will be provided of operating system memory m
 Since I have already dealt with memory management theory and the parts that are largely hidden from user view in my discussion write-up,
 I won't address that here. 
 
-This report requires a comparison of at least two operating systems. The choice here will consist of: 
-1. Windows 10, the main OS on my notebook, together with, 2. the Ubuntu installation under Windows Sub-system for Linux (WSL) 
-running under this Windows 10. 
+This report requires a comparison of at least two operating systems. The choice here will consist of: 1. Windows 10, the main OS on my notebook, together with, 2. the Ubuntu installation under Windows Sub-system for Linux (WSL) running under this Windows 10. 
 
 Regarding my current system usage patterns, one the one hand, I have used Windows 10 on notebooks and desktops to perform everyday work and tasks for decades. 
 On the other hand, it is clear that Linux is the best platform for the apps I create and the open source programming languages I use to create them, such as Python, PyTorch, and Docker.  
