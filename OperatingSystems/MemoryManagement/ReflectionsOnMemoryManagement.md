@@ -108,41 +108,33 @@ at many different prices.
 
 On Amazon's AWS for intance, One can get a better deal by varying patterns of resource usage 
 over time and place purchasing them on a spot market 
-or by reserving them and committing up front to use and pay for resources.  
+or by reserving them and committing up front to use and pay for resources (Wittig & Wittig 2018:92-100).  
 
-Namely, are there off-hours discounts, 
-and are certain resources (or 'places') offered at different prices,
-This is most obviously true for storage with fast vs. slow access times. 
-Different types of archival storage, for instance, have low access privileges 
-but very low price as well. 
+In contrast to virtual machines (VMs) on the cloud,
+flexibility memory allocation is a feature of Docker containers.  
+By default, Docker containers will allocate as much memory from the 
+host as possible, but limits on memory consumption can easily 
+be placed on each container (Miell & Sayers 2019:386-88). 
 
-The second question, is whether such computing cost
-minimization opportunities are avaiable for docker containers running on the cloud. 
+Automated container orchestration systems such as Kubernetes
+allow for more fine-grained control of containers (Comer 2021).
+Using 'control theory' a 'control loop; continually monitors
+the state of the system, which includes the important factor of 
+memory usage, and makes adjustments to bring the actual state
+to the desired state.  
 
-### GPU CUDA Memory Management 
+Resource requirements and limits for containers are specified at configuration time.
+Monitoring then ensures that containers have sufficient resources to run efficiently and reliably.
 
+When pods that manage a microservice are created or updated, the control loop checks the requested memory resources of the containers in the pod against the available resources in the cluster. It ensures that the pod is scheduled to a worker node (virtual machine) that has enough available memory to meet the requested resources. If there is not enough available memory, the pod may be queued or rescheduled until sufficient resources become available.
 
+The control loop also monitors the memory usage of containers and if limits are exceeded actions can be triggered. Autoscaling can also adjust the number of replicas of a deployment (replica set) based on memory usage patterns. 
 
 ### REFERENCES 
 
-[Docker reference]
+Comer, D. (2021). The Cloud Computing Book: The Future of Computing Explained. CRC Press.
 
-[Windows memory management mysteries Two part videos]
+Miell, I., & Sayers, A. (2019). Docker in practice. Simon and Schuster.
 
- 
-
-  
-
-  
-
- 
-
-
-
- 
-
-
-
-
-
+Wittig, M., & Wittig, A. (2018). Amazon web services in action. Simon and Schuster.
 
