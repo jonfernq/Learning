@@ -9,6 +9,7 @@
 ### 2. Memory Management 
 
 - [Memory Management](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/MemoryManagement/README.md) 
+- [Memory Management Issues](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/MemoryManagement/ReflectionsOnMemoryManagement.md) 
 
 ### Internet of Things (IoT)  
 
