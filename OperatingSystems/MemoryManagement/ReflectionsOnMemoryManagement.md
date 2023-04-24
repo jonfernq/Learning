@@ -52,8 +52,7 @@ and the memory system seems to be **'thrashing'** and near complete collapse.
 Anti-virus security software over-zealous blocking of access to files seems to be a common problem
 of memory management in the security rather than performance domain. 
 Anti-virus software locking files and preventing access and use 
-is one memory management problem that happens often. 
-I brought a notebook a technician that was so slow in booting and performing
+is one memory management problem that happens often. I brought a notebook a technician that was so slow in booting and performing
 common tasks, that it was a big waste of time using it.   
 I would usually reinstall Windows, but all the technician 
 did was uninstall the Avast anti-virus app and the problem was solved. 
