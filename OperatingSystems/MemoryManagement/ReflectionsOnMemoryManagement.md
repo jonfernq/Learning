@@ -9,7 +9,7 @@ The conclusion of this paper will include: a choice of operating system with spe
 and solutions to memory management problems encountered in the past. 
 The hardware, operating system, and application levels of memory management will all be addressed. 
 
-In my discussion write-up I have already dealt with memory management theory, largely hidden from user view, I won't address that here. 
+In my earlier discussion write-up I dealt with theory of memory management, I won't address that here. The question posed here is a very practical one and practical system troubleshooting seems more relevant here, as taught in the CompTIA A+ Certification (Meyers 2021) or Windows Sysinternals Tools (Russinovich & Margosis 2016; Russinovich, Solomon, & Ionescu 2017)  
 
 This report compares two operating systems: 1. Windows 10 the main OS on my notebook, and 2. Ubuntu Linux running under WSL on Windows 10. 
 
@@ -144,9 +144,21 @@ Comer, D. (2021). *The Cloud Computing Book: The Future of Computing Explained.*
 
 Hohn, Alan. (2022). *The Book of Kubernetes: A Complete Guide to Container Orchestration.* No Starch Press.
 
+Meyers, M. (2021). *CompTIA A+ Certification All-in-One Exam Guide, Tenth Edition (Exams 220-1001 & 220-1002).* McGraw-Hill Education.
+
 Miell, I., & Sayers, A. (2019). *Docker in practice.* Simon and Schuster.
 
 Russinovich, Mark. (2016, December 19). 'Mysteries of Memory Management Revealed.' Part 1 of 2. WCL405 HD [Video]. YouTube.com. https://www.youtube.com/watch?v=TrFEgHr72Yg
 
+Russinovich, M., & Margosis, A. (2016). *Troubleshooting with the Windows Sysinternals Tools.* Microsoft Press.
+
+Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). *Windows Internals, Part 1: System architecture, processes, threads, memory management, and more (7th ed.).* Microsoft Press.
+
 Wittig, M., & Wittig, A. (2018). *Amazon web services in action.* Simon and Schuster.
+
+
+
+
+
+
 
