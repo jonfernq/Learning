@@ -5,28 +5,27 @@ operating memory management, and application memory management. The content shou
 The conclusion should include which operating system is the best for your computer and recommend solutions to memory management problems. 
 Images and tables are encouraged but should not constitute more than one page of the report.
 
-The conclusion of this paper will include: 1. a choice of operating system for one's computer, 
-and towards this end, recommended 'solutions to memory management problems'. 
+The conclusion of this paper will include: 1. a choice of operating system for my computer in terms of memory management, 
+and towards this end, recommended 2. 'solutions to memory management problems' encountered in the past. 
 
-This requires a comparison of at least two operating systems. The choice here will consist of: 
+Along the way, a thorough analysis will be provided of operating system memory management at the hardware, operating system, and application levels.
+
+This report requires a comparison of at least two operating systems. 
+
+The choice here will consist of: 
 1. Windows 10, the main OS on my notebook, together with, 2. the Ubuntu installation under Windows Sub-system for Linux (WSL) 
 running under this Windows 10. 
 
-I already have a partial answer to the above question based on my current system usage patterns. 
-
-One the one hand, I have used Windows 10 on notebooks and desktops to perform everyday work and tasks for decades. 
+Regarding my current system usage patterns, one the one hand, I have used Windows 10 on notebooks and desktops to perform everyday work and tasks for decades. 
 
 On the other hand, it is clear that Linux is the best platform for the apps I create and the open source programming languages I use to create them, such as Python, PyTorch, and Docker.  
 
 ### Windows 10 Memory Management Experiences 
 
-Memory does seem to be the system resource that causes 
-performance degradation on my Windows 10 notebook. 
-This is an important hypothesis to get out there from the 
-beginning, because all my reflections on notebook system performance 
-will relate back to it. 
+Memory itself does seem to be the key system resource causing 
+ocassional performance degradation on my Windows 10 notebook. 
 
-Moving from traditional hard drives to Solid State Drives (SSDs) 
+Several years back, moving from traditional hard drives to Solid State Drives (SSDs) 
 has led to huge improvements in memory management improvement. 
 Several years back when SSDs came into use, 
 I started purchasing notebooks with 256GB of SSD memory with 8 GB of RAM main memory.
@@ -38,16 +37,21 @@ led to its quick replacement with SSD.
 
 Nowadays, the only real memory management problem under Windows 10 occurs 
 when I open thousands of tabs in the  Chrome browser.
-Other memory intensive applications contribute to the system overload
+Other memory intensive applications contribute to the system overload as well,
 but Chrome browser memory usage always stands out in the task manager 
-and he Chrome browser is known-to-be memory intensive. 
+and the Chrome browser is known-to-be memory intensive. 
+
+![taskmanger1](https://user-images.githubusercontent.com/68504324/233879364-c9cf236d-fb90-4c2c-852c-2fe1f6ac8de6.jpg)
+
+![taskmanager2](https://user-images.githubusercontent.com/68504324/233879377-4b63fad3-10e9-4244-9c5f-a680d18e0ed8.jpg)
 
 Instead of rebooting everytime I use the computer, just put it to sleep in order to easily 
 save my work environment, avoiding reset up time and remembering what I was doing. 
 
 If one does this for many days, eventually there are obvious signs that memory is tied up 
 and cannot be used, some apps will not open, one cannot print from the browser, and the wi-fi tab even disappears. 
-Then it is definitely time to reboot the system. 
+Then it is definitely time to reboot the system. When I check task manager memory usage is almost 100% 
+and the memory system seems to be **'thrashing'** and near complete collapse. 
 
 Anti-virus security software over-zealous blocking of access to files seems to be a common problem
 of memory management in the security rather than performance domain. 
