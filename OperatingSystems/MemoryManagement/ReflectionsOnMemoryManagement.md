@@ -8,6 +8,7 @@ Images and tables are encouraged but should not constitute more than one page of
 The conclusion of this paper will include: 1. a choice of operating system for my computer in terms of memory management, 
 and towards this end, recommended 2. 'solutions to memory management problems' encountered in the past. 
 Along the way, a thorough analysis will be provided of operating system memory management at the hardware, operating system, and application levels.
+
 Since I have already dealt with memory management theory and the parts that are largely hidden from user view in my discussion write-up,
 I won't address that here. 
 
@@ -53,11 +54,17 @@ Anti-virus security software blocking of access to files and not allowing them t
 of memory management in the security domain. 
 Anti-virus software is always resident in memory and serves as a sort of gatekeeper to memory and the kernel,
 but sometimes it seems to be over-zealous in performing this function. 
+The standard advice on debugging and resolving these problems of course applies.
 
-I brought a notebook a technician that was so slow in booting and performing
+- Google the problem and error messages, particularly noting Stack Overflow suggestions.
+- Read the Manual. 
+- Review settings and confuigurations. 
+- Check the logs.  
+
+I brought a notebook to a technician that was so slow in booting and performing
 tasks, that it was a big waste of time using it.   
 Faced with such a situation I would usually just reinstall Windows, but all the technician 
-did was uninstall the Avast anti-virus app and the problem was solved. 
+did was *uninstall the Avast anti-virus software* and the problem was solved. 
 The task manager also noted the excessive memory usage of this program. 
 
 Recently, the Avast anti-virus 
