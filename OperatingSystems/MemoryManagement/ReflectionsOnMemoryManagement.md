@@ -142,6 +142,8 @@ resource needs.
 
 Comer, D. (2021). *The Cloud Computing Book: The Future of Computing Explained.* CRC Press.
 
+Hailperin, M. (2019). *Operating systems and middleware: Supporting controlled interaction.* Thomson Learning, Inc.: San Francisco, CA.
+
 Hohn, Alan. (2022). *The Book of Kubernetes: A Complete Guide to Container Orchestration.* No Starch Press.
 
 Meyers, M. (2021). *CompTIA A+ Certification All-in-One Exam Guide, Tenth Edition (Exams 220-1001 & 220-1002).* McGraw-Hill Education.
