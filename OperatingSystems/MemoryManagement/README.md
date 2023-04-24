@@ -116,6 +116,8 @@ Arpaci-Dusseau, R. H., & Arpaci-Dusseau, A. C. (2014). *Operating Systems: Three
 
 Bryant, R. E., & O'Hallaron, D. R. (2015). *Computer Systems: A Programmer's Perspective.* Pearson.
 
+Hailperin, M. (2019). *Operating systems and middleware: Supporting controlled interaction.* Thomson Learning, Inc.: San Francisco, CA.
+
 Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating System Concepts.* Wiley.
 
 Stallings, W. (2018). *Operating Systems: Internals and Design Principles.* Pearson.
