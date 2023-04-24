@@ -76,7 +76,7 @@ not necessarily deep knowledge of system internals.
 
 The open source programming tools I use are normally associated with Linux. On Windows. Docker did not even work properly on Windows until relatively recently, and deep learning experts recommend the use of a Linux machine for running deep learning models under PyTorch with a GPU. The biggest factor in using Linux for these programming tasks seems to be the openness of the operating system, increased certainty of what is happening in the OS, particularly for testing and ascertaining the nature of a bug when a program crashed. 
 
-Windows experts are clear about the difficulty of ascertaining what is happening under the hood in Windows. This certainly stems from the closed proprietary nature of the source code, but also from a policy of not adding too much transparency and error-tracing capability to the system because this means adding extra overhead with a potential negative impact on performance (Windows memory management mystery YouTube).
+Windows experts are clear about the difficulty of ascertaining what is happening under the hood in Windows. This certainly stems from the closed proprietary nature of the source code, but also from a policy of not adding too much transparency and error-tracing capability to the system because this means adding extra overhead with a potential negative impact on performance (Russinovich 2016).
 
 Running open source programming tools under Linux, I only encounter a 
 memory management problem when I am processing very large files. 
@@ -135,6 +135,8 @@ The control loop also monitors the memory usage of containers and if limits are 
 Comer, D. (2021). The Cloud Computing Book: The Future of Computing Explained. CRC Press.
 
 Miell, I., & Sayers, A. (2019). Docker in practice. Simon and Schuster.
+
+Russinovich, Mark. (2016, December 19). Mysteries of Memory Management Revealed. Part 1 of 2. WCL405 HD [Video]. YouTube.com. https://www.youtube.com/watch?v=TrFEgHr72Yg
 
 Wittig, M., & Wittig, A. (2018). Amazon web services in action. Simon and Schuster.
 
