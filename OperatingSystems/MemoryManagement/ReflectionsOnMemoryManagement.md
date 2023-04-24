@@ -146,11 +146,13 @@ resource needs.
 
 ### REFERENCES 
 
-Comer, D. (2021). The Cloud Computing Book: The Future of Computing Explained. CRC Press.
+Comer, D. (2021). *The Cloud Computing Book: The Future of Computing Explained.* CRC Press.
 
-Miell, I., & Sayers, A. (2019). Docker in practice. Simon and Schuster.
+Hohn, Alan. (2022). *The Book of Kubernetes: A Complete Guide to Container Orchestration.* No Starch Press.
 
-Russinovich, Mark. (2016, December 19). Mysteries of Memory Management Revealed. Part 1 of 2. WCL405 HD [Video]. YouTube.com. https://www.youtube.com/watch?v=TrFEgHr72Yg
+Miell, I., & Sayers, A. (2019). *Docker in practice.* Simon and Schuster.
 
-Wittig, M., & Wittig, A. (2018). Amazon web services in action. Simon and Schuster.
+Russinovich, Mark. (2016, December 19). 'Mysteries of Memory Management Revealed.' Part 1 of 2. WCL405 HD [Video]. YouTube.com. https://www.youtube.com/watch?v=TrFEgHr72Yg
+
+Wittig, M., & Wittig, A. (2018). *Amazon web services in action.* Simon and Schuster.
 
