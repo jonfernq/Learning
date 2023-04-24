@@ -5,35 +5,30 @@ operating memory management, and application memory management. The content shou
 The conclusion should include which operating system is the best for your computer and recommend solutions to memory management problems. 
 Images and tables are encouraged but should not constitute more than one page of the report.
 
-The conclusion of this paper will include: 1. a choice of operating system for my computer in terms of memory management, 
-and towards this end, recommended 2. 'solutions to memory management problems' encountered in the past. 
-Along the way, a thorough analysis will be provided of operating system memory management at the hardware, operating system, and application levels.
+The conclusion of this paper will include: a choice of operating system with special attention paid to memory management, 
+and solutions to memory management problems encountered in the past. 
+The hardware, operating system, and application levels of memory management will all be addressed. 
 
-Since I have already dealt with memory management theory and the parts that are largely hidden from user view in my discussion write-up,
-I won't address that here. 
+In my discussion write-up I have already dealt with memory management theory, largely hidden from user view, I won't address that here. 
 
-This report requires a comparison of at least two operating systems. The choice here will consist of: 1. Windows 10, the main OS on my notebook, together with, 2. the Ubuntu installation under Windows Sub-system for Linux (WSL) running under this Windows 10. 
+This report compares two operating systems: 1. Windows 10 the main OS on my notebook, and 2. Ubuntu Linux running under WSL on Windows 10. 
 
-Regarding my current system usage patterns, one the one hand, I have used Windows 10 on notebooks and desktops to perform everyday work and tasks for decades. 
-On the other hand, it is clear that Linux is the best platform for the apps I create and the open source programming languages I use to create them, such as Python, PyTorch, and Docker.  
+I have used Windows 10 on notebooks and desktops to perform everyday work and tasks for decades. 
+
+However, it is clear that Linux is the best platform for the open source programming languages and frameworks I use: Python, PyTorch, JavaScript, React.js, and Docker.  
 
 ### Windows 10 Memory Management Experiences 
 
-Memory itself does seem to be the key system resource causing 
-ocassional performance degradation on my Windows 10 notebook. 
+Memory is the key system resource that has caused past performance degradation on my Windows 10 notebook. 
 
-Several years back, moving from traditional hard drives to Solid State Drives (SSDs) 
-has led to huge improvements in memory management improvement. 
-Several years back when SSDs came into use, 
-I started purchasing notebooks with 256GB of SSD memory with 8 GB of RAM main memory.
-This seemed to be a widely available combination
-that provided enough capacity while still being affordable.   
-I did purchase a notebook once  with an old style much larger 
-but much slower hard drive, but frustration with slow speeds 
-led to its quick replacement with SSD. 
+Several years back, moving from slow hard drives to Solid State Drives (SSDs) 
+led to huge improvements in performance.
+SSDs are not as fast as memory, but stoarage capacity is much larger. 
+I started purchasing notebooks with 256GB of SSD memory with 8 GB of RAM main memory,
+providing enough capacity while still being affordable.   
 
 Nowadays, the only real memory management problem under Windows 10 occurs 
-when I open thousands of tabs in the  Chrome browser.
+when I open to many windows and tabs in the  Chrome browser.
 Other memory intensive applications contribute to the system overload as well,
 but Chrome browser memory usage always stands out in the task manager 
 and the Chrome browser is known-to-be memory intensive. 
@@ -42,15 +37,14 @@ and the Chrome browser is known-to-be memory intensive.
 
 ![taskmanager2](https://user-images.githubusercontent.com/68504324/233879377-4b63fad3-10e9-4244-9c5f-a680d18e0ed8.jpg)
 
-Instead of rebooting everytime I use the computer, just put it to sleep in order to easily 
+Instead of rebooting everytime I use the computer, I just put it to sleep in order to easily 
 save my work environment, avoiding reset up time and remembering what I was doing. 
-
 If one does this for many days, eventually there are obvious signs that memory is tied up 
 and cannot be used, some apps will not open, one cannot print from the browser, and the wi-fi tab even disappears. 
 Then it is definitely time to reboot the system. When I check task manager memory usage is almost 100% 
 and the memory system seems to be **'thrashing'** and near complete collapse. 
 
-Anti-virus security software blocking of access to files and not allowing them to be loaded into memory seems to be a common problem
+Anti-virus security software locking files and not allowing them to be loaded into memory seems to be a common problem
 of memory management in the security domain. 
 Anti-virus software is always resident in memory and serves as a sort of gatekeeper to memory and the kernel,
 but sometimes it seems to be over-zealous in performing this function. 
