@@ -1,6 +1,11 @@
 ## TypeScript 
 
----
+
+**Table of Contents:**
+- TypeScript Interfaces
+- Comparable Interface for Sorting
+- Pattern Matching
+
 ### Typescript Interfaces
 
 Please define a TypeScript 'interface' 
