@@ -1,4 +1,4 @@
-## Learning COBOL
+## Learning GnuCOBOL
 
 ### COBOL Learning Material
 
