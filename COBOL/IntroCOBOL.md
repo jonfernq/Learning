@@ -1,4 +1,6 @@
-## Intro to COBOL
+## Intro to GnuCOBOL
+
+Newest Questions at StackOverflow: https://stackoverflow.com/questions/tagged/gnucobol
 
 > It seems that what COBOL does is write reports and also CRUD like functionality with databases? 
 
