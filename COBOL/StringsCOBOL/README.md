@@ -15,21 +15,21 @@ which allow for different ways of manipulating strings.
 
 Here are some key differences between strings in Python and COBOL:
 
-Data type declaration: In Python, strings do not require explicit data type declaration, 
+1. Data type declaration: In Python, strings do not require explicit data type declaration, 
 as they are dynamically typed. In COBOL, strings are explicitly declared using the PIC clause, specifying the type and size of the string.
 
-String manipulation functions: Python provides a wide range of built-in functions and methods for string manipulation, 
+2. String manipulation functions: Python provides a wide range of built-in functions and methods for string manipulation, 
 such as concatenation, slicing, formatting, and searching. COBOL, on the other hand, provides intrinsic functions for basic string manipulation, 
 such as STRING, UNSTRING, INSPECT, and REPLACE, which are used in combination with the PIC clause for more advanced string operations.
 
-Null-termination: In Python, strings are null-terminated by default, which means the end of 
+3. Null-termination: In Python, strings are null-terminated by default, which means the end of 
 a string is marked by a null character. In COBOL, strings are not null-terminated by default, 
 and the programmer needs to specify the length of the string using the PIC clause or other techniques.
 
-Length and storage: In Python, strings can have variable length and do not require predefined 
+4. Length and storage: In Python, strings can have variable length and do not require predefined 
 storage size. In COBOL, strings have fixed length determined by the PIC clause, and the storage is allocated based on the maximum length of the string.
 
-Picture editing: COBOL provides various picture editing techniques, such as PIC X(n) REDEFINES 
+5. Picture editing: COBOL provides various picture editing techniques, such as PIC X(n) REDEFINES 
 and PIC X(n) OCCURS, which allow for different ways of manipulating strings based on specific requirements. 
 Python does not have similar built-in picture editing techniques.
 
