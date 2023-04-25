@@ -26,7 +26,7 @@ Multiple choice questions & notes for learning the intricacies of programming la
 
 - [JavaScript](https://github.com/jonfernq/Learning/tree/main/JavaScript)
 
-- [COBOL](https://github.com/jonfernq/Learning/tree/main/COBOL) 
+- [GnuCOBOL](https://github.com/jonfernq/Learning/tree/main/COBOL) 
 
 - [Databases](https://github.com/jonfernq/Learning/blob/main/Databases/README.md) 
 
