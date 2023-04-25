@@ -5,6 +5,10 @@
 - [Getting Started](https://github.com/jonfernq/Learning/blob/main/COBOL/GettingStarted/README.md) 
 - [Mental Map](https://github.com/jonfernq/Learning/blob/main/COBOL/COBOLMentalMap/README.md)
 
+### DATA TYPES
+
+- [Strings](https://github.com/jonfernq/Learning/blob/main/COBOL/StringsCOBOL/README.md): Compared with Python 
+
 ### COBOL Verbs & Features
 
 - [Inspect](https://github.com/jonfernq/COBOL/tree/main/COBOLInspect)
