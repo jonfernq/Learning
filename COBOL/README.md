@@ -1,6 +1,6 @@
 ## Learning GnuCOBOL
 
-### COBOL Learning Material
+### COBOL Learning Material 
 
 - [Intro to COBOL](https://github.com/jonfernq/Learning/blob/main/COBOL/IntroCOBOL.md) 
 - [Getting Started](https://github.com/jonfernq/Learning/blob/main/COBOL/GettingStarted/README.md) 
