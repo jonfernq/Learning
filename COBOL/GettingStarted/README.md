@@ -1,5 +1,12 @@
 ## Getting Started with COBOL
 
+**Table of Contents:**
+
+- Compile Steps: Hello World Program
+- Minimal Program
+- DISPLAY & ACCEPT: With Edit Mask to Suppress Leading Zeros 
+- Edit Masks 
+- 
 ---
 
 ### Hello World Program:
@@ -21,53 +28,6 @@
 ## Compile Steps: 
 
 ![helloworldchatgpt](https://user-images.githubusercontent.com/68504324/231666331-609840bf-9872-4ce7-a8b6-c1e2ad2e69cf.jpg)
-
----
-### DISPLAY & ACCEPT: With Edit Mask to Suppress Leading Zeros 
-
-```
-000001 IDENTIFICATION DIVISION.
-000002 PROGRAM-ID.  MyCalc.
-000003 AUTHOR.  ChatGPT.
-000004 DATA DIVISION.
-000005 WORKING-STORAGE SECTION.
-000006 01 FirstNumber       PIC 9     VALUE ZEROS.
-000007 01 SecondNumber      PIC 9     VALUE ZEROS.
-000008* Edit mask 'Z9' to suppress leading zeros when printing two digit number  
-000008 01 CalcResult        PIC Z9    VALUE 0.
-000009 01 UserPrompt        PIC X(38) VALUE
-           "Please enter a single-digit number: ".
-000010 PROCEDURE DIVISION.
-000011 CalculateResult.
-000012     DISPLAY UserPrompt.
-000013     ACCEPT FirstNumber.
-000012     DISPLAY UserPrompt.
-000014     ACCEPT SecondNumber.
-000015     COMPUTE CalcResult = FirstNumber + SecondNumber.
-000016     DISPLAY "Result is = ", CalcResult.
-000017     STOP RUN. 
-```
-
----
-> So Z9 to suppress leading zeros is called an 'edit mask' ?  
-
-Yes, in COBOL, an "edit mask" is a formatting pattern that is used to specify how numeric data items should be displayed or edited. It consists of a combination of characters, including numeric placeholders (0, 9), sign indicators (S, +, -), and editing characters (., ,, /, $, etc.), that define the desired format for displaying numeric data.
-
-In the context of the COBOL statement DISPLAY "Result is = ", Z9 CalcResult, the Z9 is an edit mask that specifies how the numeric data item CalcResult should be displayed. The Z character is used to suppress leading zeros, and the 9 character is a placeholder for a single numeric digit. When the CalcResult data item is displayed using this edit mask, any leading zeros in the value of CalcResult will be suppressed, and only the significant digits will be displayed.
-
-Here are some examples of how the 'Z' character can be used in edit masks in COBOL:
-
-ZZZZ.ZZ: This edit mask would display a numeric data item with at least four digits before the decimal point and two digits after the decimal point. Leading zeros would be suppressed.
-
-ZZ,ZZZ.99: This edit mask would display a numeric data item with at least two digits before the comma, followed by groups of three digits separated by commas, and two digits after the decimal point. Leading zeros would be suppressed.
-
-Z,ZZZ,ZZZ: This edit mask would display a numeric data item with at least one digit before the comma, followed by groups of three digits separated by commas. Leading zeros would be suppressed.
-
-ZZ,ZZ9.99: This edit mask would display a numeric data item with at least two digits before the comma, followed by groups of three digits separated by commas, and two digits after the decimal point. If there are less than two significant digits before the decimal point, leading zeros would be displayed.
-
-Z99,999: This edit mask would display a numeric data item with at least one digit before the first two digits, followed by a comma, and then groups of three digits separated by commas. Leading zeros would be suppressed.
-
-Remember that the 'Z' character is used to suppress leading zeros in COBOL edit masks, allowing for more flexible and customizable display of numeric data items in COBOL programs.
 
 ---
 > So it seems that COBOL syntax and semantics are very different from other common programming languages such as C, Java, JavScript and Python. I guess that this is because these other common languages are in the same programming language family tree, desdending for the most part from Algol and C ? 
@@ -125,6 +85,54 @@ STOP RUN.
 ![perform](https://user-images.githubusercontent.com/68504324/234551108-cab17003-896c-4cb2-8e2a-b8a20082e68f.jpg)
 
 In this example, the PERFORM statement is placed within the PROCEDURE DIVISION, which is where the main logic of the program is located. The other mandatory divisions (IDENTIFICATION DIVISION, ENVIRONMENT DIVISION, and DATA DIVISION) are included to provide the necessary structure for a complete COBOL program. The STOP RUN statement is used to terminate the program execution. Note that this is just a basic example and a real-world COBOL program may include more complex logic, additional sections, and other necessary elements depending on the specific requirements of the program.
+
+
+---
+### DISPLAY & ACCEPT: With Edit Mask to Suppress Leading Zeros 
+
+```
+000001 IDENTIFICATION DIVISION.
+000002 PROGRAM-ID.  MyCalc.
+000003 AUTHOR.  ChatGPT.
+000004 DATA DIVISION.
+000005 WORKING-STORAGE SECTION.
+000006 01 FirstNumber       PIC 9     VALUE ZEROS.
+000007 01 SecondNumber      PIC 9     VALUE ZEROS.
+000008* Edit mask 'Z9' to suppress leading zeros when printing two digit number  
+000008 01 CalcResult        PIC Z9    VALUE 0.
+000009 01 UserPrompt        PIC X(38) VALUE
+           "Please enter a single-digit number: ".
+000010 PROCEDURE DIVISION.
+000011 CalculateResult.
+000012     DISPLAY UserPrompt.
+000013     ACCEPT FirstNumber.
+000012     DISPLAY UserPrompt.
+000014     ACCEPT SecondNumber.
+000015     COMPUTE CalcResult = FirstNumber + SecondNumber.
+000016     DISPLAY "Result is = ", CalcResult.
+000017     STOP RUN. 
+```
+
+---
+> So Z9 to suppress leading zeros is called an 'edit mask' ?  
+
+Yes, in COBOL, an "edit mask" is a formatting pattern that is used to specify how numeric data items should be displayed or edited. It consists of a combination of characters, including numeric placeholders (0, 9), sign indicators (S, +, -), and editing characters (., ,, /, $, etc.), that define the desired format for displaying numeric data.
+
+In the context of the COBOL statement DISPLAY "Result is = ", Z9 CalcResult, the Z9 is an edit mask that specifies how the numeric data item CalcResult should be displayed. The Z character is used to suppress leading zeros, and the 9 character is a placeholder for a single numeric digit. When the CalcResult data item is displayed using this edit mask, any leading zeros in the value of CalcResult will be suppressed, and only the significant digits will be displayed.
+
+Here are some examples of how the 'Z' character can be used in edit masks in COBOL:
+
+ZZZZ.ZZ: This edit mask would display a numeric data item with at least four digits before the decimal point and two digits after the decimal point. Leading zeros would be suppressed.
+
+ZZ,ZZZ.99: This edit mask would display a numeric data item with at least two digits before the comma, followed by groups of three digits separated by commas, and two digits after the decimal point. Leading zeros would be suppressed.
+
+Z,ZZZ,ZZZ: This edit mask would display a numeric data item with at least one digit before the comma, followed by groups of three digits separated by commas. Leading zeros would be suppressed.
+
+ZZ,ZZ9.99: This edit mask would display a numeric data item with at least two digits before the comma, followed by groups of three digits separated by commas, and two digits after the decimal point. If there are less than two significant digits before the decimal point, leading zeros would be displayed.
+
+Z99,999: This edit mask would display a numeric data item with at least one digit before the first two digits, followed by a comma, and then groups of three digits separated by commas. Leading zeros would be suppressed.
+
+Remember that the 'Z' character is used to suppress leading zeros in COBOL edit masks, allowing for more flexible and customizable display of numeric data items in COBOL programs.
 
 
 
