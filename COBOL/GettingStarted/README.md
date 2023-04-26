@@ -82,3 +82,52 @@ In contrast, other programming languages like C, Java, JavaScript, and Python ar
 
 While there may be some similarities and overlaps in programming concepts and constructs among different programming languages, each language has its own unique syntax, semantics, and design philosophy, which may make them quite different from one another. As such, learning COBOL may require some effort to understand its unique syntax and semantics, especially for programmers familiar with other programming languages.
 
+---
+> What is the minimal program stuff you have to put around a perform statement to get it to run as a program ? 
+
+In COBOL, a minimal program structure typically consists of the following elements to get a PERFORM statement to run as a standalone program:
+
+- PROGRAM-ID: This is a mandatory COBOL reserved word that indicates the name of the program. It is typically placed at the beginning of the program and is followed by the name of the program.
+
+- IDENTIFICATION DIVISION: This is a mandatory division that contains information about the program, such as the AUTHOR, INSTALLATION, and DATE-WRITTEN. It also includes the PROGRAM-ID, which was mentioned in the first point.
+
+- ENVIRONMENT DIVISION: This is a mandatory division that describes the environment in which the program will run, such as the CONFIGURATION SECTION, INPUT-OUTPUT SECTION, and FILE SECTION. It defines the files, devices, and other resources that the program will use.
+
+- DATA DIVISION: This is a mandatory division that defines the data structures used in the program, such as working storage variables, file records, and data items.
+
+- PROCEDURE DIVISION: This is a mandatory division that contains the actual COBOL code, including the PERFORM statement and any other statements or procedures needed for the program logic.
+
+Here's an example of a minimal COBOL program structure with a PERFORM statement:
+
+
+```css
+IDENTIFICATION DIVISION.
+PROGRAM-ID. MYPROGRAM.
+
+ENVIRONMENT DIVISION.
+CONFIGURATION SECTION.
+INPUT-OUTPUT SECTION.
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 WS-COUNTER PIC 9(2).
+
+PROCEDURE DIVISION.
+MAIN-PROGRAM.
+    PERFORM VARYING WS-COUNTER FROM 1 BY 1 UNTIL WS-COUNTER > 5
+        DISPLAY 'Counter: ' WS-COUNTER
+    END-PERFORM.
+
+STOP RUN.
+```
+**OUTPUT:**
+
+![perform](https://user-images.githubusercontent.com/68504324/234551108-cab17003-896c-4cb2-8e2a-b8a20082e68f.jpg)
+
+In this example, the PERFORM statement is placed within the PROCEDURE DIVISION, which is where the main logic of the program is located. The other mandatory divisions (IDENTIFICATION DIVISION, ENVIRONMENT DIVISION, and DATA DIVISION) are included to provide the necessary structure for a complete COBOL program. The STOP RUN statement is used to terminate the program execution. Note that this is just a basic example and a real-world COBOL program may include more complex logic, additional sections, and other necessary elements depending on the specific requirements of the program.
+
+
+
+
+
+
