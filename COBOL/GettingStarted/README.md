@@ -74,6 +74,43 @@ STOP RUN.
 ![perform](https://user-images.githubusercontent.com/68504324/234551108-cab17003-896c-4cb2-8e2a-b8a20082e68f.jpg)
 
 In this example, the PERFORM statement is placed within the PROCEDURE DIVISION, which is where the main logic of the program is located. The other mandatory divisions (IDENTIFICATION DIVISION, ENVIRONMENT DIVISION, and DATA DIVISION) are included to provide the necessary structure for a complete COBOL program. The STOP RUN statement is used to terminate the program execution. Note that this is just a basic example and a real-world COBOL program may include more complex logic, additional sections, and other necessary elements depending on the specific requirements of the program.
+---
+> Can you step through a gnucobol program using the gnu debugger ?
+
+ChatGPT: 
+- Yes, you can use the GNU debugger (GDB) to step through a GNUCOBOL program and debug it. Here's a general outline of the steps you can follow: 
+
+1. Compile the GNUCOBOL program with the `-g` flag to include debugging information. For example:
+
+```
+
+cobc -g -x my_program.cob
+```
+
+ 
+1. Start GDB by running the `gdb` command in your terminal. 
+2. In GDB, load the compiled GNUCOBOL program by typing `file my_program` and pressing Enter. Replace `my_program` with the actual name of your compiled program. 
+3. Set breakpoints at the desired locations in your COBOL program using the `break` command followed by the line number or function name. For example:
+
+```bash
+
+break 10  # Set breakpoint at line 10
+```
+
+ 
+1. Run the GNUCOBOL program by typing `run` or `r` and pressing Enter. The program will start executing until it reaches a breakpoint or encounters an error. 
+2. Once the program stops at a breakpoint, you can use various GDB commands to step through the program and inspect variables, memory, and other program states. Here are some commonly used commands: 
+ 
+- `next` or `n`: Execute the next line of code 
+- `step` or `s`: Step into a subroutine or function 
+- `finish` or `f`: Finish the current subroutine or function and stop at the calling line 
+- `continue` or `c`: Continue executing until the next breakpoint or program end 
+- `print` or `p`: Print the value of a variable or expression 
+- `backtrace` or `bt`: Show the call stack 
+- `quit` or `q`: Quit GDB
+4. You can also set watchpoints to break when a variable's value changes, and use other advanced debugging features provided by GDB.
+
+Note: The specific commands and syntax may vary depending on your GDB version and system configuration. It's recommended to refer to the GDB documentation for more detailed information on using GDB for COBOL debugging.
 
 ---
 > So it seems that COBOL syntax and semantics are very different from other common programming languages such as C, Java, JavScript and Python. I guess that this is because these other common languages are in the same programming language family tree, desdending for the most part from Algol and C ? 
