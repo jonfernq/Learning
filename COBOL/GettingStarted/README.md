@@ -5,6 +5,7 @@
 - Hello World Program
 - Compile Steps 
 - Minimal Program
+- GDB Debugger 
 - COBOL is different 
 - DISPLAY & ACCEPT: With Edit Mask to Suppress Leading Zeros 
 - Edit Masks 
@@ -74,6 +75,7 @@ STOP RUN.
 ![perform](https://user-images.githubusercontent.com/68504324/234551108-cab17003-896c-4cb2-8e2a-b8a20082e68f.jpg)
 
 In this example, the PERFORM statement is placed within the PROCEDURE DIVISION, which is where the main logic of the program is located. The other mandatory divisions (IDENTIFICATION DIVISION, ENVIRONMENT DIVISION, and DATA DIVISION) are included to provide the necessary structure for a complete COBOL program. The STOP RUN statement is used to terminate the program execution. Note that this is just a basic example and a real-world COBOL program may include more complex logic, additional sections, and other necessary elements depending on the specific requirements of the program.
+
 ---
 > Can you step through a gnucobol program using the gnu debugger ?
 
