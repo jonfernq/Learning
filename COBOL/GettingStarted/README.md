@@ -2,11 +2,13 @@
 
 **Table of Contents:**
 
-- Compile Steps: Hello World Program
+- Hello World Program
+- Compile Steps 
 - Minimal Program
+- COBOL is different 
 - DISPLAY & ACCEPT: With Edit Mask to Suppress Leading Zeros 
 - Edit Masks 
-- 
+
 ---
 
 ### Hello World Program:
@@ -28,19 +30,6 @@
 ## Compile Steps: 
 
 ![helloworldchatgpt](https://user-images.githubusercontent.com/68504324/231666331-609840bf-9872-4ce7-a8b6-c1e2ad2e69cf.jpg)
-
----
-> So it seems that COBOL syntax and semantics are very different from other common programming languages such as C, Java, JavScript and Python. I guess that this is because these other common languages are in the same programming language family tree, desdending for the most part from Algol and C ? 
-
-Yes, that's correct. COBOL is a programming language that was specifically designed for business applications and has its own unique syntax and semantics, which can be quite different from other general-purpose programming languages like C, Java, JavaScript, and Python.
-
-COBOL was developed in the late 1950s and early 1960s, and it has its roots in the era of mainframe computers and batch processing. It was primarily designed for handling large-scale data processing tasks in business environments, such as banking, finance, and government. As a result, COBOL has a focus on data manipulation and handling, with features like its extensive support for record-based file processing and data hierarchy.
-
-The syntax and semantics of COBOL were designed to be highly readable and understandable for business users, with a focus on English-like statements and a heavy use of explicit data definitions. This makes COBOL code highly self-documenting and readable, which was important in the era when business users were often involved in writing and maintaining COBOL programs.
-
-In contrast, other programming languages like C, Java, JavaScript, and Python are part of the procedural or object-oriented programming (OOP) paradigms, which have different design goals and origins. They have their roots in languages like Algol, C, and Simula, which were developed for different purposes and have different syntax and semantics compared to COBOL.
-
-While there may be some similarities and overlaps in programming concepts and constructs among different programming languages, each language has its own unique syntax, semantics, and design philosophy, which may make them quite different from one another. As such, learning COBOL may require some effort to understand its unique syntax and semantics, especially for programmers familiar with other programming languages.
 
 ---
 > What is the minimal program stuff you have to put around a perform statement to get it to run as a program ? 
@@ -86,6 +75,18 @@ STOP RUN.
 
 In this example, the PERFORM statement is placed within the PROCEDURE DIVISION, which is where the main logic of the program is located. The other mandatory divisions (IDENTIFICATION DIVISION, ENVIRONMENT DIVISION, and DATA DIVISION) are included to provide the necessary structure for a complete COBOL program. The STOP RUN statement is used to terminate the program execution. Note that this is just a basic example and a real-world COBOL program may include more complex logic, additional sections, and other necessary elements depending on the specific requirements of the program.
 
+---
+> So it seems that COBOL syntax and semantics are very different from other common programming languages such as C, Java, JavScript and Python. I guess that this is because these other common languages are in the same programming language family tree, desdending for the most part from Algol and C ? 
+
+Yes, that's correct. COBOL is a programming language that was specifically designed for business applications and has its own unique syntax and semantics, which can be quite different from other general-purpose programming languages like C, Java, JavaScript, and Python.
+
+COBOL was developed in the late 1950s and early 1960s, and it has its roots in the era of mainframe computers and batch processing. It was primarily designed for handling large-scale data processing tasks in business environments, such as banking, finance, and government. As a result, COBOL has a focus on data manipulation and handling, with features like its extensive support for record-based file processing and data hierarchy.
+
+The syntax and semantics of COBOL were designed to be highly readable and understandable for business users, with a focus on English-like statements and a heavy use of explicit data definitions. This makes COBOL code highly self-documenting and readable, which was important in the era when business users were often involved in writing and maintaining COBOL programs.
+
+In contrast, other programming languages like C, Java, JavaScript, and Python are part of the procedural or object-oriented programming (OOP) paradigms, which have different design goals and origins. They have their roots in languages like Algol, C, and Simula, which were developed for different purposes and have different syntax and semantics compared to COBOL.
+
+While there may be some similarities and overlaps in programming concepts and constructs among different programming languages, each language has its own unique syntax, semantics, and design philosophy, which may make them quite different from one another. As such, learning COBOL may require some effort to understand its unique syntax and semantics, especially for programmers familiar with other programming languages.
 
 ---
 ### DISPLAY & ACCEPT: With Edit Mask to Suppress Leading Zeros 
