@@ -6,6 +6,7 @@
 - [Getting Started](https://github.com/jonfernq/Learning/blob/main/COBOL/GettingStarted/README.md) 
 - [Mental Map](https://github.com/jonfernq/Learning/blob/main/COBOL/COBOLMentalMap/README.md)
 - [CALL (COBOL) & GNUCobol: Static Linking with C Programs](https://github.com/jonfernq/Learning/blob/main/COBOL/CallCOBOL/README.md) 
+- [Interprocess Communication](https://github.com/jonfernq/Learning/blob/main/COBOL/InterprocessCommunicationCOBOL/README.md) 
 
 ### DATA TYPES & VERBS 
 
