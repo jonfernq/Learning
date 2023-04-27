@@ -41,7 +41,13 @@ This principle makes it easy for developers to create applications that work wit
 ---
 > Even though in Linux 'everything is a file' most of these 'files' are not in a 'file system' ? 
 
-In Linux, the concept that 'everything is a file' means that all devices, hardware, and resources are represented as files or directories. However, not all of these files or directories are stored in a file system. For example, some files represent devices such as the keyboard, mouse, or network card, and these files are accessed through device drivers rather than a traditional file system. Similarly, files related to system configuration, process management, and system performance metrics are typically not part of a file system but are instead accessed through system calls. So while everything may be represented as a file or directory in Linux, not all of these entities are necessarily stored in a traditional file system.
+In Linux, the concept that 'everything is a file' means that all devices, hardware, and resources are represented as files or directories. However, *not all of these files or directories are stored in a file system.* 
+
+For example, some files represent *devices* such as the keyboard, mouse, or network card, and these files are *accessed through device drivers* rather than a traditional file system. 
+
+Similarly, *files related to system configuration, process management, and system performance metrics* are typically not part of a file system but are instead accessed through *system calls*. 
+
+So while everything may be represented as a file or directory in Linux, not all of these entities are necessarily stored in a traditional file system.
 
 --- 
 > In general, how would you describe allocation methods of a file system?
