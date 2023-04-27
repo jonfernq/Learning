@@ -434,6 +434,15 @@ This will sort an array of integers in ascending order using the heap sort algor
 --- 
 ### REFERENCES 
 
+Cormen, T. H., Leiserson, C. E., & Rivest, R. L. (2022). **Introduction to algorithms.** MIT Laboratory for Computer Science. pp. 17-24.
+
+Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022). **'Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.'** raywenderlich.com.
+
+Sedgewick, R., & Wayne, K. (2011). *Algorithms (4th ed.).* Addison-Wesley Professional.
+
+Skiena, S. S. (2020). *The algorithm design manual (Third Edition).* Springer.
+
+
 
 
 
