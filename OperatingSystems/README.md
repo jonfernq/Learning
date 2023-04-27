@@ -26,6 +26,9 @@
 
 ### Unit 5: File Systems
 
+
+#### Topics
+
 - Concept of File
 - Access Methods
 - Directory Structure
@@ -34,13 +37,15 @@
 - Free Space Management
 - Protection
 
-#### Learning Objectives2
+#### Learning Objectives
 
 - Describe the choices made in designing file systems.
 - Compare and contrast different approaches to file organization, recognizing the strengths and weaknesses of each.
 - Create shell scripting commands to practice file manipulation.
 
 ### Unit 6: Networking
+
+#### Topics
 
 - Networks and Internets
 - Protocol Layers
@@ -59,6 +64,8 @@
 
 ### Unit 7: Messaging, RPC, and Web Services
 
+#### Topics
+
 - Messaging Systems
 - Remote Procedure Call (RPC)
 - Principles of Operations for RPC
@@ -74,11 +81,13 @@
 
 ### Unit 8: Security
 
+#### Topics
+
 - Security Objectives and Principles
 - User Authentication
 - Password Capture Using Spoofing and Phishing
-- Ch- ecking Passwords Without Storing Them
-- Pa- sswords for Multiple, Independent Systems
+- Checking Passwords Without Storing Them
+- Passwords for Multiple, Independent Systems
 - Two-Factor Authentication
 - Access and Information-Flow Controls
 - Viruses and Worms
