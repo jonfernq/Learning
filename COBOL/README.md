@@ -8,6 +8,10 @@
 - [CALL (COBOL) & GNUCobol: Static Linking with C Programs](https://github.com/jonfernq/Learning/blob/main/COBOL/CallCOBOL/README.md) 
 - [Interprocess Communication](https://github.com/jonfernq/Learning/blob/main/COBOL/InterprocessCommunicationCOBOL/README.md) 
 
+### FILES
+
+- [Sequential Files](https://github.com/jonfernq/Learning/blob/main/COBOL/SequentialFilesCOBOL/README.md) 
+
 ### DATA TYPES & VERBS 
 
 - [Strings](https://github.com/jonfernq/Learning/blob/main/COBOL/StringsCOBOL/README.md): Compared with Python 
