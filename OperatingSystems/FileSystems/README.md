@@ -8,6 +8,7 @@
 - Linux File System
 - Windows File System
 - Character vs. Block-based files
+- Memory-Mapped Files
 - Shell scripting commands for file manipulation
 
 --- 
@@ -112,6 +113,17 @@ Character-based files, also known as character special files or device files, ar
 Block-based files, also known as block special files or device files, are files that represent devices that work with blocks of data, such as hard disk drives and USB drives. These files are also located in the /dev directory, and they are accessed using special file system functions that allow block-oriented I/O operations.
 
 The distinction between character-based and block-based files is important because the I/O operations on these files are handled differently by the operating system. Character-based devices are typically slower than block-based devices, and they require more processing overhead to perform I/O operations. Therefore, the file system functions for character-based devices are designed to handle small amounts of data at a time, while the file system functions for block-based devices are designed to handle larger amounts of data in a more efficient way.
+
+---
+> What is a memory-mapped file? Especially in Linux.
+
+A memory-mapped file is a segment of virtual memory that is associated with a file on disk. This technique allows for direct reading and writing to the file through the memory instead of traditional read and write system calls. In Linux, this is accomplished using the mmap() system call.
+
+When a file is memory-mapped, the operating system maps a portion of the file into the virtual address space of the process. This makes the file appear as if it is in memory and can be accessed by reading or writing to the memory addresses that correspond to the mapped portion of the file. When the process writes to the memory-mapped file, the changes are written back to the disk automatically by the operating system.
+
+Memory-mapped files are useful in situations where large files need to be accessed frequently or when the file needs to be shared between multiple processes. They are commonly used in databases, text editors, and other applications that need to access large files.
+
+One advantage of memory-mapped files is that they can provide faster access times than traditional file I/O, especially for large files. This is because the operating system can perform intelligent caching of the file contents, minimizing disk I/O operations. However, memory-mapped files can also consume a significant amount of memory, so they should be used judiciously.
 
 --- 
 > In general, how would you describe the file system structure of an operating system?
@@ -351,5 +363,5 @@ Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). *Windows Internals.* Micr
 Wikipedia: File system, List of file systems, Comparison of file systems, 
 Hierarchical file system, Clustered file system,
 File system fragmentation, Directory structure, File manager, 
-Storage efficiency 
+Storage efficiency, Memory-mapped file
 
