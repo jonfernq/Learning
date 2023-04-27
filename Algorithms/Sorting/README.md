@@ -442,6 +442,12 @@ Sedgewick, R., & Wayne, K. (2011). *Algorithms (4th ed.).* Addison-Wesley Profes
 
 Skiena, S. S. (2020). *The algorithm design manual (Third Edition).* Springer.
 
+Also:
+
+Dasgupta, S., Papadimitriou, C. H., & Vazirani, U. V. (2006). *Algorithms.* McGraw-Hill Education.
+
+Kleinberg, J., & Tardos, E. (2005). "Algorithm design.* Addison-Wesley Professional.
+
 
 
 
