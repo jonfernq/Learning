@@ -326,3 +326,25 @@ chmod g+s file.txt
 
 
 These are some of the examples of using `chmod` command in Linux and Unix systems for changing file permissions.
+
+---
+### REFERENCES
+
+Anderson, T., & Dahlin, M. (2011-15). *Operating Systems: Principles and Practice, Vol. 4: Persistent Storage.* Recursive Books.
+
+Arpaci-Dusseau, R. H., & Arpaci-Dusseau, A. C. (2014). *Operating Systems: Three Easy Pieces.* Arpaci-Dusseau Books.
+
+Bryant, R. E., & O'Hallaron, D. R. (2015). *Computer Systems: A Programmer's Perspective.* Pearson.
+
+Hailperin, M. (2019). *Operating systems and middleware: Supporting controlled interaction.* Thomson Learning, Inc.: San Francisco, CA.
+
+Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating System Concepts.* Wiley.
+
+Stallings, W. (2018). *Operating Systems: Internals and Design Principles.* Pearson.
+
+Tanenbaum, A. S. (1987). *Operating Systems: Design and Implementation.* Pearson Education.
+
+Tanenbaum, A. S., & Bos, H. (2014). *Modern Operating Systems.* Pearson.
+
+Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). *Windows Internals.* Microsoft Press.
+
