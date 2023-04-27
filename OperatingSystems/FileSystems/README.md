@@ -10,6 +10,7 @@
 - Character vs. Block-based files
 - Memory-Mapped Files
 - Shell scripting commands for file manipulation
+- Minix
 - REFERENCES 
 
 --- 
@@ -339,6 +340,19 @@ chmod g+s file.txt
 
 
 These are some of the examples of using `chmod` command in Linux and Unix systems for changing file permissions.
+
+---
+### Minix
+
+> Please describe Minix file systems.
+ 
+Minix file systems use a hierarchical structure similar to the file systems used in Unix and Linux. At the top of the hierarchy is the root directory, which contains all other directories and files on the system. Directories can contain other directories and files, forming a tree-like structure.
+
+In Minix, there are three main types of files: regular files, directories, and special files. Regular files are files that contain data, such as text or binary data. Directories are files that contain a list of other files and directories. Special files are files that represent hardware devices or other special resources, such as pipes or sockets.
+
+Minix file systems use an allocation method called the "i-node" method, which is similar to the Unix File System (UFS) in which each file has an i-node that contains metadata about the file, including ownership, permissions, timestamps, and a pointer to the location of the file's data on the disk.
+
+The file systems in Minix also support journaling, which is a technique used to ensure data consistency and reduce the risk of data loss in the event of a system crash. When a file is modified, the changes are first written to a journal before being written to the file system. If a crash occurs before the changes are written to the file system, the journal can be used to recover the changes and ensure that the file system is consistent.
 
 ---
 ### REFERENCES
