@@ -2,7 +2,7 @@
 
 > Using Pandoc can I format GitHub markdown in to a pdf or word file ?
 
-- Yes, you can use Pandoc to convert GitHub markdown to a PDF or Word document. Pandoc is a versatile command-line tool that can convert files from one format to another, including converting GitHub-flavored markdown to PDF or Word.
+Yes, you can use Pandoc to convert GitHub markdown to a PDF or Word document. Pandoc is a versatile command-line tool that can convert files from one format to another, including converting GitHub-flavored markdown to PDF or Word.
 
 Here's an example command to convert a GitHub markdown file to a PDF using Pandoc:
 
