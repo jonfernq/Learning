@@ -13,7 +13,7 @@
 - [Maximum Subarray Problem](https://github.com/jonfernq/Learning/blob/main/Algorithms/MaxSubarrayProblem/README.md)
 
 
-### Unit 4: Analysis of Sorting Algorithms
+### [Unit 4: Analysis of Sorting Algorithms](https://github.com/jonfernq/Learning/blob/main/Algorithms/Sorting/README.md)
 
 #### Topics
 - Types of sorting algorithms
