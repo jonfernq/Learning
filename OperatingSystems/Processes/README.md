@@ -67,3 +67,11 @@ The Linux command line provides a wide range of commands for managing processes.
 10. fg - This command brings a background process to the foreground.
 
 Overall, these commands provide a powerful set of tools for managing processes on Linux systems, enabling users to monitor, control, and manipulate system processes to meet their specific needs.
+
+---
+REFERENCES 
+
+- Wikipedia: [POSIX](https://en.wikipedia.org/wiki/POSIX), [Process](https://en.wikipedia.org/wiki/Process_(computing)),
+[Mandatory access control](https://en.wikipedia.org/wiki/Mandatory_access_control), [Discretionary access control](https://en.wikipedia.org/wiki/Discretionary_access_control), [Process group](https://en.wikipedia.org/wiki/Process_group), 
+[Fork](https://en.wikipedia.org/wiki/Fork_(system_call)), [System call](https://en.wikipedia.org/wiki/System_call), [Zombie process](https://en.wikipedia.org/wiki/Zombie_process), [Kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system))
+
