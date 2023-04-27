@@ -11,7 +11,7 @@
 - [Memory Management](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/MemoryManagement/README.md) 
 - [Memory Management Issues](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/MemoryManagement/ReflectionsOnMemoryManagement.md) 
 
-### [Unit 4: Operating System Process Management and Protecting Memory](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Processes/README.md)
+### [Unit 4: Process Management and Protecting Memory](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Processes/README.md)
 
 #### Topics
 
