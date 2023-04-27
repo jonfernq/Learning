@@ -4,14 +4,14 @@
 ---
 > What is the notion of 'exploit in computer security?
 
-- In computer security, an exploit refers to a technique or program that takes advantage of a vulnerability or weakness in a computer system or software application in order to gain unauthorized access, perform a malicious action, or cause a denial of service. Exploits can target a variety of components, including operating systems, network protocols, web applications, and even hardware.
+In computer security, an exploit refers to a technique or program that takes advantage of a vulnerability or weakness in a computer system or software application in order to gain unauthorized access, perform a malicious action, or cause a denial of service. Exploits can target a variety of components, including operating systems, network protocols, web applications, and even hardware.
 
 Once an exploit successfully takes advantage of a vulnerability, it can potentially give an attacker full control of the affected system or application. Exploits can be created by attackers themselves, or they can be obtained from public or private exploit databases. Therefore, it is important for system administrators and software developers to constantly monitor for new exploits and to apply patches and updates to address vulnerabilities as soon as they are discovered.
 
 ---
 > What is the relation between 'penetration testing' and 'exploits' ?
 
-- Penetration testing and exploits are related in the sense that penetration testing involves the use of exploits as a means to test the security of a system or application.
+Penetration testing and exploits are related in the sense that penetration testing involves the use of exploits as a means to test the security of a system or application.
 
 Penetration testing is a method of evaluating the security of a computer system or network by simulating an attack from a malicious source. The goal is to identify vulnerabilities and weaknesses that could be exploited by an attacker. In order to simulate an attack, penetration testers use a variety of tools and techniques, including exploits.
 
@@ -59,7 +59,7 @@ While hacking skills can be useful in security, it's important to note that ethi
 --- 
 > Where does one learn 'white hacking' ? It does not seem to be taught in universities or textbooks.
 
-> There are many resources available online to learn about ethical hacking or "white hat" hacking. Some popular options include online courses, tutorials, and certifications from organizations such as CompTIA, EC-Council, and Offensive Security. There are also many books available on the topic, both in print and online, as well as forums and communities where individuals can share knowledge and learn from others. It's important to note that while learning about ethical hacking can be a valuable skill, it should always be done within legal and ethical boundaries.
+There are many resources available online to learn about ethical hacking or "white hat" hacking. Some popular options include online courses, tutorials, and certifications from organizations such as CompTIA, EC-Council, and Offensive Security. There are also many books available on the topic, both in print and online, as well as forums and communities where individuals can share knowledge and learn from others. It's important to note that while learning about ethical hacking can be a valuable skill, it should always be done within legal and ethical boundaries.
 
 ---
 > Are there ethical hacking competitions, like Coder One ?
