@@ -350,6 +350,8 @@ Bryant, R. E., & O'Hallaron, D. R. (2015). *Computer Systems: A Programmer's Per
 
 Hailperin, M. (2019). *Operating systems and middleware: Supporting controlled interaction.* Thomson Learning, Inc.: San Francisco, CA.
 
+Pate, Steve D. (2003). *UNIX Filesystems: Evolution, Design, and Implementation.* Wiley.
+
 Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating System Concepts.* Wiley.
 
 Stallings, W. (2018). *Operating Systems: Internals and Design Principles.* Pearson.
@@ -358,7 +360,7 @@ Tanenbaum, A. S. (1987). *Operating Systems: Design and Implementation.* Pearson
 
 Tanenbaum, A. S., & Bos, H. (2014). *Modern Operating Systems.* Pearson.
 
-Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). *Windows Internals.* Microsoft Press.
+Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). "File Systems". *Windows Internals.* Microsoft Press.
 
 Wikipedia: File system, List of file systems, Comparison of file systems, 
 Hierarchical file system, Clustered file system,
