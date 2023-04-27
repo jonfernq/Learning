@@ -5,6 +5,7 @@
 - Memory Protection
 - Access Control: DAC (Discretionary Access Control) and MAC (Mandatory Access Control)
 - Linux Process Commands 
+- Minix Internals
 - References
 
 ---
