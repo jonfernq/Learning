@@ -9,7 +9,7 @@
 ---
 > Please describe POSIX Process Management API
 
-- The POSIX (Portable Operating System Interface) Process Management API provides a set of functions and interfaces that allow programs to manage processes and perform inter-process communication (IPC) on Unix and Unix-like systems. The API defines a standardized interface that ensures compatibility across different implementations of the Unix operating system.
+The POSIX (Portable Operating System Interface) Process Management API provides a set of functions and interfaces that allow programs to manage processes and perform inter-process communication (IPC) on Unix and Unix-like systems. The API defines a standardized interface that ensures compatibility across different implementations of the Unix operating system.
 
 Some of the key functions in the POSIX Process Management API include: 
 
@@ -25,7 +25,7 @@ Overall, the POSIX Process Management API provides a powerful set of tools for m
 ---
 > Please describe how memory protection works with processes.
 
-- Memory protection is a crucial mechanism that helps ensure the stability and security of modern computer systems. In the context of processes, memory protection refers to the ability of the operating system to isolate and protect the memory used by each individual process.
+Memory protection is a crucial mechanism that helps ensure the stability and security of modern computer systems. In the context of processes, memory protection refers to the ability of the operating system to isolate and protect the memory used by each individual process.
 
 When a process is created, the operating system assigns a virtual address space to the process. This address space is a set of memory addresses that the process can use to store data and instructions. However, the actual physical memory used by the process may be scattered across different locations in the physical memory of the system.
 
@@ -40,11 +40,11 @@ Overall, memory protection is a critical aspect of process management, as it ens
 ---
 > Please Differentiate between a DAC system and a MAC system in operating systems
 
-- DAC (Discretionary Access Control) and MAC (Mandatory Access Control) are two different access control models used in operating systems to regulate access to system resources. The main difference between the two is in how they enforce access control.
+DAC (Discretionary Access Control) and MAC (Mandatory Access Control) are two different access control models used in operating systems to regulate access to system resources. The main difference between the two is in how they enforce access control.
 
-In a DAC system, access control is at the discretion of the owner of the resource. Each resource has an owner who decides who can access the resource and what level of access they have. This means that the owner of a resource has complete control over who can access it and can grant or revoke access permissions as they see fit. However, this can also lead to security issues, as an untrusted user who gains access to a resource can potentially modify or delete it, even if they do not have permission to do so.
+In a **DAC system**, access control is at the discretion of the owner of the resource. Each resource has an owner who decides who can access the resource and what level of access they have. This means that the owner of a resource has complete control over who can access it and can grant or revoke access permissions as they see fit. However, this can also lead to security issues, as an untrusted user who gains access to a resource can potentially modify or delete it, even if they do not have permission to do so.
 
-In contrast, in a MAC system, access control is enforced by a centralized authority, such as the operating system or a security administrator. Access permissions are assigned based on a set of predefined rules and policies, and users have no control over these permissions. This means that even if a user gains access to a resource, they may not be able to modify or delete it if they do not have the necessary permissions according to the policy.
+In contrast, in a **MAC system**, access control is enforced by a centralized authority, such as the operating system or a security administrator. Access permissions are assigned based on a set of predefined rules and policies, and users have no control over these permissions. This means that even if a user gains access to a resource, they may not be able to modify or delete it if they do not have the necessary permissions according to the policy.
 
 One advantage of a MAC system is that it provides a more secure environment, as access to resources is strictly controlled by a centralized authority, rather than being left to the discretion of individual users. However, this can also make it more difficult for users to access resources that they need to perform their tasks, as they must request permission from the authority.
 
@@ -53,8 +53,8 @@ Overall, DAC and MAC are two different approaches to access control, each with i
 ---
 > Please enumerate and describe the process commands for the Linux command line.
 
-ChatGPT: 
-- The Linux command line provides a wide range of commands for managing processes. Some of the commonly used process commands are: 
+The Linux command line provides a wide range of commands for managing processes. Some of the commonly used process commands are: 
+
 1. ps - This command displays a list of currently running processes, including their process IDs (PIDs), CPU and memory usage, and other details. 
 2. top - This command provides a real-time view of system processes, including the most CPU-intensive processes, memory usage, and other statistics. 
 3. kill - This command sends a signal to a specified process to terminate it. The default signal is SIGTERM, which requests a graceful termination of the process, but other signals such as SIGKILL can be used to force a process to terminate immediately. 
