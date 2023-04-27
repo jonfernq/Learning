@@ -1,9 +1,10 @@
 ## SEQUENTIAL FILES (COBOL) 
 
-Table of Contents 
+**Table of Contents** 
 - Create Test Data 
-- Display File Records to Screen 
- 
+- Read Sequential File, display records to Screen 
+- Write Sequential File  
+
 ---
 ### TEST DATA 
 > Create a test sales data file for a COBOL program.  
@@ -97,5 +98,52 @@ MAIN-PROGRAM.
     
 This program reads in the salesdata.dat file using the SELECT statement and the OPEN statement. It then displays the header for the data fields and reads in each record using the READ statement. The program continues to read records until the end of file is reached. For each record read, the program displays the record using the DISPLAY statement and increments the counter. Finally, the program displays the total number of records read and closes the file using the CLOSE statement.
 
+---
+- WRITE RECORDS TO FILE 
+
+```
+IDENTIFICATION DIVISION.
+PROGRAM-ID. READ-SALES-FILE.
+
+ENVIRONMENT DIVISION.
+INPUT-OUTPUT SECTION.
+FILE-CONTROL.
+SELECT SALES-IN-FILE ASSIGN TO 'salesdata.dat'
+ORGANIZATION IS LINE SEQUENTIAL.
+SELECT SALES-OUT-FILE ASSIGN TO 'salesoutput.dat'
+ORGANIZATION IS LINE SEQUENTIAL.
+
+DATA DIVISION.
+FILE SECTION.
+FD SALES-IN-FILE.
+01 SALES-RECORD-IN PIC X(50).
+
+FD SALES-OUT-FILE.
+01 SALES-RECORD-OUT PIC X(50).
+
+WORKING-STORAGE SECTION.
+01 END-OF-FILE PIC X VALUE 'N'.
+01 WS-COUNTER PIC 9(3) VALUE ZERO.
+
+PROCEDURE DIVISION.
+MAIN-PROGRAM.
+OPEN INPUT SALES-IN-FILE
+OUTPUT SALES-OUT-FILE.
+DISPLAY 'DATE' ' ' 'SALESPERSON' ' ' 'PRODUCT' ' ' 'PURCHASE-AMOUNT'.
+PERFORM UNTIL END-OF-FILE = 'Y'
+READ SALES-IN-FILE
+AT END
+MOVE 'Y' TO END-OF-FILE
+NOT AT END
+MOVE SALES-RECORD-IN TO SALES-RECORD-OUT
+WRITE SALES-RECORD-OUT
+ADD 1 TO WS-COUNTER
+END-READ
+END-PERFORM.
+DISPLAY 'Total records read: ' WS-COUNTER.
+CLOSE SALES-IN-FILE
+SALES-OUT-FILE.
+STOP RUN.
+```
 
 
