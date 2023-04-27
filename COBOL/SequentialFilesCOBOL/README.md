@@ -58,7 +58,7 @@ There are multiple records for each SALESPERSON, allowing for analysis and summa
 
 Here's a COBOL program that reads in the salesdata.txt file and prints it out to the screen:
 
-sql
+```sql
 IDENTIFICATION DIVISION.
 PROGRAM-ID. READ-SALES-FILE.
 
@@ -93,7 +93,7 @@ MAIN-PROGRAM.
     DISPLAY 'Total records read: ' WS-COUNTER.
     CLOSE SALES-IN-FILE.
     STOP RUN.
-    
+```    
     
 This program reads in the salesdata.dat file using the SELECT statement and the OPEN statement. It then displays the header for the data fields and reads in each record using the READ statement. The program continues to read records until the end of file is reached. For each record read, the program displays the record using the DISPLAY statement and increments the counter. Finally, the program displays the total number of records read and closes the file using the CLOSE statement.
 
