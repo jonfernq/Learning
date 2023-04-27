@@ -1,5 +1,14 @@
 ## File Systems:
-
+**Table of Contents:**
+- Concept of file 
+- Linux Everything is a File
+- General file system structure 
+- General allocation methods of file system
+- General protection for files
+- Linux File System
+- Windows File System
+- Character vs. Block-based files
+- Shell scripting commands for file manipulation
 
 --- 
 > Please describe the structure of Linux file systems.
@@ -67,7 +76,7 @@ In modern operating systems, the file system structure is usually implemented us
 Different operating systems have different file system structures, with different naming conventions, permissions, and features. For example, the Windows file system uses drive letters to distinguish between different storage devices, while Linux and other Unix-like operating systems use a single root directory and mount other devices as subdirectories within the file system tree.
 
 --- 
-> In general, how would you describe Allocation Methods for operating system file systems?
+> In c?
 
  
 Allocation methods refer to the ways in which the operating system file system allocates storage space to files on a storage device. There are three main types of allocation methods: contiguous allocation, linked allocation, and indexed allocation. 
