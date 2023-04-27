@@ -348,3 +348,8 @@ Tanenbaum, A. S., & Bos, H. (2014). *Modern Operating Systems.* Pearson.
 
 Russinovich, M., Solomon, D. A., & Ionescu, A. (2017). *Windows Internals.* Microsoft Press.
 
+Wikipedia: File system, List of file systems, Comparison of file systems, 
+Hierarchical file system, Clustered file system,
+File system fragmentation, Directory structure, File manager, 
+Storage efficiency 
+
