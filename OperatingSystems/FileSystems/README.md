@@ -25,6 +25,16 @@ In modern operating systems, the file system structure is usually implemented us
 
 Different operating systems have different file system structures, with different naming conventions, permissions, and features. For example, the Windows file system uses drive letters to distinguish between different storage devices, while Linux and other Unix-like operating systems use a single root directory and mount other devices as subdirectories within the file system tree.
 
+
+--- 
+> For Linux it is commonly said that everything is a file. What does this mean?
+
+In Linux, the concept of "everything is a file" means that all system resources, including devices, directories, and processes, can be treated as files. This concept is a fundamental principle of the Linux operating system, and it simplifies the design and implementation of the operating system.
+
+For example, in Linux, the input/output (I/O) operations for a device, such as a printer or a keyboard, can be performed using the same file system functions that are used to read and write regular files. Similarly, a directory can be treated as a file that contains a list of other files and directories, and the operations on directories can be performed using the same file system functions.
+
+This principle makes it easy for developers to create applications that work with files and devices in a consistent way, and it also makes it easier for users to interact with the system.
+
 --- 
 > In general, how would you describe allocation methods of a file system?
 
@@ -60,16 +70,6 @@ Permissions control which users or groups are allowed to read, write, or execute
 ACLs are an extension of permissions that allow more granular control over file access. With ACLs, individual users or groups can be granted or denied specific permissions on a file. This is useful in large organizations where files may need to be accessed by multiple users with varying levels of access.
 
 File protection is an important part of file system security, as it ensures that sensitive information is only accessible to those who need it.
-
-
---- 
-> For Linux it is commonly said that everything is a file. What does this mean?
-
-In Linux, the concept of "everything is a file" means that all system resources, including devices, directories, and processes, can be treated as files. This concept is a fundamental principle of the Linux operating system, and it simplifies the design and implementation of the operating system.
-
-For example, in Linux, the input/output (I/O) operations for a device, such as a printer or a keyboard, can be performed using the same file system functions that are used to read and write regular files. Similarly, a directory can be treated as a file that contains a list of other files and directories, and the operations on directories can be performed using the same file system functions.
-
-This principle makes it easy for developers to create applications that work with files and devices in a consistent way, and it also makes it easier for users to interact with the system.
 
 --- 
 > Please describe the structure of Linux file systems.
