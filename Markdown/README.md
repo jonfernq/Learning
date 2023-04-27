@@ -1,6 +1,7 @@
 ### Markdown
 
 - [History](https://github.com/jonfernq/Learning/tree/main/Markdown/MarkdownHistory) - Notes towards a history of Markdown. 
+- [Pandoc](https://github.com/jonfernq/Learning/blob/main/Markdown/Pandoc/README.md) 
 
 ### Mathematical Expressions
 
