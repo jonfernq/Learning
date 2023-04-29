@@ -7,34 +7,31 @@ import graphviz
 
 # Define the binary tree using a dictionary
 tree = {'A': ('B', 'C'), 'B': ('D', 'E'), 'C': ('F', 'G'), 'D': ('H', 'I'), 'E': ('J', None), 'F': (None, None), 'G': ('K', None)}
+root = 'A'
 
-# Create a Graphviz graph object
-graph = graphviz.Digraph()
+def graph_binary_tree(tree, root):
+    # Create a Graphviz graph object
+    graph = graphviz.Digraph()
 
-# Add the nodes and edges to the graph
-def add_nodes1(graph, parent, tree):
-    for node in tree[parent]:
-        if node is not None:
-            graph.node(node)
-            graph.edge(parent, node)
-            add_nodes(graph, node, tree)
+    # Add the nodes and edges to the graph
+    def add_nodes(graph, parent, children):
+        for child in children:
+            if child is not None:
+                graph.node(child)
+                graph.edge(parent, child)
+                add_nodes(graph, child, tree.get(child, (None, None)))
 
-def add_nodes(graph, parent, tree):
-    children = tree.get(parent, None)
-    if children is not None:
-        for node in children:
-            if node is not None:
-                graph.node(node)
-                graph.edge(parent, node)
-                add_nodes(graph, node, tree)
+    # Add the root node to the graph
+    graph.node(root)
 
-add_nodes(graph, 'A', tree)
+    # Add nodes and edges to the graph
+    add_nodes(graph, root, tree.get(root, (None, None)))
 
-# Render the graph to an image file
-graph.render('binary_tree6')
+    # Render the graph to an image file
+    graph.render('binary_tree', format='pdf')
+    graph.render('binary_tree', format='jpeg')
 
-# Render the graph to a JPEG image file
-graph.render('binary_tree5.jpg', format='jpg')
+graph_binary_tree(tree, root)
 ```
 
 **OUTPUT:** 
