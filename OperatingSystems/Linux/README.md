@@ -116,22 +116,25 @@ alias lstn='function _lstn_func() { ls -lrt | tail -"$1"; }; _lstn_func'   # Sho
 ```bash
 alias mcd='function _mcd() { \mkdir -p "$1"; \cd "$1"; }; _mcd'            # make directory, change to directory
 ```
+
+(Albing & Vossen 2022)
+
 ---
-> jq: JSON in Bash
+### jq: JSON in Bash
 
 - `jq` is a popular command-line tool for processing JSON data in Bash and other shells. `jq` allows you to extract, filter, and manipulate JSON data using a simple and powerful syntax.
 
 Here are a few examples of how you can use `jq` in Bash: 
 - Extract a specific field from a JSON object:
 
-```json
+```bash
 
 $ echo '{"name": "Alice", "age": 30}' | jq '.name'
 "Alice"
 ``` 
 - Filter an array of JSON objects based on a condition:
 
-```scss
+```bash
 
 $ echo '[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]' | jq '.[] | select(.age > 27)'
 {
@@ -141,7 +144,7 @@ $ echo '[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]' | jq '.[] | 
 ``` 
 - Manipulate JSON data using arithmetic and string operations:
 
-```json
+```bash
 
 $ echo '{"x": 2, "y": 3}' | jq '.x + .y'
 5
