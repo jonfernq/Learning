@@ -1,5 +1,7 @@
 ## Operating Systems
 
+- [Linux Commands](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Linux/README.md) 
+
 ### Unit 2. CPU Scheduling
 
 - [Types of Scheduling Algorithms + Python Code](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/2CPUScheduling/README.md) 
