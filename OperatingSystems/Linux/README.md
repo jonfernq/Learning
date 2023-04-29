@@ -113,10 +113,14 @@ Generalizing with a function:
 alias lstn='function _lstn_func() { ls -lrt | tail -"$1"; }; _lstn_func'   # Show n most recently modified files in dir
 ```
 
+```bash
+alias mcd='function _mcd() { \mkdir -p "$1"; \cd "$1"; }; _mcd'            # make directory, change to directory
+```
+
 ---
 ### REFERENCES
 
-Albing, C., & Vossen, J. P. (2022). Bash Idioms. " O'Reilly Media, Inc.".
+Albing, C., & Vossen, J. P. (2022). Bash Idioms: Write Powerful, Flexible, Readable Shell Scripts. " O'Reilly Media, Inc.".
 
 Shotts, W. (2019). The Linux command line: a complete introduction. No Starch Press.
 
