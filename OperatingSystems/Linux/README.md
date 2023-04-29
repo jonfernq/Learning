@@ -100,10 +100,25 @@ alias cobol='function _cobol() { cobc -g -x "$1".cob; ./"$1"; }; _cobol'
 This defines a shell function called _cobol() inside the alias, which takes the first argument passed to cobol and uses it to compile and run a COBOL program. The function is then immediately called with the "$1" parameter to execute the alias.
 
 ---
+
+### More Useful Aliases
+
+```bash
+alias lst='ls -lrt | tail -5'    # Show 5 most recently modified files in dir
+```
+
+Generalizing with a function:
+
+```bash
+alias lstn='function _lstn_func() { ls -lrt | tail -"$1"; }; _lstn_func'   # Show n most recently modified files in dir
+```
+
+---
 ### REFERENCES
 
-Shotts, W. (2019). The Linux command line: a complete introduction. No Starch Press.
+Albing, C., & Vossen, J. P. (2022). Bash Idioms. " O'Reilly Media, Inc.".
 
+Shotts, W. (2019). The Linux command line: a complete introduction. No Starch Press.
 
 
 
