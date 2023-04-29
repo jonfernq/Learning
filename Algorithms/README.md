@@ -1,5 +1,9 @@
 ## Algorithms
 
+### Visualization of Data Structures
+
+- [Binary Tree Visualization]() 
+
 ### Unit 2: Algorithm Analysis
 
 - [Selection Sort #2](https://github.com/jonfernq/Learning/blob/main/Algorithms/SelectionSort2/README.md)
