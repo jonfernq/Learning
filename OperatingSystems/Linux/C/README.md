@@ -18,8 +18,7 @@ This command will link your program with the POSIX regular expression library, a
 --- 
 > Could a gcc file also call grep?
 
-ChatGPT: 
-- Yes, a program compiled with GCC can call the `grep` command using the `system()` function or the `popen()` function.
+Yes, a program compiled with GCC can call the `grep` command using the `system()` function or the `popen()` function.
 
 The `system()` function allows you to execute a command in the shell, similar to running a command in the terminal. For example, you can use the following code to call the `grep` command:
 
