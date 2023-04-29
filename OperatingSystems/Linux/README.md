@@ -99,7 +99,10 @@ alias cobol='function _cobol() { cobc -g -x "$1".cob; ./"$1"; }; _cobol'
 
 This defines a shell function called _cobol() inside the alias, which takes the first argument passed to cobol and uses it to compile and run a COBOL program. The function is then immediately called with the "$1" parameter to execute the alias.
 
+---
+### REFERENCES
 
+Shotts, W. (2019). The Linux command line: a complete introduction. No Starch Press.
 
 
 
