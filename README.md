@@ -8,6 +8,7 @@
 - [Cloud Computing](https://github.com/jonfernq/Learning/blob/main/CloudComputing/README.md) 
 - [Algorithms](https://github.com/jonfernq/Learning/tree/main/Algorithms/README.md)
 - [Computational Social Science](https://github.com/jonfernq/Learning/blob/main/ComputationalSocialScience/README.md)
+- [Veterinary Medicine](https://github.com/jonfernq/Learning/blob/main/VeterinaryMedicine/README.md) 
 
 ### English Teaching
 
