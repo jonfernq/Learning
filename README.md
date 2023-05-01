@@ -6,7 +6,8 @@
 - [TypeScript](https://github.com/jonfernq/Learning/blob/main/TypeScript/README.md)
 - [Operating Systems](https://github.com/jonfernq/Learning/tree/main/OperatingSystems/README.md) 
 - [Cloud Computing](https://github.com/jonfernq/Learning/blob/main/CloudComputing/README.md) 
-- [Algorithms](https://github.com/jonfernq/Learning/tree/main/Algorithms/README.md)  
+- [Algorithms](https://github.com/jonfernq/Learning/tree/main/Algorithms/README.md)
+- [Computational Social Science](https://github.com/jonfernq/Learning/blob/main/ComputationalSocialScience/README.md)
 
 ### English Teaching
 
