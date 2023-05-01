@@ -7,6 +7,7 @@
 - [Operating Systems](https://github.com/jonfernq/Learning/tree/main/OperatingSystems/README.md) 
 - [Cloud Computing](https://github.com/jonfernq/Learning/blob/main/CloudComputing/README.md) 
 - [Algorithms](https://github.com/jonfernq/Learning/tree/main/Algorithms/README.md)
+- [GnuCOBOL](https://github.com/jonfernq/Learning/tree/main/COBOL) 
 - [Computational Social Science](https://github.com/jonfernq/Learning/blob/main/ComputationalSocialScience/README.md)
 - [Veterinary Medicine](https://github.com/jonfernq/Learning/blob/main/VeterinaryMedicine/README.md) 
 
@@ -27,8 +28,6 @@ Multiple choice questions & notes for learning the intricacies of programming la
 - [Development Environments](https://github.com/jonfernq/Learning/tree/main/DevelopmentEnvironments)
 
 - [JavaScript](https://github.com/jonfernq/Learning/tree/main/JavaScript)
-
-- [GnuCOBOL](https://github.com/jonfernq/Learning/tree/main/COBOL) 
 
 - [Databases](https://github.com/jonfernq/Learning/blob/main/Databases/README.md) 
 
