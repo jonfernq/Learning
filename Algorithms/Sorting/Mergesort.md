@@ -114,6 +114,9 @@ The master theorem is a useful tool for analyzing the time complexity of many co
 
 > Please explain the time complexity of mergesort in terms of the master theorem. 
 
+As Skiena (2020:153-55) suggests, "the master theorem can be thought of as a black box... invoked as needed," obviating the need for a 
+proof of time complexity using mathematical induction, but one is included at the end as well. 
+
 The time complexity of mergesort can be expressed by the recurrence relation:
 
 T(n) = 2T(n/2) + Θ(n)
@@ -240,5 +243,15 @@ merge(arr, left, middle, right)
 ```
 
 In this pseudocode, `arr` is the array to be sorted, `left` and `right` are the indices of the first and last elements of the subarray to be sorted, and `middle` is the index of the middle element of the subarray. The `merge_sort` function recursively sorts the left and right halves of the array, and then merges them back together using the `merge` function. The `merge` function takes in the temporary arrays `left_arr` and `right_arr`, which are used to hold the left and right subarrays while they are being merged.
+
+---
+### REFERENCES 
+
+Sande, Jonathan, Kelvin Lau, and Vincent Ngo. (2022). **'Data Structures & Algorithms in Dart (First Edition): Implementing Practical Data Structures in Dart.'** raywenderlich.com.
+
+Sedgewick, R., & Wayne, K. (2011). *Algorithms (4th ed.).* Addison-Wesley Professional.
+
+Skiena, S. S. (2020). *The algorithm design manual (Third Edition).* Springer.
+
 
 
