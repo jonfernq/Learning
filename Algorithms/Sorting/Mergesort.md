@@ -58,3 +58,51 @@ The best case time complexity of mergesort is significantly better than the wors
 In contrast, the worst case time complexity of mergesort occurs when the input array is sorted in reverse order. In this case, mergesort has to perform the maximum number of comparisons and swaps, resulting in a time complexity of O(n log n).
 
 It is worth noting that although the best case time complexity is significantly better than the worst case, in practice, the worst case rarely occurs. This is because in most real-world scenarios, the input array is not sorted in any particular order, and the average case time complexity of O(n log n) is a good estimate of the actual runtime of mergesort.
+
+---
+> Are you familiar with the 'master theorem' for deriving recurrence relations for recursively-defined algorithms?
+
+The master theorem is a powerful tool for analyzing the time complexity of algorithms that have a recurrence relation of the form:
+
+T(n) = aT(n/b) + f(n)
+
+where T(n) represents the running time of the algorithm on an input of size n, a is the number of subproblems at each level of recursion, b is the size of the subproblems relative to the original problem size, and f(n) is the cost of dividing the problem and combining the solutions.
+
+The master theorem provides a framework for analyzing the time complexity of algorithms with such recurrence relations by dividing them into three cases, depending on the relative values of a, b, and f(n). The three cases are: 
+
+1. If f(n) = O(n^(log_b a - ε)) for some constant ε > 0, then T(n) = Θ(n^(log_b a)). 
+2. If f(n) = Θ(n^(log_b a)), then T(n) = Θ(n^(log_b a) log n). 
+3. If f(n) = Ω(n^(log_b a + ε)) for some constant ε > 0, and if a*f(n/b) ≤ c*f(n) for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).
+
+The master theorem is a useful tool for analyzing the time complexity of many common recursive algorithms, such as binary search, mergesort, and quicksort. However, it is not always applicable, and there are many cases where a more nuanced analysis is required. In such cases, it may be necessary to use other techniques, such as substitution, iteration, or the method of guessing and verifying.
+
+---
+> Please explain the time complexity of mergesort with a recurrence relation of the form:
+
+T(n) = aT(n/b) + f(n)
+
+And please explain it in terms of the 'master theorem' in the form: 
+
+"where T(n) represents the running time of the algorithm on an input of size n, a is the number of subproblems at each level of recursion, b is the size of the subproblems relative to the original problem size, and f(n) is the cost of dividing the problem and combining the solutions."
+
+
+The time complexity of mergesort can be expressed by the recurrence relation:
+
+T(n) = 2T(n/2) + Θ(n)
+
+Here, a = 2 (since we are dividing the problem into two subproblems of equal size), b = 2 (since the subproblems are half the size of the original problem), and f(n) = Θ(n) (since the cost of dividing the problem and combining the solutions is proportional to the size of the input).
+
+To analyze the time complexity of mergesort using the master theorem, we need to compare the value of f(n) to n^(log_b a). In this case, we have:
+
+n^(log_b a) = n^(log_2 2) = n
+
+So, we need to compare f(n) to n. Since f(n) is Θ(n), we have:
+
+f(n) = Θ(n) = n^(log_b a)
+
+This means that we are in case 2 of the master theorem, which tells us that the time complexity of mergesort is:
+
+T(n) = Θ(n log n)
+
+In other words, the time complexity of mergesort is proportional to n times the logarithm of n. This is a very efficient algorithm for sorting, and it is one of the most widely used sorting algorithms due to its excellent performance in practice.
+
