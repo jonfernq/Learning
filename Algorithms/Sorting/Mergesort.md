@@ -105,7 +105,7 @@ The master theorem provides a framework for analyzing the time complexity of alg
 
 1. If f(n) = $O(n^(log_b a - ε))$ for some constant ε > 0, then $T(n) = Θ(n^(log_b a))$. 
 2. If f(n) = $Θ(n^(log_b a))$, then T(n) = $Θ(n^(log_b a) log n)$. 
-3. If f(n) = $Ω(n^(log_b a + ε))$ for some constant ε > 0, and if $a*f(n/b) ≤ c*f(n)$ for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).
+3. If f(n) = $Ω(n^(log_b a + ε))$ for some constant ε > 0, and if a*f(n/b) ≤ c*f(n) for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).
 
 The master theorem is a useful tool for analyzing the time complexity of many common recursive algorithms, such as binary search, mergesort, and quicksort. However, it is not always applicable, and there are many cases where a more nuanced analysis is required. In such cases, it may be necessary to use other techniques, such as substitution, iteration, or the method of guessing and verifying.
 
