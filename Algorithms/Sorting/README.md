@@ -449,7 +449,7 @@ Also:
 
 Dasgupta, S., Papadimitriou, C. H., & Vazirani, U. V. (2006). *Algorithms.* McGraw-Hill Education.
 
-Kleinberg, J., & Tardos, E. (2005). "Algorithm design.* Addison-Wesley Professional.
+Kleinberg, J., & Tardos, E. (2005). *Algorithm design.* Addison-Wesley Professional.
 
 
 
