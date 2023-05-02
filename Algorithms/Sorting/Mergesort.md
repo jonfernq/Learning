@@ -15,7 +15,7 @@ Table of Contents
 
 > Can pseudocode for mergesort be made concise by using recursion?
 
-Yes, the pseudocode for merge sort can be made more concise by using recursion. Here's a more concise pseudocode implementation of merge sort using recursion:
+Expressing pseudocode for merge sort in recursive form makes it more concise (see more expansive iterative further down the page). 
 
 ```java
 merge_sort(arr):
@@ -52,42 +52,43 @@ merge(left_arr, right_arr):
     return merged_arr
 ```
 
-In this implementation, the `merge_sort` function takes in the entire array to be sorted and recursively divides it into two halves until each half contains only one element. The `merge` function is used to merge the sorted subarrays back together into a single sorted array. The `append` method is used to add elements to the `merged_arr` list, and the `extend` method is used to add any remaining elements from the left or right subarray. This implementation is more concise because it uses recursion to handle the sorting and merging of subarrays, rather than iterating through the subarrays using a while loop.
+The 'mergesort' function recursively divides into the input array into two halves until each half contains only one element. 
+
+The `merge` function is used to merge the sorted subarrays back together into a single sorted array. 
+
+The `append` method is used to add elements to the `merged_arr` list.
+
+The `extend` method is used to add any remaining elements from the left or right subarray. 
 
 --- 
 ### Explanation 
 
 > Please describe the essential idea behind the recursive version of mergesort above in plain English.
 
-The recursive version of merge sort works by dividing the array into halves, recursively sorting each half, and then merging the sorted halves back together into a single sorted array.
+Mergesort is a divide-and-conquer algorithm that recursively divides the input array into two halves, sorts each half, and then merges the sorted halves back together. 
 
-The merge sort algorithm starts by dividing the original array into two halves. It then recursively sorts each half of the array by applying the same divide-and-conquer approach. This process continues until each subarray contains only one element, at which point they are considered sorted.
+Or, The merge sort algorithm applies the divide-and-conquer approach by first recursing downwards through successive recursive function calls dividing the array, when it reaches the base case and these function calls end, the array is in effective sorted order, and then recursing upwards returning from these function calls the divided arrays are merged back into the whole, now sorted, array.  
+
+Or, first dividing the original array into two halves, and then it recursively sorting each half of the array. This process continues until each subarray contains only one element, at which point the array has been sorted.
 
 Once each subarray is sorted, the algorithm merges them back together by comparing the first element of each subarray and selecting the smaller one to be added to the final sorted array. This process continues until all elements have been merged into a single sorted array.
-
-The recursive nature of the algorithm allows it to handle the sorting of subarrays in a more elegant and concise manner, which leads to more readable and maintainable code. By dividing the problem into smaller subproblems and solving each recursively, the algorithm can handle large arrays efficiently and with less code complexity.
 
 ---
 ### Time Complexity 
 
 > Please derive the best, average and worst case time complexity for mergesort
 
-Mergesort is a divide-and-conquer algorithm that recursively divides the input array into two halves, sorts each half, and then merges the sorted halves back together. The time complexity of mergesort can be analyzed in terms of the number of comparisons or the number of swaps performed during the algorithm. 
-- Best case time complexity: The best case occurs when the input array is already sorted. In this case, the algorithm only needs to compare adjacent elements and won't need to perform any swaps. The time complexity for this case is O(n log n). 
-- Average case time complexity: The average case occurs when the input array is unsorted and has no special structure. In this case, each element needs to be compared to every other element at least once, so the time complexity is O(n log n). 
-- Worst case time complexity: The worst case occurs when the input array is sorted in reverse order. In this case, each element needs to be compared to every other element, and every pair of adjacent elements needs to be swapped. This results in a time complexity of O(n log n).
+The time complexity of mergesort can be analyzed in terms of the number of comparisons or the number of swaps performed during the algorithm. 
 
-In summary, the best, average, and worst case time complexity of mergesort is O(n log n) for all cases.
+- **Best case time complexity:** when the input array is already sorted, the algorithm only needs to compare adjacent elements and won't need to perform any swaps, resulting in O(n log n) time complexity.
 
---- 
-> Is the best case time complexity very different ?
+- **Average case time complexity:** when the input array is unsorted, each element needs to be compared to every other element at least once, so the time complexity is O(n log n). 
 
-The best case time complexity of mergesort is significantly better than the worst case time complexity. In the best case scenario, when the input array is already sorted, mergesort takes advantage of this fact and skips the merging step. Instead, it simply returns the input array without any further processing. As a result, the best case time complexity of mergesort is O(n log n), which is the same as the average case time complexity.
+- **Worst case time complexity:** when the input array is sorted in reverse order, each element needs to be compared to every other element, and every pair of adjacent elements needs to be swapped with a time complexity of once again O(n log n).
 
-In contrast, the worst case time complexity of mergesort occurs when the input array is sorted in reverse order. In this case, mergesort has to perform the maximum number of comparisons and swaps, resulting in a time complexity of O(n log n).
+The best, average, and worst case time complexity of mergesort is O(n log n).
 
-It is worth noting that although the best case time complexity is significantly better than the worst case, in practice, the worst case rarely occurs. This is because in most real-world scenarios, the input array is not sorted in any particular order, and the average case time complexity of O(n log n) is a good estimate of the actual runtime of mergesort.
-
+In practice, the worst case rarely occurs, because the input array is usually not sorted in any particular order, so the average case time complexity of O(n log n) is a good estimate of the actual runtime of mergesort.
 
 ---
 ### Master Theorem 
@@ -111,14 +112,7 @@ The master theorem is a useful tool for analyzing the time complexity of many co
 ---
 ### Master Theorem for Mergesort 
 
-> Please explain the time complexity of mergesort with a recurrence relation of the form:
-
-T(n) = aT(n/b) + f(n)
-
-And please explain it in terms of the 'master theorem' in the form: 
-
-"where T(n) represents the running time of the algorithm on an input of size n, a is the number of subproblems at each level of recursion, b is the size of the subproblems relative to the original problem size, and f(n) is the cost of dividing the problem and combining the solutions."
-
+> Please explain the time complexity of mergesort in terms of the master theorem. 
 
 The time complexity of mergesort can be expressed by the recurrence relation:
 
@@ -143,7 +137,7 @@ In other words, the time complexity of mergesort is proportional to n times the 
 ---
 ### Proof By Mathematical Induction 
 
-> Could you show that rigorously by using mathematical induction for the worst case time complexity >
+> Could you show that rigorously by using mathematical induction for the worst case time complexity ?
 
 We can use mathematical induction to prove that the worst case time complexity of mergesort is O(n log n).
 
