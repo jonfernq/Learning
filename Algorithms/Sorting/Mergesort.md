@@ -3,6 +3,12 @@
 Table of Contents 
 - Pseudocode
 - Explanation
+- Time Complexity
+- Master Theorem
+- Master Theorem for Mergesort 
+- Proof by Mathematical Induction 
+- Iterative Pseudocode
+- References 
 
 ---
 ### Pseudocode 
