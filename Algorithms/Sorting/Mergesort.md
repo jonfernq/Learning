@@ -1,7 +1,69 @@
 ## Mergesort 
 
+Table of Contents 
+- Pseudocode
+- Explanation
 
 ---
+### Pseudocode 
+
+> Can pseudocode for mergesort be made concise by using recursion?
+
+Yes, the pseudocode for merge sort can be made more concise by using recursion. Here's a more concise pseudocode implementation of merge sort using recursion:
+
+```java
+merge_sort(arr):
+    if length(arr) > 1:
+        middle = length(arr) / 2
+
+        // Divide the array into two halves and sort them recursively
+        left_arr = merge_sort(arr[0:middle])
+        right_arr = merge_sort(arr[middle:length(arr)])
+
+        // Merge the sorted halves
+        arr = merge(left_arr, right_arr)
+
+    return arr
+
+merge(left_arr, right_arr):
+    merged_arr = []
+
+    // Merge the left and right subarrays into a single sorted array
+    while length(left_arr) > 0 and length(right_arr) > 0:
+        if left_arr[0] <= right_arr[0]:
+            merged_arr.append(left_arr[0])
+            left_arr = left_arr[1:]
+        else:
+            merged_arr.append(right_arr[0])
+            right_arr = right_arr[1:]
+
+    // Add any remaining elements from the left or right subarray
+    if length(left_arr) > 0:
+        merged_arr.extend(left_arr)
+    else:
+        merged_arr.extend(right_arr)
+
+    return merged_arr
+```
+
+In this implementation, the `merge_sort` function takes in the entire array to be sorted and recursively divides it into two halves until each half contains only one element. The `merge` function is used to merge the sorted subarrays back together into a single sorted array. The `append` method is used to add elements to the `merged_arr` list, and the `extend` method is used to add any remaining elements from the left or right subarray. This implementation is more concise because it uses recursion to handle the sorting and merging of subarrays, rather than iterating through the subarrays using a while loop.
+
+--- 
+### Explanation 
+
+> Please describe the essential idea behind the recursive version of mergesort above in plain English.
+
+The recursive version of merge sort works by dividing the array into halves, recursively sorting each half, and then merging the sorted halves back together into a single sorted array.
+
+The merge sort algorithm starts by dividing the original array into two halves. It then recursively sorts each half of the array by applying the same divide-and-conquer approach. This process continues until each subarray contains only one element, at which point they are considered sorted.
+
+Once each subarray is sorted, the algorithm merges them back together by comparing the first element of each subarray and selecting the smaller one to be added to the final sorted array. This process continues until all elements have been merged into a single sorted array.
+
+The recursive nature of the algorithm allows it to handle the sorting of subarrays in a more elegant and concise manner, which leads to more readable and maintainable code. By dividing the problem into smaller subproblems and solving each recursively, the algorithm can handle large arrays efficiently and with less code complexity.
+
+---
+### Time Complexity 
+
 > Please derive the best, average and worst case time complexity for mergesort
 
 Mergesort is a divide-and-conquer algorithm that recursively divides the input array into two halves, sorts each half, and then merges the sorted halves back together. The time complexity of mergesort can be analyzed in terms of the number of comparisons or the number of swaps performed during the algorithm. 
@@ -22,6 +84,8 @@ It is worth noting that although the best case time complexity is significantly 
 
 
 ---
+### Master Theorem 
+
 > Are you familiar with the 'master theorem' for deriving recurrence relations for recursively-defined algorithms?
 
 The master theorem is a powerful tool for analyzing the time complexity of algorithms that have a recurrence relation of the form:
@@ -39,6 +103,8 @@ The master theorem provides a framework for analyzing the time complexity of alg
 The master theorem is a useful tool for analyzing the time complexity of many common recursive algorithms, such as binary search, mergesort, and quicksort. However, it is not always applicable, and there are many cases where a more nuanced analysis is required. In such cases, it may be necessary to use other techniques, such as substitution, iteration, or the method of guessing and verifying.
 
 ---
+### Master Theorem for Mergesort 
+
 > Please explain the time complexity of mergesort with a recurrence relation of the form:
 
 T(n) = aT(n/b) + f(n)
@@ -109,3 +175,70 @@ T(n) <= 2dn log n - 2dn + dn
 T(n) <= 2dn log n
 
 Thus, we have shown that T(n) <= cn log n for some constant c and all n >= 1, where the inequality holds for sufficiently large n. This completes the proof that the worst case time complexity of mergesort is O(n log n).
+
+---
+### Iterative Pseudocode
+
+> Please provide me some iterative (non-recursive) pseudocode for mergesort
+
+Here's some pseudocode for the merge sort algorithm:
+
+```less
+
+merge_sort(arr, left, right)
+    if left < right:
+        middle = (left + right) / 2
+
+        // Sort the left half of the array recursively
+        merge_sort(arr, left, middle)
+
+        // Sort the right half of the array recursively
+        merge_sort(arr, middle + 1, right)
+
+        // Merge the sorted halves
+        merge(arr, left, middle, right)
+
+merge(arr, left, middle, right)
+    // Find the sizes of the left and right subarrays
+    n1 = middle - left + 1
+    n2 = right - middle
+
+    // Create temporary arrays for the left and right subarrays
+    left_arr[n1]
+    right_arr[n2]
+
+    // Copy the data from the original array to the temporary arrays
+    for i = 0 to n1
+        left_arr[i] = arr[left + i]
+    for j = 0 to n2
+        right_arr[j] = arr[middle + 1 + j]
+
+    // Merge the left and right subarrays back into the original array
+    i = 0
+    j = 0
+    k = left
+    while i < n1 and j < n2
+        if left_arr[i] <= right_arr[j]
+            arr[k] = left_arr[i]
+            i = i + 1
+        else
+            arr[k] = right_arr[j]
+            j = j + 1
+        k = k + 1
+
+    // Copy the remaining elements of the left subarray, if any
+    while i < n1
+        arr[k] = left_arr[i]
+        i = i + 1
+        k = k + 1
+
+    // Copy the remaining elements of the right subarray, if any
+    while j < n2
+        arr[k] = right_arr[j]
+        j = j + 1
+        k = k + 1
+```
+
+In this pseudocode, `arr` is the array to be sorted, `left` and `right` are the indices of the first and last elements of the subarray to be sorted, and `middle` is the index of the middle element of the subarray. The `merge_sort` function recursively sorts the left and right halves of the array, and then merges them back together using the `merge` function. The `merge` function takes in the temporary arrays `left_arr` and `right_arr`, which are used to hold the left and right subarrays while they are being merged.
+
+
