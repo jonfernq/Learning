@@ -103,7 +103,7 @@ where T(n) represents the running time of the algorithm on an input of size n, a
 
 The master theorem provides a framework for analyzing the time complexity of algorithms with such recurrence relations by dividing them into three cases, depending on the relative values of a, b, and f(n). The three cases are: 
 
-1. If f(n) = $ O(n^(log_b a - ε)) $ for some constant ε > 0, then $ T(n) = Θ(n^(log_b a)) $. 
+1. If f(n) = $O(n^(log_b a - ε))$ for some constant ε > 0, then $T(n) = Θ(n^(log_b a))$. 
 2. If f(n) = Θ(n^(log_b a)), then T(n) = Θ(n^(log_b a) log n). 
 3. If f(n) = Ω(n^(log_b a + ε)) for some constant ε > 0, and if a*f(n/b) ≤ c*f(n) for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).
 
