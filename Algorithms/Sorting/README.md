@@ -1,6 +1,7 @@
 ## Sorting 
 
 - [Mergesort](https://github.com/jonfernq/Learning/blob/main/Algorithms/Sorting/Mergesort.md) 
+- [Quicksort](https://github.com/jonfernq/Learning/blob/main/Algorithms/Sorting/Quicksort.md) 
 
 **Table of Contents:***
 - Quicksort, and a mergesort algorithm for time and space complexity, best, worst, and average case
