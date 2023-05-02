@@ -104,8 +104,8 @@ where T(n) represents the running time of the algorithm on an input of size n, a
 The master theorem provides a framework for analyzing the time complexity of algorithms with such recurrence relations by dividing them into three cases, depending on the relative values of a, b, and f(n). The three cases are: 
 
 1. If f(n) = $O(n^(log_b a - ε))$ for some constant ε > 0, then $T(n) = Θ(n^(log_b a))$. 
-2. If f(n) = Θ(n^(log_b a)), then T(n) = Θ(n^(log_b a) log n). 
-3. If f(n) = Ω(n^(log_b a + ε)) for some constant ε > 0, and if a*f(n/b) ≤ c*f(n) for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).
+2. If f(n) = $Θ(n^(log_b a))$, then T(n) = $Θ(n^(log_b a) log n)$. 
+3. If f(n) = $Ω(n^(log_b a + ε))$ for some constant ε > 0, and if $a*f(n/b) ≤ c*f(n)$ for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).
 
 The master theorem is a useful tool for analyzing the time complexity of many common recursive algorithms, such as binary search, mergesort, and quicksort. However, it is not always applicable, and there are many cases where a more nuanced analysis is required. In such cases, it may be necessary to use other techniques, such as substitution, iteration, or the method of guessing and verifying.
 
@@ -122,11 +122,11 @@ Here, a = 2 (since we are dividing the problem into two subproblems of equal siz
 
 To analyze the time complexity of mergesort using the master theorem, we need to compare the value of f(n) to n^(log_b a). In this case, we have:
 
-n^(log_b a) = n^(log_2 2) = n
+$n^(log_b a) = n^(log_2 2) = n$
 
 So, we need to compare f(n) to n. Since f(n) is Θ(n), we have:
 
-f(n) = Θ(n) = n^(log_b a)
+f(n) = Θ(n) = $n^(log_b a)$
 
 This means that we are in case 2 of the master theorem, which tells us that the time complexity of mergesort is:
 
