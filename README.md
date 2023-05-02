@@ -23,7 +23,7 @@ Multiple choice questions & notes for learning the intricacies of programming la
 
 - [Sphinx](https://github.com/jonfernq/Learning/tree/main/SphinxPythonDocumentation): Python documentation site standard, with Static Site Generation (SSG)
 
-- [Markdown](https://github.com/jonfernq/Learning/tree/main/Markdown)
+- [Markdown](https://github.com/jonfernq/Learning/blob/main/Markdown/README.md)
 
 - [Development Environments](https://github.com/jonfernq/Learning/tree/main/DevelopmentEnvironments)
 
