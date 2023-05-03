@@ -2,8 +2,8 @@
 
 ### COBOL Learning Material 
 
-- [Intro to COBOL](https://github.com/jonfernq/Learning/blob/main/COBOL/IntroCOBOL.md) 
 - [Getting Started](https://github.com/jonfernq/Learning/blob/main/COBOL/GettingStarted/README.md) 
+- [Intro to COBOL](https://github.com/jonfernq/Learning/blob/main/COBOL/IntroCOBOL.md) 
 - [Mental Map](https://github.com/jonfernq/Learning/blob/main/COBOL/COBOLMentalMap/README.md)
 - [CALL (COBOL) & GNUCobol: Static Linking with C Programs](https://github.com/jonfernq/Learning/blob/main/COBOL/CallCOBOL/README.md) 
 - [Interprocess Communication](https://github.com/jonfernq/Learning/blob/main/COBOL/InterprocessCommunicationCOBOL/README.md) 
