@@ -366,49 +366,56 @@ These components work together to provide the core functionality of Docker, incl
 
 A multi-layer software architecture diagram for Docker would typically include the following layers and their associated components:
 
-Container Layer:
+**Container Layer:**
 - **Container:** Represents the running instance of a Docker container.
 - **Containerd:** Containerd is a container runtime that manages the lifecycle of containers, including creating, starting, stopping, and deleting containers.
 - **runc:** runc is a command-line tool and a reference implementation for the Open Container Initiative (OCI) specification, which defines the standard for container runtimes.
-Docker Engine Core - **Layer:**
-Docker - **Engine:** The Docker Engine is the core component of Docker that provides container management functionality. It includes components such as libcontainerd, libnetwork, graph, and plugins as explained in the previous answer.
-Operating System - **Layer:**
-Linux - **Kernel:** The Linux kernel is the core of the host operating system and provides the foundational functionality for Docker, including namespaces, cgroups, and other Linux features that enable containerization.
-Host Operating System - **Layer:**
-Host Operating - **System:** The host operating system is the underlying operating system on which Docker is installed and running. It provides the necessary resources and services for Docker containers to run, such as CPU, memory, storage, and networking.
-Hardware - **Layer:**
-- **Hardware:** Represents the physical hardware infrastructure on which the host operating system and Docker containers are running, including servers, storage devices, and networking equipment.
-Networking - **Layer:**
-- **Networking:** Represents the networking infrastructure that enables communication between Docker containers, as well as communication between Docker containers and the host operating system, and communication with external networks.
+- 
+**Docker Engine Core Layer:**
+**Docker Engine:** The Docker Engine is the core component of Docker that provides container management functionality. It includes components such as libcontainerd, libnetwork, graph, and plugins as explained in the previous answer.
+
+**Operating System Layer:**
+**Linux Kernel:** The Linux kernel is the core of the host operating system and provides the foundational functionality for Docker, including namespaces, cgroups, and other Linux features that enable containerization.
+**Host Operating System Layer:**
+**Host Operating System:** The host operating system is the underlying operating system on which Docker is installed and running. It provides the necessary resources and services for Docker containers to run, such as CPU, memory, storage, and networking.
+
+**Hardware Layer:**
+**Hardware:** Represents the physical hardware infrastructure on which the host operating system and Docker containers are running, including servers, storage devices, and networking equipment.
+
+**Networking Layer:**
+**Networking:** Represents the networking infrastructure that enables communication between Docker containers, as well as communication between Docker containers and the host operating system, and communication with external networks.
+
 This is a simplified overview of a multi-layer software architecture diagram for Docker. The actual architecture may vary depending on the specific implementation, configuration, and deployment requirements.
 
+---
 > What is Container Orchestration?  How are Docker Compose, Swarm, and Kubernetes related to this? 
 
 Container orchestration is the process of managing, deploying, and scaling containerized applications across a cluster of machines or hosts. It involves automating the deployment, scaling, monitoring, and management of containers to ensure that applications run reliably and consistently in a distributed environment.
 
 Docker Compose, Docker Swarm, and Kubernetes are container orchestration tools that are commonly used in the Docker - **ecosystem:**
 
-Docker - **Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to define your application's services, networks, and volumes in a single Compose file, and then deploy and manage the entire application stack with a single command. Docker Compose is typically used for development and testing environments or small-scale deployments.
+**Docker Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to define your application's services, networks, and volumes in a single Compose file, and then deploy and manage the entire application stack with a single command. Docker Compose is typically used for development and testing environments or small-scale deployments.
 
-Docker - **Swarm:** Docker Swarm is the native container orchestration solution that is built into Docker. It allows you to create and manage a swarm of Docker nodes (machines) and deploy services (containers) across the swarm, providing features such as service discovery, load balancing, and automated scaling. Docker Swarm is designed to be simple and easy to set up, making it a good option for smaller deployments or organizations that are already familiar with Docker.
+**Docker Swarm:** Docker Swarm is the native container orchestration solution that is built into Docker. It allows you to create and manage a swarm of Docker nodes (machines) and deploy services (containers) across the swarm, providing features such as service discovery, load balancing, and automated scaling. Docker Swarm is designed to be simple and easy to set up, making it a good option for smaller deployments or organizations that are already familiar with Docker.
 
-- **Kubernetes:** Kubernetes is a popular open-source container orchestration platform that is widely used for managing containerized applications at scale. It provides a rich set of features for managing containers, including automated scaling, rolling updates, load balancing, service discovery, and self-healing. Kubernetes has a large and active community, and it is known for its flexibility, extensibility, and support for complex deployments. Kubernetes can be used with Docker as the container runtime, among other container runtimes.
+**Kubernetes:** Kubernetes is a popular open-source container orchestration platform that is widely used for managing containerized applications at scale. It provides a rich set of features for managing containers, including automated scaling, rolling updates, load balancing, service discovery, and self-healing. Kubernetes has a large and active community, and it is known for its flexibility, extensibility, and support for complex deployments. Kubernetes can be used with Docker as the container runtime, among other container runtimes.
 
 In summary, Docker Compose, Docker Swarm, and Kubernetes are container orchestration tools that provide different levels of complexity, scalability, and flexibility for managing containerized applications. Docker Compose is focused on single-host environments, Docker Swarm is built into Docker and provides native container orchestration capabilities, and Kubernetes is a powerful and widely adopted container orchestration platform that can work with Docker as the container runtime.
 
+---
 > Load balancing at the Container Orchestration level seems very similar to CPU scheduling at the Operating System level. What are the similarities and differences? 
 
 Load balancing in container orchestration and CPU scheduling in operating systems share some similarities, but they are also different in several key aspects.
 
-- **Similarities:**
+**Similarities:**
 
-Resource - **allocation:** Both load balancing in container orchestration and CPU scheduling in operating systems involve the allocation of resources, such as CPU, memory, and network bandwidth, to different processes or containers.
+**Resource allocation:** Both load balancing in container orchestration and CPU scheduling in operating systems involve the allocation of resources, such as CPU, memory, and network bandwidth, to different processes or containers.
 
 - **Optimization:** Both load balancing and CPU scheduling aim to optimize the utilization of available resources to ensure efficient and effective use of system resources.
 
 - **Scaling:** Both load balancing and CPU scheduling can involve scaling up or down resources based on demand, such as adding more containers or processes during peak periods and reducing resources during low demand.
 
-- **Differences:**
+**Differences:**
 
 - **Scope:** Load balancing in container orchestration is focused on distributing containerized applications across a cluster of machines or hosts, while CPU scheduling in operating systems is focused on managing the allocation of CPU resources among different processes on a single machine.
 
@@ -427,15 +434,16 @@ Here are some suggestions for books and web pages that you can refer to for furt
 
 Books:
 
-"Docker Deep Dive" by Nigel Poulton
-"The Docker Book: Containerization is the New Virtualization" by James Turnbull
-"Kubernetes: Up and Running" by Kelsey Hightower, Brendan Burns, and Joe Beda
-"Docker in Action" by Jeff Nickoloff
-"Containerization with Docker" by V. Subramaniam
+- "Docker Deep Dive" by Nigel Poulton
+- "The Docker Book: Containerization is the New Virtualization" by James Turnbull
+- "Kubernetes: Up and Running" by Kelsey Hightower, Brendan Burns, and Joe Beda
+- "Docker in Action" by Jeff Nickoloff
+- "Containerization with Docker" by V. Subramaniam
+
 Web pages:
 
-Docker's official documentation: https://docs.docker.com/
-Kubernetes' official documentation: https://kubernetes.io/docs/
-The Open Container Initiative (OCI) specifications: https://opencontainers.org/
-Docker GitHub repository: https://github.com/docker/docker
-Kubernetes GitHub repository: https://github.com/kubernetes/kubernetes
+- Docker's official documentation: https://docs.docker.com/
+- Kubernetes' official documentation: https://kubernetes.io/docs/
+- The Open Container Initiative (OCI) specifications: https://opencontainers.org/
+- Docker GitHub repository: https://github.com/docker/docker
+- Kubernetes GitHub repository: https://github.com/kubernetes/kubernetes
