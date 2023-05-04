@@ -2,7 +2,7 @@
 
 > In cloud computing and using a cloud platform for computational tasks, there seem to be two major - **alternatives:** Virtual Machines (VMs) and Docker Containers? Is this an accurate assessment? 
 
-Yes, your assessment is accurate. Virtual Machines (VMs) and Docker containers are two major alternatives in cloud computing for deploying computational tasks.
+Yes, Virtual Machines (VMs) and Docker containers are two major alternatives in cloud computing for deploying computational tasks.
 
 Virtual Machines (VMs) are essentially emulated computers that run on a physical host machine. They allow for the creation of multiple isolated virtual environments, each with its own operating system, applications, and resources. VMs provide a high level of abstraction and can run a wide range of operating systems and applications, making them flexible but also resource-intensive.
 
@@ -206,7 +206,7 @@ This separation of concerns between Docker images (blueprints) and Docker contai
 ---
 > Please provide an overview of the software architecture of Docker Containers, including Docker Daemons, Clients, Restful API, HTTP protocol, Registry, Hub, Ports and communication. 
 
-Here's an overview of the software architecture of Docker - **Containers:**
+Here's an overview of the software architecture of Docker Containers:
 
 **Docker Daemon:** The Docker daemon (dockerd) is a background process that runs on the host operating system and manages Docker containers, images, networks, and storage volumes. The Docker daemon exposes a RESTful API that allows clients to interact with it and perform various Docker operations.
 
@@ -345,7 +345,7 @@ These layering mechanisms in Docker allow for efficient and space-saving image m
 ---
 > In a so-called 'container plumbing' layer, the Docker Engine is said to consist of 'runc' spawning and running processes according to the Open Container Initiative (OCI) specification, and above that 'Container'. Could you elaborate and explain?  
 
-Certainly! The "container plumbing" layer in Docker typically consists of two main - **components:** runc and the Containerd container runtime.
+Certainly! The "container plumbing" layer in Docker typically consists of two main components: runc and the Containerd container runtime.
 
 - **runc:** runc is a lightweight, command-line tool that is part of the Docker ecosystem and is used to spawn and run processes inside containers according to the Open Container Initiative (OCI) specification. The OCI specification defines a standard interface for creating and running containers, and runc implements this specification by providing a low-level interface for starting, stopping, and managing container processes.
 runc leverages Linux namespaces and cgroups, which are kernel features, to provide container isolation and resource management. It is responsible for setting up the container's namespace, mounting the container's file system, and configuring resource limits using cgroups, among other tasks. Once the container is started, runc monitors the container process, handles signals, and manages the container's lifecycle, including stopping and deleting containers when they are no longer needed.
