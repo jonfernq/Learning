@@ -12,27 +12,28 @@ Both VMs and Docker containers have their strengths and weaknesses, and the choi
 
 > What are the key concepts for Docker Containers ? 
 
-Docker containers are based on containerization technology, which allows for packaging an application and its dependencies into a single, portable, and self-contained unit called a container. Here are some key concepts related to Docker - **containers:**
+Docker containers are based on containerization technology, which allows for packaging an application and its dependencies into a single, portable, and self-contained unit called a container. Here are some key concepts related to Docker containers:
 
-**Docker - Image:** A Docker image is a read-only template that contains everything needed to run a container, including the code, runtime, system tools, and libraries. Docker images are created from a set of instructions called a Dockerfile, which specifies the configuration and dependencies of the application. Docker images can be stored in container registries, such as Docker Hub or private registries, and can be pulled to create containers on any host machine.
+**Docker Image:** A Docker image is a read-only template that contains everything needed to run a container, including the code, runtime, system tools, and libraries. Docker images are created from a set of instructions called a Dockerfile, which specifies the configuration and dependencies of the application. Docker images can be stored in container registries, such as Docker Hub or private registries, and can be pulled to create containers on any host machine.
 
-**Docker - Container:** A Docker container is a runnable instance of a Docker image. It is a lightweight, standalone, and portable unit that includes the application and its dependencies, isolated from the host system and other containers. Docker containers provide consistent behavior across different environments, making them highly portable and easy to deploy. Containers can be started, stopped, restarted, and removed as needed, and they can be connected to various networks and storage volumes for communication and data persistence.
+**Docker Container:** A Docker container is a runnable instance of a Docker image. It is a lightweight, standalone, and portable unit that includes the application and its dependencies, isolated from the host system and other containers. Docker containers provide consistent behavior across different environments, making them highly portable and easy to deploy. Containers can be started, stopped, restarted, and removed as needed, and they can be connected to various networks and storage volumes for communication and data persistence.
 
-**Docker - Engine:** Docker Engine is the core component of Docker that allows for creating, running, and managing Docker containers. It includes a client-server architecture, where the Docker client communicates with the Docker daemon, which is responsible for building, running, and managing containers. Docker Engine provides a command-line interface (CLI) as well as APIs for interacting with containers and managing Docker resources.
+**Docker Engine:** Docker Engine is the core component of Docker that allows for creating, running, and managing Docker containers. It includes a client-server architecture, where the Docker client communicates with the Docker daemon, which is responsible for building, running, and managing containers. Docker Engine provides a command-line interface (CLI) as well as APIs for interacting with containers and managing Docker resources.
 
 - **Dockerfile:** A Dockerfile is a script-like text file that contains instructions for building a Docker image. It specifies the base image, application code, dependencies, configuration, and other settings for creating a Docker image. Dockerfiles follow a declarative syntax and can be versioned, shared, and used to automate the process of building Docker images.
 
-**Docker - Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. It allows for defining an entire application stack, including multiple services, networks, volumes, and configurations, in a single YAML file. Docker Compose provides a simple way to deploy and manage complex applications with multiple containers, making it easier to set up and manage multi-container environments.
+**Docker Compose:** Docker Compose is a tool for defining and running multi-container Docker applications. It allows for defining an entire application stack, including multiple services, networks, volumes, and configurations, in a single YAML file. Docker Compose provides a simple way to deploy and manage complex applications with multiple containers, making it easier to set up and manage multi-container environments.
 
-**Docker - Registry:** A Docker registry is a centralized repository for storing and sharing Docker images. Docker Hub is the default public Docker registry, which hosts a large number of Docker images for various applications and services. Private Docker registries can also be set up for storing and sharing custom Docker images within an organization or team, providing more control and security over the container images used in a deployment.
+**Docker Registry:** A Docker registry is a centralized repository for storing and sharing Docker images. Docker Hub is the default public Docker registry, which hosts a large number of Docker images for various applications and services. Private Docker registries can also be set up for storing and sharing custom Docker images within an organization or team, providing more control and security over the container images used in a deployment.
 
 These are some of the key concepts related to Docker containers, which form the foundation of Docker's containerization technology and enable the efficient packaging, deployment, and management of applications in a containerized environment.
 
+---
 > What are 'layers' and how do they relate to Docker Images? 
 
 In Docker, "layers" refer to the individual building blocks that make up a Docker image. Docker images are composed of multiple read-only layers stacked on top of each other, with each layer representing a discrete piece of the image's file system. These layers are created during the Docker image build process from the instructions specified in the Dockerfile.
 
-Layers in Docker images have the following - characteristics:
+Layers in Docker images have the following characteristics:
 
 **Layered-architecture:** Docker images use a layered architecture, where each instruction in the Dockerfile corresponds to a new layer that is added to the image. This means that Docker images are built incrementally, and each layer represents a change or modification to the previous layer. This allows for efficient storage and distribution of Docker images, as only the layers that are changed need to be stored or transferred, reducing duplication and improving performance.
 
@@ -46,24 +47,26 @@ Layers in Docker images have the following - characteristics:
 
 Layers are a fundamental concept in Docker images and play a crucial role in the efficiency, reproducibility, and scalability of Docker containerization. Understanding Docker layers and their relationship to Docker images is essential for effectively building, managing, and distributing Docker images in containerized environments.
 
+---
 > Could you provide some real-life common examples of layers in a Docker Image? For instance, would a Django app have a lightweight version of Linux as a low-level layer with Django on top of that? 
 
-Here's an example of how layers might be organized in a Docker image for a Django - **app:**
+Here's an example of how layers might be organized in a Docker image for a Django app:
 
-**Base Image - Layer:** The base image is typically the first layer in a Docker image and provides the foundation for the image. It usually includes a lightweight Linux distribution, such as Alpine, Debian, or Ubuntu, and may also include common system tools, libraries, and dependencies needed by the application.
+**Base Image Layer:** The base image is typically the first layer in a Docker image and provides the foundation for the image. It usually includes a lightweight Linux distribution, such as Alpine, Debian, or Ubuntu, and may also include common system tools, libraries, and dependencies needed by the application.
 
-**Application Code - Layer:** The next layer would contain the application code, including the Django framework and any custom Django apps or modules that make up the Django application. This layer is added on top of the base image layer and includes the application-specific files and directories required for running the Django app.
+**Application Code Layer:** The next layer would contain the application code, including the Django framework and any custom Django apps or modules that make up the Django application. This layer is added on top of the base image layer and includes the application-specific files and directories required for running the Django app.
 
-**Dependencies - Layer:** The Django app may require additional dependencies, such as Python packages, database drivers, or other runtime dependencies. These dependencies can be installed in a separate layer to isolate them from the application code and make them more reusable across multiple images.
+**Dependencies Layer:** The Django app may require additional dependencies, such as Python packages, database drivers, or other runtime dependencies. These dependencies can be installed in a separate layer to isolate them from the application code and make them more reusable across multiple images.
 
-**Configuration - Layer:** The configuration layer includes any configuration files, settings, or environment variables needed for the Django app to run properly. This layer can be added as a separate layer to keep the configuration separate from the application code, allowing for easier configuration management and updates.
+**Configuration Layer:** The configuration layer includes any configuration files, settings, or environment variables needed for the Django app to run properly. This layer can be added as a separate layer to keep the configuration separate from the application code, allowing for easier configuration management and updates.
 
-**Static Files - Layer:** If the Django app serves static files, such as CSS, JavaScript, or images, these files can be included in a separate layer to allow for efficient caching and distribution of static assets. This layer can be optimized for caching and may be shared across multiple images, reducing duplication and improving performance.
+**Static Files Layer:** If the Django app serves static files, such as CSS, JavaScript, or images, these files can be included in a separate layer to allow for efficient caching and distribution of static assets. This layer can be optimized for caching and may be shared across multiple images, reducing duplication and improving performance.
 
-**Customization - Layer:** If there are any customizations or modifications specific to the Django app, such as custom scripts, templates, or configurations, these can be included in a separate layer to maintain separation of concerns and allow for easy customization and updates.
+**Customization Layer:** If there are any customizations or modifications specific to the Django app, such as custom scripts, templates, or configurations, these can be included in a separate layer to maintain separation of concerns and allow for easy customization and updates.
 
 Each of these layers represents a discrete piece of the Docker image's file system, and changes made to any layer during the image build process result in the creation of a new layer. This allows for efficient storage, distribution, and caching of Docker images, and enables code reuse, modularity, and reproducibility in containerized environments.
 
+---
 > When using Docker Containers, how is data persistence between user sessions achieved? Through a Linux file system that persists between sessions in a particular layer? Or through a database? I heard that databases are ideally installed in their own separate container and Docker Compose used to integrate the app container with the database container. Is this accurate ? 
 
 In Docker containers, data persistence between user sessions is typically achieved using external volumes or Docker data volumes, rather than relying on changes to the container's file system or using separate containers for databases.
@@ -78,9 +81,10 @@ Using external volumes or Docker data volumes allows data to persist between con
 
 As for databases, it is generally recommended to run databases in separate containers rather than including them in the same container as the application. This follows the principle of containerization, where each container should have a single responsibility. Docker Compose, a tool for defining and running multi-container Docker applications, can be used to manage multiple containers as a single application stack, allowing for easy integration of the app container with the database container and other containers. This allows for scalability, flexibility, and separation of concerns in managing the application and its data in a containerized environment.
 
+---
 > So I understand that Docker Data Volumes allow containers to consume, produce, and modify a state., and also share that state with other containers. So it seems that Docker Data Volumes exist outside of containers and can be 'mounted' in a container, so they must consist of a Linux file system as well as other things ?  
 
-Yes, you are correct. Docker data volumes are created and managed outside of containers, and they can be mounted into containers as a directory or a file. Docker data volumes provide a persistent storage solution for containers and allow containers to consume, produce, and modify data, as well as share data with other containers.
+Yes, Docker data volumes are created and managed outside of containers, and they can be mounted into containers as a directory or a file. Docker data volumes provide a persistent storage solution for containers and allow containers to consume, produce, and modify data, as well as share data with other containers.
 
 Docker data volumes can consist of a Linux file system, which is created and managed by Docker on the host system. When a Docker data volume is mounted into a container, the container can read from and write to the file system in the volume, just like it would with any other directory or file on the container's file system.
 
@@ -88,6 +92,7 @@ In addition to the Linux file system, Docker data volumes can also include other
 
 Docker data volumes provide a way to separate the application data from the container, making it independent of the container's lifecycle. This allows for data persistence and portability across different containers, and also enables data sharing between containers, making it possible to implement complex multi-container applications and services using Docker.
 
+---
 > Specifically, which Linux file system do Docker Containers use? 
 
 Docker Containers use the file system of the host operating system on which they are running. When a container is started, it shares the kernel of the host system, and the container's file system is created as a lightweight, isolated layer on top of the host's file system.
@@ -96,6 +101,7 @@ The specific Linux file system used by Docker Containers depends on the host ope
 
 Docker does not use a separate or isolated file system for containers. Instead, it leverages the host's file system and adds a layer of isolation and abstraction using container technologies like namespaces and control groups (cgroups) to provide an isolated environment for running applications in containers. This allows containers to share the same file system as the host, while providing isolation and encapsulation for the application and its dependencies.
 
+---
 > Specifically, which Linux file system do Docker Data Volumes use? 
 
 Docker data volumes do not have a specific Linux file system associated with them. Docker data volumes are created and managed by Docker, and they provide a persistent storage solution that is independent of the container's file system and the host's file system.
@@ -106,6 +112,7 @@ The storage driver used for Docker data volumes depends on the Docker storage co
 
 It's important to note that Docker data volumes are not tied to a specific Linux file system, but rather provide a persistent storage abstraction that is independent of the underlying file system or storage technology. This allows for flexibility in choosing the appropriate storage backend for Docker data volumes based on the specific use case and requirements of the application.
 
+---
 > For portability between platforms which file system choice for Docker Data Volumes is best? 
 
 When it comes to portability between platforms, choosing a storage backend for Docker data volumes depends on various factors, such as the specific requirements of your application, the host operating systems you plan to run Docker on, and any constraints or limitations of the target platforms.
@@ -120,6 +127,7 @@ In general, it's recommended to choose storage backends for Docker data volumes 
 
 It's important to consider the specific requirements of your application, the available storage options on the target platforms, and the trade-offs in terms of performance, scalability, and management complexity when choosing a storage backend for Docker data volumes. It's also recommended to test and validate the chosen storage backend on the target platforms to ensure proper functionality and performance before deploying your Docker containers in production.
 
+---
 > So if, for instance, Django uses a PostgrSQL or SQLite database, is it best to put this in a Docker Data Volume or its own separate container? 
 
 When using Django with a PostgreSQL or SQLite database in a Docker environment, there are multiple approaches you can take for data persistence.
@@ -132,6 +140,7 @@ Both approaches have their pros and cons. Using a separate container for the dat
 
 Ultimately, the choice between these approaches depends on the specific requirements and constraints of your application, such as the need for isolation, scalability, backup, and management, as well as the level of complexity you are willing to manage in your Docker environment. It's recommended to carefully evaluate your application's needs and consider factors such as performance, scalability, manageability, and ease of deployment when deciding on the best approach for data persistence with Docker containers in your Django application.
 
+---
 > What are the key Docker commands and their purpose? What sequence are they typically issued in? 
 
 Docker provides a wide range of commands that allow you to interact with Docker images, containers, volumes, networks, and other Docker objects. Here are some key Docker commands and their purpose:
