@@ -1,6 +1,7 @@
 ## Operating Systems
 
 - [Linux Commands](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Linux/README.md) 
+- [GPUs & CUDA](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/GPUCUDA/README.md) 
 
 ### Unit 2. CPU Scheduling
 
