@@ -358,7 +358,6 @@ eventTrigger:
 ---
 > What books or articles help one get started with, learn, and master GCP Cloud functions ?
 
-ChatGPT: 
 - There are several resources available to get started with, learn, and master GCP Cloud Functions. Here are a few suggestions: 
 1. GCP documentation: The GCP documentation provides comprehensive guides and tutorials on Cloud Functions. The documentation covers everything from getting started to more advanced topics such as deploying functions with Terraform. 
 2. Google Cloud Functions - Getting Started: This book by Kuan-Chung Chen provides a step-by-step guide to building Cloud Functions using various languages including Node.js, Python, and Go. The book covers topics such as event-driven architectures, testing, and deployment. 
