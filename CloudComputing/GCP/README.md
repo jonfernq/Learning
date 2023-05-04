@@ -101,7 +101,7 @@ An identity is a representation of a user or service account that is used to aut
 In summary, IAM is used to manage access to GCP resources by defining and assigning roles and permissions to identities, such as users or service accounts. The IAM Console is the user interface for managing IAM resources in the Google Cloud Console.
 
 --- 
-What is a 'service account' ?
+> What is a 'service account' ?
 
 A service account is a special type of account in Google Cloud Platform (GCP) that is used to authenticate and authorize applications or services to access GCP resources. Service accounts are associated with projects, and can be used to grant permissions to applications or services to access GCP APIs, run workloads on compute instances, and access other GCP resources.
 
@@ -141,7 +141,7 @@ These predefined roles provide a set of commonly used permissions that can be as
 By using these predefined roles, you can easily manage access to GCP resources and ensure that users have only the permissions they need to perform their tasks.
 
 ---
-What is the 'principle of least privilege' ?  (a fundamental best practice in information security)
+> What is the 'principle of least privilege' ?  Is it a fundamental best practice in information security? 
 
 The principle of least privilege is a fundamental best practice in information security that recommends that a user or process should be granted only the minimum level of access necessary to perform its required tasks. This principle is also known as the "principle of minimal privilege."
 
