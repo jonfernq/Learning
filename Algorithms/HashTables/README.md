@@ -86,6 +86,11 @@ For example, if the table_size is 13, then a possible second hash function is h2
 which will always produce a value between 1 and 6.
 """
 ```
+**OUTPUT:**
+
+![linearprobing](https://github.com/jonfernq/Learning/assets/68504324/5e8c1cf5-5af3-41ea-9fa7-288c942c27a9)
+
+
 
 ### Double Hashing (Collision Resolution)
 
