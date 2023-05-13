@@ -90,8 +90,70 @@ which will always produce a value between 1 and 6.
 
 ![linearprobing](https://github.com/jonfernq/Learning/assets/68504324/5e8c1cf5-5af3-41ea-9fa7-288c942c27a9)
 
+---
+### Quadratic Probing (Collision Resolution)
+
+```
+# Define the hash table size and the keys to insert
+table_size = 11
+keys = [10, 22, 31, 4, 15, 28, 17, 88, 59]
+
+# Initialize the hash table with None values
+hash_table = [None] * table_size
+
+# Define the first hash function using the division method
+def h1(key):
+    return key % table_size
+
+# Define the second hash function using the auxiliary hash function
+# h2(k) = 7 - (k % 7),
+def h2(key):
+    return 7 - (key % 7)
+
+# Define the quadratic probing function
+def quadratic_probing(key, i):
+    # Use c1 = 1 and c2 = 3 as constants
+    c1 = 1
+    c2 = 3
+    return (h1(key) + c1 * i + c2 * i * i) % table_size
+
+# Define the insert function
+def insert(key):
+    # Try to insert the key at the first hash index
+    index = h1(key)
+    if hash_table[index] is None:
+        hash_table[index] = key
+        print(f"Inserted {key} at index {index}")
+    else:
+        # If there is a collision, use quadratic probing to find an alternative index
+        i = 1 # Initialize the probe number
+        while True:
+            # Calculate the new index using quadratic probing
+            index = quadratic_probing(key, i)
+            if hash_table[index] is None:
+                # If the new index is empty, insert the key there
+                hash_table[index] = key
+                print(f"Inserted {key} at index {index}")
+                break
+            else:
+                # If the new index is occupied, increment the probe number and try again
+                print(f"Index {index} occupied, {key} cannot be inserted in hash table: {hash_table}") 
+                i += 1
+
+# Insert all the keys into the hash table
+for key in keys:
+    insert(key)
+
+# Print the final hash table
+print(f"Final hash table: {hash_table}")
+```
+
+**OUTPUT:**
+
+![quadratichashing](https://github.com/jonfernq/Learning/assets/68504324/d05a43a0-adc2-402c-9751-e89f6b940071)
 
 
+---
 ### Double Hashing (Collision Resolution)
 
 
