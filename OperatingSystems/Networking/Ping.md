@@ -76,6 +76,16 @@ Source: Conversation with Bing, 5/13/2023
 ![pinglocalhost](https://github.com/jonfernq/Learning/assets/68504324/b58bbee4-eab3-4ddf-beb8-ab98321f8b32)
 
 ---
+> Comand: hostname
+
+![hostname](https://github.com/jonfernq/Learning/assets/68504324/f1fc78ec-72fa-4e36-a040-74ff0bc0108d)
+
+The command output shows the following information:
+
+- The hostname command is used to display or set the hostname of the system, which is a name that identifies the system on a network.
+- The output shows that the hostname of the system is DESKTOP-GBKF6GA, which is a string of characters that represents the system's name. This name may be assigned by the user, the administrator, or the operating system. It may also include a domain name or a suffix that indicates the network or organization that the system belongs to.
+- 
+---
 > Once you issue a ping command, why does it continue to the ping the host over and over again?
 
 The ping command may continue to ping the host over and over again for different reasons, depending on the operating system and the options used with the ping command. For example:
