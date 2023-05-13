@@ -8,6 +8,7 @@ A ping command is issued for the purpose of testing the connectivity and perform
 - Check to see if a webserver is up and running (TCP ping).
 - Network performance analysis.
 - Troubleshoot network problems.
+- Check if the elements of the network  (its interface cards, cabling, routing, and gateways) are working properly and how fast they are responding.
 
 ICMP packets are used by the ping command to test the connectivity and performance of a host on a network. Most network devices will reply to these packets by default, unless they are configured otherwise. Some network devices may ignore or block ICMP packets for security reasons, such as hiding their presence or preventing denial-of-service attacks. Firewalls may also filter ICMP packets to protect the network from unwanted traffic.
 
