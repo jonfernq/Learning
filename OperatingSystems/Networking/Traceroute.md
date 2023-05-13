@@ -46,7 +46,13 @@ A typical line in the traceroute command output means the following:
 
 ---
 
+> What is the meaning of longer 'traceroute' output lines with multiple IP addresses ? example: " 5  202.137.133.209 (202.137.133.209)  30.274 ms 202.137.133.217 (202.137.133.217)  44.166 ms 202.137.133.254 (202.137.133.254)  36.254 ms"
 
+A longer traceroute output line with multiple IP addresses means that there are multiple routers or gateways at the same hop that can forward the packet to the next hop. In this case, it means that the fifth hop has three possible paths to reach the sixth hop. Each IP address represents a different router or gateway at the same hop, and each RTT represents the time it took for the packet to reach that router or gateway and come back.
+
+This can happen when there is load balancing or redundancy in the network, which means that there are multiple routes available to distribute the traffic or to provide backup in case of failure. Traceroute may choose a different path for each packet, depending on the network conditions and routing protocols. Therefore, you may see different IP addresses and RTTs for each packet at the same hop..
+
+---
 
 
 
