@@ -41,4 +41,3 @@ The output of this 'ip a' command shows the following information:
 - The eth0 interface is an Ethernet interface, which is used for external communication with other devices on the network. It has an IPv4 address of 172.23.48.85 and an IPv6 address of fe80::215:5dff:fe40:a0c4. It also has a subnet mask of /20 and a broadcast address of 172.23.63.255. It is in the UP state and uses the mq queueing discipline (qdisc) to manage multiple transmit queues.
 - The tunl0 interface is a tunneling interface, which is used to encapsulate one protocol within another protocol for routing purposes. It uses the IP-in-IP protocol (ipip) to tunnel IP packets over IP networks. It has no MAC address or IP address assigned. It is in the DOWN state.
 - The sit0 interface is another tunneling interface, which is used to tunnel IPv6 packets over IPv4 networks using the IPv6-in-IPv4 protocol (sit). It also has no MAC address or IP address assigned. It is also in the DOWN state.
-- 
