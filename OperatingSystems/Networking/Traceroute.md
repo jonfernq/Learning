@@ -31,7 +31,21 @@ Source: Conversation with Bing, 5/13/2023
 
 ![traceroute1](https://github.com/jonfernq/Learning/assets/68504324/c1353bc6-29a5-45d3-9600-de372067e4b2)
 
+ Connecting from our machine to slashdot.org requires traversing 8 routers.
+ 
 ---
+
+> What does a typical line in the 'traceroute' command output mean? 
+> For example: " 2  192.168.100.1 (192.168.100.1)  2.725 ms  2.714 ms  2.716 ms"
+
+A typical line in the traceroute command output means the following:
+
+- The first number is the hop count, which indicates how many routers or gateways the packet has passed through to reach the destination. In this case, it is 2, which means this is the second hop.
+- The second part is the hostname and the IP address of the router or gateway that received and forwarded the packet. In this case, it is 192.168.100.1, which is a private IP address that belongs to a local network.
+- The third part is the round-trip time (RTT) of each packet sent to that hop, measured in milliseconds (ms). In this case, three packets were sent, and their RTTs were 2.725 ms, 2.714 ms, and 2.716 ms respectively. This shows how long it took for each packet to travel from the source to the hop and back. The lower the RTT, the faster the connection.
+
+---
+
 
 
 
