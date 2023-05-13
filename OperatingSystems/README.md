@@ -45,7 +45,7 @@
 - Compare and contrast different approaches to file organization, recognizing the strengths and weaknesses of each.
 - Create shell scripting commands to practice file manipulation.
 
-### Unit 6: Networking
+### [Unit 6: Networking](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/README.md)
 
 #### Topics
 
