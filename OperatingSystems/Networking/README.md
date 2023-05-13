@@ -6,4 +6,5 @@
 - [traceroute](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/Traceroute.md)
 - [ip](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/IP.md)
 - [netstat](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/Netstat.md)
+- [ifconfig](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/Ifconfig.md)
 - [who & whoami](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/Who.md)
