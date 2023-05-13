@@ -82,6 +82,33 @@ The output of this netstat command shows the following information:
 - The 172.23.48.0 entry is a network route, which is used to send packets to a specific network or subnet. It has no gateway, which means that the packets are sent directly to the destination without passing through a router. It has a genmask of 255.255.240.0, which means that only the destination addresses that start with 172.23.48.x to 172.23.63.x can match this route. It has a flag of U, which means that the route is up (active). It also has an interface of eth0, which is the Ethernet interface that connects to the network or subnet.
 
 ---
+> Please explain the options on the following commands: 
+netstat –t
+netstat –s –t
+netstat -i
+
+The options on the following commands are:
+
+- netstat –t: This command displays the network connections for the TCP protocol only. The TCP protocol is a connection-oriented protocol that provides reliable and ordered delivery of data between two endpoints. By default, netstat shows both TCP and UDP connections, but the -t option filters out the UDP connections.
+- netstat –s –t: This command displays the protocol statistics for the TCP protocol only. The protocol statistics show the number of packets and bytes sent and received for each protocol, as well as the errors and drops that occurred. The -s option enables the statistics mode, and the -t option filters out the other protocols except TCP.
+- netstat -i: This command displays the interface statistics for all network interfaces on the system. The interface statistics show the name, flags, IP address, MAC address, and traffic details of each network interface. The -i option enables the interface mode.
+
+---
+> Command: netstat -t 
+
+![netstat_t](https://github.com/jonfernq/Learning/assets/68504324/5f949795-b4f2-4ebf-a558-1a76ff93d88b)
+
+The output of this netstat command shows the following information:
+
+- The -t option is used to display the network connections for the TCP protocol only. However, there are no TCP connections on the system, so the first part of the output is empty.
+- The second part of the output shows the active UNIX domain sockets on the system. UNIX domain sockets are a type of inter-process communication (IPC) that allow processes on the same system to exchange data using a file-like interface. They are identified by a path name instead of an IP address and port number.
+- Each line of the output shows a different UNIX domain socket and its properties. The first column shows the protocol, which is always UNIX for UNIX domain sockets. The second column shows the reference count, which is the number of file descriptors that refer to the socket. The third column shows the flags, which indicate the state and type of the socket. The fourth column shows the type, which can be one of STREAM (reliable byte-stream), DGRAM (unreliable datagram), SEQPACKET (reliable datagram), or RAW (raw data). The fifth column shows the state, which can be one of FREE (not allocated), LISTENING (waiting for incoming connections), CONNECTING (actively trying to establish connection), CONNECTED (connection established), DISCONNECTING (connection closing), or UNKNOWN (unknown state). The sixth column shows the inode number, which is a unique identifier for the socket file. The seventh column shows the path name, which is the name of the socket file in the file system.
+- For example, the first line of the output shows a UNIX domain socket with a reference count of 3, no flags, a type of STREAM, a state of CONNECTED, an inode number of 19485, and no path name. This means that there are three file descriptors that refer to this socket, it is a reliable byte-stream socket, it has an established connection with another process on the system, and it has no name in the file system.
+
+---
+
+
+
 
 
 
