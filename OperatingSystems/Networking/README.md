@@ -1,18 +1,5 @@
 ## Networking
 
-> Pinging 'localhost' my computer:
-
-![pinglocalhost](https://github.com/jonfernq/Learning/assets/68504324/b58bbee4-eab3-4ddf-beb8-ab98321f8b32)
-
----
-> Once you issue a ping command, why does it continue to the ping the host over and over again?
-
-The ping command may continue to ping the host over and over again for different reasons, depending on the operating system and the options used with the ping command. For example:
-
-- In Windows, the ping command by default sends four packets to the host and then stops. However, if you use the -t option with the ping command, it will ping the host continuously until you press Ctrl+C to stop it. This option can be useful for monitoring the availability and performance of the host over time.
-- In Linux, macOS, and other Unix-like systems, the ping command by default sends packets to the host continuously until you press Ctrl+C to stop it. However, you can use the -c option with the ping command to specify the number of packets to send and then stop. This option can be useful for testing the connectivity and response time of the host in a single run.
-
----
 > What is this: 201.54.100.1 ?
 
 This is an IP address, which is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication¹. 
@@ -69,6 +56,20 @@ Source: Conversation with Bing, 5/13/2023
 > Pinging Google:
 
 ![pinggoogle](https://github.com/jonfernq/Learning/assets/68504324/e7b56e51-bac3-4bcb-bab1-55f6081231db)
+
+---
+> Pinging 'localhost' my computer:
+
+![pinglocalhost](https://github.com/jonfernq/Learning/assets/68504324/b58bbee4-eab3-4ddf-beb8-ab98321f8b32)
+
+---
+> Once you issue a ping command, why does it continue to the ping the host over and over again?
+
+The ping command may continue to ping the host over and over again for different reasons, depending on the operating system and the options used with the ping command. For example:
+
+- In Windows, the ping command by default sends four packets to the host and then stops. However, if you use the -t option with the ping command, it will ping the host continuously until you press Ctrl+C to stop it. This option can be useful for monitoring the availability and performance of the host over time.
+- In Linux, macOS, and other Unix-like systems, the ping command by default sends packets to the host continuously until you press Ctrl+C to stop it. However, you can use the -c option with the ping command to specify the number of packets to send and then stop. This option can be useful for testing the connectivity and response time of the host in a single run.
+
 
 
 
