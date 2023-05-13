@@ -41,7 +41,7 @@ mergesort, and quicksort.
 - Implement stacks and queues by using linked lists
 - Compare doubly linked lists with single linked lists in time and space complexity
 
-### Unit 6: Hash Tables and their Applications
+### [Unit 6: Hash Tables and their Applications](https://github.com/jonfernq/Learning/blob/main/Algorithms/HashTables/README.md)
 
 #### Topics
 - Direct address-tables
