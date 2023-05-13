@@ -1,8 +1,6 @@
 ## Ping Command
 
-## Networking
-
-> For what purpose are 'ping'commands issued?
+> For what purpose are 'ping' commands issued?
 
 A ping command is issued for the purpose of testing the connectivity and performance of a host on a network. A ping command works by sending ICMP packets to the host and listening for ICMP replies. The ping command shows you how long each packet took to make the round trip or tells you there was no reply. A ping command can help you to:
 
