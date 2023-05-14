@@ -63,4 +63,24 @@ Source: Conversation with Bing, 5/14/2023
 (5) Full-Stack TypeScript with tRPC and React - robinwieruch.de. https://www.robinwieruch.de/react-trpc/.
 
 ---
+> What are the principles of operation for RPC ? 
+
+The principles of operations for RPC are the following:
+
+- RPC is a form of client-server interaction, where the client invokes a procedure or function on the server as if it were a local call, without explicitly writing the details for the remote communication¹.
+- RPC uses a request-response message-passing system, where the client sends a request message containing the procedure name and parameters to the server, and the server sends back a response message containing the return value and any errors¹.
+- RPC uses stubs, which are special instances that act as proxies for the remote procedure on both sides. The client stub packs the parameters into a message and sends it to the server stub, which unpacks the parameters and calls the actual procedure. The server stub then packs the return value into a message and sends it back to the client stub, which unpacks it and returns it to the client².
+- RPC uses a low-level transport protocol, such as TCP/IP or UDP, to carry the message data between the client and the server. The transport protocol is responsible for ensuring reliable and efficient delivery of messages across the network³.
+- RPC uses various mechanisms to handle issues such as naming, binding, marshalling, security, concurrency, fault tolerance, and performance. These mechanisms may vary depending on the implementation and specification of RPC¹.
+
+You can learn more about the principles of operations for RPC in ¹, ², ³, and .
+
+Source: Conversation with Bing, 5/14/2023
+(1) Remote Procedure Call (RPC) - TechTarget. https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC.
+(2) Remote procedure call - Wikipedia. https://en.wikipedia.org/wiki/Remote_procedure_call.
+(3) RPC (remote procedure call): What’s behind the technology ... - IONOS. https://www.ionos.com/digitalguide/server/know-how/what-is-a-remote-procedure-call/.
+(4) Remote Procedure Call - IBM. https://www.ibm.com/docs/en/aix/7.1?topic=concepts-remote-procedure-call.
+
+---
+
 
