@@ -29,3 +29,38 @@ Source: Conversation with Bing, 5/14/2023
 (3) REST vs RPC: What problems are you trying to solve with your APIs?. https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-problems-are-you-trying-to-solve-with-your-apis.
 
 ---
+> Is RPC used for much nowadays ? 
+
+RPC is still used nowadays for various purposes, especially in distributed systems that require high performance, efficiency, and low latency. Some examples of RPC usage are:
+
+- gRPC: This is a modern, open-source RPC framework developed by Google that uses HTTP/2 and protocol buffers to enable fast and scalable communication between microservices. It supports various languages and platforms, such as C++, Java, Python, Go, Node.js, Android, and iOS. It also provides features such as authentication, load balancing, logging, and monitoring¹.
+- RMI: This stands for remote method invocation, which is a Java-specific implementation of RPC that allows objects to invoke methods on remote objects across the network. It uses object serialization and stubs to facilitate the communication between Java virtual machines. It also supports features such as garbage collection, security, and dynamic class loading².
+- DCOM: This stands for distributed component object model, which is a Microsoft technology that extends the component object model (COM) to support communication between COM components across the network. It uses a binary protocol and stubs to enable RPC between Windows applications. It also supports features such as security, transactions, events, and activation³.
+
+You can learn more about these and other RPC frameworks and technologies in ¹, ², ³, and .
+
+Source: Conversation with Bing, 5/14/2023
+(1) Remote procedure call (RPC) - Win32 apps | Microsoft Learn. https://learn.microsoft.com/en-us/windows/win32/rpc/rpc-start-page.
+(2) Remote procedure call - Wikipedia. https://en.wikipedia.org/wiki/Remote_procedure_call.
+(3) Remote Procedure Call (RPC) Protocol in Distributed System - Guru99. https://www.guru99.com/remote-procedure-call-rpc.html.
+(4) Remote Procedure Call (RPC) - TechTarget. https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC.
+
+---
+
+> Do you know about tRPC with Typescript? 
+
+Yes, I know about tRPC with TypeScript. tRPC stands for TypeScript Remote Procedure Call, which is a library that allows you to easily build and consume fully typesafe APIs without schemas or code generation. It leverages the power of TypeScript to infer and apply your endpoints and their types on both the client and the server. It also supports various features such as subscriptions, request batching, and framework agnosticism¹.
+
+tRPC is an alternative to traditional REST or GraphQL APIs, which require additional tools or steps to ensure typesafety across the network boundary. With tRPC, you can share types directly between your client and server, without relying on code generation or runtime overhead. tRPC is designed for full-stack TypeScript developers who want a simple and fast way to create typesafe APIs¹.
+
+You can learn more about tRPC and how to use it with TypeScript in ¹, ², ³, ⁴, and ⁵.
+
+Source: Conversation with Bing, 5/14/2023
+(1) Intro to tRPC: Integrated, full-stack TypeScript | InfoWorld. https://www.infoworld.com/article/3690275/intro-to-trpc-integrated-full-stack-typescript.html.
+(2) Build a full-stack TypeScript app using tRPC and React. https://blog.logrocket.com/build-full-stack-typescript-app-trpc-react/.
+(3) tRPC | tRPC. https://trpc.io/docs/.
+(4) Full-stack TypeScript with tRPC ft. Angular | AnyMind Group - Medium. https://medium.com/anymind-group/full-stack-typesscript-with-trpc-ft-angular-93ffc52685a5.
+(5) Full-Stack TypeScript with tRPC and React - robinwieruch.de. https://www.robinwieruch.de/react-trpc/.
+
+---
+
