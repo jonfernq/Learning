@@ -104,5 +104,11 @@ Source: Conversation with Bing, 5/14/2023
 
 ---
 
+**REFERENCES**
+
+Hailperin, M. (2019). Operating systems and middleware: Supporting controlled interaction. Thomson Learning, Inc.: San Francisco, CA .
+
+**Wikipedia:** Remote procedure call, Web service, Representational state transfer, Hypertext Transfer Protocol, SOAP, Amazon Web Services, Web Services Description Language 
+
 
 
