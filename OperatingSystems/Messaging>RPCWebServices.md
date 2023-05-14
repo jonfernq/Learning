@@ -103,6 +103,22 @@ Source: Conversation with Bing, 5/14/2023
 (7) What Are Web Services? Easy-to-Learn Concepts with Examples. https://www.cleo.com/blog/knowledge-base-web-services.
 
 ---
+> How are web services, APIs, and microservice architectures related ?
+
+
+Web services, APIs, and microservice architectures are related concepts that deal with the design and implementation of software systems that communicate and exchange data over the internet. Here is a brief explanation of how they are related:
+
+- **Web services**: These are software systems that expose their functionality through standardized web-based interfaces, such as REST or SOAP. Web services enable communication and data exchange between different applications or systems across the internet. Web services are a type of API that operates only via web communication¹.
+- **APIs**: These are sets of software functions and procedures that enable data transmission between any kinds of software products. APIs are the rules, routines, commands, and protocols that define how software components interact with each other. APIs can be web-based or non-web-based, depending on the underlying transport protocol².
+- **Microservice architectures**: These are architectural styles for developing applications as a collection of small, independent, and loosely coupled services. Each service is responsible for a specific functionality or domain and communicates with other services through APIs. Microservice architectures aim to improve the scalability, reliability, and maintainability of software systems by breaking them down into smaller and simpler units³.
+
+You can learn more about these concepts and how they work together in ¹, ², ³, and .
+
+Source: Conversation with Bing, 5/14/2023
+(1) Common web application architectures | Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures.
+(2) What Is Microservices Architecture? | Google Cloud. https://cloud.google.com/learn/what-is-microservices-architecture.
+(3) REST APIs vs Microservices: The Differences and How They Work Together. https://blog.dreamfactory.com/restful-api-and-microservices-the-differences-and-how-they-work-together/.
+---
 
 **REFERENCES**
 
