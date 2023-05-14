@@ -1,7 +1,5 @@
 ## Advanced JavaScript Questions
 
-Okay, I will try to create 10 difficult advanced Javascript multiple choice questions with answers that involve evaluating code. Here they are:
-
 1. What is the output of this code?
 
 ```javascript
