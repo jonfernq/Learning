@@ -30,4 +30,5 @@
 - [COBOL programming - tutorials, lectures, exercises, examples](http://www.csis.ul.ie/cobol/)
 - [GnuCOBOL Manual](https://gnucobol.sourceforge.io/)
 - [OpenCOBOL Manual](https://gnucobol.sourceforge.io/guides/OpenCOBOL%20Programmers%20Guide.pdf)
+- [SPF Editor](https://github.com/michaelknigge/spf-editor?fbclid=IwAR3IY9NqC0yKf3vwMzYoKNJzI_n3EPqGkvgxlxGP9vOVJbeEmTrZDexENMs) 
 
