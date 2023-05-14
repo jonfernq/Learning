@@ -118,6 +118,7 @@ Source: Conversation with Bing, 5/14/2023
 (1) Common web application architectures | Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures.
 (2) What Is Microservices Architecture? | Google Cloud. https://cloud.google.com/learn/what-is-microservices-architecture.
 (3) REST APIs vs Microservices: The Differences and How They Work Together. https://blog.dreamfactory.com/restful-api-and-microservices-the-differences-and-how-they-work-together/.
+
 ---
 
 **REFERENCES**
