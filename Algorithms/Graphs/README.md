@@ -11,10 +11,10 @@ Graphs are data structures that represent the relationship between various objec
 You can see some examples of these representations in ¹ and ³. You can also learn more about graphs and their properties in ² and ⁴.
 
 Source: Conversation with Bing, 5/14/2023
-(1) Representing graphs (article) | Algorithms | Khan Academy. https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs.
-(2) Graph Theory Graph Representations - javatpoint. https://www.javatpoint.com/graph-theory-graph-representations.
-(3) Describing graphs (article) | Algorithms | Khan Academy. https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/describing-graphs.
-(4) Graph Representation Tutorials & Notes | Algorithms | HackerEarth. https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/.
+- (1) Representing graphs (article) | Algorithms | Khan Academy. https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs.
+- (2) Graph Theory Graph Representations - javatpoint. https://www.javatpoint.com/graph-theory-graph-representations.
+- (3) Describing graphs (article) | Algorithms | Khan Academy. https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/describing-graphs.
+- (4) Graph Representation Tutorials & Notes | Algorithms | HackerEarth. https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/.
 
 ---
 
