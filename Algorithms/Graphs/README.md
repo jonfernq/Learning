@@ -55,4 +55,97 @@ Source: Conversation with Bing, 5/14/2023
 
 ---
 
+> Write a Python class that implements Dijkstra’s algorithm taking a directed graph  and a pair of nodes in the graph as input and returning  the shortest path.
+
+```
+import heapq
+
+class Dijkstra:
+    def __init__(self, graph):
+        # graph is a dictionary of dictionaries that maps each node to its neighbors and weights
+        self.graph = graph
+        # dist is a dictionary that maps each node to its current shortest distance from the source
+        self.dist = {}
+        # prev is a dictionary that maps each node to its previous node in the shortest path
+        self.prev = {}
+        # pq is a priority queue of tuples (distance, node) that stores the nodes to be visited
+        self.pq = []
+
+    def shortest_path(self, source, target):
+        # initialize the distances and previous nodes
+        for node in self.graph:
+            self.dist[node] = float('inf') # infinity
+            self.prev[node] = None
+        # set the distance of the source to 0 and add it to the priority queue
+        self.dist[source] = 0
+        heapq.heappush(self.pq, (0, source))
+        # loop until the priority queue is empty or the target is found
+        while self.pq:
+            # get the node with the minimum distance from the priority queue
+            distance, node = heapq.heappop(self.pq)
+            # if the node is the target, we are done
+            if node == target:
+                break
+            # otherwise, relax the edges from the node to its neighbors
+            for neighbor, weight in self.graph[node].items():
+                # calculate the new distance to the neighbor
+                new_distance = distance + weight
+                # if the new distance is smaller than the current distance, update it
+                if new_distance < self.dist[neighbor]:
+                    self.dist[neighbor] = new_distance
+                    self.prev[neighbor] = node
+                    # add the neighbor and its new distance to the priority queue
+                    heapq.heappush(self.pq, (new_distance, neighbor))
+        # if the target was not found, return None
+        if self.prev[target] is None:
+            return None
+        # otherwise, reconstruct the shortest path by following the previous nodes
+        path = []
+        node = target
+        while node is not None:
+            path.append(node)
+            node = self.prev[node]
+        # reverse the path and return it
+        path.reverse()
+        return path
+        
+graph = {
+    'A': {'B': 4, 'C': 2},
+    'B': {'C': 5, 'D': 10},
+    'C': {'E': 3},
+    'D': {'F': 11},
+    'E': {'D': 4},
+    'F': {}
+}
+
+dijkstra = Dijkstra(graph)
+path = dijkstra.shortest_path('A', 'F')
+print(path)
+
+# Output: ['A', 'C', 'E', 'D', 'F']
+# This means that the shortest path from A to F is A -> C -> E -> D -> F, with a total distance of 2 + 3 + 4 + 11 = 20.
+```
+
+The program above works as follows:
+
+- First, it creates a graph as a dictionary of dictionaries, where each key is a node and each value is another dictionary that maps its neighbors to their weights.
+- Then, it creates an instance of the Dijkstra class and passes the graph as an argument to the constructor. The constructor initializes three attributes: graph, dist, and prev. Graph is the same as the input graph. Dist is a dictionary that maps each node to its current shortest distance from the source node. Prev is a dictionary that maps each node to its previous node in the shortest path. The constructor also creates a priority queue (pq) that will store the nodes to be visited along with their distances.
+- Next, it calls the shortest_path method and passes the source node ('A') and the target node ('F') as arguments. The method does the following steps:
+  - It initializes the distances and previous nodes for all nodes in the graph. It sets the distance of the source node to 0 and the rest to infinity. It sets the previous node of all nodes to None.
+  - It adds the source node and its distance (0) to the priority queue.
+  - It loops until the priority queue is empty or the target node is found. In each iteration, it does the following steps:
+    - It pops the node with the minimum distance from the priority queue. This is the current node.
+    - If the current node is the target node, it breaks out of the loop.
+    - Otherwise, it loops through all the neighbors of the current node and their weights. For each neighbor, it does the following steps:
+      - It calculates the new distance to the neighbor by adding the current distance and the weight of the edge.
+      - If the new distance is smaller than the current distance of the neighbor, it updates its distance and previous node in the dist and prev dictionaries. It also adds the neighbor and its new distance to the priority queue.
+  - After the loop ends, it checks if there is a path from the source to the target by looking at the prev dictionary. If there is no path, it returns None.
+  - Otherwise, it reconstructs the shortest path by following the previous nodes from the target to the source and appending them to a list. It reverses the list and returns it as the output.
+
+That's how the program above works. I hope this explanation was clear and helpful. 😊
+
+
+
+
+
 
