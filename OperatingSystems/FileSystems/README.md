@@ -13,6 +13,8 @@
 - Minix
 - REFERENCES 
 
+- [Finding Files](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/FindingFiles.md)
+
 --- 
 > In general, how would you describe the concept of a 'file' in the file systems in operating systems?
 
