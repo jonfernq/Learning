@@ -54,7 +54,7 @@ mergesort, and quicksort.
 - Analyze types of hashing and hash functions
 - Apply collision resolution techniques
 
-### Unit 7: Graphs and Algorithms
+### [Unit 7: Graphs and Algorithms](https://github.com/jonfernq/Learning/blob/main/Algorithms/Graphs/README.md) 
 
 #### Topics
 - Representation of graphs
