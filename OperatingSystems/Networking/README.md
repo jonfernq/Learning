@@ -1,5 +1,7 @@
 ## Networking
 
+- [Effective Network Criteria](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/EffectiveNetworkCriteria.md)
+
 ### Linux Commands
 
 - [ping](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/Ping.md)
