@@ -64,7 +64,7 @@
 - Assess the criteria for effective networking.
 - Document the application of the ping command in a shell script.
 
-### Unit 7: Messaging, RPC, and Web Services
+### [Unit 7: Messaging, RPC, and Web Services](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/MessagingRPCWebServices/README.md)
 
 #### Topics
 
