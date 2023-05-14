@@ -89,10 +89,111 @@ D) ReferenceError
 
 Answer: A) true
 
----
-Explanations:
+Okay, I will create more questions on advanced Javascript. Here they are:
 
-Sure, I will explain the answers to the questions I created.
+6. What is the output of this code?
+
+```javascript
+let x = 1;
+let y = 2;
+let z = 3;
+function foo(a, b, c) {
+  a = 4;
+  b = 5;
+  c = 6;
+}
+foo(x, y, z);
+console.log(x + y + z);
+```
+
+A) 6
+B) 9
+C) 12
+D) 15
+
+Answer: A) 6
+
+7. What is the output of this code?
+
+```javascript
+let x = { name: "foo" };
+let y = { name: "bar" };
+let z = x;
+z.name = "baz";
+console.log(x.name);
+```
+
+A) foo
+B) bar
+C) baz
+D) undefined
+
+Answer: C) baz
+
+8. What is the output of this code?
+
+```javascript
+let x = [1, 2, 3];
+let y = [4, 5, 6];
+let z = [...x, ...y];
+console.log(z.length);
+```
+
+A) 3
+B) 4
+C) 5
+D) 6
+
+Answer: D) 6
+
+9. What is the output of this code?
+
+```javascript
+function foo() {
+  console.log(this);
+}
+
+let obj = { name: "bar" };
+let baz = foo.bind(obj);
+baz.call(6);
+```
+
+A) undefined
+B) window
+C) { name: "bar" }
+D) { name: "foo" }
+
+Answer: C) { name: "bar" }
+
+10. What is the output of this code?
+
+```javascript
+function foo() {
+  let x = 1;
+  function bar() {
+    let x = 2;
+    function baz() {
+      let x = 3;
+      console.log(x);
+    }
+    baz();
+    console.log(x);
+  }
+  bar();
+  console.log(x);
+}
+foo();
+```
+
+A) 1, 2, 3
+B) 3, 2, 1
+C) 1, 1, 1
+D) 3, 3, 3
+
+Answer: B) 3, 2, 1
+
+---
+**Explanations:**
 
 1. The output is 6 because the array destructuring syntax swaps the values of x, y, and z. So x becomes 3, y becomes 1, and z becomes 2. Then the sum of x + y + z is 6.
 
@@ -103,4 +204,16 @@ Sure, I will explain the answers to the questions I created.
 4. The output is 3 because the bind method returns a new function that has a preset argument of 1. So when bar(2) is called, it is equivalent to foo(1, 2), which returns 1 + 2 = 3.
 
 5. The output is true because the template literal syntax creates a string that is identical to the concatenation of x and y. So z === x + y evaluates to true.
+
+6. The output is 9 because the parameters of the foo function are passed by value, not by reference. So changing the values of a, b, and c inside the function does not affect the values of x, y, and z outside the function. The sum of x + y + z is still 1 + 2 + 3 = 9.
+
+7. The output is baz because the variables x and z point to the same object in memory. So changing the name property of z also changes the name property of x. The console.log(x.name) prints baz.
+
+8. The output is 6 because the spread operator (...) creates a new array that contains all the elements of x and y. The length of z is 3 + 3 = 6.
+
+9. The output is { name: "bar" } because the bind method returns a new function that has a fixed this value of obj. So calling baz with any other value of this does not change the this value inside foo. The console.log(this) prints obj.
+
+10. The output is 3, 2, 1 because the variable x is declared with let in each scope, creating a new binding for each x. The console.log(x) prints the value of x in the closest scope. So baz prints 3, bar prints 2, and foo prints 1.
+
+
 
