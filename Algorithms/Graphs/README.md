@@ -1,5 +1,12 @@
 ## Graph Algorithms
 
+Table of Contents 
+- Graph Representation
+- Dijkstra’s shortest path algorithm
+- Applications 
+- Python Object-Oriented Implementation
+
+---
 > How are graphs represented in graph algorithms?
 
 Graphs are data structures that represent the relationship between various objects. Graphs can be represented in different ways depending on the situation and the algorithm that we want to run on them. Here are some common ways to represent graphs:
@@ -55,7 +62,7 @@ Source: Conversation with Bing, 5/14/2023
 
 ---
 
-> Write a Python class that implements Dijkstra’s algorithm taking a directed graph  and a pair of nodes in the graph as input and returning  the shortest path.
+> Write a Python class that implements Dijkstra’s algorithm taking a directed graph and a pair of nodes in the graph as input and returning  the shortest path.
 
 ```
 import heapq
