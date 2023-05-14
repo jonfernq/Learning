@@ -1,6 +1,7 @@
 ## Networking
 
 - [Effective Network Criteria](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/Networking/EffectiveNetworkCriteria.md)
+- [Finding Files](https://github.com/jonfernq/Learning/blob/main/OperatingSystems/FindingFiles.md)
 
 ### Linux Commands
 
