@@ -17,7 +17,7 @@ B) 9
 C) 12
 D) 15
 
-Answer: B) 9
+Answer: A) 6
 
 2. What is the output of this code?
 
@@ -94,7 +94,7 @@ Explanations:
 
 Sure, I will explain the answers to the questions I created.
 
-1. The output is 9 because the array destructuring syntax swaps the values of x, y, and z. So x becomes 3, y becomes 1, and z becomes 2. Then the sum of x + y + z is 9.
+1. The output is 6 because the array destructuring syntax swaps the values of x, y, and z. So x becomes 3, y becomes 1, and z becomes 2. Then the sum of x + y + z is 6.
 
 2. The output is { name: "bar" } because the arrow function inherits the this value from the outer scope, which is set by the call method to obj. So the console.log(this) prints the obj object.
 
