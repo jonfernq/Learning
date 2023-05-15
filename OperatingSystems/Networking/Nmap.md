@@ -16,6 +16,25 @@ The nmap command can take one or more arguments that specify the target(s) to sc
 
 Therefore, the nmap command below can take two arguments: ip-address and server-ip-address because they are both valid targets to scan. The ip-address argument can be any IP address of a host or a network range to scan, and the server-ip-address argument can be any IP address of a server or a domain name of a server to scan.
   
+---
+Command would only run in 'sudo' mode: 
+  
+> sudo nmap slashdot.org  
+  
+  ![nmap](https://github.com/jonfernq/Learning/assets/68504324/7d2f0fd7-7c49-469a-b2b5-b49e4e023b13)
+
+  The output of the nmap command shows the following information:
+
+- The version of nmap that is used and the website of nmap
+- The date and time of the scan and the time zone
+- The scan report for the target domain name (slashdot.org) and its IP address (104.18.29.86)
+- The host status (up) and the latency (0.54s)
+- The other IP address for slashdot.org that is not scanned (104.18.28.86)
+- The number of ports that are not shown because they are filtered by a firewall or a router (996)
+- The four ports that are open and their services (80 for http, 443 for https, 8080 for http-proxy, and 8443 for https-alt)
+
+The output indicates that slashdot.org is online and has four web-related services running on different ports. It also indicates that most of the ports are filtered and not accessible by nmap.
+  
   
   
   
