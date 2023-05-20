@@ -197,3 +197,27 @@ These books provide a good foundation in understanding social influence, opinion
 
 
 
+* * *
+
+**You:**
+
+What kind of social network graphs do the above systems employ? Are they directed or undirected ? 
+
+* * *
+
+**ChatGPT:**
+
+The kind of social network graphs employed in social influence and opinion analysis can vary depending on the specific application and research context. Both directed and undirected graphs can be used, depending on the nature of the relationships being modeled. Here's an overview:
+
+1.  Undirected Social Network Graphs: In undirected social network graphs, the edges do not have a specific direction and represent symmetric relationships between individuals. These graphs are commonly used when the relationships between individuals are considered as symmetric or bidirectional. For example, in a friendship network, where the edges represent friendships between individuals, an undirected graph is often used to capture the mutual nature of the relationships.
+    
+2.  Directed Social Network Graphs: In directed social network graphs, the edges have a specific direction, indicating the asymmetric relationships between individuals. These graphs are used when the relationships between individuals have a directional aspect. For instance, in networks where one individual can influence another or when studying information flow, directed graphs are suitable. In this case, the edges represent the influence or information transfer from one individual to another.
+    
+
+It's important to note that the choice of whether to use directed or undirected graphs depends on the specific research question, the nature of the relationships being modeled, and the objectives of the analysis. Sometimes, a combination of both directed and undirected edges may be used to capture different aspects of the social relationships.
+
+Furthermore, within these social network graphs, additional attributes or properties can be associated with nodes or edges to represent characteristics such as opinions, sentiments, or other relevant information. These attributes can provide additional context for studying social influence and opinion analysis within the network structure.
+
+Ultimately, the choice between directed or undirected graphs in social influence and opinion analysis depends on the specific research goals, the nature of the relationships being modeled, and the insights sought from the analysis.
+
+
