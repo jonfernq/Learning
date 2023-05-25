@@ -54,6 +54,7 @@ Here's how it works on our example:
 ---
 > Can you write pseudocode for the Naive or Brute Force Algorithm for Pattern Searching?
 
+```
 NaivePatternSearch(T, P):
     n = length(T)
     m = length(P)
@@ -63,7 +64,7 @@ NaivePatternSearch(T, P):
             j = j + 1
         if j = m:
             print "Pattern found at index ", i
-
+```
 ---
 
 > Here's the pseudocode for the Rabin-Karp Algorithm for Pattern Searching:
