@@ -67,7 +67,7 @@ mergesort, and quicksort.
 - Analyze Dijkstra’s algorithm on a directed graph to find the shortest path
 - Build a Binary Search Tree (BST) and Traversing BST by in-order, pre-order, and post-order
 
-### Unit 8: String Matching Algorithms
+### [Unit 8: String Matching Algorithms](https://github.com/jonfernq/Learning/blob/main/Algorithms/StringMatching/README.md)
 
 #### Topics
 - String matching with the naive or brute force algorithm for pattern searching
