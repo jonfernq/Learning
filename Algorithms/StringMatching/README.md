@@ -32,3 +32,25 @@ Source: Conversation with Bing, 5/25/2023
 (2) Rabin-Karp Algorithm for Pattern Searching - GeeksforGeeks. https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/.
 (3) Rabin–Karp algorithm - Wikipedia. https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm.
 (4) Rabin-Karp and Knuth-Morris-Pratt Algorithms - Topcoder. https://www.topcoder.com/community/competitive-programming/tutorials/introduction-to-string-searching-algorithms/.
+
+---
+> Using a Word document, illustrate the Karp-Rabin algorithm on T= AABAACAADAABAAABAA and P= AABA. Be sure to show each step of the process in your illustration.
+
+Here's how the Karp-Rabin algorithm works on T= AABAACAADAABAAABAA and P= AABA:
+
+1. Calculate the hash value of the pattern P. Let's say it is hP.
+2. Calculate the hash value of the first substring of T that is of the same length as P. Let's say it is hT.
+3. Compare hP and hT. If they are equal, compare each character of P with the corresponding character of T. If they all match, then we have found a match.
+4. If hP and hT are not equal, slide the window one position to the right and calculate the new hash value of the substring of T that is now under consideration. Let's say it is hT'.
+5. Repeat steps 3-4 until either a match is found or all substrings of T have been considered.
+
+Here's how it works on our example:
+
+1. The hash value of AABA is 1*2^3 + 1*2^2 + 2*2^1 + 0*2^0 = 8+4+4+0 = 16.
+2. The hash value of AABA in T is 1*2^3 + 1*2^2 + 2*2^1 + 0*2^0 = 8+4+4+0 = 16.
+3. Since hP and hT are equal, we compare each character of P with the corresponding character of T. They all match, so we have found a match.
+4. We stop here since we have found a match.
+
+
+
+
