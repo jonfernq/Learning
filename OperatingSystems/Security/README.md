@@ -14,14 +14,13 @@ There are several ways to make an operating system more secure. Here are some of
 
 In addition to these measures, operating system hardening is also important for security. This involves patching and implementing advanced security measures to secure a server’s operating system (OS). One of the best ways to achieve a hardened state for the operating system is to have updates, patches, and service packs installed automatically².
 
-I hope this helps!
-
 Source: Conversation with Bing, 5/25/2023
 (1) How to Secure Your Operating System (OS) - Trenton Systems. https://www.trentonsystems.com/blog/secure-your-operating-system.
 (2) Discuss how you can make an operating system OS more secure Think - Studocu. https://www.studocu.com/en-us/messages/question/2893604/discuss-how-you-can-make-an-operating-system-os-more-secure-think-about-files-system-virtual.
 (3) Windows operating system security | Microsoft Learn. https://learn.microsoft.com/en-us/windows/security/operating-system.
 (4) Keep your computer secure at home - Microsoft Support. https://support.microsoft.com/en-us/windows/keep-your-computer-secure-at-home-c348f24f-a4f0-de5d-9e4a-e0fc156ab221.
 ---
+
 > Are there any aspects of operating system (os) design that you think will make your OS design more secure than today's OSes? Please explain.
 
 There are several aspects of operating system design that can make an OS more secure. Here are some of them:
