@@ -51,6 +51,40 @@ Here's how it works on our example:
 3. Since hP and hT are equal, we compare each character of P with the corresponding character of T. They all match, so we have found a match.
 4. We stop here since we have found a match.
 
+---
+> Can you write pseudocode for the Naive or Brute Force Algorithm for Pattern Searching?
+
+NaivePatternSearch(T, P):
+    n = length(T)
+    m = length(P)
+    for i = 0 to n-m:
+        j = 0
+        while j < m and T[i+j] = P[j]:
+            j = j + 1
+        if j = m:
+            print "Pattern found at index ", i
+
+---
+
+> Here's the pseudocode for the Rabin-Karp Algorithm for Pattern Searching:
+
+```
+RabinKarp(T, P):
+    n = length(T)
+    m = length(P)
+    hP = hash(P)
+    for i = 0 to n-m:
+        hT = hash(T[i:i+m])
+        if hT = hP:
+            if T[i:i+m] = P:
+                print "Pattern found at index ", i
+    return
+```
+
+Here, T is the text and P is the pattern we are searching for. The algorithm calculates the hash value of the pattern and then compares it with the hash value of each substring of T that is of the same length as P. If the hash values match, then we compare each character of P with the corresponding character of T. If they all match, then we have found a match.
+
+
+
 
 
 
