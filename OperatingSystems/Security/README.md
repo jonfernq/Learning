@@ -1,6 +1,49 @@
 ## Security 
 
+> Discuss how you can make an operating system (OS) more secure. Think about files system, virtual memory, etc.
 
+There are several ways to make an operating system more secure. Here are some of them:
+
+1. Use security keys.
+2. Use strong usernames and passwords.
+3. Use biometric security mechanisms such as fingerprints and retina scanners.
+4. Use multi-factor authentication.
+5. Use virtualization.
+6. Check the file systems of the OS regularly for consistency.
+7. Use virtual memory to ensure the proper functioning of a PC.
+
+In addition to these measures, operating system hardening is also important for security. This involves patching and implementing advanced security measures to secure a server’s operating system (OS). One of the best ways to achieve a hardened state for the operating system is to have updates, patches, and service packs installed automatically².
+
+I hope this helps!
+
+Source: Conversation with Bing, 5/25/2023
+(1) How to Secure Your Operating System (OS) - Trenton Systems. https://www.trentonsystems.com/blog/secure-your-operating-system.
+(2) Discuss how you can make an operating system OS more secure Think - Studocu. https://www.studocu.com/en-us/messages/question/2893604/discuss-how-you-can-make-an-operating-system-os-more-secure-think-about-files-system-virtual.
+(3) Windows operating system security | Microsoft Learn. https://learn.microsoft.com/en-us/windows/security/operating-system.
+(4) Keep your computer secure at home - Microsoft Support. https://support.microsoft.com/en-us/windows/keep-your-computer-secure-at-home-c348f24f-a4f0-de5d-9e4a-e0fc156ab221.
+---
+> Are there any aspects of operating system (os) design that you think will make your OS design more secure than today's OSes? Please explain.
+
+There are several aspects of operating system design that can make an OS more secure. Here are some of them:
+
+1. Use of virtualization technology.
+2. Use of sandboxing techniques.
+3. Use of secure boot mechanisms.
+4. Use of trusted computing modules.
+5. Use of hardware-based security mechanisms.
+6. Use of secure coding practices.
+
+These are just some examples of how operating system design can be improved to make an OS more secure³. However, it is important to note that there is no single solution to security and that a combination of different measures is often required.
+
+I hope this helps!
+
+Source: Conversation with Bing, 5/25/2023
+(1) Steps to a secure operating system | Computerworld. https://www.computerworld.com/article/2571939/steps-to-a-secure-operating-system.html.
+(2) Windows operating system security | Microsoft Learn. https://learn.microsoft.com/en-us/windows/security/operating-system.
+(3) How to Secure Your Operating System (OS) - Trenton Systems. https://www.trentonsystems.com/blog/secure-your-operating-system.
+
+
+---
 ---
 > What is the notion of 'exploit in computer security?
 
