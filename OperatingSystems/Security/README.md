@@ -165,3 +165,32 @@ The certification is recognized by many organizations and is a valuable credenti
 EC-Council offers the Certified Ethical Hacker (CEH) program, which is designed to provide individuals with the knowledge and skills necessary to identify and exploit vulnerabilities in computer systems using the same tools and techniques as malicious hackers. The program covers topics such as footprinting and reconnaissance, network scanning, enumeration, system hacking, web application hacking, and social engineering.
 
 Offensive Security offers the Offensive Security Certified Professional (OSCP) certification, which is considered one of the most rigorous and challenging ethical hacking certifications available. The program requires participants to complete a hands-on penetration testing exam in which they must identify and exploit vulnerabilities in a controlled environment. The program covers topics such as network and web application penetration testing, exploit development, and client-side attacks.
+
+---
+### Bibliography 
+
+Here are some widely recommended textbooks on computer security, including the book by William Stallings:
+
+1. "Computer Security: Principles and Practice" by William Stallings and Lawrie Brown
+    
+    * This comprehensive textbook covers various aspects of computer security, including cryptography, access control, network security, and more. It provides a solid foundation in security principles and practices.
+2. "Security Engineering: A Guide to Building Dependable Distributed Systems" by Ross Anderson
+    
+    * This book explores the engineering principles and techniques behind designing secure systems. It covers topics such as cryptography, secure protocols, access control, and system vulnerabilities.
+3. "Cryptography and Network Security: Principles and Practice" by William Stallings
+    
+    * Focused on cryptography and network security, this book provides a comprehensive introduction to cryptographic algorithms, network protocols, authentication, and security management.
+4. "Practical Cryptography" by Bruce Schneier and Niels Ferguson
+    
+    * This book offers a practical approach to cryptography, covering topics such as symmetric and asymmetric encryption, key management, digital signatures, and cryptographic protocols.
+5. "Network Security: Private Communication in a Public World" by Charlie Kaufman, Radia Perlman, and Mike Speciner
+    
+    * This book provides a comprehensive overview of network security, including secure communication protocols, VPNs, firewalls, intrusion detection systems, and secure email.
+6. "Security in Computing" by Charles P. Pfleeger and Shari Lawrence Pfleeger
+    
+    * This textbook covers a broad range of security topics, including cryptography, access control, software security, database security, and risk management.
+7. "Web Application Security: A Beginner's Guide" by Bryan Sullivan and Vincent Liu
+    
+    * Focused on web application security, this book introduces common vulnerabilities, secure coding practices, web security testing, and strategies for protecting web applications.
+
+
