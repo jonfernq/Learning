@@ -11,6 +11,7 @@
 - [Computational Social Science](https://github.com/jonfernq/Learning/blob/main/ComputationalSocialScience/README.md)
 - [Mathematics Education](https://github.com/jonfernq/Learning/blob/main/MathematicsEducation/README.md)
 - [Veterinary Medicine](https://github.com/jonfernq/Learning/blob/main/VeterinaryMedicine/README.md) 
+- [Bicycling](https://github.com/jonfernq/Learning/blob/main/Bicycling/README.md)
 
 ### English Teaching
 
