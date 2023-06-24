@@ -178,9 +178,11 @@ With these commands, you can create the database instance, configure read replic
 ---
 **REFERENCES**
 
-Amazon Web Services (2021). AWS Serverless Multi-Tier Architectures With Amazon API Gateway and AWS Lambda. Amazon Web Services (AWS). https://d0.awsstatic.com/whitepapers/AWS_Serverless_Multi-Tier_Architectures.pdf
+Amazon Web Services (2021). **AWS Serverless Multi-Tier Architectures With Amazon API Gateway and AWS Lambda.** Amazon Web Services (AWS). https://d0.awsstatic.com/whitepapers/AWS_Serverless_Multi-Tier_Architectures.pdf
 
 Medium (2023, January 19). "How to Build a 3 Tier Architecture in AWS. AWS in Plain English." Retrieved June 25, 2023, from https://aws.plainenglish.io/
+
+Shrivastava S. Srivastav N. Artasanchez A. Sayed I. & Choubey S. (2023). *Aws for solutions architects : the definitive guide to aws solutions architecture for migrating to building scaling and succeeding in the cloud* (Second Edition). Packt Publishing. Retrieved June 24 2023 from https://www.oreilly.com/library/view/-/9781803238951/.
 
 
 
