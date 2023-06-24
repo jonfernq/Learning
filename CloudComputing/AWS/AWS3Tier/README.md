@@ -175,7 +175,8 @@ aws ec2 authorize-security-group-ingress --group-id <database-security-group-id>
 
 Note: Replace `<database-security-group-id>` with the ID of the security group associated with the database instance, `<port>` with the port number used by your database engine (e.g., 3306 for MySQL), and `<source-security-group>` with the ID of the security group associated with your application instances.
 
-With these commands, you can create the database instance, configure read replicas if necessary, and set up the necessary security group rules to allow inbound access to the database from your application instances. 
+With these commands, you can create the database instance, configure read replicas if necessary, and set up the necessary security group rules to allow inbound access to the database from your application instances.
+
 ---
 ### SECOND PART: ANALYTICS ADDED
 
