@@ -22,7 +22,7 @@ Write an explanation that details how the solution works and why you chose to us
 ---
 **SOLUTION:** 
 
-We are setting up a 3-tier architecture on AWS using the command line interface (CLI). This architecture consists of the web tier, application tier, and database tier.
+For the first part, we create a 3-tier architecture on AWS using the command line interface (CLI). This architecture consists of the web tier, application tier, and database tier.
 
 In the web tier, we have two web instances that will handle the presentation of our web application. These instances will be launched in public subnets and will be load balanced using an Application Load Balancer. The load balancer will distribute incoming traffic evenly between the web instances, ensuring high availability and scalability.
 
@@ -72,7 +72,7 @@ Additional component details remain to be added such as security groups, routing
 ---
 ### AWS CLI Commands
 
-AWS CLI commands are used to set up this architecture via the AWS command line interface. These commands create virtual private cloud (VPC) resources, such as subnets and security groups, launch instances with a given configuration, and configure a load balancer and database instance.
+For the first part, AWS CLI commands are used to set up this architecture via the AWS command line interface. These commands create virtual private cloud (VPC) resources, such as subnets and security groups, launch instances with a given configuration, and configure a load balancer and database instance.
 
 Here's a step-by-step breakdown of the AWS CLI commands:
 
@@ -174,6 +174,143 @@ aws ec2 authorize-security-group-ingress --group-id <database-security-group-id>
 Note: Replace `<database-security-group-id>` with the ID of the security group associated with the database instance, `<port>` with the port number used by your database engine (e.g., 3306 for MySQL), and `<source-security-group>` with the ID of the security group associated with your application instances.
 
 With these commands, you can create the database instance, configure read replicas if necessary, and set up the necessary security group rules to allow inbound access to the database from your application instances. 
+---
+### SECOND PART: ANALYTICS ADDED
+
+The architecture diagram below illustrates how both the three-tier application and the data analytics workload can be hosted on AWS:
+
+```sql
+                       +------------------------+
+                       |                        |
+                       |       Internet         |
+                       |                        |
+                       +-----------+------------+
+                                   |
+                                   |
+                       +-----------v------------+
+                       |                        |
+                       |      Amazon Route 53    |
+                       |                        |
+                       +-----------+------------+
+                                   |
+                                   |
+                       +-----------v------------+
+                       |                        |
+                       |    Application Load     |
+                       |    Balancer (ALB)       |
+                       |                        |
+                       +-----------+------------+
+                                   |
+                  +----------------+----------------+
+                  |                                 |
+                  |       EC2 Auto Scaling Group     |
+                  |      (Frontend Instances)       |
+                  |                                 |
+                  +----------------+----------------+
+                                   |
+                                   |
+                  +----------------v----------------+
+                  |                                 |
+                  |   Elastic Beanstalk (Backend)   |
+                  |                                 |
+                  +----------------+----------------+
+                                   |
+                                   |
+                  +----------------v----------------+
+                  |                                 |
+                  |      Amazon RDS (MySQL)         |
+                  |                                 |
+                  +----------------+----------------+
+                                   |
+                                   |
+                  +----------------v----------------+
+                  |                                 |
+                  |       Amazon S3 (Storage)       |
+                  |                                 |
+                  +----------------+----------------+
+                                   |
+                                   |
+                  +----------------v----------------+
+                  |                                 |
+                  |     Amazon EMR (Hadoop)        |
+                  |                                 |
+                  +----------------+----------------+
+                                   |
+                  +----------------v----------------+
+                  |                                 |
+                  |      Amazon QuickSight         |
+                  |    (Data Visualization)        |
+                  |                                 |
+                  +---------------------------------+
+
+```
+
+Explanation of the Solution:
+
+1. **Amazon Route 53**: We use Amazon Route 53 as the DNS service to route incoming traffic from the internet to our application. It provides domain registration and DNS management, ensuring high availability and fault tolerance.
+    
+2. **Application Load Balancer (ALB)**: The ALB acts as the entry point for the frontend layer of the three-tier architecture. It distributes incoming traffic across multiple EC2 instances in an Auto Scaling group to ensure scalability and fault tolerance.
+    
+3. **EC2 Auto Scaling Group**: The Auto Scaling group manages the frontend instances that host the HTML, CSS, and JavaScript components of the application. It automatically scales the number of instances based on demand, allowing the application to handle varying levels of user traffic.
+    
+4. **Elastic Beanstalk**: Elastic Beanstalk is used to deploy and manage the backend layer of the three-tier application. It supports various platforms, including Java, and automatically handles the deployment, capacity provisioning, load balancing, and health monitoring of the backend application.
+    
+5. **Amazon RDS (MySQL)**: We use Amazon RDS to host the MySQL database, which serves as the backend data store for the application. Amazon RDS provides a managed database service, ensuring high availability, durability, and automated backups.
+    
+6. **Amazon S3**: Amazon S3 serves as the storage solution for the data analytics workload. It provides highly scalable and durable object storage for the massive amount of data that needs to be ingested and processed by the analytics workload.
+    
+7. **Amazon EMR**: Amazon EMR is used to run the Apache Hadoop-based data analytics workload. EMR provides a managed cluster platform for big data processing, allowing us to spin up Hadoop clusters on-demand. By leveraging EMR, we can take advantage of its scalability, fault tolerance, and integration with other AWS services.
+    
+8. **Amazon QuickSight**: QuickSight
+
+---
+AWS CLI commands to build the above system.
+
+To build the system described above using AWS CLI commands, you would need to execute a series of commands for each component. Here's a step-by-step guide:
+
+1. Create an Application Load Balancer (ALB):
+
+```shell
+aws elbv2 create-load-balancer --name my-application-alb --subnets subnet-1a123456 subnet-1b789012 --security-groups sg-12345678
+```
+
+2. Create a target group for the ALB:
+
+```shell
+aws elbv2 create-target-group --name my-target-group --protocol HTTP --port 80 --target-type instance --vpc-id vpc-12345678
+```
+
+3. Create an Auto Scaling group:
+
+```shell
+aws autoscaling create-auto-scaling-group --auto-scaling-group-name my-auto-scaling-group --launch-configuration-name my-launch-config --target-group-arns arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-target-group/abcdefg --min-size 2 --max-size 5 --desired-capacity 2 --vpc-zone-identifier subnet-1a123456 subnet-1b789012 --health-check-type ELB
+```
+
+4. Create an Elastic Beanstalk environment:
+
+```shell
+aws elasticbeanstalk create-environment --application-name my-application --environment-name my-environment --solution-stack-name "64bit Amazon Linux 2 v5.3.1 running Java 11" --option-settings Namespace=aws:autoscaling:launchconfiguration,OptionName=InstanceType,Value=t2.micro
+```
+
+5. Create an Amazon RDS database instance:
+
+```shell
+aws rds create-db-instance --db-instance-identifier my-db-instance --db-instance-class db.t2.micro --engine MySQL --master-username myuser --master-user-password mypassword --allocated-storage 20 --vpc-security-group-ids sg-12345678 --availability-zone us-west-2a
+```
+
+6. Create an Amazon S3 bucket:
+
+```shell
+aws s3api create-bucket --bucket my-bucket --region us-west-2
+```
+
+7. Create an Amazon EMR cluster:
+
+```shell
+aws emr create-cluster --name my-emr-cluster --release-label emr-6.5.0 --applications Name=Hadoop Name=Hive --ec2-attributes KeyName=my-key-pair --instance-type m5.xlarge --instance-count 3 --use-default-roles
+```
+
+Once you have executed these commands, you will have the foundational components set up for your system. Remember to replace the placeholder values (e.g., subnet-1a123456, sg-12345678) with the appropriate values for your specific configuration.
 
 ---
 **REFERENCES**
