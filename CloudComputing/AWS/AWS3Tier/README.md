@@ -33,7 +33,7 @@ Finally, in the database tier, we have an RDS (Relational Database Service) inst
 ---
 ### Diagram:
 
-A diagram of the AWS system architecture based on the information provided:
+A diagram of the AWS system architecture:
 
 ```scss
 ------------------------------------------
@@ -67,20 +67,18 @@ The application tier consists of two instances (App Instance 1 and App Instance 
 
 The database tier includes an RDS instance running in a private subnet. This is where the application tier interacts with the database.
 
-Some additional components have been left out to keep the diagram manageable, such as like security groups, routing tables, and NAT gateways that are required to ensure proper network connectivity and security.
+Additional component details remain to be added such as security groups, routing tables, and NAT gateways, required to ensure proper network connectivity and security.
 
 ---
 ### AWS CLI Commands
 
-To set up this architecture using the command line interface, we will need to use various AWS CLI commands. These commands will involve creating virtual private cloud (VPC) resources, such as subnets and security groups, launching instances with the desired configurations, and configuring the load balancer and database instance.
+AWS CLI commands are used to set up this architecture via the AWS command line interface. These commands create virtual private cloud (VPC) resources, such as subnets and security groups, launch instances with a given configuration, and configure a load balancer and database instance.
 
 Here's a step-by-step breakdown of the AWS CLI commands:
 
-WEB TIER:
+**WEB TIER:**
 
-Step 1: Creating Your VPC and More
-
-To create a VPC and subnets:
+Step 1: Creating the VPC and subnets:
 
 ```shell
 # Create VPC
@@ -100,42 +98,34 @@ aws ec2 create-subnet --vpc-id <vpc-id> --cidr-block <private-subnet-cidr-block>
 aws ec2 create-nat-gateway --subnet-id <public-subnet-id> --allocation-id <eip-allocation-id> --tag-specifications 'ResourceType=natgateway,Tags=[{Key=Name,Value=<nat-gateway-name>}]'
 ```
 
-Step 2: Creating Your Web Tier Launch Template
-
-To create a launch template for the web tier:
+Step 2: Creating launch template:
 
 ```shell
 # Create launch template
 aws ec2 create-launch-template --launch-template-name <web-tier-launch-template-name> --launch-template-data file://web-tier-launch-template.json
 ```
 
-Note: You need to create a JSON file named "web-tier-launch-template.json" with the required launch template configuration.
+Note: A JSON file named "web-tier-launch-template.json" is needed with the required launch template configuration.
 
 Step 3: Create Auto Scaling Group
-
-To create an auto scaling group for the web tier:
 
 ```shell
 # Create auto scaling group
 aws autoscaling create-auto-scaling-group --auto-scaling-group-name <web-tier-auto-scaling-group-name> --launch-template "LaunchTemplateName=<web-tier-launch-template-name>,Version=<version>" --min-size 2 --max-size 5 --target-group-arns <target-group-arn> --vpc-zone-identifier "<private-subnet-1>,<private-subnet-2>"
 ```
 
-APPLICATION TIER:
+**APPLICATION TIER:**
 
-Step 1: Creating Your Application Launch Template
-
-To create a launch template for the application tier:
+Step 1: Create Application Launch Template
 
 ```shell
 # Create launch template
 aws ec2 create-launch-template --launch-template-name <application-tier-launch-template-name> --launch-template-data file://application-tier-launch-template.json
 ```
 
-Note: You need to create a JSON file named "application-tier-launch-template.json" with the required launch template configuration.
+Note: A JSON file named "application-tier-launch-template.json" is needed with the required launch template configuration.
 
 Step 2: Create Auto Scaling Group
-
-To create an auto scaling group for the application tier:
 
 ```shell
 # Create auto scaling group
@@ -144,15 +134,15 @@ aws autoscaling create-auto-scaling-group --auto-scaling-group-name <application
 
 Note: Replace `<application-tier-auto-scaling-group-name>` with a desired name for the auto scaling group, `<application-tier-launch-template-name>` with the name of the application tier launch template created in the previous step, `<version>` with the version number of the launch template, and `<private-subnet-1>` and `<private-subnet-2>` with the IDs of the private subnets where you want to launch the application instances.
 
-With these commands, you can create a launch template for the application tier and an auto scaling group that will ensure the desired number of application instances are running and properly scaled based on the specified minimum and maximum sizes.
+With these commands, a launch template for the application tier and an auto scaling group is created that will ensure the chosen application instances are running and properly scaled based on the specified minimum and maximum sizes.
 
-Remember to configure the launch template JSON file (`application-tier-launch-template.json`) with the necessary instance configurations, security groups, and other settings as per your requirements.
+Configure the launch template JSON file (`application-tier-launch-template.json`) with the necessary instance configurations, security groups, and other settings as per your requirements.
 
-DATABASE TIER:
+**DATABASE TIER:**
 
 Here are the AWS CLI commands to complete the setup for the database tier:
 
-Step 1: Creating Your Database Instance
+Step 1: Creating a Database Instance
 
 To create a database instance:
 
@@ -165,7 +155,7 @@ Note: Replace `<db-instance-identifier>` with a unique identifier for your datab
 
 Step 2: Create Read Replicas (optional)
 
-If you want to create read replicas for your database:
+To create read replicas for your database:
 
 ```shell
 # Create read replica
@@ -176,8 +166,6 @@ Note: Replace `<db-instance-identifier>` with a unique identifier for the read r
 
 Step 3: Configure Database Security Group
 
-To configure the security group for the database:
-
 ```shell
 # Authorize inbound access to the database
 aws ec2 authorize-security-group-ingress --group-id <database-security-group-id> --protocol tcp --port <port> --source-group <source-security-group>
@@ -185,11 +173,6 @@ aws ec2 authorize-security-group-ingress --group-id <database-security-group-id>
 
 Note: Replace `<database-security-group-id>` with the ID of the security group associated with the database instance, `<port>` with the port number used by your database engine (e.g., 3306 for MySQL), and `<source-security-group>` with the ID of the security group associated with your application instances.
 
-With these commands, you can create the database instance, configure read replicas if necessary, and set up the necessary security group rules to allow inbound access to the database from your application instances. Make sure to provide the appropriate values for the placeholders and adjust the configurations based on your specific requirements and database engine choice.
+With these commands, you can create the database instance, configure read replicas if necessary, and set up the necessary security group rules to allow inbound access to the database from your application instances. 
 
-
-
-
-
----
 
