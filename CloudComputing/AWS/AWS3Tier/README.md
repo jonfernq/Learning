@@ -125,5 +125,33 @@ APPLICATION TIER:
 Step 1: Creating Your Application Launch Template
 
 
+Step 1: Creating Your Application Launch Template
+
+To create a launch template for the application tier:
+
+```shell
+# Create launch template
+aws ec2 create-launch-template --launch-template-name <application-tier-launch-template-name> --launch-template-data file://application-tier-launch-template.json
+```
+
+Note: You need to create a JSON file named "application-tier-launch-template.json" with the required launch template configuration.
+
+Step 2: Create Auto Scaling Group
+
+To create an auto scaling group for the application tier:
+
+```shell
+# Create auto scaling group
+aws autoscaling create-auto-scaling-group --auto-scaling-group-name <application-tier-auto-scaling-group-name> --launch-template "LaunchTemplateName=<application-tier-launch-template-name>,Version=<version>" --min-size 2 --max-size 5 --vpc-zone-identifier "<private-subnet-1>,<private-subnet-2>"
+```
+
+Note: Replace `<application-tier-auto-scaling-group-name>` with a desired name for the auto scaling group, `<application-tier-launch-template-name>` with the name of the application tier launch template created in the previous step, `<version>` with the version number of the launch template, and `<private-subnet-1>` and `<private-subnet-2>` with the IDs of the private subnets where you want to launch the application instances.
+
+With these commands, you can create a launch template for the application tier and an auto scaling group that will ensure the desired number of application instances are running and properly scaled based on the specified minimum and maximum sizes.
+
+Remember to configure the launch template JSON file (`application-tier-launch-template.json`) with the necessary instance configurations, security groups, and other settings as per your requirements.
+
+
+
 ---
 
