@@ -30,12 +30,51 @@ Moving on to the application tier, we have two application instances that will h
 
 Finally, in the database tier, we have an RDS (Relational Database Service) instance that will store and manage our data. The RDS instance will also be launched in a private subnet to ensure secure access. The application instances from the application tier will interact with the database tier to retrieve and store data.
 
-To set up this architecture using the command line interface, we will need to use various AWS CLI commands. These commands will involve creating virtual private cloud (VPC) resources, such as subnets and security groups, launching instances with the desired configurations, and configuring the load balancer and database instance.
+---
+### Diagram:
 
-By following this command line setup, we can achieve a scalable and highly available 3-tier architecture on AWS, where each tier performs its specific role in the overall functioning of our web application.
+A diagram of the AWS system architecture based on the information provided:
+
+```scss
+------------------------------------------
+|               INTERNET                 |
+------------------------------------------
+                    |
+             [Application Load Balancer]
+                    |
+------------------------------------------
+|          WEB TIER (Public Subnets)     |
+------------------------------------------
+         |                      |
+[Web Instance 1]        [Web Instance 2]
+         |                      |
+------------------------------------------
+|      APPLICATION TIER (Private Subnets)|
+------------------------------------------
+         |                      |
+[App Instance 1]        [App Instance 2]
+         |                      |
+------------------------------------------
+|        DATABASE TIER (Private Subnets) |
+------------------------------------------
+                 |
+           [RDS Instance]
+```
+
+In this diagram, the web tier consists of two instances (Web Instance 1 and Web Instance 2) running in public subnets. These instances are behind an Application Load Balancer, which distributes traffic to the instances.
+
+The application tier consists of two instances (App Instance 1 and App Instance 2) running in private subnets. These instances process the data received from the web tier.
+
+The database tier includes an RDS instance running in a private subnet. This is where the application tier interacts with the database.
+
+Some additional components have been left out to keep the diagram manageable, such as like security groups, routing tables, and NAT gateways that are required to ensure proper network connectivity and security.
 
 ---
-To convert the GUI-based AWS setup to a command-line version, we will need to use the AWS Command Line Interface (CLI) to perform the necessary tasks. Here's a step-by-step breakdown of the process:
+### AWS CLI Commands
+
+To set up this architecture using the command line interface, we will need to use various AWS CLI commands. These commands will involve creating virtual private cloud (VPC) resources, such as subnets and security groups, launching instances with the desired configurations, and configuring the load balancer and database instance.
+
+Here's a step-by-step breakdown of the AWS CLI commands:
 
 WEB TIER:
 
@@ -85,48 +124,6 @@ APPLICATION TIER:
 
 Step 1: Creating Your Application Launch Template
 
-* * *
 
-**You:**
+---
 
-Please create an AWS system diagram for this. 
-
-* * *
-
-**ChatGPT:**
-
-I apologize, but as a text-based AI model, I am unable to create visual diagrams. However, I can provide you with a textual representation of the AWS system architecture based on the information provided:
-
-```scss
-------------------------------------------
-|               INTERNET                 |
-------------------------------------------
-                    |
-             [Application Load Balancer]
-                    |
-------------------------------------------
-|          WEB TIER (Public Subnets)     |
-------------------------------------------
-         |                      |
-[Web Instance 1]        [Web Instance 2]
-         |                      |
-------------------------------------------
-|      APPLICATION TIER (Private Subnets)|
-------------------------------------------
-         |                      |
-[App Instance 1]        [App Instance 2]
-         |                      |
-------------------------------------------
-|        DATABASE TIER (Private Subnets) |
-------------------------------------------
-                 |
-           [RDS Instance]
-```
-
-In this diagram, the web tier consists of two instances (Web Instance 1 and Web Instance 2) running in public subnets. These instances are behind an Application Load Balancer, which distributes traffic to the instances.
-
-The application tier consists of two instances (App Instance 1 and App Instance 2) running in private subnets. These instances process the data received from the web tier.
-
-The database tier includes an RDS instance running in a private subnet. This is where the application tier interacts with the database.
-
-Please note that this is a simplified representation, and additional components like security groups, routing tables, and NAT gateways are required to ensure proper network connectivity and security.
