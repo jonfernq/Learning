@@ -22,6 +22,8 @@ Write an explanation that details how the solution works and why you chose to us
 ---
 **SOLUTION:** 
 
+### First Part: Three Tier Architecture
+
 For the first part, we create a 3-tier architecture on AWS using the command line interface (CLI). This architecture consists of the web tier, application tier, and database tier.
 
 In the web tier, we have two web instances that will handle the presentation of our web application. These instances will be launched in public subnets and will be load balanced using an Application Load Balancer. The load balancer will distribute incoming traffic evenly between the web instances, ensuring high availability and scalability.
