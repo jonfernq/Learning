@@ -124,9 +124,6 @@ APPLICATION TIER:
 
 Step 1: Creating Your Application Launch Template
 
-
-Step 1: Creating Your Application Launch Template
-
 To create a launch template for the application tier:
 
 ```shell
@@ -150,6 +147,47 @@ Note: Replace `<application-tier-auto-scaling-group-name>` with a desired name f
 With these commands, you can create a launch template for the application tier and an auto scaling group that will ensure the desired number of application instances are running and properly scaled based on the specified minimum and maximum sizes.
 
 Remember to configure the launch template JSON file (`application-tier-launch-template.json`) with the necessary instance configurations, security groups, and other settings as per your requirements.
+
+DATABASE TIER:
+
+Here are the AWS CLI commands to complete the setup for the database tier:
+
+Step 1: Creating Your Database Instance
+
+To create a database instance:
+
+```shell
+# Create database instance
+aws rds create-db-instance --db-instance-identifier <db-instance-identifier> --db-instance-class <db-instance-class> --engine <engine> --allocated-storage <allocated-storage> --master-username <master-username> --master-user-password <master-user-password> --vpc-security-group-ids <vpc-security-group-ids> --availability-zone <availability-zone>
+```
+
+Note: Replace `<db-instance-identifier>` with a unique identifier for your database instance, `<db-instance-class>` with the desired instance class, `<engine>` with the database engine (e.g., "mysql" or "postgres"), `<allocated-storage>` with the amount of storage to allocate in GB, `<master-username>` and `<master-user-password>` with the credentials for the master user, `<vpc-security-group-ids>` with the ID of the security group associated with the database instance, and `<availability-zone>` with the desired availability zone.
+
+Step 2: Create Read Replicas (optional)
+
+If you want to create read replicas for your database:
+
+```shell
+# Create read replica
+aws rds create-db-instance-read-replica --db-instance-identifier <db-instance-identifier> --source-db-instance-identifier <source-db-instance-identifier> --availability-zone <availability-zone>
+```
+
+Note: Replace `<db-instance-identifier>` with a unique identifier for the read replica, `<source-db-instance-identifier>` with the identifier of the source database instance, and `<availability-zone>` with the desired availability zone.
+
+Step 3: Configure Database Security Group
+
+To configure the security group for the database:
+
+```shell
+# Authorize inbound access to the database
+aws ec2 authorize-security-group-ingress --group-id <database-security-group-id> --protocol tcp --port <port> --source-group <source-security-group>
+```
+
+Note: Replace `<database-security-group-id>` with the ID of the security group associated with the database instance, `<port>` with the port number used by your database engine (e.g., 3306 for MySQL), and `<source-security-group>` with the ID of the security group associated with your application instances.
+
+With these commands, you can create the database instance, configure read replicas if necessary, and set up the necessary security group rules to allow inbound access to the database from your application instances. Make sure to provide the appropriate values for the placeholders and adjust the configurations based on your specific requirements and database engine choice.
+
+
 
 
 
