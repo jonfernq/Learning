@@ -175,4 +175,14 @@ Note: Replace `<database-security-group-id>` with the ID of the security group a
 
 With these commands, you can create the database instance, configure read replicas if necessary, and set up the necessary security group rules to allow inbound access to the database from your application instances. 
 
+---
+**REFERENCES**
+
+Amazon Web Services (2021). AWS Serverless Multi-Tier Architectures With Amazon API Gateway and AWS Lambda. Amazon Web Services (AWS). https://d0.awsstatic.com/whitepapers/AWS_Serverless_Multi-Tier_Architectures.pdf
+
+Medium (2023, January 19). "How to Build a 3 Tier Architecture in AWS. AWS in Plain English." Retrieved June 25, 2023, from https://aws.plainenglish.io/
+
+
+
+
 
