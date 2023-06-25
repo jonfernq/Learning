@@ -71,6 +71,9 @@ The database tier includes an RDS instance running in a private subnet. This is 
 
 Additional component details remain to be added such as security groups, routing tables, and NAT gateways, required to ensure proper network connectivity and security.
 
+![3tier](https://github.com/jonfernq/Learning/assets/68504324/9b3cec6d-4dea-42d0-b88d-6ca44918a920)
+
+
 ---
 ### AWS CLI Commands
 
@@ -247,6 +250,9 @@ The architecture diagram below illustrates how both the three-tier application a
                   +---------------------------------+
 
 ```
+![data_analytics_architecture](https://github.com/jonfernq/Learning/assets/68504324/cc14ab77-821b-4be3-94ef-88067498c042)
+
+
 
 Explanation of the Solution:
 
