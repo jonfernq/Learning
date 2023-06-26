@@ -1,6 +1,8 @@
-## Integration of Web and Analytics
+## AWS Architecture: Integration of Three Tier Web and Analytics
 
-Overall, this architecture follows a typical three-tier architecture pattern, where the web tier handles incoming requests and forwards them to the application tier, which further interacts with the database tier for data storage and retrieval. The use of load balancers, auto scaling groups, and managed services like RDS, S3, EMR, and QuickSight helps ensure scalability, availability, and ease of management for the application.
+Overall, this architecture follows a typical three-tier architecture pattern, where the web tier handles incoming requests and forwards them to the application tier, which further interacts with the database tier for data storage and retrieval. The use of load balancers, auto-scaling groups, and managed services like RDS, S3, EMR, and QuickSight helps ensure scalability, availability, and ease of management for the application.
+
+![aws_diagram](https://github.com/jonfernq/Learning/assets/68504324/0b1fc807-a8a8-4370-a773-dcd5e98b44fa)
 
 Explanation of architectural elements: 
 
@@ -43,11 +45,7 @@ Benefits:
 By adding an ElastiCache tier and a standby instance, you enhance the performance, scalability, and availability of your architecture. These additions help optimize the system's response time, handle increased traffic, and protect against failures, resulting in an improved user experience and system reliability.
 
 ---
-A diagram of the AWS system architecture:
-
-Please integrate the two systems and diagrams below
-adding Amazon S3 (Storage) after the RDS instance: 
-
+Simpler separate diagrams of the three tier and analytics architecture is provided below: 
 
 ```scss
 ------------------------------------------
@@ -146,83 +144,10 @@ adding Amazon S3 (Storage) after the RDS instance:
 
 ```
 
-* * *
-
-**ChatGPT:**
-
-Sure! Here's an integrated diagram of the AWS system architecture, including Amazon S3 after the RDS instance:
-
-```plaintext
-                                               +------------------------+
-                                               |                        |
-                                               |       Internet         |
-                                               |                        |
-                                               +-----------+------------+
-                                                           |
-                                                           |
-                                               +-----------v------------+
-                                               |                        |
-                                               |      Amazon Route 53    |
-                                               |                        |
-                                               +-----------+------------+
-                                                           |
-                                                           |
-                                               +-----------v------------+
-                                               |                        |
-                                               |    Application Load     |
-                                               |    Balancer (ALB)       |
-                                               |                        |
-                                               +-----------+------------+
-                                                           |
-                              +------------------------+  |
-                              |                       |  |
-                              |       EC2 Auto        |  |
-                              |     Scaling Group     |  |
-                              |  (Frontend Instances) |  |
-                              |                       |  |
-                              +----------+------------+  |
-                                         |              |
-                                         |              |
-                            +------------v--------------v---------+
-                            |                                   |
-                            |   Elastic Beanstalk (Backend)      |
-                            |                                   |
-                            +------------+--------------+-------+
-                                         |              |
-                                         |              |
-                            +------------v--------------v-------+
-                            |                                   |
-                            |      Amazon RDS (MySQL)           |
-                            |                                   |
-                            +------------+--------------+-------+
-                                         |              |
-                                         |              |
-                            +------------v--------------v-------+
-                            |                                   |
-                            |     Amazon S3 (Storage)           |
-                            |                                   |
-                            +------------+--------------+-------+
-                                         |              |
-                                         |              |
-                            +------------v--------------v-------+
-                            |                                   |
-                            |      Amazon EMR (Hadoop)          |
-                            |                                   |
-                            +------------+--------------+-------+
-                                         |              |
-                            +------------v--------------v-------+
-                            |                                   |
-                            |      Amazon QuickSight            |
-                            |    (Data Visualization)           |
-                            |                                   |
-                            +-----------------------------------+
-
-```
-
 ---
 ## Analytics
 
-By following the workflow below, we can extract data from the database, transfer it to Amazon S3 for storage, process it using Amazon EMR, and finally visualize the results using Amazon QuickSight. This enables you to leverage the power of big data analytics for deriving insights and making data-driven decisions. Here's a step-by-step explanation:
+The analytics workflow works as follow. Briefly, transfer data to Amazon S3 for storage, process it using Amazon EMR, and finally visualize the results using Amazon QuickSight. This enables you to leverage the power of big data analytics for deriving insights and making data-driven decisions. Here's a step-by-step more detailed explanation:
 
 1. Data Extraction: SQL queries are used to extract data from the RDS database. These extracts are placed in S3 storage.  
     
@@ -233,9 +158,6 @@ By following the workflow below, we can extract data from the database, transfer
 4. Storing Analyzed Data: Once the data processing is complete, the analyzed or transformed data can be stored back in Amazon S3 in a structured format providing easy access for further analysis or visualization.
     
 5. Visualization with Amazon QuickSight: With the processed data available in Amazon S3, you can connect Amazon QuickSight to the S3 bucket and create interactive visualizations, dashboards, and reports. QuickSight provides a user-friendly interface for creating visualizations and exploring data. You can configure the data source in QuickSight to access the processed data stored in S3 and create visual representations of the insights derived from the data.
-    
-
-
 
 ---
 ### Load Balancers
