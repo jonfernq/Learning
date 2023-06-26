@@ -1,28 +1,5 @@
 ## Integration of Web and Analytics
 
-**You:**
-
-what are the names of the AWS load balancers? 
-
-* * *
-
-**ChatGPT:**
-
-As of my knowledge cutoff in September 2021, Amazon Web Services (AWS) offers several load balancer services. However, please note that AWS frequently updates its services and may introduce new offerings or make changes to existing ones. Here are the load balancers that were available at the time of my knowledge cutoff:
-
-1. Classic Load Balancer (ELB): The Classic Load Balancer is the original load balancer service provided by AWS. It distributes traffic across multiple EC2 instances and can be used for both HTTP and TCP applications.
-    
-2. Application Load Balancer (ALB): The Application Load Balancer operates at the application layer (Layer 7) of the OSI model. It provides advanced request routing and content-based routing capabilities. ALB is commonly used for load balancing HTTP and HTTPS traffic.
-    
-3. Network Load Balancer (NLB): The Network Load Balancer operates at the transport layer (Layer 4) of the OSI model. It is designed to handle high volumes of traffic and provides ultra-low latency. NLB is often used for load balancing TCP, UDP, and TLS traffic.
-    
-
-Please note that AWS may have introduced new load balancer offerings or made updates since my knowledge cutoff. It's always a good idea to refer to the official AWS documentation for the most up-to-date information on their services.
-
-* * *
-
-**You:**
-
 A diagram of the AWS system architecture:
 
 Please integrate the two systems and diagrams below
@@ -201,17 +178,8 @@ Sure! Here's an integrated diagram of the AWS system architecture, including Ama
 
 Please note that this is a simplified representation and may not include all the components or services in your specific architecture. It's always a good idea to consult the AWS documentation or consider professional assistance to design and configure your AWS architecture according to your specific requirements.
 
-* * *
-
-**You:**
-
-Please explain how this architecture works ? 
-
-* * *
-
-**ChatGPT:**
-
-Certainly! Let's go through the different components and how they work together in the provided architecture:
+---
+Let's go through the different components and how they work together in the provided architecture:
 
 1. Internet: This represents the external network or the internet from which requests originate.
     
@@ -236,13 +204,7 @@ Overall, this architecture follows a typical three-tier architecture pattern, wh
 
 ---
 
-**You:**
-
-Please explain how the part of the system that feeds into the analytics works. How data is taken out of the database into S3 into Hadoop and Quicksight
-
-* * *
-
-**ChatGPT:**
+> Please explain how the part of the system that feeds into the analytics works. How data is taken out of the database into S3 into Hadoop and Quicksight
 
 In the provided architecture, the part of the system that feeds into the analytics involves extracting data from the database (Amazon RDS) and transferring it to Amazon S3 for storage and further processing in Hadoop (Amazon EMR). The processed data can then be visualized using Amazon QuickSight. Here's a step-by-step explanation of how this process works:
 
@@ -259,6 +221,17 @@ In the provided architecture, the part of the system that feeds into the analyti
 
 By following this flow, you can extract data from the database, transfer it to Amazon S3 for storage, process it using Amazon EMR, and finally visualize the results using Amazon QuickSight. This enables you to leverage the power of big data analytics for deriving insights and making data-driven decisions.
 
+---
+### Load Balancers
+
+Amazon Web Services (AWS) offers several load balancer services. However, please note that AWS frequently updates its services and may introduce new offerings or make changes to existing ones. Here are the load balancers that were available at the time of my knowledge cutoff:
+
+1. Classic Load Balancer (ELB): The Classic Load Balancer is the original load balancer service provided by AWS. It distributes traffic across multiple EC2 instances and can be used for both HTTP and TCP applications.
+    
+2. Application Load Balancer (ALB): The Application Load Balancer operates at the application layer (Layer 7) of the OSI model. It provides advanced request routing and content-based routing capabilities. ALB is commonly used for load balancing HTTP and HTTPS traffic.
+    
+3. Network Load Balancer (NLB): The Network Load Balancer operates at the transport layer (Layer 4) of the OSI model. It is designed to handle high volumes of traffic and provides ultra-low latency. NLB is often used for load balancing TCP, UDP, and TLS traffic.
+   
 
 
 
