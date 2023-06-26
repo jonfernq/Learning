@@ -1,5 +1,4 @@
 ## AWS Architecture: Integration of Three Tier Web and Analytics
-## AWS System Design
 
 **PROBLEM:**
 
