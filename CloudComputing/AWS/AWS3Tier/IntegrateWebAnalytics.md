@@ -67,6 +67,21 @@ Benefits:
 By adding an ElastiCache tier and a standby instance, you enhance the performance, scalability, and availability of your architecture. These additions help optimize the system's response time, handle increased traffic, and protect against failures, resulting in an improved user experience and system reliability.
 
 ---
+## Analytics Workflow: Detailed Description
+
+The analytics workflow works briefly as follows. First, transfer data to Amazon S3 for storage, process data using Amazon EMR, and finally visualize the results using Amazon QuickSight. This enables one to leverage the power of big data analytics for deriving insights and making data-driven decisions. Here's a step-by-step more detailed explanation:
+
+1. Data Extraction: SQL queries are used to extract data from the RDS database. These extracts are placed in S3 storage.  
+
+2. Exporting to Amazon S3: Once SQL queries have extracted data from the RDS database, it is exported to Amazon S3 storage. Amazon S3 provides a reliable and scalable storage solution for large amounts of data. The AWS command-line interface (CLI) or SDKs can be used to transfer the data from your RDS instance to an S3 bucket. This can be done in various formats like CSV or JSON 
+    
+3. Data Processing with Amazon EMR: After the data is stored in Amazon S3, an Amazon EMR cluster is set up to process the data using distributed computing frameworks such as Apache Hadoop, Spark, or Presto. EMR simplifies the setup and management of big data infrastructure. You can define the processing steps and transformations you want to apply to the data using Hadoop-based tools like MapReduce or higher-level frameworks like Apache Spark. EMR reads the data from S3, performs the specified computations, and generates the desired results or derived datasets.
+    
+4. Storing Analyzed Data: Once the data processing is complete, the analyzed or transformed data can be stored back in Amazon S3 in a structured format providing easy access for further analysis or visualization.
+
+5. Visualization with Amazon QuickSight: With the processed data available in Amazon S3, you can connect Amazon QuickSight to the S3 bucket and create interactive visualizations, dashboards, and reports. QuickSight provides a user-friendly interface for creating visualizations and exploring data. You can configure the data source in QuickSight to access the processed data stored in S3 and create visual representations of the insights derived from the data.
+
+---
 ### Breakdown into Component Parts
 
 #### First Part: Three Tier Architecture
