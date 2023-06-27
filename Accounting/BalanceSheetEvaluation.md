@@ -2,9 +2,13 @@
 
 ### 1. Discuss two ways in which the balance sheets differ across the two companies.
   
-VF Corporation is an apparel and footwear manufacturing company that owns well-known brands such as The North Face, Vans, Timberland, Wrangler, and Lee.
+VF Corporation is an apparel and footwear manufacturing company that owns well-known brands such as The North Face, Vans, Timberland, Wrangler, and Lee. Here are financial ratios that allow balance sheet comparison: 
 
-Johnson & Johnson is a healthcare company that develops and manufactures pharmaceuticals, medical devices, and consumer healthcare products, with notable brands including Band-Aid, Tylenol, Neutrogena, and Johnson's Baby.
+![vf_](https://github.com/jonfernq/Learning/assets/68504324/dc5f2622-4925-4701-9fd0-746d26425a4c)
+
+Johnson & Johnson is a healthcare company that develops and manufactures pharmaceuticals, medical devices, and consumer healthcare products, with notable brands including Band-Aid, Tylenol, Neutrogena, and Johnson's Baby. Here are financial ratios that allow balance sheet comparison:
+
+![jj](https://github.com/jonfernq/Learning/assets/68504324/a1c2a360-fc49-4a2f-856b-81afb984f6d2)
 
 ### 1. Inventory
 
