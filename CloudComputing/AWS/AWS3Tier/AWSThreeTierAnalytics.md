@@ -100,7 +100,8 @@ The analytics workflow works briefly as follows. First, transfer data to Amazon 
 ---
 ### Justification for the specific approach
 
----
+The decision was made to go cloud native with a complete end-to-end AWS solution 
+instead of merely lifting and shifting.
 
 
 
