@@ -220,6 +220,31 @@ Comparing certain financial ratios between two companies, such as VF Corporation
 
 These ratios provide a starting point for comparing the financial performance and positions of companies in different industries. However, it's important to consider industry-specific factors, competitive dynamics, and company-specific strategies when interpreting and comparing these ratios.
 
+---
+
+you can still compare the financial ratios of two companies on Google Finance by following these steps:
+
+1. Visit Google Finance at google.com/finance.
+    
+2. In the search bar at the top, enter the ticker symbol of the first company you want to compare and press Enter.
+    
+3. You'll be directed to the company's overview page, where you can access various financial information, news, and stock data.
+    
+4. Take note of the key financial ratios displayed on the page, such as profitability ratios, liquidity ratios, and leverage ratios. Make a note of the values or copy them for later reference.
+    
+5. Go back to the search bar at the top and enter the ticker symbol of the second company you want to compare.
+    
+6. Repeat the process of accessing the overview page for the second company and note down or copy the relevant financial ratios.
+    
+7. Open a separate spreadsheet or document to compile the financial ratios of both companies for side-by-side comparison. Organize the ratios in a clear and structured manner to facilitate comparison.
+    
+8. Analyze and compare the ratios to identify any notable differences or patterns between the two companies.
+    
+
+While Google Finance doesn't provide an automated comparison feature, this manual process allows you to collect and compare the financial ratios of two companies individually. However, I would encourage you to explore other financial websites mentioned earlier, such as Yahoo Finance or Bloomberg, as they offer more robust comparison tools for analyzing financial ratios side by side.
+
+
+
 
 
 
