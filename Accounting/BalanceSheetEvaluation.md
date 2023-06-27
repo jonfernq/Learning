@@ -8,7 +8,7 @@ VF Corporation is an apparel and footwear manufacturing company that owns well-k
 
 Johnson & Johnson is a healthcare company that develops and manufactures pharmaceuticals, medical devices, and consumer healthcare products, with notable brands including Band-Aid, Tylenol, Neutrogena, and Johnson's Baby. Here are financial ratios that allow balance sheet comparison:
 
-                                   2022  2021  2020  2018   2017 
+                                                           2022  2021  2020  2018   2017            
 ![jj](https://github.com/jonfernq/Learning/assets/68504324/a1c2a360-fc49-4a2f-856b-81afb984f6d2)
 
 ### 1. Inventory
