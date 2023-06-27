@@ -12,7 +12,9 @@ Johnson & Johnson is a healthcare company that develops and manufactures pharmac
                                                            2022        2021       2020       2018       2017            
 ![jj](https://github.com/jonfernq/Learning/assets/68504324/a1c2a360-fc49-4a2f-856b-81afb984f6d2)
 
+Comparing the financial ratios for the two companies, one can see that the receivables turnover ratio is always substantially more for the garment manufacturer VF Corporation than it is for the pharmaceuticals firm Johnson & Johnson. 
 
+Though the inventory turnover ratio for 2022 is roughly the same for the two companies, before this the inventory ratio is always substantially higher for the garment manufacturer than it is for the pharmaceutical company. 
 
 ### 1. Inventory
 
@@ -32,11 +34,11 @@ This ratio measures how efficiently a company manages its inventory.
 For apparel companies, a high inventory turnover ratio indicates efficient inventory management, 
 as they typically need to regularly replenish their product offerings to meet changing fashion trends. 
 
-In contrast, healthcare companies may have a lower inventory turnover ratio due to longer product lifecycles or manufacturing processes.
-
-The apparel industry typically relies on maintaining an appropriate level of inventory to meet customer demand. 
+(The apparel industry typically relies on maintaining an appropriate level of inventory to meet customer demand. 
 In the balance sheet, assessing the inventory turnover ratio and the composition of inventory 
-(e.g., raw materials, work-in-progress, finished goods) is important to gauge the efficiency of inventory management.
+(e.g., raw materials, work-in-progress, finished goods) is important to gauge the efficiency of inventory management.)
+
+In contrast, healthcare companies may have a lower inventory turnover ratio due to longer product lifecycles or manufacturing processes.
 
 ### 2. Accounts Receivable: 
 
@@ -55,13 +57,14 @@ Net Credit Sales represent the total credit sales made by the company during the
 
 A higher Accounts Receivable Turnover Ratio suggests that a company is collecting payments from customers more quickly, which indicates effective credit management and strong cash flow. Conversely, a lower ratio may indicate slower collections, potentially signaling issues with credit policies, customer payment delays, or the quality of receivables.
 
-It's important to note that the Accounts Receivable Turnover Ratio should be compared to industry benchmarks or the company's historical data to gain meaningful insights. Additionally, the ratio should be considered in conjunction with other factors, such as industry-specific credit terms and customer payment practices, to obtain a comprehensive assessment of a company's accounts receivable management.
 
 ### 2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
 
 Compares a given company financial ratio to an industry average would be best practice, since these ratios typically differ by industry.
 
 But this problem asks for a comparison between the companies without taking into account the industry. 
+
+It's important to note that the Accounts Receivable Turnover Ratio should be compared to industry benchmarks or the company's historical data to gain meaningful insights. Additionally, the ratio should be considered in conjunction with other factors, such as industry-specific credit terms and customer payment practices, to obtain a comprehensive assessment of a company's accounts receivable management.
 
 
 
