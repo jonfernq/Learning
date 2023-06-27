@@ -103,5 +103,21 @@ The analytics workflow works briefly as follows. First, transfer data to Amazon 
 The decision was made to go cloud native with a complete end-to-end AWS solution 
 instead of merely lifting and shifting.
 
+Going cloud native for the three-tier web app combined with data analytics using EMR and QuickSight offers several advantages compared to simply lifting and shifting the on-premises workloads to the cloud. Here are the advantages of embracing cloud-native technologies and practices:
+
+1. **Scalability and Elasticity**: Cloud-native architectures leverage the scalability and elasticity of cloud services. By adopting a cloud-native approach, you can easily scale your application resources up or down based on demand. For example, with AWS Auto Scaling, the web application frontend can automatically add or remove instances to handle traffic fluctuations. Additionally, EMR allows you to dynamically scale your data analytics cluster to process large datasets efficiently.
+    
+2. **Improved Resilience and Fault Tolerance**: Cloud-native architectures promote high availability and fault tolerance by utilizing managed services that are designed to be resilient. AWS services like Amazon RDS and Amazon S3 automatically handle replication and backups to ensure data durability. Moreover, leveraging multi-Availability Zone (AZ) deployments and managed services like Amazon Route 53 and Amazon ELB enhances the performance of the application.
+    
+3. **Cost Optimization**: Cloud-native architectures enable cost optimization by leveraging pay-as-you-go pricing models. With services like Amazon EC2 Auto Scaling and Elastic Beanstalk, you can scale resources based on demand, reducing unnecessary costs during periods of low traffic. Additionally, using managed services like Amazon RDS and Amazon EMR helps eliminate the need for upfront hardware investments and reduces maintenance costs.
+    
+4. **Enhanced Security**: Cloud providers like AWS offer security features and compliance certifications. By adopting cloud-native technologies, you can take advantage of built-in security measures like VPCs, security groups, and AWS Identity and Access Management (IAM). AWS services also undergo regular security audits and provide tools for monitoring and logging, allowing you to enhance the overall security posture of your application.
+    
+5. **Flexibility and Agility** (Devops): Cloud-native architectures enable faster development and deployment cycles. Infrastructure can be provisioned and configured programmatically using Infrastructure as Code (IaC) tools like AWS CloudFormation or AWS CDK. This allows for easier testing, iteration, and deployment of changes. Additionally, services like Elastic Beanstalk simplify the deployment process, reducing the time and effort required to bring updates and new features to production.
+    
+6. **Service Integration and Innovation**: Cloud-native architectures allow you to leverage a wide range of managed services and APIs provided by cloud providers. In the given architecture, services like Amazon EMR and QuickSight integrate seamlessly with other AWS offerings, providing powerful data analytics and visualization capabilities. These services allow you to take advantage of cutting-edge technologies and innovation without the need for extensive infrastructure management.
+    
+In summary, adopting a cloud-native approach offers numerous advantages over a lift-and-shift strategy. It provides scalability, resilience, cost optimization, security, flexibility, and integration with innovative services. By leveraging AWS managed services and embracing cloud-native technologies, you can build a highly scalable, resilient, and cost-effective solution.
+
 
 
