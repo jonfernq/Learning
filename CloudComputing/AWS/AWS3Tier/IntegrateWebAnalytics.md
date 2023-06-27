@@ -1,6 +1,14 @@
 ## AWS Architecture: Integration of Three Tier Web and Analytics
+## AWS Three-Tier Application and Data Analytics Solution
 
-**PROBLEM:**
+**TABLE OF CONTENTS**
+- Problem Statement
+- Solution
+-- Architecture Diagram	
+-- Written Explanation of Architecture Diagram
+-- Justification for the specific approach they took for the migration? (For example, going cloud native compared to lifting and shifting) 
+
+### **PROBLEM STATEMENT:**
 
 You are working for a customer that runs their workloads on premises. Your customer has two workloads:
 
@@ -19,7 +27,7 @@ Use AWS managed services and advocate for refactoring the code to take advantage
 Write an explanation that details how the solution works and why you chose to use the services that you selected. Also, create an architecture diagram that depicts how both solutions will be hosted on AWS. 
 
 ---
-**SOLUTION:** 
+### **SOLUTION:** 
 
 Overall, the solution architecture follows a typical three-tier architecture pattern, where the web tier handles incoming requests and forwards them to the application tier, which further interacts with the database tier for data storage and retrieval. The use of load balancers, auto-scaling groups, and managed services like RDS, S3, EMR, and QuickSight helps ensure scalability, availability, and ease of management for the application.
 
