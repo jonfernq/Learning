@@ -243,6 +243,71 @@ you can still compare the financial ratios of two companies on Google Finance by
 
 While Google Finance doesn't provide an automated comparison feature, this manual process allows you to collect and compare the financial ratios of two companies individually. However, I would encourage you to explore other financial websites mentioned earlier, such as Yahoo Finance or Bloomberg, as they offer more robust comparison tools for analyzing financial ratios side by side.
 
+* * *
+
+**You:**
+
+what financial ration measures the portion of  balance sheet allocated to inventory
+
+* * *
+
+**ChatGPT:**
+
+The financial ratio that measures the portion of the balance sheet allocated to inventory is called the Inventory Turnover Ratio.
+
+The Inventory Turnover Ratio is calculated by dividing the cost of goods sold (COGS) by the average inventory during a specific period. It indicates how quickly a company is able to sell its inventory and replace it with new inventory. The formula for the Inventory Turnover Ratio is:
+
+Inventory Turnover Ratio = Cost of Goods Sold / Average Inventory
+
+A higher inventory turnover ratio suggests that a company is effectively managing its inventory and selling products efficiently. On the other hand, a lower ratio may indicate slower inventory turnover, which could be a sign of excess inventory or potential issues with sales and demand.
+
+It's important to note that the Inventory Turnover Ratio should be analyzed in the context of the specific industry and company dynamics. Different industries have different inventory turnover benchmarks, so it's valuable to compare a company's ratio with its industry peers or historical data to gain a better understanding of its performance.
+
+* * *
+
+**You:**
+
+what financial ratio measures the proportion of accounts receivable? 
+
+* * *
+
+**ChatGPT:**
+
+The financial ratio that measures the proportion of accounts receivable on a company's balance sheet is called the Accounts Receivable Turnover Ratio.
+
+The Accounts Receivable Turnover Ratio calculates how many times, on average, a company collects its accounts receivable within a given period. It indicates how efficiently a company is managing its credit sales and collecting payments from customers. The formula for the Accounts Receivable Turnover Ratio is:
+
+Accounts Receivable Turnover Ratio = Net Credit Sales / Average Accounts Receivable
+
+Net Credit Sales represent the total credit sales made by the company during the period, while Average Accounts Receivable is the average value of accounts receivable over the same period.
+
+A higher Accounts Receivable Turnover Ratio suggests that a company is collecting payments from customers more quickly, which indicates effective credit management and strong cash flow. Conversely, a lower ratio may indicate slower collections, potentially signaling issues with credit policies, customer payment delays, or the quality of receivables.
+
+It's important to note that the Accounts Receivable Turnover Ratio should be compared to industry benchmarks or the company's historical data to gain meaningful insights. Additionally, the ratio should be considered in conjunction with other factors, such as industry-specific credit terms and customer payment practices, to obtain a comprehensive assessment of a company's accounts receivable management.
+
+* * *
+
+**You:**
+
+what financial ratio measures resources devoted  to research and development? 
+
+* * *
+
+**ChatGPT:**
+
+The financial ratio that measures the resources devoted to research and development (R&D) is the R&D Intensity Ratio.
+
+The R&D Intensity Ratio calculates the proportion of a company's revenue that is allocated to research and development activities. It provides insight into the level of investment a company is making in R&D relative to its revenue. The formula for the R&D Intensity Ratio is:
+
+R&D Intensity Ratio = R&D Expenses / Total Revenue
+
+R&D Expenses represent the total expenses incurred by the company for research and development activities, including salaries, equipment, materials, and other related costs. Total Revenue refers to the company's total revenue generated from its operations.
+
+A higher R&D Intensity Ratio indicates a greater commitment to research and development, suggesting a focus on innovation and future growth. It implies that the company is dedicating a significant portion of its resources to develop new products, improve existing offerings, or explore new technologies. Conversely, a lower ratio may indicate relatively lower R&D investment.
+
+The R&D Intensity Ratio is particularly relevant for companies in industries that heavily rely on innovation, such as pharmaceuticals, technology, and biotechnology. It allows for comparisons between companies within the same industry to assess their level of R&D investment and potential for future growth.
+
+It's important to note that the R&D Intensity Ratio should be analyzed in the context of the industry norms and the company's specific strategies and objectives. Different industries have different R&D intensity benchmarks, and it's valuable to compare a company's ratio with its industry peers or historical data for a more meaningful evaluation.
 
 
 
