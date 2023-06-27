@@ -1,24 +1,29 @@
 ## Balance Sheet Comparison 
 
-### PROBLEM
-
-1. Discuss two ways in which the balance sheets differ across the two companies.
-
+### 1. Discuss two ways in which the balance sheets differ across the two companies.
+  
 VF Corporation is an apparel and footwear manufacturing company that owns well-known brands such as The North Face, Vans, Timberland, Wrangler, and Lee.
 
 Johnson & Johnson is a healthcare company that develops and manufactures pharmaceuticals, medical devices, and consumer healthcare products, with notable brands including Band-Aid, Tylenol, Neutrogena, and Johnson's Baby.
 
 ### 1. Inventory
 
-Inventory Composition: Companies in the apparel industry, like VF Corporation, 
+**Inventory Composition:** 
+
+Companies in the apparel industry, like VF Corporation, 
 typically have a significant portion of their balance sheet allocated to inventory. 
 This includes raw materials, work-in-progress, and finished goods. 
+
 In contrast, healthcare companies like Johnson & Johnson may have lower inventory
 levels as their products often have longer lifecycles and require less frequent replenishment.
 
-Inventory Turnover Ratio: This ratio measures how efficiently a company manages its inventory. 
+**Inventory Turnover Ratio:** 
+
+This ratio measures how efficiently a company manages its inventory. 
+
 For apparel companies, a high inventory turnover ratio indicates efficient inventory management, 
 as they typically need to regularly replenish their product offerings to meet changing fashion trends. 
+
 In contrast, healthcare companies may have a lower inventory turnover ratio due to longer product lifecycles or manufacturing processes.
 
 The apparel industry typically relies on maintaining an appropriate level of inventory to meet customer demand. 
@@ -32,7 +37,6 @@ accounts receivable due to the complexities of billing insurance companies, heal
 and government reimbursement programs. In contrast, apparel companies typically have shorter credit periods 
 and faster collection cycles, resulting in lower accounts receivable.
 
-
 The financial ratio that measures the proportion of accounts receivable on a company's balance sheet is called the Accounts Receivable Turnover Ratio.
 
 The Accounts Receivable Turnover Ratio calculates how many times, on average, a company collects its accounts receivable within a given period. It indicates how efficiently a company is managing its credit sales and collecting payments from customers. The formula for the Accounts Receivable Turnover Ratio is:
@@ -45,7 +49,14 @@ A higher Accounts Receivable Turnover Ratio suggests that a company is collectin
 
 It's important to note that the Accounts Receivable Turnover Ratio should be compared to industry benchmarks or the company's historical data to gain meaningful insights. Additionally, the ratio should be considered in conjunction with other factors, such as industry-specific credit terms and customer payment practices, to obtain a comprehensive assessment of a company's accounts receivable management.
 
----
+### 2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
+
+Compares a given company financial ratio to an industry average would be best practice, since these ratios typically differ by industry.
+
+But this problem asks for a comparison between the companies without taking into account the industry. 
+
+
+
 
 --------------------------
 
@@ -63,8 +74,6 @@ A higher inventory turnover ratio suggests that a company is effectively managin
 
 It's important to note that the Inventory Turnover Ratio should be analyzed in the context of the specific industry and company dynamics. Different industries have different inventory turnover benchmarks, so it's valuable to compare a company's ratio with its industry peers or historical data to gain a better understanding of its performance.
 
-
-2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
 
 
 
