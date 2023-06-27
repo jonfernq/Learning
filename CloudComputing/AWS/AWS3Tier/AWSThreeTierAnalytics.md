@@ -1,16 +1,10 @@
 ## AWS Three-Tier Application and Data Analytics Solution
 
 **TABLE OF CONTENTS**
-- Problem Statement
-- Solution
-## AWS Architecture: Integration of Three Tier Web and Analytics
-
-
-**TABLE OF CONTENTS**
 - Problem 
 - Architecture Diagram
 - Written Explanation of Architecture Diagram
-- Justification for the specific approach
+- Justification for specific approach
 
 ### PROBLEM
 
@@ -39,7 +33,15 @@ The solution architecture follows a typical three-tier architecture pattern, whe
 
 #### Written Explanation of Architecture Diagram
 
-Explanation of architectural elements: 
+For the first part, we create a 3-tier architecture on AWS using the command line interface (CLI). This architecture consists of the web tier, application tier, and database tier.
+
+In the web tier, we have two web instances that will handle the presentation of our web application. These instances will be launched in public subnets and will be load balanced using an Application Load Balancer. The load balancer will distribute incoming traffic evenly between the web instances, ensuring high availability and scalability.
+
+Moving on to the application tier, we have two application instances that will handle the logic and processing of data received from the web tier. These instances will be launched in private subnets, which provide an additional layer of security by restricting direct access from the internet. The application instances will communicate with the web tier through the load balancer.
+
+Finally, in the database tier, we have an RDS (Relational Database Service) instance that will store and manage our data. The RDS instance will also be launched in a private subnet to ensure secure access. The application instances from the application tier will interact with the database tier to retrieve and store data.
+
+Explanation of the Solution:
 
 1. Internet: This represents the external network or the internet from which requests originate.
     
@@ -49,7 +51,7 @@ Explanation of architectural elements:
     
 4. EC2 Auto Scaling Group (Frontend Instances): This group consists of multiple EC2 instances that host the frontend of the application. EC2 Auto Scaling helps automatically adjust the number of instances based on demand, ensuring high availability and scalability.
     
-5. Elastic Beanstalk (Backend): Elastic Beanstalk is a platform-as-a-service (PaaS) offering by AWS. It provides an environment to deploy, manage, and scale applications. In this architecture, it hosts the backend instances, which handle the application logic and data processing.
+5. Elastic Beanstalk (Backend): (Optional, not added to diagram) Elastic Beanstalk is a platform-as-a-service (PaaS) offering by AWS. It provides an environment to deploy, manage, and scale applications. In this architecture, it hosts the backend instances, which handle the application logic and data processing.
     
 6. Amazon RDS (MySQL): Amazon RDS is a managed relational database service by AWS. In this architecture, it hosts the MySQL database, providing a reliable and scalable storage solution for the application. The backend instances interact with the RDS instance to store and retrieve data.
     
@@ -79,6 +81,8 @@ Benefits:
 
 By adding an ElastiCache tier and a standby instance, you enhance the performance, scalability, and availability of your architecture. These additions help optimize the system's response time, handle increased traffic, and protect against failures, resulting in an improved user experience and system reliability.
 
+---
+
 ### Analytics Workflow
 
 The analytics workflow works briefly as follows. First, transfer data to Amazon S3 for storage, process data using Amazon EMR, and finally visualize the results using Amazon QuickSight. This enables one to leverage the power of big data analytics for deriving insights and making data-driven decisions. Here's a step-by-step more detailed explanation:
@@ -91,35 +95,12 @@ The analytics workflow works briefly as follows. First, transfer data to Amazon 
     
 4. Storing Analyzed Data: Once the data processing is complete, the analyzed or transformed data can be stored back in Amazon S3 in a structured format providing easy access for further analysis or visualization.
 
-5. Visualization with Amazon QuickSight: With the processed data available in Amazon S3, you can connect Amazon QuickSight to the S3 bucket and create interactive visualizations, dashboards, and reports. QuickSight provides a user-friendly interface for creating visualizations and exploring data. You can configure the data source in QuickSight to access the processed data stored in S3 and create visual representations of the insights derived from the data.
+5. Visualization with Amazon QuickSight: With the processed data available in Amazon S3, you can connect Amazon QuickSight to the S3 bucket and create interactive visualizations, dashboards, and reports. QuickSight provides a user-friendly interface for creating visualizations and exploring data. You can configure the data source in QuickSight to access the processed data stored in S3 and create visual representations of the insights derived from the data. 
 
 ---
-### Breakdown into Component Parts
+### Justification for the specific approach
 
-#### First Part: Three Tier Architecture
+---
 
-For the first part, we create a 3-tier architecture on AWS using the command line interface (CLI). This architecture consists of the web tier, application tier, and database tier.
 
-In the web tier, we have two web instances that will handle the presentation of our web application. These instances will be launched in public subnets and will be load balanced using an Application Load Balancer. The load balancer will distribute incoming traffic evenly between the web instances, ensuring high availability and scalability.
 
-Moving on to the application tier, we have two application instances that will handle the logic and processing of data received from the web tier. These instances will be launched in private subnets, which provide an additional layer of security by restricting direct access from the internet. The application instances will communicate with the web tier through the load balancer.
-
-Finally, in the database tier, we have an RDS (Relational Database Service) instance that will store and manage our data. The RDS instance will also be launched in a private subnet to ensure secure access. The application instances from the application tier will interact with the database tier to retrieve and store data.
-
-Explanation of the Solution:
-
-1. **Amazon Route 53**: We use Amazon Route 53 as the DNS service to route incoming traffic from the internet to our application. It provides domain registration and DNS management, ensuring high availability and fault tolerance.
-    
-2. **Application Load Balancer (ALB)**: The ALB acts as the entry point for the frontend layer of the three-tier architecture. It distributes incoming traffic across multiple EC2 instances in an Auto Scaling group to ensure scalability and fault tolerance.
-    
-3. **EC2 Auto Scaling Group**: The Auto Scaling group manages the frontend instances that host the HTML, CSS, and JavaScript components of the application. It automatically scales the number of instances based on demand, allowing the application to handle varying levels of user traffic.
-    
-4. **Elastic Beanstalk**: Elastic Beanstalk is used to deploy and manage the backend layer of the three-tier application. It supports various platforms, including Java, and automatically handles the deployment, capacity provisioning, load balancing, and health monitoring of the backend application.
-    
-5. **Amazon RDS (MySQL)**: We use Amazon RDS to host the MySQL database, which serves as the backend data store for the application. Amazon RDS provides a managed database service, ensuring high availability, durability, and automated backups.
-    
-6. **Amazon S3**: Amazon S3 serves as the storage solution for the data analytics workload. It provides highly scalable and durable object storage for the massive amount of data that needs to be ingested and processed by the analytics workload.
-    
-7. **Amazon EMR**: Amazon EMR is used to run the Apache Hadoop-based data analytics workload. EMR provides a managed cluster platform for big data processing, allowing us to spin up Hadoop clusters on-demand. By leveraging EMR, we can take advantage of its scalability, fault tolerance, and integration with other AWS services.
-    
-8. **Amazon QuickSight**: QuickSight
