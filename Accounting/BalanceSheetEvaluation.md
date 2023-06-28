@@ -22,28 +22,19 @@ Does this meet expectations according to industry norms? We now address this que
 
 **Inventory Composition:** 
 
-Companies in the apparel industry, like VF Corporation, 
+The Inventory Turnover Ratio measures how efficiently a company manages its inventory.
+
+Apparel companies like VF Corporation, 
 typically have a significant portion of their balance sheet allocated to inventory. 
 This includes raw materials, work-in-progress, and finished goods. 
 
-In contrast, healthcare companies like Johnson & Johnson may have lower inventory
-levels as their products often have longer lifecycles and require less frequent replenishment.
-
-**Inventory Turnover Ratio:** 
-
-This ratio measures how efficiently a company manages its inventory. 
-
 For apparel companies, a high inventory turnover ratio indicates efficient inventory management, 
-as they typically need to regularly replenish their product offerings to meet changing fashion trends. 
+as they typically need to regularly replenish their product offerings to meet changing fashion trends.
 
-In contrast, healthcare companies may have a lower inventory turnover ratio due to longer product lifecycles or manufacturing processes.
+In contrast, healthcare companies like Johnson & Johnson may have lower inventory
+levels and a lower inventory turnover ratio as their products often have longer lifecycles and manufacturing processes, and thus require less frequent replenishment.
 
 ### 2. Accounts Receivable: 
-
-Healthcare companies, including Johnson & Johnson, often have a higher proportion of 
-accounts receivable due to the complexities of billing insurance companies, healthcare providers, 
-and government reimbursement programs. In contrast, apparel companies typically have shorter credit periods 
-and faster collection cycles, resulting in lower accounts receivable.
 
 The financial ratio that measures the proportion of accounts receivable on a company's balance sheet is called the Accounts Receivable Turnover Ratio.
 
@@ -55,9 +46,14 @@ Net Credit Sales represent the total credit sales made by the company during the
 
 A higher Accounts Receivable Turnover Ratio suggests that a company is collecting payments from customers more quickly, which indicates effective credit management and strong cash flow. Conversely, a lower ratio may indicate slower collections, potentially signaling issues with credit policies, customer payment delays, or the quality of receivables.
 
+Healthcare companies, including Johnson & Johnson, often have a higher proportion of 
+accounts receivable due to the complexities of billing insurance companies, healthcare providers, 
+and government reimbursement programs. 
+
+In contrast, apparel companies typically have shorter credit periods 
+and faster collection cycles, resulting in lower accounts receivable.
+
 ### 2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
-
-
 
 A higher Accounts Receivable Turnover Ratio or Inventory Turnover Ratio can have implications for different parts of the balance sheet, including liabilities, assets, and owners' equity. Here's how each ratio can impact these components:
 
