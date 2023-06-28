@@ -57,7 +57,7 @@ These expectations are not met in the Balance Sheet Data prezented above.
 
 ### 2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
 
-A higher Accounts Receivable Turnover Ratio or Inventory Turnover Ratio can have implications for different parts of the balance sheet, including liabilities, assets, and owners' equity. Here's how each ratio can impact these components:
+Keeping in mind that both ratios are higher for the garment manufacturer VF Corporation than they are for the Pharmaceutical company Johnson & Johnson, a higher Accounts Receivable Turnover Ratio or Inventory Turnover Ratio can have implications for different parts of the balance sheet, including liabilities, assets, and owners' equity. Here's how each ratio can impact these components:
 
 1. Accounts Receivable Turnover Ratio:
     
