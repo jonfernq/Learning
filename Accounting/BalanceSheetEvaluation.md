@@ -1,6 +1,6 @@
 ## Balance Sheet Comparison 
 
-### 1. Discuss two ways in which the balance sheets differ across the two companies.
+### 1. Discuss two ways in which the balance sheets differ across two companies.
   
 VF Corporation is an apparel and footwear manufacturing company that owns well-known brands such as The North Face, Vans, Timberland, Wrangler, and Lee. Here are financial ratios that allow balance sheet comparison between companies: 
 
