@@ -67,8 +67,8 @@ A higher Accounts Receivable Turnover Ratio or Inventory Turnover Ratio can have
 2. Inventory Turnover Ratio:
     
     * Assets: A higher inventory turnover ratio indicates that a company is selling its inventory more quickly. This suggests efficient management of inventory levels and a lower investment in inventory. As a result, the inventory balance, which is recorded as an asset on the balance sheet, will decrease. This reduction in inventory can lead to a decrease in total assets.
-    * Liabilities: The inventory turnover ratio typically does not have a direct impact on liabilities. However, efficient inventory management can positively impact a company's working capital and liquidity, which may indirectly affect the ability to meet short-term obligations.
-    * Owners' Equity: The inventory turnover ratio itself does not directly impact owners' equity. However, if a higher turnover ratio is associated with improved profitability and cost management, it can lead to higher net income. This, in turn, can contribute to an increase in retained earnings and owners' equity.
+    * Liabilities: Efficient inventory management can positively impact a company's working capital and liquidity, which may indirectly improve the ability to meet short-term obligations.
+    * Owners' Equity: If a higher turnover ratio leads to improved profitability and cost management, it can indirectly lead to higher net income. This, in turn, can contribute to an increase in retained earnings and owners' equity.
 
 Other factors, such as the company's sales growth, pricing strategy, credit policy, and capital structure, should also be considered when analyzing the overall effect on the balance sheet.
 
