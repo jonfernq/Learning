@@ -61,3 +61,39 @@ Once you have assigned scores to each component, multiply each score by its resp
 For example, if the total weighted score falls between 70 and 100, you can map it to a rating of 7 to 10. Adjust the ranges based on your preferences and the specific context of the companies you are evaluating.
 
 It's important to note that the weights assigned to each component are subjective and can vary based on your assessment of their relative importance. Additionally, this rating approach is just one possible method, and you may modify it or customize it based on your specific requirements and the characteristics of the companies you are analyzing.
+
+---
+
+> Are there financial ratios that can be calculated from the income statement that allow for cross-company performance comparison? 
+
+There are several financial ratios that can be calculated from the income statement, which facilitate cross-company performance comparison. These ratios help assess various aspects of a company's financial performance and can be used to compare companies within the same industry or across different industries. Here are some commonly used financial ratios derived from the income statement:
+
+1. Profitability Ratios:
+    
+    * Gross Profit Margin: (Gross Profit / Revenue) * 100
+    * Operating Profit Margin: (Operating Income / Revenue) * 100
+    * Net Profit Margin: (Net Income / Revenue) * 100
+    * Return on Sales (ROS): (Net Income / Revenue) * 100
+2. Efficiency Ratios:
+    
+    * Asset Turnover: Revenue / Average Total Assets
+    * Receivables Turnover: Revenue / Average Accounts Receivable
+    * Inventory Turnover: Cost of Goods Sold / Average Inventory
+3. Liquidity Ratios:
+    
+    * Current Ratio: Current Assets / Current Liabilities
+    * Quick Ratio (Acid-Test Ratio): (Current Assets - Inventory) / Current Liabilities
+4. Solvency Ratios:
+    
+    * Debt-to-Equity Ratio: Total Debt / Total Equity
+    * Interest Coverage Ratio: Operating Income / Interest Expense
+5. Earnings Ratios:
+    
+    * Earnings Per Share (EPS): Net Income / Weighted Average Number of Shares Outstanding
+    * Price-to-Earnings (P/E) Ratio: Market Price per Share / Earnings Per Share
+
+These ratios provide insights into a company's profitability, efficiency, liquidity, solvency, and earnings generation. By calculating and comparing these ratios for different companies, investors, analysts, and stakeholders can evaluate their relative financial performance and make informed decisions.
+
+When using these ratios for cross-company comparison, it's important to consider factors such as industry norms, business models, and economic conditions, as they can influence the ratios and performance benchmarks. It's also advisable to compare companies within the same industry or sector to obtain more meaningful comparisons.
+
+
