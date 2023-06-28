@@ -62,15 +62,15 @@ A higher Accounts Receivable Turnover Ratio or Inventory Turnover Ratio can have
 1. Accounts Receivable Turnover Ratio:
     
     * Assets: A higher accounts receivable turnover ratio indicates that a company is collecting its receivables more quickly. This means that accounts receivable, which is recorded as an asset on the balance sheet, will decrease. The reduction in accounts receivable can lead to a decrease in total assets.
-    * Liabilities: The accounts receivable turnover ratio typically does not have a direct impact on liabilities. However, if a company is able to collect receivables more efficiently, it may improve its cash flow position, which can positively impact liquidity and the ability to meet short-term obligations.
-    * Owners' Equity: The accounts receivable turnover ratio itself does not directly affect owners' equity. However, if the improvement in accounts receivable turnover is associated with increased profitability, it can result in higher net income. Higher net income can, in turn, contribute to an increase in retained earnings and owners' equity over time.
+    * Liabilities: If a company is able to collect receivables more efficiently, it may improve its cash flow position, which can positively impact liquidity and the ability to meet short-term obligations.
+    * Owners' Equity: If the improvement in accounts receivable turnover is associated with increased profitability, it can result in higher net income. Higher net income can, in turn, contribute to an increase in retained earnings and owners' equity over time.
 2. Inventory Turnover Ratio:
     
     * Assets: A higher inventory turnover ratio indicates that a company is selling its inventory more quickly. This suggests efficient management of inventory levels and a lower investment in inventory. As a result, the inventory balance, which is recorded as an asset on the balance sheet, will decrease. This reduction in inventory can lead to a decrease in total assets.
     * Liabilities: Efficient inventory management can positively impact a company's working capital and liquidity, which may indirectly improve the ability to meet short-term obligations.
     * Owners' Equity: If a higher turnover ratio leads to improved profitability and cost management, it can indirectly lead to higher net income. This, in turn, can contribute to an increase in retained earnings and owners' equity.
 
-Other factors, such as the company's sales growth, pricing strategy, credit policy, and capital structure, should also be considered when analyzing the overall effect on the balance sheet.
+Other factors, such as the company's sales growth, pricing strategy, credit policy, and capital structure, should also be considered when analyzing the overall effect on the balance sheet, all of which is beyond the scope of this short analysis. 
 
 
 
