@@ -57,32 +57,22 @@ A higher Accounts Receivable Turnover Ratio suggests that a company is collectin
 
 ### 2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
 
-Compares a given company financial ratio to an industry average would be best practice, since these ratios typically differ by industry.
-
-But this problem asks for a comparison between the companies without taking into account the industry. 
-
-It's important to note that the Accounts Receivable Turnover Ratio should be compared to industry benchmarks or the company's historical data to gain meaningful insights. Additionally, the ratio should be considered in conjunction with other factors, such as industry-specific credit terms and customer payment practices, to obtain a comprehensive assessment of a company's accounts receivable management.
 
 
+A higher Accounts Receivable Turnover Ratio or Inventory Turnover Ratio can have implications for different parts of the balance sheet, including liabilities, assets, and owners' equity. Here's how each ratio can impact these components:
 
+1. Accounts Receivable Turnover Ratio:
+    
+    * Assets: A higher accounts receivable turnover ratio indicates that a company is collecting its receivables more quickly. This means that accounts receivable, which is recorded as an asset on the balance sheet, will decrease. The reduction in accounts receivable can lead to a decrease in total assets.
+    * Liabilities: The accounts receivable turnover ratio typically does not have a direct impact on liabilities. However, if a company is able to collect receivables more efficiently, it may improve its cash flow position, which can positively impact liquidity and the ability to meet short-term obligations.
+    * Owners' Equity: The accounts receivable turnover ratio itself does not directly affect owners' equity. However, if the improvement in accounts receivable turnover is associated with increased profitability, it can result in higher net income. Higher net income can, in turn, contribute to an increase in retained earnings and owners' equity over time.
+2. Inventory Turnover Ratio:
+    
+    * Assets: A higher inventory turnover ratio indicates that a company is selling its inventory more quickly. This suggests efficient management of inventory levels and a lower investment in inventory. As a result, the inventory balance, which is recorded as an asset on the balance sheet, will decrease. This reduction in inventory can lead to a decrease in total assets.
+    * Liabilities: The inventory turnover ratio typically does not have a direct impact on liabilities. However, efficient inventory management can positively impact a company's working capital and liquidity, which may indirectly affect the ability to meet short-term obligations.
+    * Owners' Equity: The inventory turnover ratio itself does not directly impact owners' equity. However, if a higher turnover ratio is associated with improved profitability and cost management, it can lead to higher net income. This, in turn, can contribute to an increase in retained earnings and owners' equity.
 
---------------------------
-
-* * *
-
-what financial ration measures the portion of  balance sheet allocated to inventory
-
-The financial ratio that measures the portion of the balance sheet allocated to inventory is called the Inventory Turnover Ratio.
-
-The Inventory Turnover Ratio is calculated by dividing the cost of goods sold (COGS) by the average inventory during a specific period. It indicates how quickly a company is able to sell its inventory and replace it with new inventory. The formula for the Inventory Turnover Ratio is:
-
-Inventory Turnover Ratio = Cost of Goods Sold / Average Inventory
-
-A higher inventory turnover ratio suggests that a company is effectively managing its inventory and selling products efficiently. On the other hand, a lower ratio may indicate slower inventory turnover, which could be a sign of excess inventory or potential issues with sales and demand.
-
-It's important to note that the Inventory Turnover Ratio should be analyzed in the context of the specific industry and company dynamics. Different industries have different inventory turnover benchmarks, so it's valuable to compare a company's ratio with its industry peers or historical data to gain a better understanding of its performance.
-
-
+Other factors, such as the company's sales growth, pricing strategy, credit policy, and capital structure, should also be considered when analyzing the overall effect on the balance sheet.
 
 
 
