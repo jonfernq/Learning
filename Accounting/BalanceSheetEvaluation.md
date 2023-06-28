@@ -20,19 +20,19 @@ Does this meet expectations according to industry norms? We now address this que
 
 ### 1. Inventory
 
-**Inventory Composition:** 
-
 The Inventory Turnover Ratio measures how efficiently a company manages its inventory.
 
 Apparel companies like VF Corporation, 
 typically have a significant portion of their balance sheet allocated to inventory. 
-This includes raw materials, work-in-progress, and finished goods. 
+This includes raw materials, work-in-progress, and finished goods.  
 
 For apparel companies, a high inventory turnover ratio indicates efficient inventory management, 
 as they typically need to regularly replenish their product offerings to meet changing fashion trends.
 
 In contrast, healthcare companies like Johnson & Johnson may have lower inventory
 levels and a lower inventory turnover ratio as their products often have longer lifecycles and manufacturing processes, and thus require less frequent replenishment.
+
+These expectations match the pattern in the Balance Sheet data presented above.
 
 ### 2. Accounts Receivable: 
 
@@ -52,6 +52,8 @@ and government reimbursement programs.
 
 In contrast, apparel companies typically have shorter credit periods 
 and faster collection cycles, resulting in lower accounts receivable.
+
+These expectations are not met in the Balance Sheet Data prezented above. 
 
 ### 2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
 
