@@ -36,15 +36,11 @@ This ratio measures how efficiently a company manages its inventory.
 For apparel companies, a high inventory turnover ratio indicates efficient inventory management, 
 as they typically need to regularly replenish their product offerings to meet changing fashion trends. 
 
-(The apparel industry typically relies on maintaining an appropriate level of inventory to meet customer demand. 
-In the balance sheet, assessing the inventory turnover ratio and the composition of inventory 
-(e.g., raw materials, work-in-progress, finished goods) is important to gauge the efficiency of inventory management.)
-
 In contrast, healthcare companies may have a lower inventory turnover ratio due to longer product lifecycles or manufacturing processes.
 
 ### 2. Accounts Receivable: 
 
-Accounts Receivable: Healthcare companies, including Johnson & Johnson, often have a higher proportion of 
+Healthcare companies, including Johnson & Johnson, often have a higher proportion of 
 accounts receivable due to the complexities of billing insurance companies, healthcare providers, 
 and government reimbursement programs. In contrast, apparel companies typically have shorter credit periods 
 and faster collection cycles, resulting in lower accounts receivable.
@@ -58,7 +54,6 @@ Accounts Receivable Turnover Ratio = Net Credit Sales / Average Accounts Receiva
 Net Credit Sales represent the total credit sales made by the company during the period, while Average Accounts Receivable is the average value of accounts receivable over the same period.
 
 A higher Accounts Receivable Turnover Ratio suggests that a company is collecting payments from customers more quickly, which indicates effective credit management and strong cash flow. Conversely, a lower ratio may indicate slower collections, potentially signaling issues with credit policies, customer payment delays, or the quality of receivables.
-
 
 ### 2. Discuss what these balance sheet differences suggest about differences in the financial positions of the two companies.
 
