@@ -72,6 +72,11 @@ Keeping in mind that both ratios are higher for the garment manufacturer VF Corp
 
 Other factors, such as the company's sales growth, pricing strategy, credit policy, and capital structure, should also be considered when analyzing the overall effect on the balance sheet, all of which is beyond the scope of this short analysis. 
 
+### DATA SOURCES 
+
+https://www.macrotrends.net/stocks/charts/JNJ/johnson-johnson/financial-ratios
+
+https://www.macrotrends.net/stocks/charts/VFC/vf/financial-ratios
 
 
 
