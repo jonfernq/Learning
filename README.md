@@ -1,9 +1,5 @@
 ## Learning
 
-### Accounting Analytics & Taxation
-
-- [Taxation]()
-
 ### Knowledge Bases 
 
 - [Python](https://github.com/jonfernq/Learning/blob/main/Python/README.md)
